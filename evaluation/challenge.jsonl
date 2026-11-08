@@ -1,0 +1,100 @@
+{"girdi": "toplam bin iki yüz elli lira elli kuruş", "hedef": "toplam 1.250,50 TL", "kategori": "para", "sablon": "elle"}
+{"girdi": "faturanız üç yüz kırk dokuz lira doksan kuruş", "hedef": "faturanız 349,90 TL", "kategori": "para", "sablon": "elle"}
+{"girdi": "bu ay kiraya on sekiz bin beş yüz lira verdim", "hedef": "bu ay kiraya 18.500 TL verdim", "kategori": "para", "sablon": "elle"}
+{"girdi": "elli kuruşa simit mi kaldı", "hedef": "50 kuruşa simit mi kaldı", "kategori": "para", "sablon": "elle"}
+{"girdi": "dolar kırk iki lira on beş kuruşa çıktı", "hedef": "dolar 42,15 TL'ye çıktı", "kategori": "para", "sablon": "elle"}
+{"girdi": "yüz dolar bozdurdum", "hedef": "100 dolar bozdurdum", "kategori": "para", "sablon": "elle"}
+{"girdi": "kırk beş liralık hesap geldi", "hedef": "45 TL'lik hesap geldi", "kategori": "para", "sablon": "elle"}
+{"girdi": "ekmek on beş lira oldu", "hedef": "ekmek 15 TL oldu", "kategori": "para", "sablon": "elle"}
+{"girdi": "dokuz yüz doksan dokuz lira", "hedef": "999 TL", "kategori": "para", "sablon": "elle"}
+{"girdi": "yüz liradan fazla harcama", "hedef": "100 TL'den fazla harcama", "kategori": "para", "sablon": "elle"}
+{"girdi": "yüzde on iki buçuk indirim", "hedef": "%12,5 indirim", "kategori": "yuzde", "sablon": "elle"}
+{"girdi": "enflasyon yüzde kırk yedi virgül üç oldu", "hedef": "enflasyon %47,3 oldu", "kategori": "yuzde", "sablon": "elle"}
+{"girdi": "öğrencilerin yüzde sekseni geçti", "hedef": "öğrencilerin %80'i geçti", "kategori": "yuzde", "sablon": "elle"}
+{"girdi": "yüzde yüz katılıyorum", "hedef": "%100 katılıyorum", "kategori": "yuzde", "sablon": "elle"}
+{"girdi": "iki buçuk kilogram domates", "hedef": "2,5 kg domates", "kategori": "olcu", "sablon": "elle"}
+{"girdi": "bir kilo un iki litre süt al", "hedef": "1 kg un 2 L süt al", "kategori": "olcu", "sablon": "elle"}
+{"girdi": "evden okula üç kilometre var", "hedef": "evden okula 3 km var", "kategori": "olcu", "sablon": "elle"}
+{"girdi": "otuz beş metrekarelik bir oda", "hedef": "35 m²'lik bir oda", "kategori": "olcu", "sablon": "elle"}
+{"girdi": "telefonun hafızası yüz yirmi sekiz gigabayt", "hedef": "telefonun hafızası 128 GB", "kategori": "olcu", "sablon": "elle"}
+{"girdi": "on iki buçuk kilo et aldık", "hedef": "12,5 kg et aldık", "kategori": "olcu", "sablon": "elle"}
+{"girdi": "üç bin beş yüz metre koştu", "hedef": "3.500 m koştu", "kategori": "olcu", "sablon": "elle"}
+{"girdi": "saatte yüz yirmi kilometre hızla gidiyordu", "hedef": "saatte 120 km hızla gidiyordu", "kategori": "olcu", "sablon": "elle"}
+{"girdi": "dışarıda eksi yedi derece var", "hedef": "dışarıda -7 derece var", "kategori": "eksi", "sablon": "elle"}
+{"girdi": "yarın hava otuz iki derece olacak", "hedef": "yarın hava 32 derece olacak", "kategori": "olcu", "sablon": "elle"}
+{"girdi": "su otuz derece santigratta ısınır", "hedef": "su 30 °C'de ısınır", "kategori": "olcu", "sablon": "elle"}
+{"girdi": "saat on dört otuzda görüşelim", "hedef": "saat 14.30'da görüşelim", "kategori": "saat", "sablon": "elle"}
+{"girdi": "saat dokuzda toplantı var", "hedef": "saat 9'da toplantı var", "kategori": "saat", "sablon": "elle"}
+{"girdi": "saat üç buçukta buluşalım", "hedef": "saat 3.30'da buluşalım", "kategori": "saat", "sablon": "elle"}
+{"girdi": "tren saat on yedi kırk beşte kalkıyor", "hedef": "tren saat 17.45'te kalkıyor", "kategori": "saat", "sablon": "elle"}
+{"girdi": "maç saat altıda başlıyor", "hedef": "maç saat 6'da başlıyor", "kategori": "saat", "sablon": "elle"}
+{"girdi": "saat ona kadar çalışıyoruz", "hedef": "saat 10'a kadar çalışıyoruz", "kategori": "saat", "sablon": "elle"}
+{"girdi": "saat dörde kadar açığız", "hedef": "saat 4'e kadar açığız", "kategori": "saat", "sablon": "elle"}
+{"girdi": "saat yedide yemek yedik", "hedef": "saat 7'de yemek yedik", "kategori": "saat", "sablon": "elle"}
+{"girdi": "saat on dokuz sıfır beşte çıktı", "hedef": "saat 19.05'te çıktı", "kategori": "saat", "sablon": "elle"}
+{"girdi": "sabah yedide kalktım", "hedef": "sabah 7'de kalktım", "kategori": "saat_zor", "sablon": "elle"}
+{"girdi": "gece on bir buçukta yatarım", "hedef": "gece 11.30'da yatarım", "kategori": "saat_zor", "sablon": "elle"}
+{"girdi": "sekiz kasım iki bin yirmi altıda doğdu", "hedef": "8 Kasım 2026'da doğdu", "kategori": "tarih", "sablon": "elle"}
+{"girdi": "yirmi dokuz ekim bin dokuz yüz yirmi üçte cumhuriyet ilan edildi", "hedef": "29 Ekim 1923'te cumhuriyet ilan edildi", "kategori": "tarih", "sablon": "elle"}
+{"girdi": "on beş kasımda saat on dokuzda konser var", "hedef": "15 Kasım'da saat 19'da konser var", "kategori": "tarih", "sablon": "elle"}
+{"girdi": "bin dokuz yüz doksanlarda çok popülerdi", "hedef": "1990'larda çok popülerdi", "kategori": "tarih", "sablon": "elle"}
+{"girdi": "iki bin yirmi beşteki seçimler", "hedef": "2025'teki seçimler", "kategori": "tarih", "sablon": "elle"}
+{"girdi": "üçüncü kattaki daire satılık", "hedef": "3. kattaki daire satılık", "kategori": "sira", "sablon": "elle"}
+{"girdi": "yirmi birinci yüzyılda yaşıyoruz", "hedef": "21. yüzyılda yaşıyoruz", "kategori": "sira", "sablon": "elle"}
+{"girdi": "onuncu sınıfa geçti", "hedef": "10. sınıfa geçti", "kategori": "sira", "sablon": "elle"}
+{"girdi": "kırk dördüncü maddede yazıyor", "hedef": "44. maddede yazıyor", "kategori": "sira", "sablon": "elle"}
+{"girdi": "otobüse binip altıncı durakta indim", "hedef": "otobüse binip 6. durakta indim", "kategori": "sira", "sablon": "elle"}
+{"girdi": "numaram sıfır beş yüz otuz iki yüz yirmi üç kırk beş altmış yedi", "hedef": "numaram 0532 123 45 67", "kategori": "telefon", "sablon": "elle"}
+{"girdi": "sıfır iki yüz on iki dört yüz elli altı yetmiş sekiz doksan", "hedef": "0212 456 78 90", "kategori": "telefon", "sablon": "elle"}
+{"girdi": "beni sıfır beş üç iki bir iki üç dört beş altı yedi numaradan ara", "hedef": "beni 0532 123 45 67 numaradan ara", "kategori": "telefon", "sablon": "elle"}
+{"girdi": "doğrulama kodu sıfır sekiz dört iki", "hedef": "doğrulama kodu 0842", "kategori": "kod", "sablon": "elle"}
+{"girdi": "şifre dört beş bir dokuz", "hedef": "şifre 4519", "kategori": "kod", "sablon": "elle"}
+{"girdi": "maç iki bir bitti", "hedef": "maç 2-1 bitti", "kategori": "skor", "sablon": "elle"}
+{"girdi": "galatasaray maçı üç sıfır kazandı", "hedef": "galatasaray maçı 3-0 kazandı", "kategori": "skor", "sablon": "elle"}
+{"girdi": "beş altı kişi gelecek", "hedef": "5-6 kişi gelecek", "kategori": "aralik", "sablon": "elle"}
+{"girdi": "on on beş dakika sonra çıkarım", "hedef": "10-15 dakika sonra çıkarım", "kategori": "aralik", "sablon": "elle"}
+{"girdi": "pi sayısı üç virgül on dört", "hedef": "pi sayısı 3,14", "kategori": "ondalik", "sablon": "elle"}
+{"girdi": "not ortalamam üç virgül sıfır beş", "hedef": "not ortalamam 3,05", "kategori": "ondalik", "sablon": "elle"}
+{"girdi": "şirket iki buçuk milyon lira zarar etti", "hedef": "şirket 2,5 milyon TL zarar etti", "kategori": "buyuk", "sablon": "elle"}
+{"girdi": "nüfus seksen beş milyon", "hedef": "nüfus 85 milyon", "kategori": "buyuk", "sablon": "elle"}
+{"girdi": "projeye bir milyon iki yüz bin lira ayrıldı", "hedef": "projeye 1.200.000 TL ayrıldı", "kategori": "buyuk", "sablon": "elle"}
+{"girdi": "on yedi kişi geldi", "hedef": "17 kişi geldi", "kategori": "kardinal", "sablon": "elle"}
+{"girdi": "yüz kişilik salon doldu", "hedef": "100 kişilik salon doldu", "kategori": "kardinal", "sablon": "elle"}
+{"girdi": "bin kişi meydanda toplandı", "hedef": "1.000 kişi meydanda toplandı", "kategori": "kardinal", "sablon": "elle"}
+{"girdi": "on iki gün sonra geleceğim", "hedef": "12 gün sonra geleceğim", "kategori": "kardinal", "sablon": "elle"}
+{"girdi": "iphone on beşi aldım", "hedef": "iphone 15'i aldım", "kategori": "kardinal", "sablon": "elle"}
+{"girdi": "otuz beş yaşındayım", "hedef": "35 yaşındayım", "kategori": "kardinal", "sablon": "elle"}
+{"girdi": "kırk sekiz saat içinde döneriz", "hedef": "48 saat içinde döneriz", "kategori": "kardinal", "sablon": "elle"}
+{"girdi": "on bin adım attım", "hedef": "10.000 adım attım", "kategori": "kardinal", "sablon": "elle"}
+{"girdi": "yüzde yirmi indirimle iki yüz otuz dokuz lira", "hedef": "%20 indirimle 239 TL", "kategori": "karisik", "sablon": "elle"}
+{"girdi": "akşam yemeğini yedi ve uyudu", "hedef": "akşam yemeğini yedi ve uyudu", "kategori": "negatif_es", "sablon": "elle"}
+{"girdi": "çocuk kekin hepsini yedi", "hedef": "çocuk kekin hepsini yedi", "kategori": "negatif_es", "sablon": "elle"}
+{"girdi": "kedi masanın altında uyuyor", "hedef": "kedi masanın altında uyuyor", "kategori": "negatif_es", "sablon": "elle"}
+{"girdi": "yüzünü yıkadı ve çıktı", "hedef": "yüzünü yıkadı ve çıktı", "kategori": "negatif_es", "sablon": "elle"}
+{"girdi": "denizde bir saat yüzdük", "hedef": "denizde bir saat yüzdük", "kategori": "negatif_es", "sablon": "elle"}
+{"girdi": "otobüse bin hemen", "hedef": "otobüse bin hemen", "kategori": "negatif_es", "sablon": "elle"}
+{"girdi": "ona söyledim ama dinlemedi", "hedef": "ona söyledim ama dinlemedi", "kategori": "negatif_es", "sablon": "elle"}
+{"girdi": "onların evi çok uzak", "hedef": "onların evi çok uzak", "kategori": "negatif_es", "sablon": "elle"}
+{"girdi": "pastanın üçte birini yedim", "hedef": "pastanın üçte birini yedim", "kategori": "negatif_es", "sablon": "elle"}
+{"girdi": "dört gözle bekliyorum", "hedef": "dört gözle bekliyorum", "kategori": "negatif_kalip", "sablon": "elle"}
+{"girdi": "kırk yılda bir böyle şey olur", "hedef": "kırk yılda bir böyle şey olur", "kategori": "negatif_kalip", "sablon": "elle"}
+{"girdi": "ikisi de çok güzel", "hedef": "ikisi de çok güzel", "kategori": "negatif_kalip", "sablon": "elle"}
+{"girdi": "birinci oldu ve madalya aldı", "hedef": "birinci oldu ve madalya aldı", "kategori": "negatif_kalip", "sablon": "elle"}
+{"girdi": "ikinci el araba aldım", "hedef": "ikinci el araba aldım", "kategori": "negatif_kalip", "sablon": "elle"}
+{"girdi": "kasımda tatile çıkacağız", "hedef": "kasımda tatile çıkacağız", "kategori": "negatif_kalip", "sablon": "elle"}
+{"girdi": "bir iki gün içinde döneriz", "hedef": "bir iki gün içinde döneriz", "kategori": "negatif_kalip", "sablon": "elle"}
+{"girdi": "yarım kilo peynir aldım", "hedef": "yarım kilo peynir aldım", "kategori": "negatif_kalip", "sablon": "elle"}
+{"girdi": "bir adam geldi ve bir şey sordu", "hedef": "bir adam geldi ve bir şey sordu", "kategori": "negatif_kalip", "sablon": "elle"}
+{"girdi": "birlikte gidelim mi", "hedef": "birlikte gidelim mi", "kategori": "negatif_kalip", "sablon": "elle"}
+{"girdi": "onlarca kişi bekliyordu", "hedef": "onlarca kişi bekliyordu", "kategori": "negatif_kalip", "sablon": "elle"}
+{"girdi": "yüzlerce mesaj geldi", "hedef": "yüzlerce mesaj geldi", "kategori": "negatif_kalip", "sablon": "elle"}
+{"girdi": "yedi düvele meydan okudu", "hedef": "yedi düvele meydan okudu", "kategori": "negatif_kalip", "sablon": "elle"}
+{"girdi": "üçgenin alanını hesapla", "hedef": "üçgenin alanını hesapla", "kategori": "negatif_kalip", "sablon": "elle"}
+{"girdi": "iki gün sonra geleceğim", "hedef": "iki gün sonra geleceğim", "kategori": "negatif_politika", "sablon": "elle"}
+{"girdi": "toplam 1.250,50 TL", "hedef": "toplam 1.250,50 TL", "kategori": "negatif_yazili", "sablon": "elle"}
+{"girdi": "saat 14.30'da görüşelim", "hedef": "saat 14.30'da görüşelim", "kategori": "negatif_yazili", "sablon": "elle"}
+{"girdi": "%12,5 indirim var", "hedef": "%12,5 indirim var", "kategori": "negatif_yazili", "sablon": "elle"}
+{"girdi": "Toplam bin iki yüz elli lira elli kuruş.", "hedef": "Toplam 1.250,50 TL.", "kategori": "buyuk_harf", "sablon": "elle"}
+{"girdi": "Saat on dört otuzda görüşelim mi?", "hedef": "Saat 14.30'da görüşelim mi?", "kategori": "buyuk_harf", "sablon": "elle"}
+{"girdi": "Akşam yemeğini yedi.", "hedef": "Akşam yemeğini yedi.", "kategori": "buyuk_harf", "sablon": "elle"}
+{"girdi": "Yirmi dokuz ekimde bayram var.", "hedef": "29 Ekim'de bayram var.", "kategori": "buyuk_harf", "sablon": "elle"}

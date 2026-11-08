@@ -1,0 +1,1 @@
+{"steps": 60, "batch_size": 8, "gradient_accumulation": 2, "learning_rate": 0.001, "lr_min_oran": 1.0, "warmup": 10, "eval_every": 30, "eval_ornek": 32, "seed": 42, "rank": 16, "max_bytes": 192, "patience": 8}

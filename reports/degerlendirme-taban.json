@@ -1,0 +1,3023 @@
+{
+  "bilgi": {
+    "ad": "taban",
+    "kontrol_noktasi": "yok (yalnız taban çizgileri)",
+    "saniye": 0.22340869999970892,
+    "limit": null
+  },
+  "kumeler": [
+    {
+      "ad": "test",
+      "ornek": 2000,
+      "hata_kaynagi": "kural",
+      "olcumler": {
+        "kopya": {
+          "ornek": 2000,
+          "tam_eslesme": 0.388,
+          "cer": 0.3358563607736642,
+          "wer": 0.4701235944614813,
+          "sayi_belirteci_dogrulugu": 0.11638679791546033,
+          "negatif_ornek": 776,
+          "yanlis_donusum_orani": 0.0
+        },
+        "kural": {
+          "ornek": 2000,
+          "tam_eslesme": 0.532,
+          "cer": 0.04118216354417946,
+          "wer": 0.1674565560821485,
+          "sayi_belirteci_dogrulugu": 0.6751592356687898,
+          "negatif_ornek": 776,
+          "yanlis_donusum_orani": 0.41365979381443296
+        }
+      },
+      "kirilim": {
+        "kopya": {
+          "aralik": {
+            "ornek": 60,
+            "tam_eslesme": 0.0,
+            "cer": 0.40628706998813763,
+            "wer": 0.5533333333333333,
+            "sayi_belirteci_dogrulugu": 0.0,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "buyuk": {
+            "ornek": 50,
+            "tam_eslesme": 0.0,
+            "cer": 0.4607449856733524,
+            "wer": 0.6629213483146067,
+            "sayi_belirteci_dogrulugu": 0.0,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "eksi": {
+            "ornek": 30,
+            "tam_eslesme": 0.0,
+            "cer": 0.6029684601113172,
+            "wer": 0.7468354430379747,
+            "sayi_belirteci_dogrulugu": 0.0,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "kardinal": {
+            "ornek": 100,
+            "tam_eslesme": 0.16,
+            "cer": 0.29936305732484075,
+            "wer": 0.41202672605790647,
+            "sayi_belirteci_dogrulugu": 0.0,
+            "negatif_ornek": 16,
+            "yanlis_donusum_orani": 0.0
+          },
+          "karisik": {
+            "ornek": 60,
+            "tam_eslesme": 0.0,
+            "cer": 0.8830855765367618,
+            "wer": 1.0765765765765767,
+            "sayi_belirteci_dogrulugu": 0.0,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "kod": {
+            "ornek": 50,
+            "tam_eslesme": 0.0,
+            "cer": 1.5338983050847457,
+            "wer": 2.3,
+            "sayi_belirteci_dogrulugu": 0.0,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "negatif_dogal": {
+            "ornek": 180,
+            "tam_eslesme": 1.0,
+            "cer": 0.0,
+            "wer": 0.0,
+            "sayi_belirteci_dogrulugu": null,
+            "negatif_ornek": 180,
+            "yanlis_donusum_orani": 0.0
+          },
+          "negatif_es": {
+            "ornek": 200,
+            "tam_eslesme": 1.0,
+            "cer": 0.0,
+            "wer": 0.0,
+            "sayi_belirteci_dogrulugu": null,
+            "negatif_ornek": 200,
+            "yanlis_donusum_orani": 0.0
+          },
+          "negatif_kalip": {
+            "ornek": 220,
+            "tam_eslesme": 1.0,
+            "cer": 0.0,
+            "wer": 0.0,
+            "sayi_belirteci_dogrulugu": null,
+            "negatif_ornek": 220,
+            "yanlis_donusum_orani": 0.0
+          },
+          "negatif_yazili": {
+            "ornek": 160,
+            "tam_eslesme": 1.0,
+            "cer": 0.0,
+            "wer": 0.0,
+            "sayi_belirteci_dogrulugu": 1.0,
+            "negatif_ornek": 160,
+            "yanlis_donusum_orani": 0.0
+          },
+          "olcu": {
+            "ornek": 160,
+            "tam_eslesme": 0.0,
+            "cer": 0.6153395784543325,
+            "wer": 0.7584541062801933,
+            "sayi_belirteci_dogrulugu": 0.0,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "ondalik": {
+            "ornek": 60,
+            "tam_eslesme": 0.0,
+            "cer": 0.7377358490566037,
+            "wer": 0.8854961832061069,
+            "sayi_belirteci_dogrulugu": 0.0,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "para": {
+            "ornek": 140,
+            "tam_eslesme": 0.0,
+            "cer": 0.47378455672068637,
+            "wer": 0.7157490396927016,
+            "sayi_belirteci_dogrulugu": 0.0,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "saat": {
+            "ornek": 130,
+            "tam_eslesme": 0.0,
+            "cer": 0.29997535124476216,
+            "wer": 0.4752,
+            "sayi_belirteci_dogrulugu": 0.0,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "sira": {
+            "ornek": 70,
+            "tam_eslesme": 0.0,
+            "cer": 0.3340091231626964,
+            "wer": 0.34935897435897434,
+            "sayi_belirteci_dogrulugu": 0.0,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "skor": {
+            "ornek": 50,
+            "tam_eslesme": 0.0,
+            "cer": 0.3649906890130354,
+            "wer": 0.6060606060606061,
+            "sayi_belirteci_dogrulugu": 0.0,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "tarih": {
+            "ornek": 120,
+            "tam_eslesme": 0.0,
+            "cer": 0.5539086779823094,
+            "wer": 0.9334389857369255,
+            "sayi_belirteci_dogrulugu": 0.0,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "telefon": {
+            "ornek": 60,
+            "tam_eslesme": 0.0,
+            "cer": 1.284178187403994,
+            "wer": 1.6644144144144144,
+            "sayi_belirteci_dogrulugu": 0.0,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "yuzde": {
+            "ornek": 100,
+            "tam_eslesme": 0.0,
+            "cer": 0.47163695299837927,
+            "wer": 0.7422907488986784,
+            "sayi_belirteci_dogrulugu": 0.0,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          }
+        },
+        "kural": {
+          "aralik": {
+            "ornek": 60,
+            "tam_eslesme": 0.0,
+            "cer": 0.046263345195729534,
+            "wer": 0.4,
+            "sayi_belirteci_dogrulugu": 0.0,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "buyuk": {
+            "ornek": 50,
+            "tam_eslesme": 0.02,
+            "cer": 0.264756446991404,
+            "wer": 0.3595505617977528,
+            "sayi_belirteci_dogrulugu": 0.16,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "eksi": {
+            "ornek": 30,
+            "tam_eslesme": 0.8,
+            "cer": 0.011131725417439703,
+            "wer": 0.0379746835443038,
+            "sayi_belirteci_dogrulugu": 1.0,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "kardinal": {
+            "ornek": 100,
+            "tam_eslesme": 0.72,
+            "cer": 0.04008992131884601,
+            "wer": 0.06904231625835189,
+            "sayi_belirteci_dogrulugu": 1.0,
+            "negatif_ornek": 16,
+            "yanlis_donusum_orani": 1.0
+          },
+          "karisik": {
+            "ornek": 60,
+            "tam_eslesme": 0.5333333333333333,
+            "cer": 0.02249899558055444,
+            "wer": 0.15990990990990991,
+            "sayi_belirteci_dogrulugu": 0.7,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "kod": {
+            "ornek": 50,
+            "tam_eslesme": 0.0,
+            "cer": 0.2777777777777778,
+            "wer": 2.3,
+            "sayi_belirteci_dogrulugu": 0.0,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "negatif_dogal": {
+            "ornek": 180,
+            "tam_eslesme": 0.9888888888888889,
+            "cer": 0.0008987417615338526,
+            "wer": 0.00211864406779661,
+            "sayi_belirteci_dogrulugu": null,
+            "negatif_ornek": 180,
+            "yanlis_donusum_orani": 0.011111111111111112
+          },
+          "negatif_es": {
+            "ornek": 200,
+            "tam_eslesme": 0.3,
+            "cer": 0.056838365896980464,
+            "wer": 0.10606060606060606,
+            "sayi_belirteci_dogrulugu": null,
+            "negatif_ornek": 200,
+            "yanlis_donusum_orani": 0.7
+          },
+          "negatif_kalip": {
+            "ornek": 220,
+            "tam_eslesme": 0.3090909090909091,
+            "cer": 0.05889066423191052,
+            "wer": 0.10621942697414395,
+            "sayi_belirteci_dogrulugu": null,
+            "negatif_ornek": 220,
+            "yanlis_donusum_orani": 0.6909090909090909
+          },
+          "negatif_yazili": {
+            "ornek": 160,
+            "tam_eslesme": 0.93125,
+            "cer": 0.011056268509378084,
+            "wer": 0.013819095477386936,
+            "sayi_belirteci_dogrulugu": 1.0,
+            "negatif_ornek": 160,
+            "yanlis_donusum_orani": 0.06875
+          },
+          "olcu": {
+            "ornek": 160,
+            "tam_eslesme": 0.64375,
+            "cer": 0.031030444964871194,
+            "wer": 0.08091787439613526,
+            "sayi_belirteci_dogrulugu": 1.0,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "ondalik": {
+            "ornek": 60,
+            "tam_eslesme": 0.9333333333333333,
+            "cer": 0.0025157232704402514,
+            "wer": 0.026717557251908396,
+            "sayi_belirteci_dogrulugu": 0.9333333333333333,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "para": {
+            "ornek": 140,
+            "tam_eslesme": 0.8785714285714286,
+            "cer": 0.006482364156339371,
+            "wer": 0.04353393085787452,
+            "sayi_belirteci_dogrulugu": 0.8785714285714286,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "saat": {
+            "ornek": 130,
+            "tam_eslesme": 0.33076923076923076,
+            "cer": 0.03475474488538329,
+            "wer": 0.256,
+            "sayi_belirteci_dogrulugu": 0.33076923076923076,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "sira": {
+            "ornek": 70,
+            "tam_eslesme": 0.7571428571428571,
+            "cer": 0.025848960973137353,
+            "wer": 0.05448717948717949,
+            "sayi_belirteci_dogrulugu": 1.0,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "skor": {
+            "ornek": 50,
+            "tam_eslesme": 0.0,
+            "cer": 0.04655493482309125,
+            "wer": 0.6060606060606061,
+            "sayi_belirteci_dogrulugu": 0.0,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "tarih": {
+            "ornek": 120,
+            "tam_eslesme": 0.041666666666666664,
+            "cer": 0.03753287114511116,
+            "wer": 0.24881141045958796,
+            "sayi_belirteci_dogrulugu": 0.5224719101123596,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "telefon": {
+            "ornek": 60,
+            "tam_eslesme": 0.0,
+            "cer": 0.0706605222734255,
+            "wer": 0.6351351351351351,
+            "sayi_belirteci_dogrulugu": 0.47950819672131145,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "yuzde": {
+            "ornek": 100,
+            "tam_eslesme": 0.97,
+            "cer": 0.0008103727714748784,
+            "wer": 0.00881057268722467,
+            "sayi_belirteci_dogrulugu": 0.97,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          }
+        }
+      },
+      "hata_sayisi": 936,
+      "hatalar": [
+        {
+          "girdi": "Müşteri numarası dört altı beş üç iki dokuz sekiz yedi dört.",
+          "hedef": "Müşteri numarası 465329874.",
+          "cikti": "Müşteri numarası 4 6 5 3 2 9 8 7 4.",
+          "ham": null,
+          "kategori": "kod",
+          "sablon": "kod-014",
+          "uyari": []
+        },
+        {
+          "girdi": "evet onları kapıda karşıladım",
+          "hedef": "evet onları kapıda karşıladım",
+          "cikti": "evet 10'ları kapıda karşıladım",
+          "ham": null,
+          "kategori": "negatif_es",
+          "sablon": "negatif_es-040",
+          "uyari": []
+        },
+        {
+          "girdi": "şirket bin dokuz yüz otuz bir yılında kuruldu",
+          "hedef": "şirket 1931 yılında kuruldu",
+          "cikti": "şirket 1.931 yılında kuruldu",
+          "ham": null,
+          "kategori": "tarih",
+          "sablon": "tarih-008",
+          "uyari": []
+        },
+        {
+          "girdi": "On üçüncü yüzyılda yaşamış bir şair.",
+          "hedef": "13. yüzyılda yaşamış bir şair.",
+          "cikti": "13. yüzyılda yaşamış 1 şair.",
+          "ham": null,
+          "kategori": "sira",
+          "sablon": "sira-006",
+          "uyari": []
+        },
+        {
+          "girdi": "nazlı on beş ekim bin dokuz yüz doksan üç tarihinde doğdu",
+          "hedef": "nazlı 15 Ekim 1993 tarihinde doğdu",
+          "cikti": "nazlı 15 ekim 1.993 tarihinde doğdu",
+          "ham": null,
+          "kategori": "tarih",
+          "sablon": "tarih-001",
+          "uyari": []
+        },
+        {
+          "girdi": "baksana bir sürü iş birikti",
+          "hedef": "baksana bir sürü iş birikti",
+          "cikti": "baksana 1 sürü iş birikti",
+          "ham": null,
+          "kategori": "negatif_kalip",
+          "sablon": "negatif_kalip-008",
+          "uyari": []
+        },
+        {
+          "girdi": "Beni sıfır beş yüz otuz dört sekiz yüz yetmiş beş seksen kırk numarasından arayabilirsin.",
+          "hedef": "Beni 0534 875 80 40 numarasından arayabilirsin.",
+          "cikti": "Beni 0 534 875 80 40 numarasından arayabilirsin.",
+          "ham": null,
+          "kategori": "telefon",
+          "sablon": "telefon-000",
+          "uyari": []
+        },
+        {
+          "girdi": "On beşinci yüzyılda yaşamış bir şair.",
+          "hedef": "15. yüzyılda yaşamış bir şair.",
+          "cikti": "15. yüzyılda yaşamış 1 şair.",
+          "ham": null,
+          "kategori": "sira",
+          "sablon": "sira-006",
+          "uyari": []
+        },
+        {
+          "girdi": "Yemek saat yirmi iki yirmide hazır olur.",
+          "hedef": "Yemek saat 22.20'de hazır olur.",
+          "cikti": "Yemek saat 22 20'de hazır olur.",
+          "ham": null,
+          "kategori": "saat",
+          "sablon": "saat-012",
+          "uyari": []
+        },
+        {
+          "girdi": "Yoğurdu kırk iki derece santigratta mayalayın.",
+          "hedef": "Yoğurdu 42 °C'de mayalayın.",
+          "cikti": "Yoğurdu 42 °C'ta mayalayın.",
+          "ham": null,
+          "kategori": "olcu",
+          "sablon": "olcu-031",
+          "uyari": []
+        },
+        {
+          "girdi": "kısacası ona sorarsan yarın gelir",
+          "hedef": "kısacası ona sorarsan yarın gelir",
+          "cikti": "kısacası 10'a sorarsan yarın gelir",
+          "ham": null,
+          "kategori": "negatif_es",
+          "sablon": "negatif_es-047",
+          "uyari": []
+        },
+        {
+          "girdi": "Şubat kısa ama soğuk bir aydır, herkes biliyor.",
+          "hedef": "Şubat kısa ama soğuk bir aydır, herkes biliyor.",
+          "cikti": "Şubat kısa ama soğuk 1 aydır, herkes biliyor.",
+          "ham": null,
+          "kategori": "negatif_kalip",
+          "sablon": "negatif_kalip-059",
+          "uyari": []
+        },
+        {
+          "girdi": "koliyi yedi dokuz günde teslim ederiz",
+          "hedef": "koliyi 7-9 günde teslim ederiz",
+          "cikti": "koliyi 7 9 günde teslim ederiz",
+          "ham": null,
+          "kategori": "aralik",
+          "sablon": "aralik-026",
+          "uyari": []
+        },
+        {
+          "girdi": "dokuz yüz yetmiş beş gramlık bir paket zeytin aldık",
+          "hedef": "975 g'lık bir paket zeytin aldık",
+          "cikti": "975 g'lık 1 paket zeytin aldık",
+          "ham": null,
+          "kategori": "olcu",
+          "sablon": "olcu-021",
+          "uyari": []
+        },
+        {
+          "girdi": "otuz altı kilogramlık bir paket un aldık",
+          "hedef": "36 kg'lık bir paket un aldık",
+          "cikti": "36 kg'lık 1 paket un aldık",
+          "ham": null,
+          "kategori": "olcu",
+          "sablon": "olcu-021",
+          "uyari": []
+        },
+        {
+          "girdi": "Yoğurdu on dokuz derece santigratta mayalayın.",
+          "hedef": "Yoğurdu 19 °C'de mayalayın.",
+          "cikti": "Yoğurdu 19 °C'ta mayalayın.",
+          "ham": null,
+          "kategori": "olcu",
+          "sablon": "olcu-031",
+          "uyari": []
+        },
+        {
+          "girdi": "yemek saat on bir otuzda hazır olur",
+          "hedef": "yemek saat 11.30'da hazır olur",
+          "cikti": "yemek saat 11 30'da hazır olur",
+          "ham": null,
+          "kategori": "saat",
+          "sablon": "saat-012",
+          "uyari": []
+        },
+        {
+          "girdi": "Posta kodu dört sıfır dört yedi iki.",
+          "hedef": "Posta kodu 40472.",
+          "cikti": "Posta kodu 4 0 4 7 2.",
+          "ham": null,
+          "kategori": "kod",
+          "sablon": "kod-003",
+          "uyari": []
+        },
+        {
+          "girdi": "Maçı üç sıfırla kazandık.",
+          "hedef": "Maçı 3-0'la kazandık.",
+          "cikti": "Maçı 3 0'la kazandık.",
+          "ham": null,
+          "kategori": "skor",
+          "sablon": "skor-017",
+          "uyari": []
+        },
+        {
+          "girdi": "şunu söyleyeyim bir an durup düşündü",
+          "hedef": "şunu söyleyeyim bir an durup düşündü",
+          "cikti": "şunu söyleyeyim 1 an durup düşündü",
+          "ham": null,
+          "kategori": "negatif_kalip",
+          "sablon": "negatif_kalip-002",
+          "uyari": []
+        },
+        {
+          "girdi": "Otuz dokuz buçuk kilogramlık bir paket biber aldık.",
+          "hedef": "39,5 kg'lık bir paket biber aldık.",
+          "cikti": "39,5 kg'lık 1 paket biber aldık.",
+          "ham": null,
+          "kategori": "olcu",
+          "sablon": "olcu-021",
+          "uyari": []
+        },
+        {
+          "girdi": "yüzü gülüyordu ama gözleri yorgundu ama neyse",
+          "hedef": "yüzü gülüyordu ama gözleri yorgundu ama neyse",
+          "cikti": "100'ü gülüyordu ama gözleri yorgundu ama neyse",
+          "ham": null,
+          "kategori": "negatif_es",
+          "sablon": "negatif_es-019",
+          "uyari": []
+        },
+        {
+          "girdi": "gerçekten bir sürü iş birikti",
+          "hedef": "gerçekten bir sürü iş birikti",
+          "cikti": "gerçekten 1 sürü iş birikti",
+          "ham": null,
+          "kategori": "negatif_kalip",
+          "sablon": "negatif_kalip-008",
+          "uyari": []
+        },
+        {
+          "girdi": "akşam altı yirmiden sonra trafik azalıyor",
+          "hedef": "akşam 6.20'den sonra trafik azalıyor",
+          "cikti": "akşam 6 20'den sonra trafik azalıyor",
+          "ham": null,
+          "kategori": "saat",
+          "sablon": "saat-026",
+          "uyari": []
+        },
+        {
+          "girdi": "Kampanyaya yirmi üç milyon üç yüz elli bir bin katılımcı destek verdi.",
+          "hedef": "Kampanyaya 23.351.000 katılımcı destek verdi.",
+          "cikti": "Kampanyaya 23 1.000.351 1.000 katılımcı destek verdi.",
+          "ham": null,
+          "kategori": "buyuk",
+          "sablon": "buyuk-023",
+          "uyari": []
+        },
+        {
+          "girdi": "Kapı saat on elliden sonra kapanıyor.",
+          "hedef": "Kapı saat 10.50'den sonra kapanıyor.",
+          "cikti": "Kapı saat 10 50'den sonra kapanıyor.",
+          "ham": null,
+          "kategori": "saat",
+          "sablon": "saat-021",
+          "uyari": []
+        },
+        {
+          "girdi": "sözleşme on üç temmuz bin dokuz yüz altmış iki tarihinde imzalandı",
+          "hedef": "sözleşme 13 Temmuz 1962 tarihinde imzalandı",
+          "cikti": "sözleşme 13 temmuz 1.962 tarihinde imzalandı",
+          "ham": null,
+          "kategori": "tarih",
+          "sablon": "tarih-022",
+          "uyari": []
+        },
+        {
+          "girdi": "Neyse, ondan hiç haber alamadık, diye düşündüm.",
+          "hedef": "Neyse, ondan hiç haber alamadık, diye düşündüm.",
+          "cikti": "Neyse, 10'dan hiç haber alamadık, diye düşündüm.",
+          "ham": null,
+          "kategori": "negatif_es",
+          "sablon": "negatif_es-037",
+          "uyari": []
+        },
+        {
+          "girdi": "Lütfen sıfır beş yüz elli iki yedi yüz on yedi sıfır sıfır sıfır dokuz numarasına mesaj gönderin.",
+          "hedef": "Lütfen 0552 717 00 09 numarasına mesaj gönderin.",
+          "cikti": "Lütfen 0 552 717 0 0 0 9 numarasına mesaj gönderin.",
+          "ham": null,
+          "kategori": "telefon",
+          "sablon": "telefon-007",
+          "uyari": []
+        },
+        {
+          "girdi": "Sabah dokuz yirmide işe çıktık.",
+          "hedef": "Sabah 9.20'de işe çıktık.",
+          "cikti": "Sabah 9 20'de işe çıktık.",
+          "ham": null,
+          "kategori": "saat",
+          "sablon": "saat-023",
+          "uyari": []
+        },
+        {
+          "girdi": "şirket bin dokuz yüz seksen üç yılında kuruldu",
+          "hedef": "şirket 1983 yılında kuruldu",
+          "cikti": "şirket 1.983 yılında kuruldu",
+          "ham": null,
+          "kategori": "tarih",
+          "sablon": "tarih-008",
+          "uyari": []
+        },
+        {
+          "girdi": "Maç dört bir bitti.",
+          "hedef": "Maç 4-1 bitti.",
+          "cikti": "Maç 4 1 bitti.",
+          "ham": null,
+          "kategori": "skor",
+          "sablon": "skor-000",
+          "uyari": []
+        },
+        {
+          "girdi": "yemek saat on yirmide hazır olur",
+          "hedef": "yemek saat 10.20'de hazır olur",
+          "cikti": "yemek saat 10 20'de hazır olur",
+          "ham": null,
+          "kategori": "saat",
+          "sablon": "saat-012",
+          "uyari": []
+        },
+        {
+          "girdi": "elif on dört nisan iki bin otuz iki tarihinde doğdu",
+          "hedef": "elif 14 Nisan 2032 tarihinde doğdu",
+          "cikti": "elif 14 nisan 2.032 tarihinde doğdu",
+          "ham": null,
+          "kategori": "tarih",
+          "sablon": "tarih-001",
+          "uyari": []
+        },
+        {
+          "girdi": "Hepimiz biliyoruz ki, altı çizili kelimeleri tekrar oku, galiba.",
+          "hedef": "Hepimiz biliyoruz ki, altı çizili kelimeleri tekrar oku, galiba.",
+          "cikti": "Hepimiz biliyoruz ki, 6 çizili kelimeleri tekrar oku, galiba.",
+          "ham": null,
+          "kategori": "negatif_es",
+          "sablon": "negatif_es-015",
+          "uyari": []
+        },
+        {
+          "girdi": "Bir an durup düşündü.",
+          "hedef": "Bir an durup düşündü.",
+          "cikti": "1 an durup düşündü.",
+          "ham": null,
+          "kategori": "negatif_kalip",
+          "sablon": "negatif_kalip-002",
+          "uyari": []
+        },
+        {
+          "girdi": "Gerçekten, bir sürü iş birikti.",
+          "hedef": "Gerçekten, bir sürü iş birikti.",
+          "cikti": "Gerçekten, 1 sürü iş birikti.",
+          "ham": null,
+          "kategori": "negatif_kalip",
+          "sablon": "negatif_kalip-008",
+          "uyari": []
+        },
+        {
+          "girdi": "sabah on buçukta çıktım hava otuz üç derece",
+          "hedef": "sabah 10.30'da çıktım hava 33 derece",
+          "cikti": "sabah 10,5'ta çıktım hava 33 derece",
+          "ham": null,
+          "kategori": "karisik",
+          "sablon": "karisik-028",
+          "uyari": []
+        },
+        {
+          "girdi": "Yoğurdu kırk dört derece santigratta mayalayın.",
+          "hedef": "Yoğurdu 44 °C'de mayalayın.",
+          "cikti": "Yoğurdu 44 °C'ta mayalayın.",
+          "ham": null,
+          "kategori": "olcu",
+          "sablon": "olcu-031",
+          "uyari": []
+        },
+        {
+          "girdi": "kapı saat on dokuz ondan sonra kapanıyor",
+          "hedef": "kapı saat 19.10'dan sonra kapanıyor",
+          "cikti": "kapı saat 19 10'dan sonra kapanıyor",
+          "ham": null,
+          "kategori": "saat",
+          "sablon": "saat-021",
+          "uyari": []
+        },
+        {
+          "girdi": "yetmiş beş kilogramlık bir paket elma aldık",
+          "hedef": "75 kg'lık bir paket elma aldık",
+          "cikti": "75 kg'lık 1 paket elma aldık",
+          "ham": null,
+          "kategori": "olcu",
+          "sablon": "olcu-021",
+          "uyari": []
+        },
+        {
+          "girdi": "Sınav on bir kasım tarihinde yapılacak.",
+          "hedef": "Sınav 11 Kasım tarihinde yapılacak.",
+          "cikti": "Sınav 11 kasım tarihinde yapılacak.",
+          "ham": null,
+          "kategori": "tarih",
+          "sablon": "tarih-002",
+          "uyari": []
+        },
+        {
+          "girdi": "sınav yedi ekim tarihinde yapılacak",
+          "hedef": "sınav 7 Ekim tarihinde yapılacak",
+          "cikti": "sınav 7 ekim tarihinde yapılacak",
+          "ham": null,
+          "kategori": "tarih",
+          "sablon": "tarih-002",
+          "uyari": []
+        },
+        {
+          "girdi": "Sekiz yüz elli gramlık bir paket salatalık aldık.",
+          "hedef": "850 g'lık bir paket salatalık aldık.",
+          "cikti": "850 g'lık 1 paket salatalık aldık.",
+          "ham": null,
+          "kategori": "olcu",
+          "sablon": "olcu-021",
+          "uyari": []
+        },
+        {
+          "girdi": "Yemek saat on altı sıfır sıfırda hazır olur.",
+          "hedef": "Yemek saat 16.00'da hazır olur.",
+          "cikti": "Yemek saat 16 0 0'da hazır olur.",
+          "ham": null,
+          "kategori": "saat",
+          "sablon": "saat-012",
+          "uyari": []
+        },
+        {
+          "girdi": "Sözleşme dört eylül iki bin on üç tarihinde imzalandı.",
+          "hedef": "Sözleşme 4 Eylül 2013 tarihinde imzalandı.",
+          "cikti": "Sözleşme 4 eylül 2.013 tarihinde imzalandı.",
+          "ham": null,
+          "kategori": "tarih",
+          "sablon": "tarih-022",
+          "uyari": []
+        },
+        {
+          "girdi": "hayır şubat kısa ama soğuk bir aydır sence de öyle değil mi",
+          "hedef": "hayır şubat kısa ama soğuk bir aydır sence de öyle değil mi",
+          "cikti": "hayır şubat kısa ama soğuk 1 aydır sence de öyle değil mi",
+          "ham": null,
+          "kategori": "negatif_kalip",
+          "sablon": "negatif_kalip-059",
+          "uyari": []
+        },
+        {
+          "girdi": "müşteri numarası yedi sekiz yedi dokuz üç iki üç yedi",
+          "hedef": "müşteri numarası 78793237",
+          "cikti": "müşteri numarası 7 8 7 9 3 2 3 7",
+          "ham": null,
+          "kategori": "kod",
+          "sablon": "kod-014",
+          "uyari": []
+        },
+        {
+          "girdi": "hesabınızdan on sekiz bin beş yüz lira kırk beş kuruş tahsil edilmiştir",
+          "hedef": "hesabınızdan 18.500,45 TL tahsil edilmiştir",
+          "cikti": "hesabınızdan 18 1.500,45 TL tahsil edilmiştir",
+          "ham": null,
+          "kategori": "para",
+          "sablon": "para-009",
+          "uyari": []
+        },
+        {
+          "girdi": "sabah yedi on beşte işe çıktık",
+          "hedef": "sabah 7.15'te işe çıktık",
+          "cikti": "sabah 7 15'te işe çıktık",
+          "ham": null,
+          "kategori": "saat",
+          "sablon": "saat-023",
+          "uyari": []
+        },
+        {
+          "girdi": "önce şunu bil bir sürü iş birikti ama neyse",
+          "hedef": "önce şunu bil bir sürü iş birikti ama neyse",
+          "cikti": "önce şunu bil 1 sürü iş birikti ama neyse",
+          "ham": null,
+          "kategori": "negatif_kalip",
+          "sablon": "negatif_kalip-008",
+          "uyari": []
+        },
+        {
+          "girdi": "sınav on beş kasım tarihinde yapılacak",
+          "hedef": "sınav 15 Kasım tarihinde yapılacak",
+          "cikti": "sınav 15 kasım tarihinde yapılacak",
+          "ham": null,
+          "kategori": "tarih",
+          "sablon": "tarih-002",
+          "uyari": []
+        },
+        {
+          "girdi": "Ondan hiç haber alamadık.",
+          "hedef": "Ondan hiç haber alamadık.",
+          "cikti": "10'dan hiç haber alamadık.",
+          "ham": null,
+          "kategori": "negatif_es",
+          "sablon": "negatif_es-037",
+          "uyari": []
+        },
+        {
+          "girdi": "Yoğurdu on bir derece santigratta mayalayın.",
+          "hedef": "Yoğurdu 11 °C'de mayalayın.",
+          "cikti": "Yoğurdu 11 °C'ta mayalayın.",
+          "ham": null,
+          "kategori": "olcu",
+          "sablon": "olcu-031",
+          "uyari": []
+        },
+        {
+          "girdi": "yoğurdu altı derece santigratta mayalayın",
+          "hedef": "yoğurdu 6 °C'de mayalayın",
+          "cikti": "yoğurdu 6 °C'ta mayalayın",
+          "ham": null,
+          "kategori": "olcu",
+          "sablon": "olcu-031",
+          "uyari": []
+        },
+        {
+          "girdi": "maçı dört sıfırla kazandık",
+          "hedef": "maçı 4-0'la kazandık",
+          "cikti": "maçı 4 0'la kazandık",
+          "ham": null,
+          "kategori": "skor",
+          "sablon": "skor-017",
+          "uyari": []
+        },
+        {
+          "girdi": "Altmış altı yaşındaki bir çocuk kazayı gördü.",
+          "hedef": "66 yaşındaki bir çocuk kazayı gördü.",
+          "cikti": "66 yaşındaki 1 çocuk kazayı gördü.",
+          "ham": null,
+          "kategori": "kardinal",
+          "sablon": "kardinal-029",
+          "uyari": []
+        },
+        {
+          "girdi": "elli iki kiloluk bir paket tavuk aldık",
+          "hedef": "52 kg'lık bir paket tavuk aldık",
+          "cikti": "52 kg'luk 1 paket tavuk aldık",
+          "ham": null,
+          "kategori": "olcu",
+          "sablon": "olcu-021",
+          "uyari": []
+        },
+        {
+          "girdi": "Maalesef, bir an durup düşündü, bunu unutma.",
+          "hedef": "Maalesef, bir an durup düşündü, bunu unutma.",
+          "cikti": "Maalesef, 1 an durup düşündü, bunu unutma.",
+          "ham": null,
+          "kategori": "negatif_kalip",
+          "sablon": "negatif_kalip-002",
+          "uyari": []
+        },
+        {
+          "girdi": "iki yüz iki yüz elli yıl önce buraya taşındık",
+          "hedef": "200-250 yıl önce buraya taşındık",
+          "cikti": "202 150 yıl önce buraya taşındık",
+          "ham": null,
+          "kategori": "aralik",
+          "sablon": "aralik-011",
+          "uyari": []
+        },
+        {
+          "girdi": "sınavda dört beş soru yanlış yaptım",
+          "hedef": "sınavda 4-5 soru yanlış yaptım",
+          "cikti": "sınavda 4 5 soru yanlış yaptım",
+          "ham": null,
+          "kategori": "aralik",
+          "sablon": "aralik-022",
+          "uyari": []
+        },
+        {
+          "girdi": "neyse bir bakıma haklısın yani",
+          "hedef": "neyse bir bakıma haklısın yani",
+          "cikti": "neyse 1 bakıma haklısın yani",
+          "ham": null,
+          "kategori": "negatif_kalip",
+          "sablon": "negatif_kalip-041",
+          "uyari": []
+        },
+        {
+          "girdi": "Stadyumun yapımı bir milyar lira tuttu.",
+          "hedef": "Stadyumun yapımı 1 milyar TL tuttu.",
+          "cikti": "Stadyumun yapımı 1.000.000.000 TL tuttu.",
+          "ham": null,
+          "kategori": "buyuk",
+          "sablon": "buyuk-006",
+          "uyari": []
+        },
+        {
+          "girdi": "Telefon numaram sıfır beş yüz kırk sekiz yüz elli dört doksan on beş.",
+          "hedef": "Telefon numaram 0548 154 90 15.",
+          "cikti": "Telefon numaram 0 548 154 90 15.",
+          "ham": null,
+          "kategori": "telefon",
+          "sablon": "telefon-001",
+          "uyari": []
+        },
+        {
+          "girdi": "Yoğurdu yedi derece santigratta mayalayın.",
+          "hedef": "Yoğurdu 7 °C'de mayalayın.",
+          "cikti": "Yoğurdu 7 °C'ta mayalayın.",
+          "ham": null,
+          "kategori": "olcu",
+          "sablon": "olcu-031",
+          "uyari": []
+        },
+        {
+          "girdi": "yolcu sayısı altmış dört bin dört yüz altmış altı gecikme yedi sekiz dakika",
+          "hedef": "yolcu sayısı 64.466 gecikme 7-8 dakika",
+          "cikti": "yolcu sayısı 64 1.466 gecikme 7 8 dakika",
+          "ham": null,
+          "kategori": "karisik",
+          "sablon": "karisik-027",
+          "uyari": []
+        },
+        {
+          "girdi": "Sabah sekiz otuzda işe çıktık.",
+          "hedef": "Sabah 8.30'da işe çıktık.",
+          "cikti": "Sabah 8 30'da işe çıktık.",
+          "ham": null,
+          "kategori": "saat",
+          "sablon": "saat-023",
+          "uyari": []
+        },
+        {
+          "girdi": "kredi notu yirmi yedi virgül yedi beş olarak hesaplandı",
+          "hedef": "kredi notu 27,75 olarak hesaplandı",
+          "cikti": "kredi notu 27,7 5 olarak hesaplandı",
+          "ham": null,
+          "kategori": "ondalik",
+          "sablon": "ondalik-015",
+          "uyari": []
+        },
+        {
+          "girdi": "Dondurucu eksi dört derece santigratta saklayın.",
+          "hedef": "Dondurucu -4 °C'de saklayın.",
+          "cikti": "Dondurucu -4 °C'ta saklayın.",
+          "ham": null,
+          "kategori": "eksi",
+          "sablon": "eksi-020",
+          "uyari": []
+        },
+        {
+          "girdi": "tabii şubat kısa ama soğuk bir aydır galiba",
+          "hedef": "tabii şubat kısa ama soğuk bir aydır galiba",
+          "cikti": "tabii şubat kısa ama soğuk 1 aydır galiba",
+          "ham": null,
+          "kategori": "negatif_kalip",
+          "sablon": "negatif_kalip-059",
+          "uyari": []
+        },
+        {
+          "girdi": "galatasaray maçı bir iki kazandı",
+          "hedef": "galatasaray maçı 1-2 kazandı",
+          "cikti": "galatasaray maçı 1 2 kazandı",
+          "ham": null,
+          "kategori": "skor",
+          "sablon": "skor-004",
+          "uyari": []
+        },
+        {
+          "girdi": "sabah on on beşte çıktım hava yirmi derece",
+          "hedef": "sabah 10.15'te çıktım hava 20 derece",
+          "cikti": "sabah 10 15'te çıktım hava 20 derece",
+          "ham": null,
+          "kategori": "karisik",
+          "sablon": "karisik-028",
+          "uyari": []
+        },
+        {
+          "girdi": "Sözleşme beş Haziran iki bin yirmi bir tarihinde imzalandı.",
+          "hedef": "Sözleşme 5 Haziran 2021 tarihinde imzalandı.",
+          "cikti": "Sözleşme 5 Haziran 2.021 tarihinde imzalandı.",
+          "ham": null,
+          "kategori": "tarih",
+          "sablon": "tarih-022",
+          "uyari": []
+        },
+        {
+          "girdi": "Sipariş numaranız yedi iki bir dokuz bir dört dokuz bir.",
+          "hedef": "Sipariş numaranız 72191491.",
+          "cikti": "Sipariş numaranız 7 2 1 9 1 4 9 1.",
+          "ham": null,
+          "kategori": "kod",
+          "sablon": "kod-004",
+          "uyari": []
+        },
+        {
+          "girdi": "Bir bakıma haklısın.",
+          "hedef": "Bir bakıma haklısın.",
+          "cikti": "1 bakıma haklısın.",
+          "ham": null,
+          "kategori": "negatif_kalip",
+          "sablon": "negatif_kalip-041",
+          "uyari": []
+        },
+        {
+          "girdi": "bir bakıma haklısın herkes biliyor",
+          "hedef": "bir bakıma haklısın herkes biliyor",
+          "cikti": "1 bakıma haklısın herkes biliyor",
+          "ham": null,
+          "kategori": "negatif_kalip",
+          "sablon": "negatif_kalip-041",
+          "uyari": []
+        },
+        {
+          "girdi": "sekiz on yıl önce buraya taşındık",
+          "hedef": "8-10 yıl önce buraya taşındık",
+          "cikti": "8 10 yıl önce buraya taşındık",
+          "ham": null,
+          "kategori": "aralik",
+          "sablon": "aralik-011",
+          "uyari": []
+        },
+        {
+          "girdi": "Yoğurdu kırk bir derece santigratta mayalayın.",
+          "hedef": "Yoğurdu 41 °C'de mayalayın.",
+          "cikti": "Yoğurdu 41 °C'ta mayalayın.",
+          "ham": null,
+          "kategori": "olcu",
+          "sablon": "olcu-031",
+          "uyari": []
+        },
+        {
+          "girdi": "Kapı saat on altı kırk beşten sonra kapanıyor.",
+          "hedef": "Kapı saat 16.45'ten sonra kapanıyor.",
+          "cikti": "Kapı saat 16 45'ten sonra kapanıyor.",
+          "ham": null,
+          "kategori": "saat",
+          "sablon": "saat-021",
+          "uyari": []
+        },
+        {
+          "girdi": "açıkçası bir bakıma haklısın diye düşündüm",
+          "hedef": "açıkçası bir bakıma haklısın diye düşündüm",
+          "cikti": "açıkçası 1 bakıma haklısın diye düşündüm",
+          "ham": null,
+          "kategori": "negatif_kalip",
+          "sablon": "negatif_kalip-041",
+          "uyari": []
+        },
+        {
+          "girdi": "kırk yaşındaki bir çocuk kazayı gördü",
+          "hedef": "40 yaşındaki bir çocuk kazayı gördü",
+          "cikti": "40 yaşındaki 1 çocuk kazayı gördü",
+          "ham": null,
+          "kategori": "kardinal",
+          "sablon": "kardinal-029",
+          "uyari": []
+        },
+        {
+          "girdi": "kapı saat on on beşten sonra kapanıyor",
+          "hedef": "kapı saat 10.15'ten sonra kapanıyor",
+          "cikti": "kapı saat 10 15'ten sonra kapanıyor",
+          "ham": null,
+          "kategori": "saat",
+          "sablon": "saat-021",
+          "uyari": []
+        },
+        {
+          "girdi": "On ikinci yüzyılda yaşamış bir şair.",
+          "hedef": "12. yüzyılda yaşamış bir şair.",
+          "cikti": "12. yüzyılda yaşamış 1 şair.",
+          "ham": null,
+          "kategori": "sira",
+          "sablon": "sira-006",
+          "uyari": []
+        },
+        {
+          "girdi": "alarm kodu sıfır iki iki beş dokuz sekiz",
+          "hedef": "alarm kodu 022598",
+          "cikti": "alarm kodu 0 2 2 5 9 8",
+          "ham": null,
+          "kategori": "kod",
+          "sablon": "kod-010",
+          "uyari": []
+        },
+        {
+          "girdi": "Bir dakika, hemen geliyorum, galiba.",
+          "hedef": "Bir dakika, hemen geliyorum, galiba.",
+          "cikti": "1 dakika, hemen geliyorum, galiba.",
+          "ham": null,
+          "kategori": "negatif_kalip",
+          "sablon": "negatif_kalip-039",
+          "uyari": []
+        },
+        {
+          "girdi": "bu arada bir sürü iş birikti",
+          "hedef": "bu arada bir sürü iş birikti",
+          "cikti": "bu arada 1 sürü iş birikti",
+          "ham": null,
+          "kategori": "negatif_kalip",
+          "sablon": "negatif_kalip-008",
+          "uyari": []
+        },
+        {
+          "girdi": "Beni sıfır beş üç yedi üç yüz doksan dört doksan sekiz altı sekiz numarasından arayabilirsin.",
+          "hedef": "Beni 0537 394 98 68 numarasından arayabilirsin.",
+          "cikti": "Beni 0 5 3 7 394 98 6 8 numarasından arayabilirsin.",
+          "ham": null,
+          "kategori": "telefon",
+          "sablon": "telefon-000",
+          "uyari": []
+        },
+        {
+          "girdi": "Başakşehir maçı sıfır sıfır kazandı.",
+          "hedef": "Başakşehir maçı 0-0 kazandı.",
+          "cikti": "Başakşehir maçı 0 0 kazandı.",
+          "ham": null,
+          "kategori": "skor",
+          "sablon": "skor-004",
+          "uyari": []
+        },
+        {
+          "girdi": "alarm kodu altı dört yedi dört",
+          "hedef": "alarm kodu 6474",
+          "cikti": "alarm kodu 6 4 7 4",
+          "ham": null,
+          "kategori": "kod",
+          "sablon": "kod-010",
+          "uyari": []
+        },
+        {
+          "girdi": "önce şunu bil seni gördüğüme iki gözüm çok sevindi ama neyse",
+          "hedef": "önce şunu bil seni gördüğüme iki gözüm çok sevindi ama neyse",
+          "cikti": "önce şunu bil seni gördüğüme 2 gözüm çok sevindi ama neyse",
+          "ham": null,
+          "kategori": "negatif_kalip",
+          "sablon": "negatif_kalip-019",
+          "uyari": []
+        },
+        {
+          "girdi": "sabah on onda işe çıktık",
+          "hedef": "sabah 10.10'da işe çıktık",
+          "cikti": "sabah 10 10'da işe çıktık",
+          "ham": null,
+          "kategori": "saat",
+          "sablon": "saat-023",
+          "uyari": []
+        },
+        {
+          "girdi": "İzlenme on beş milyara ulaştı.",
+          "hedef": "İzlenme 15 milyara ulaştı.",
+          "cikti": "İzlenme 15 1.000.000.000'a ulaştı.",
+          "ham": null,
+          "kategori": "buyuk",
+          "sablon": "buyuk-014",
+          "uyari": []
+        },
+        {
+          "girdi": "hayır ondan hiç haber alamadık",
+          "hedef": "hayır ondan hiç haber alamadık",
+          "cikti": "hayır 10'dan hiç haber alamadık",
+          "ham": null,
+          "kategori": "negatif_es",
+          "sablon": "negatif_es-037",
+          "uyari": []
+        },
+        {
+          "girdi": "Hakan on yedi mayıs bin dokuz yüz kırk altı tarihinde doğdu.",
+          "hedef": "Hakan 17 Mayıs 1946 tarihinde doğdu.",
+          "cikti": "Hakan 17 mayıs 1.946 tarihinde doğdu.",
+          "ham": null,
+          "kategori": "tarih",
+          "sablon": "tarih-001",
+          "uyari": []
+        },
+        {
+          "girdi": "stadyumun yapımı yüz milyon lira tuttu",
+          "hedef": "stadyumun yapımı 100 milyon TL tuttu",
+          "cikti": "stadyumun yapımı 100.000.000 TL tuttu",
+          "ham": null,
+          "kategori": "buyuk",
+          "sablon": "buyuk-006",
+          "uyari": []
+        },
+        {
+          "girdi": "Kampanyaya on iki milyon altmış iki bin turist destek verdi.",
+          "hedef": "Kampanyaya 12.062.000 turist destek verdi.",
+          "cikti": "Kampanyaya 12 1.000.062 1.000 turist destek verdi.",
+          "ham": null,
+          "kategori": "buyuk",
+          "sablon": "buyuk-023",
+          "uyari": []
+        },
+        {
+          "girdi": "Yedinci yüzyılda yaşamış bir şair.",
+          "hedef": "7. yüzyılda yaşamış bir şair.",
+          "cikti": "7. yüzyılda yaşamış 1 şair.",
+          "ham": null,
+          "kategori": "sira",
+          "sablon": "sira-006",
+          "uyari": []
+        },
+        {
+          "girdi": "İzlenme iki virgül beş milyara ulaştı.",
+          "hedef": "İzlenme 2,5 milyara ulaştı.",
+          "cikti": "İzlenme 2,5000000000'a ulaştı.",
+          "ham": null,
+          "kategori": "buyuk",
+          "sablon": "buyuk-014",
+          "uyari": []
+        },
+        {
+          "girdi": "Koşuda Ali ikinci geldi.",
+          "hedef": "Koşuda Ali ikinci geldi.",
+          "cikti": "Koşuda Ali 2. geldi.",
+          "ham": null,
+          "kategori": "negatif_kalip",
+          "sablon": "negatif_kalip-025",
+          "uyari": []
+        },
+        {
+          "girdi": "Beni artı doksan beş dört sekiz üç üç beş dört dört sıfır altı numarasından arayabilirsin.",
+          "hedef": "Beni +90 548 335 44 06 numarasından arayabilirsin.",
+          "cikti": "Beni artı 95 4 8 3 3 5 4 4 0 6 numarasından arayabilirsin.",
+          "ham": null,
+          "kategori": "telefon",
+          "sablon": "telefon-000",
+          "uyari": []
+        },
+        {
+          "girdi": "sınav sekiz şubat tarihinde yapılacak",
+          "hedef": "sınav 8 Şubat tarihinde yapılacak",
+          "cikti": "sınav 8 şubat tarihinde yapılacak",
+          "ham": null,
+          "kategori": "tarih",
+          "sablon": "tarih-002",
+          "uyari": []
+        },
+        {
+          "girdi": "Gerçekten, ondan hiç haber alamadık.",
+          "hedef": "Gerçekten, ondan hiç haber alamadık.",
+          "cikti": "Gerçekten, 10'dan hiç haber alamadık.",
+          "ham": null,
+          "kategori": "negatif_es",
+          "sablon": "negatif_es-037",
+          "uyari": []
+        },
+        {
+          "girdi": "şirket bin dokuz yüz otuz üç yılında kuruldu",
+          "hedef": "şirket 1933 yılında kuruldu",
+          "cikti": "şirket 1.933 yılında kuruldu",
+          "ham": null,
+          "kategori": "tarih",
+          "sablon": "tarih-008",
+          "uyari": []
+        },
+        {
+          "girdi": "sipariş numaranız altı altı iki sekiz bir dokuz yedi üç",
+          "hedef": "sipariş numaranız 66281973",
+          "cikti": "sipariş numaranız 6 6 2 8 1 9 7 3",
+          "ham": null,
+          "kategori": "kod",
+          "sablon": "kod-004",
+          "uyari": []
+        },
+        {
+          "girdi": "sabah sekiz kırkta işe çıktık",
+          "hedef": "sabah 8.40'ta işe çıktık",
+          "cikti": "sabah 8 40'ta işe çıktık",
+          "ham": null,
+          "kategori": "saat",
+          "sablon": "saat-023",
+          "uyari": []
+        },
+        {
+          "girdi": "alarm kodu sıfır dört iki dört dört",
+          "hedef": "alarm kodu 04244",
+          "cikti": "alarm kodu 0 4 2 4 4",
+          "ham": null,
+          "kategori": "kod",
+          "sablon": "kod-010",
+          "uyari": []
+        },
+        {
+          "girdi": "Tabii, bir sürü iş birikti, galiba.",
+          "hedef": "Tabii, bir sürü iş birikti, galiba.",
+          "cikti": "Tabii, 1 sürü iş birikti, galiba.",
+          "ham": null,
+          "kategori": "negatif_kalip",
+          "sablon": "negatif_kalip-008",
+          "uyari": []
+        },
+        {
+          "girdi": "Yoğurdu otuz dört derece santigratta mayalayın.",
+          "hedef": "Yoğurdu 34 °C'de mayalayın.",
+          "cikti": "Yoğurdu 34 °C'ta mayalayın.",
+          "ham": null,
+          "kategori": "olcu",
+          "sablon": "olcu-031",
+          "uyari": []
+        },
+        {
+          "girdi": "Hayır, altı çizili kelimeleri tekrar oku, bunu unutma.",
+          "hedef": "Hayır, altı çizili kelimeleri tekrar oku, bunu unutma.",
+          "cikti": "Hayır, 6 çizili kelimeleri tekrar oku, bunu unutma.",
+          "ham": null,
+          "kategori": "negatif_es",
+          "sablon": "negatif_es-015",
+          "uyari": []
+        },
+        {
+          "girdi": "aslında şubat kısa ama soğuk bir aydır",
+          "hedef": "aslında şubat kısa ama soğuk bir aydır",
+          "cikti": "aslında şubat kısa ama soğuk 1 aydır",
+          "ham": null,
+          "kategori": "negatif_kalip",
+          "sablon": "negatif_kalip-059",
+          "uyari": []
+        },
+        {
+          "girdi": "Yolcu sayısı otuz yedi bin dokuz yüz doksan bir, gecikme iki yüz elli üç yüz elli dakika.",
+          "hedef": "Yolcu sayısı 37.991, gecikme 250-350 dakika.",
+          "cikti": "Yolcu sayısı 37 1.991, gecikme 253 150 dakika.",
+          "ham": null,
+          "kategori": "karisik",
+          "sablon": "karisik-027",
+          "uyari": []
+        },
+        {
+          "girdi": "bu iş altmış altmış beş gün alır",
+          "hedef": "bu iş 60-65 gün alır",
+          "cikti": "bu iş 60 65 gün alır",
+          "ham": null,
+          "kategori": "aralik",
+          "sablon": "aralik-002",
+          "uyari": []
+        },
+        {
+          "girdi": "bu oyun sıfır virgül dört beş puan aldı",
+          "hedef": "bu oyun 0,45 puan aldı",
+          "cikti": "bu oyun 0,4 5 puan aldı",
+          "ham": null,
+          "kategori": "ondalik",
+          "sablon": "ondalik-002",
+          "uyari": []
+        },
+        {
+          "girdi": "Elli dokuz yaşındaki bir çocuk kazayı gördü.",
+          "hedef": "59 yaşındaki bir çocuk kazayı gördü.",
+          "cikti": "59 yaşındaki 1 çocuk kazayı gördü.",
+          "ham": null,
+          "kategori": "kardinal",
+          "sablon": "kardinal-029",
+          "uyari": []
+        },
+        {
+          "girdi": "bir dakika hemen geliyorum yani",
+          "hedef": "bir dakika hemen geliyorum yani",
+          "cikti": "1 dakika hemen geliyorum yani",
+          "ham": null,
+          "kategori": "negatif_kalip",
+          "sablon": "negatif_kalip-039",
+          "uyari": []
+        },
+        {
+          "girdi": "Telefon numaram sıfır beş yüz otuz dokuz dokuz yüz kırk yedi sıfır bir kırk üç.",
+          "hedef": "Telefon numaram 0539 947 01 43.",
+          "cikti": "Telefon numaram 0 539 947 0 1 43.",
+          "ham": null,
+          "kategori": "telefon",
+          "sablon": "telefon-001",
+          "uyari": []
+        },
+        {
+          "girdi": "pazardan yüz gram ekmek aldım hesap sekiz yüz doksan bir bin altı yüz elli dokuz lira elli beş kuruş tuttu",
+          "hedef": "pazardan 100 g ekmek aldım hesap 891.659,55 TL tuttu",
+          "cikti": "pazardan 100 g ekmek aldım hesap 891 1.659,55 TL tuttu",
+          "ham": null,
+          "kategori": "karisik",
+          "sablon": "karisik-000",
+          "uyari": []
+        },
+        {
+          "girdi": "maçı dört ikiyle kazandık",
+          "hedef": "maçı 4-2'yle kazandık",
+          "cikti": "maçı 4 2'yle kazandık",
+          "ham": null,
+          "kategori": "skor",
+          "sablon": "skor-017",
+          "uyari": []
+        },
+        {
+          "girdi": "sınav yirmi üç mart tarihinde yapılacak",
+          "hedef": "sınav 23 Mart tarihinde yapılacak",
+          "cikti": "sınav 23 mart tarihinde yapılacak",
+          "ham": null,
+          "kategori": "tarih",
+          "sablon": "tarih-002",
+          "uyari": []
+        },
+        {
+          "girdi": "yolcu sayısı kırk yedi bin iki yüz elli iki gecikme üç dört dakika",
+          "hedef": "yolcu sayısı 47.252 gecikme 3-4 dakika",
+          "cikti": "yolcu sayısı 47 1.252 gecikme 3 4 dakika",
+          "ham": null,
+          "kategori": "karisik",
+          "sablon": "karisik-027",
+          "uyari": []
+        },
+        {
+          "girdi": "şirket bin dokuz yüz doksan beş yılında kuruldu",
+          "hedef": "şirket 1995 yılında kuruldu",
+          "cikti": "şirket 1.995 yılında kuruldu",
+          "ham": null,
+          "kategori": "tarih",
+          "sablon": "tarih-008",
+          "uyari": []
+        },
+        {
+          "girdi": "Kapı saat on iki buçuktan sonra kapanıyor.",
+          "hedef": "Kapı saat 12.30'dan sonra kapanıyor.",
+          "cikti": "Kapı saat 12,5'tan sonra kapanıyor.",
+          "ham": null,
+          "kategori": "saat",
+          "sablon": "saat-021",
+          "uyari": []
+        },
+        {
+          "girdi": "yirmi otuz yıl önce buraya taşındık",
+          "hedef": "20-30 yıl önce buraya taşındık",
+          "cikti": "20 30 yıl önce buraya taşındık",
+          "ham": null,
+          "kategori": "aralik",
+          "sablon": "aralik-011",
+          "uyari": []
+        },
+        {
+          "girdi": "aslında yüzü gülüyordu ama gözleri yorgundu",
+          "hedef": "aslında yüzü gülüyordu ama gözleri yorgundu",
+          "cikti": "aslında 100'ü gülüyordu ama gözleri yorgundu",
+          "ham": null,
+          "kategori": "negatif_es",
+          "sablon": "negatif_es-019",
+          "uyari": []
+        },
+        {
+          "girdi": "Yine de, bir dakika, hemen geliyorum.",
+          "hedef": "Yine de, bir dakika, hemen geliyorum.",
+          "cikti": "Yine de, 1 dakika, hemen geliyorum.",
+          "ham": null,
+          "kategori": "negatif_kalip",
+          "sablon": "negatif_kalip-039",
+          "uyari": []
+        },
+        {
+          "girdi": "bir an durup düşündü dedi bana",
+          "hedef": "bir an durup düşündü dedi bana",
+          "cikti": "1 an durup düşündü dedi bana",
+          "ham": null,
+          "kategori": "negatif_kalip",
+          "sablon": "negatif_kalip-002",
+          "uyari": []
+        },
+        {
+          "girdi": "bu arada onları kapıda karşıladım yani",
+          "hedef": "bu arada onları kapıda karşıladım yani",
+          "cikti": "bu arada 10'ları kapıda karşıladım yani",
+          "ham": null,
+          "kategori": "negatif_es",
+          "sablon": "negatif_es-040",
+          "uyari": []
+        },
+        {
+          "girdi": "şehir geçen yıl 20 milyar turist ağırladı",
+          "hedef": "şehir geçen yıl 20 milyar turist ağırladı",
+          "cikti": "şehir geçen yıl 20 1.000.000.000 turist ağırladı",
+          "ham": null,
+          "kategori": "negatif_yazili",
+          "sablon": "yazili:buyuk-009",
+          "uyari": []
+        },
+        {
+          "girdi": "beşiktaş maçı iki dört kazandı",
+          "hedef": "beşiktaş maçı 2-4 kazandı",
+          "cikti": "beşiktaş maçı 2 4 kazandı",
+          "ham": null,
+          "kategori": "skor",
+          "sablon": "skor-004",
+          "uyari": []
+        },
+        {
+          "girdi": "Yedi dokuz yıl önce buraya taşındık.",
+          "hedef": "7-9 yıl önce buraya taşındık.",
+          "cikti": "7 9 yıl önce buraya taşındık.",
+          "ham": null,
+          "kategori": "aralik",
+          "sablon": "aralik-011",
+          "uyari": []
+        },
+        {
+          "girdi": "Yemek saat on iki buçukta hazır olur.",
+          "hedef": "Yemek saat 12.30'da hazır olur.",
+          "cikti": "Yemek saat 12,5'ta hazır olur.",
+          "ham": null,
+          "kategori": "saat",
+          "sablon": "saat-012",
+          "uyari": []
+        },
+        {
+          "girdi": "Sınav yirmi üç ağustos tarihinde yapılacak.",
+          "hedef": "Sınav 23 Ağustos tarihinde yapılacak.",
+          "cikti": "Sınav 23 ağustos tarihinde yapılacak.",
+          "ham": null,
+          "kategori": "tarih",
+          "sablon": "tarih-002",
+          "uyari": []
+        },
+        {
+          "girdi": "şirket bin dokuz yüz elli sekiz yılında kuruldu",
+          "hedef": "şirket 1958 yılında kuruldu",
+          "cikti": "şirket 1.958 yılında kuruldu",
+          "ham": null,
+          "kategori": "tarih",
+          "sablon": "tarih-008",
+          "uyari": []
+        },
+        {
+          "girdi": "yolcu sayısı yirmi beş bin üç gecikme otuz kırk dakika",
+          "hedef": "yolcu sayısı 25.003 gecikme 30-40 dakika",
+          "cikti": "yolcu sayısı 25 1.003 gecikme 30 40 dakika",
+          "ham": null,
+          "kategori": "karisik",
+          "sablon": "karisik-027",
+          "uyari": []
+        },
+        {
+          "girdi": "bence bir an durup düşündü sence de öyle değil mi",
+          "hedef": "bence bir an durup düşündü sence de öyle değil mi",
+          "cikti": "bence 1 an durup düşündü sence de öyle değil mi",
+          "ham": null,
+          "kategori": "negatif_kalip",
+          "sablon": "negatif_kalip-002",
+          "uyari": []
+        },
+        {
+          "girdi": "Neyse, ona sorarsan yarın gelir.",
+          "hedef": "Neyse, ona sorarsan yarın gelir.",
+          "cikti": "Neyse, 10'a sorarsan yarın gelir.",
+          "ham": null,
+          "kategori": "negatif_es",
+          "sablon": "negatif_es-047",
+          "uyari": []
+        },
+        {
+          "girdi": "şirket bin dokuz yüz doksan bir yılında kuruldu",
+          "hedef": "şirket 1991 yılında kuruldu",
+          "cikti": "şirket 1.991 yılında kuruldu",
+          "ham": null,
+          "kategori": "tarih",
+          "sablon": "tarih-008",
+          "uyari": []
+        },
+        {
+          "girdi": "sivasspor maçı üç üç kazandı",
+          "hedef": "sivasspor maçı 3-3 kazandı",
+          "cikti": "sivasspor maçı 3 3 kazandı",
+          "ham": null,
+          "kategori": "skor",
+          "sablon": "skor-004",
+          "uyari": []
+        },
+        {
+          "girdi": "doksan iki bin üç yüz seksen bir lirayla bu ayı çıkaramayız",
+          "hedef": "92.381 TL'yle bu ayı çıkaramayız",
+          "cikti": "92 1.381 TL'yle bu ayı çıkaramayız",
+          "ham": null,
+          "kategori": "para",
+          "sablon": "para-028",
+          "uyari": []
+        },
+        {
+          "girdi": "izlenme üç virgül iki milyara ulaştı",
+          "hedef": "izlenme 3,2 milyara ulaştı",
+          "cikti": "izlenme 3,2000000000'a ulaştı",
+          "ham": null,
+          "kategori": "buyuk",
+          "sablon": "buyuk-014",
+          "uyari": []
+        },
+        {
+          "girdi": "ona sorarsan yarın gelir yani",
+          "hedef": "ona sorarsan yarın gelir yani",
+          "cikti": "10'a sorarsan yarın gelir yani",
+          "ham": null,
+          "kategori": "negatif_es",
+          "sablon": "negatif_es-047",
+          "uyari": []
+        },
+        {
+          "girdi": "izlenme altı milyara ulaştı",
+          "hedef": "izlenme 6 milyara ulaştı",
+          "cikti": "izlenme 6.000.000.000'a ulaştı",
+          "ham": null,
+          "kategori": "buyuk",
+          "sablon": "buyuk-014",
+          "uyari": []
+        },
+        {
+          "girdi": "yemek saat on beş onda hazır olur",
+          "hedef": "yemek saat 15.10'da hazır olur",
+          "cikti": "yemek saat 15 10'da hazır olur",
+          "ham": null,
+          "kategori": "saat",
+          "sablon": "saat-012",
+          "uyari": []
+        },
+        {
+          "girdi": "masada sekiz sandalye eksik",
+          "hedef": "masada sekiz sandalye eksik",
+          "cikti": "masada 8 sandalye eksik",
+          "ham": null,
+          "kategori": "kardinal",
+          "sablon": "kardinal-015",
+          "uyari": []
+        },
+        {
+          "girdi": "Yoğurdu yirmi bir derece santigratta mayalayın.",
+          "hedef": "Yoğurdu 21 °C'de mayalayın.",
+          "cikti": "Yoğurdu 21 °C'ta mayalayın.",
+          "ham": null,
+          "kategori": "olcu",
+          "sablon": "olcu-031",
+          "uyari": []
+        },
+        {
+          "girdi": "Kapı saat sekiz ondan sonra kapanıyor.",
+          "hedef": "Kapı saat 8.10'dan sonra kapanıyor.",
+          "cikti": "Kapı saat 8 10'dan sonra kapanıyor.",
+          "ham": null,
+          "kategori": "saat",
+          "sablon": "saat-021",
+          "uyari": []
+        },
+        {
+          "girdi": "Şehir geçen yıl on iki milyon turist ağırladı.",
+          "hedef": "Şehir geçen yıl 12 milyon turist ağırladı.",
+          "cikti": "Şehir geçen yıl 12 1.000.000 turist ağırladı.",
+          "ham": null,
+          "kategori": "buyuk",
+          "sablon": "buyuk-009",
+          "uyari": []
+        },
+        {
+          "girdi": "on altıncı yüzyılda yaşamış bir şair",
+          "hedef": "16. yüzyılda yaşamış bir şair",
+          "cikti": "16. yüzyılda yaşamış 1 şair",
+          "ham": null,
+          "kategori": "sira",
+          "sablon": "sira-006",
+          "uyari": []
+        },
+        {
+          "girdi": "Sınav iki ağustos tarihinde yapılacak.",
+          "hedef": "Sınav 2 Ağustos tarihinde yapılacak.",
+          "cikti": "Sınav 2 ağustos tarihinde yapılacak.",
+          "ham": null,
+          "kategori": "tarih",
+          "sablon": "tarih-002",
+          "uyari": []
+        },
+        {
+          "girdi": "yedi yaşındaki bir çocuk kazayı gördü",
+          "hedef": "yedi yaşındaki bir çocuk kazayı gördü",
+          "cikti": "7 yaşındaki 1 çocuk kazayı gördü",
+          "ham": null,
+          "kategori": "kardinal",
+          "sablon": "kardinal-029",
+          "uyari": []
+        },
+        {
+          "girdi": "Kırk sekiz virgül bir kilogramlık bir paket kahve aldık.",
+          "hedef": "48,1 kg'lık bir paket kahve aldık.",
+          "cikti": "48,1 kg'lık 1 paket kahve aldık.",
+          "ham": null,
+          "kategori": "olcu",
+          "sablon": "olcu-021",
+          "uyari": []
+        },
+        {
+          "girdi": "Altınordu maçı bir beş kazandı.",
+          "hedef": "Altınordu maçı 1-5 kazandı.",
+          "cikti": "Altınordu maçı 1 5 kazandı.",
+          "ham": null,
+          "kategori": "skor",
+          "sablon": "skor-004",
+          "uyari": []
+        },
+        {
+          "girdi": "geçen hafta bir an durup düşündü",
+          "hedef": "geçen hafta bir an durup düşündü",
+          "cikti": "geçen hafta 1 an durup düşündü",
+          "ham": null,
+          "kategori": "negatif_kalip",
+          "sablon": "negatif_kalip-002",
+          "uyari": []
+        },
+        {
+          "girdi": "gizem on ekim iki bin on yedi tarihinde doğdu",
+          "hedef": "gizem 10 Ekim 2017 tarihinde doğdu",
+          "cikti": "gizem 10 ekim 2.017 tarihinde doğdu",
+          "ham": null,
+          "kategori": "tarih",
+          "sablon": "tarih-001",
+          "uyari": []
+        },
+        {
+          "girdi": "Hakan üç Ekim bin dokuz yüz yetmiş altı tarihinde doğdu.",
+          "hedef": "Hakan 3 Ekim 1976 tarihinde doğdu.",
+          "cikti": "Hakan 3 Ekim 1.976 tarihinde doğdu.",
+          "ham": null,
+          "kategori": "tarih",
+          "sablon": "tarih-001",
+          "uyari": []
+        },
+        {
+          "girdi": "sabah on kırkta çıktım hava kırk üç derece santigrat",
+          "hedef": "sabah 10.40'ta çıktım hava 43 °C",
+          "cikti": "sabah 10 40'ta çıktım hava 43 °C",
+          "ham": null,
+          "kategori": "karisik",
+          "sablon": "karisik-028",
+          "uyari": []
+        },
+        {
+          "girdi": "bir dakika hemen geliyorum",
+          "hedef": "bir dakika hemen geliyorum",
+          "cikti": "1 dakika hemen geliyorum",
+          "ham": null,
+          "kategori": "negatif_kalip",
+          "sablon": "negatif_kalip-039",
+          "uyari": []
+        },
+        {
+          "girdi": "Önce şunu bil, ondan hiç haber alamadık.",
+          "hedef": "Önce şunu bil, ondan hiç haber alamadık.",
+          "cikti": "Önce şunu bil, 10'dan hiç haber alamadık.",
+          "ham": null,
+          "kategori": "negatif_es",
+          "sablon": "negatif_es-037",
+          "uyari": []
+        },
+        {
+          "girdi": "Sınavda üç dört soru yanlış yaptım.",
+          "hedef": "Sınavda 3-4 soru yanlış yaptım.",
+          "cikti": "Sınavda 3 4 soru yanlış yaptım.",
+          "ham": null,
+          "kategori": "aralik",
+          "sablon": "aralik-022",
+          "uyari": []
+        },
+        {
+          "girdi": "sabah sekiz buçukta işe çıktık",
+          "hedef": "sabah 8.30'da işe çıktık",
+          "cikti": "sabah 8,5'ta işe çıktık",
+          "ham": null,
+          "kategori": "saat",
+          "sablon": "saat-023",
+          "uyari": []
+        },
+        {
+          "girdi": "Sınav on dokuz ağustos tarihinde yapılacak.",
+          "hedef": "Sınav 19 Ağustos tarihinde yapılacak.",
+          "cikti": "Sınav 19 ağustos tarihinde yapılacak.",
+          "ham": null,
+          "kategori": "tarih",
+          "sablon": "tarih-002",
+          "uyari": []
+        },
+        {
+          "girdi": "Şirket iki bin on yılında kuruldu.",
+          "hedef": "Şirket 2010 yılında kuruldu.",
+          "cikti": "Şirket 2.010 yılında kuruldu.",
+          "ham": null,
+          "kategori": "tarih",
+          "sablon": "tarih-008",
+          "uyari": []
+        },
+        {
+          "girdi": "Ali üç mart bin dokuz yüz yetmiş tarihinde doğdu.",
+          "hedef": "Ali 3 Mart 1970 tarihinde doğdu.",
+          "cikti": "Ali 3 mart 1.970 tarihinde doğdu.",
+          "ham": null,
+          "kategori": "tarih",
+          "sablon": "tarih-001",
+          "uyari": []
+        },
+        {
+          "girdi": "açıkçası yüzü gülüyordu ama gözleri yorgundu",
+          "hedef": "açıkçası yüzü gülüyordu ama gözleri yorgundu",
+          "cikti": "açıkçası 100'ü gülüyordu ama gözleri yorgundu",
+          "ham": null,
+          "kategori": "negatif_es",
+          "sablon": "negatif_es-019",
+          "uyari": []
+        },
+        {
+          "girdi": "önce şunu bil koşuda yusuf ikinci geldi",
+          "hedef": "önce şunu bil koşuda yusuf ikinci geldi",
+          "cikti": "önce şunu bil koşuda yusuf 2. geldi",
+          "ham": null,
+          "kategori": "negatif_kalip",
+          "sablon": "negatif_kalip-025",
+          "uyari": []
+        },
+        {
+          "girdi": "beni sıfır üç yüz on iki dört yüz dört yetmiş sekiz on beş numarasından arayabilirsin",
+          "hedef": "beni 0312 404 78 15 numarasından arayabilirsin",
+          "cikti": "beni 0 312 404 78 15 numarasından arayabilirsin",
+          "ham": null,
+          "kategori": "telefon",
+          "sablon": "telefon-000",
+          "uyari": []
+        },
+        {
+          "girdi": "Tabii, bir bakıma haklısın.",
+          "hedef": "Tabii, bir bakıma haklısın.",
+          "cikti": "Tabii, 1 bakıma haklısın.",
+          "ham": null,
+          "kategori": "negatif_kalip",
+          "sablon": "negatif_kalip-041",
+          "uyari": []
+        },
+        {
+          "girdi": "kampanyaya beş milyon dört yüz otuz dört bin yedi yüz elli sekiz aday destek verdi",
+          "hedef": "kampanyaya 5.434.758 aday destek verdi",
+          "cikti": "kampanyaya 5.000.434 1.758 aday destek verdi",
+          "ham": null,
+          "kategori": "buyuk",
+          "sablon": "buyuk-023",
+          "uyari": []
+        },
+        {
+          "girdi": "telefon numaram sıfır üç yüz yirmi iki yedi yüz otuz dört dokuz kırk dokuz",
+          "hedef": "telefon numaram 0322 730 49 49",
+          "cikti": "telefon numaram 0 322 734 9 49",
+          "ham": null,
+          "kategori": "telefon",
+          "sablon": "telefon-001",
+          "uyari": []
+        },
+        {
+          "girdi": "Yirmi beş otuz beş yıl önce buraya taşındık.",
+          "hedef": "25-35 yıl önce buraya taşındık.",
+          "cikti": "25 35 yıl önce buraya taşındık.",
+          "ham": null,
+          "kategori": "aralik",
+          "sablon": "aralik-011",
+          "uyari": []
+        },
+        {
+          "girdi": "Akşam beş otuzdan sonra trafik azalıyor.",
+          "hedef": "Akşam 5.30'dan sonra trafik azalıyor.",
+          "cikti": "Akşam 5 30'dan sonra trafik azalıyor.",
+          "ham": null,
+          "kategori": "saat",
+          "sablon": "saat-026",
+          "uyari": []
+        },
+        {
+          "girdi": "hatırlıyor musun ona sorarsan yarın gelir yani",
+          "hedef": "hatırlıyor musun ona sorarsan yarın gelir yani",
+          "cikti": "hatırlıyor musun 10'a sorarsan yarın gelir yani",
+          "ham": null,
+          "kategori": "negatif_es",
+          "sablon": "negatif_es-047",
+          "uyari": []
+        },
+        {
+          "girdi": "sonra koşuda irem ikinci geldi galiba",
+          "hedef": "sonra koşuda irem ikinci geldi galiba",
+          "cikti": "sonra koşuda irem 2. geldi galiba",
+          "ham": null,
+          "kategori": "negatif_kalip",
+          "sablon": "negatif_kalip-025",
+          "uyari": []
+        },
+        {
+          "girdi": "Beş yüz gramlık bir paket patates aldık.",
+          "hedef": "500 g'lık bir paket patates aldık.",
+          "cikti": "500 g'lık 1 paket patates aldık.",
+          "ham": null,
+          "kategori": "olcu",
+          "sablon": "olcu-021",
+          "uyari": []
+        },
+        {
+          "girdi": "Kısacası, koşuda Tuğba ikinci geldi.",
+          "hedef": "Kısacası, koşuda Tuğba ikinci geldi.",
+          "cikti": "Kısacası, koşuda Tuğba 2. geldi.",
+          "ham": null,
+          "kategori": "negatif_kalip",
+          "sablon": "negatif_kalip-025",
+          "uyari": []
+        },
+        {
+          "girdi": "Müşteri numarası sıfır dokuz üç dört dokuz yedi üç yedi.",
+          "hedef": "Müşteri numarası 09349737.",
+          "cikti": "Müşteri numarası 0 9 3 4 9 7 3 7.",
+          "ham": null,
+          "kategori": "kod",
+          "sablon": "kod-014",
+          "uyari": []
+        },
+        {
+          "girdi": "yine de ondan hiç haber alamadık yani",
+          "hedef": "yine de ondan hiç haber alamadık yani",
+          "cikti": "yine de 10'dan hiç haber alamadık yani",
+          "ham": null,
+          "kategori": "negatif_es",
+          "sablon": "negatif_es-037",
+          "uyari": []
+        },
+        {
+          "girdi": "baksana onları kapıda karşıladım",
+          "hedef": "baksana onları kapıda karşıladım",
+          "cikti": "baksana 10'ları kapıda karşıladım",
+          "ham": null,
+          "kategori": "negatif_es",
+          "sablon": "negatif_es-040",
+          "uyari": []
+        },
+        {
+          "girdi": "sabah altı onda işe çıktık",
+          "hedef": "sabah 6.10'da işe çıktık",
+          "cikti": "sabah 6 10'da işe çıktık",
+          "ham": null,
+          "kategori": "saat",
+          "sablon": "saat-023",
+          "uyari": []
+        },
+        {
+          "girdi": "Sözleşme yirmi sekiz Şubat iki bin on sekiz tarihinde imzalandı.",
+          "hedef": "Sözleşme 28 Şubat 2018 tarihinde imzalandı.",
+          "cikti": "Sözleşme 28 Şubat 2.018 tarihinde imzalandı.",
+          "ham": null,
+          "kategori": "tarih",
+          "sablon": "tarih-022",
+          "uyari": []
+        },
+        {
+          "girdi": "Koliyi altmış yetmiş beş günde teslim ederiz.",
+          "hedef": "Koliyi 60-75 günde teslim ederiz.",
+          "cikti": "Koliyi 60 75 günde teslim ederiz.",
+          "ham": null,
+          "kategori": "aralik",
+          "sablon": "aralik-026",
+          "uyari": []
+        },
+        {
+          "girdi": "Siparişiniz için sıfır beş yüz elli bir altı yüz seksen sekiz on bir yetmiş dokuz numaralı hattı arayın.",
+          "hedef": "Siparişiniz için 0551 688 11 79 numaralı hattı arayın.",
+          "cikti": "Siparişiniz için 0 551 688 11 79 numaralı hattı arayın.",
+          "ham": null,
+          "kategori": "telefon",
+          "sablon": "telefon-016",
+          "uyari": []
+        },
+        {
+          "girdi": "bir bakıma haklısın dedi bana",
+          "hedef": "bir bakıma haklısın dedi bana",
+          "cikti": "1 bakıma haklısın dedi bana",
+          "ham": null,
+          "kategori": "negatif_kalip",
+          "sablon": "negatif_kalip-041",
+          "uyari": []
+        },
+        {
+          "girdi": "Koliyi altı yedi günde teslim ederiz.",
+          "hedef": "Koliyi 6-7 günde teslim ederiz.",
+          "cikti": "Koliyi 6 7 günde teslim ederiz.",
+          "ham": null,
+          "kategori": "aralik",
+          "sablon": "aralik-026",
+          "uyari": []
+        },
+        {
+          "girdi": "dört yüz gramlık bir paket tavuk aldık",
+          "hedef": "400 g'lık bir paket tavuk aldık",
+          "cikti": "400 g'lık 1 paket tavuk aldık",
+          "ham": null,
+          "kategori": "olcu",
+          "sablon": "olcu-021",
+          "uyari": []
+        },
+        {
+          "girdi": "hayır ona sorarsan yarın gelir",
+          "hedef": "hayır ona sorarsan yarın gelir",
+          "cikti": "hayır 10'a sorarsan yarın gelir",
+          "ham": null,
+          "kategori": "negatif_es",
+          "sablon": "negatif_es-047",
+          "uyari": []
+        },
+        {
+          "girdi": "Yemek saat on bir on beşte hazır olur.",
+          "hedef": "Yemek saat 11.15'te hazır olur.",
+          "cikti": "Yemek saat 11 15'te hazır olur.",
+          "ham": null,
+          "kategori": "saat",
+          "sablon": "saat-012",
+          "uyari": []
+        },
+        {
+          "girdi": "Açıkçası, onları kapıda karşıladım, galiba.",
+          "hedef": "Açıkçası, onları kapıda karşıladım, galiba.",
+          "cikti": "Açıkçası, 10'ları kapıda karşıladım, galiba.",
+          "ham": null,
+          "kategori": "negatif_es",
+          "sablon": "negatif_es-040",
+          "uyari": []
+        },
+        {
+          "girdi": "siparişiniz için sıfır beş üç sıfır sekiz yüz on üç yetmiş yedi seksen üç numaralı hattı arayın",
+          "hedef": "siparişiniz için 0530 813 77 83 numaralı hattı arayın",
+          "cikti": "siparişiniz için 0 5 3 0 813 77 83 numaralı hattı arayın",
+          "ham": null,
+          "kategori": "telefon",
+          "sablon": "telefon-016",
+          "uyari": []
+        },
+        {
+          "girdi": "Annem söyledi, seni gördüğüme iki gözüm çok sevindi, dedi bana.",
+          "hedef": "Annem söyledi, seni gördüğüme iki gözüm çok sevindi, dedi bana.",
+          "cikti": "Annem söyledi, seni gördüğüme 2 gözüm çok sevindi, dedi bana.",
+          "ham": null,
+          "kategori": "negatif_kalip",
+          "sablon": "negatif_kalip-019",
+          "uyari": []
+        },
+        {
+          "girdi": "Yine de, ondan hiç haber alamadık, ama neyse.",
+          "hedef": "Yine de, ondan hiç haber alamadık, ama neyse.",
+          "cikti": "Yine de, 10'dan hiç haber alamadık, ama neyse.",
+          "ham": null,
+          "kategori": "negatif_es",
+          "sablon": "negatif_es-037",
+          "uyari": []
+        },
+        {
+          "girdi": "Sabah dokuz kırk beşte çıktım, hava yirmi üç derece santigrat.",
+          "hedef": "Sabah 9.45'te çıktım, hava 23 °C.",
+          "cikti": "Sabah 9 45'te çıktım, hava 23 °C.",
+          "ham": null,
+          "kategori": "karisik",
+          "sablon": "karisik-028",
+          "uyari": []
+        },
+        {
+          "girdi": "sınav dört şubat tarihinde yapılacak",
+          "hedef": "sınav 4 Şubat tarihinde yapılacak",
+          "cikti": "sınav 4 şubat tarihinde yapılacak",
+          "ham": null,
+          "kategori": "tarih",
+          "sablon": "tarih-002",
+          "uyari": []
+        },
+        {
+          "girdi": "sözleşme on sekiz eylül bin dokuz yüz doksan yedi tarihinde imzalandı",
+          "hedef": "sözleşme 18 Eylül 1997 tarihinde imzalandı",
+          "cikti": "sözleşme 18 eylül 1.997 tarihinde imzalandı",
+          "ham": null,
+          "kategori": "tarih",
+          "sablon": "tarih-022",
+          "uyari": []
+        },
+        {
+          "girdi": "ondan hiç haber alamadık bunu unutma",
+          "hedef": "ondan hiç haber alamadık bunu unutma",
+          "cikti": "10'dan hiç haber alamadık bunu unutma",
+          "ham": null,
+          "kategori": "negatif_es",
+          "sablon": "negatif_es-037",
+          "uyari": []
+        },
+        {
+          "girdi": "Koliyi üç altı günde teslim ederiz.",
+          "hedef": "Koliyi 3-6 günde teslim ederiz.",
+          "cikti": "Koliyi 3 6 günde teslim ederiz.",
+          "ham": null,
+          "kategori": "aralik",
+          "sablon": "aralik-026",
+          "uyari": []
+        },
+        {
+          "girdi": "başakşehir maçı bir iki kazandı",
+          "hedef": "başakşehir maçı 1-2 kazandı",
+          "cikti": "başakşehir maçı 1 2 kazandı",
+          "ham": null,
+          "kategori": "skor",
+          "sablon": "skor-004",
+          "uyari": []
+        },
+        {
+          "girdi": "annem söyledi bir bakıma haklısın",
+          "hedef": "annem söyledi bir bakıma haklısın",
+          "cikti": "annem söyledi 1 bakıma haklısın",
+          "ham": null,
+          "kategori": "negatif_kalip",
+          "sablon": "negatif_kalip-041",
+          "uyari": []
+        },
+        {
+          "girdi": "Hatırlıyor musun, seni gördüğüme iki gözüm çok sevindi.",
+          "hedef": "Hatırlıyor musun, seni gördüğüme iki gözüm çok sevindi.",
+          "cikti": "Hatırlıyor musun, seni gördüğüme 2 gözüm çok sevindi.",
+          "ham": null,
+          "kategori": "negatif_kalip",
+          "sablon": "negatif_kalip-019",
+          "uyari": []
+        },
+        {
+          "girdi": "Ona sorarsan yarın gelir, öyle sanıyorum.",
+          "hedef": "Ona sorarsan yarın gelir, öyle sanıyorum.",
+          "cikti": "10'a sorarsan yarın gelir, öyle sanıyorum.",
+          "ham": null,
+          "kategori": "negatif_es",
+          "sablon": "negatif_es-047",
+          "uyari": []
+        }
+      ],
+      "koruma_geri_alma": 0
+    },
+    {
+      "ad": "zorluk",
+      "ornek": 100,
+      "hata_kaynagi": "kural",
+      "olcumler": {
+        "kopya": {
+          "ornek": 100,
+          "tam_eslesme": 0.28,
+          "cer": 0.5109150023223409,
+          "wer": 0.6596306068601583,
+          "sayi_belirteci_dogrulugu": 0.03333333333333333,
+          "negatif_ornek": 28,
+          "yanlis_donusum_orani": 0.0
+        },
+        "kural": {
+          "ornek": 100,
+          "tam_eslesme": 0.53,
+          "cer": 0.07106363214119833,
+          "wer": 0.21372031662269128,
+          "sayi_belirteci_dogrulugu": 0.7444444444444445,
+          "negatif_ornek": 28,
+          "yanlis_donusum_orani": 0.6785714285714286
+        }
+      },
+      "kirilim": {
+        "kopya": {
+          "aralik": {
+            "ornek": 2,
+            "tam_eslesme": 0.0,
+            "cer": 0.40476190476190477,
+            "wer": 0.7142857142857143,
+            "sayi_belirteci_dogrulugu": 0.0,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "buyuk": {
+            "ornek": 3,
+            "tam_eslesme": 0.0,
+            "cer": 0.6621621621621622,
+            "wer": 0.8461538461538461,
+            "sayi_belirteci_dogrulugu": 0.0,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "buyuk_harf": {
+            "ornek": 4,
+            "tam_eslesme": 0.25,
+            "cer": 0.6363636363636364,
+            "wer": 0.9285714285714286,
+            "sayi_belirteci_dogrulugu": 0.0,
+            "negatif_ornek": 1,
+            "yanlis_donusum_orani": 0.0
+          },
+          "eksi": {
+            "ornek": 1,
+            "tam_eslesme": 0.0,
+            "cer": 0.4090909090909091,
+            "wer": 0.5,
+            "sayi_belirteci_dogrulugu": 0.0,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "kardinal": {
+            "ornek": 8,
+            "tam_eslesme": 0.0,
+            "cer": 0.32903225806451614,
+            "wer": 0.5185185185185185,
+            "sayi_belirteci_dogrulugu": 0.0,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "karisik": {
+            "ornek": 1,
+            "tam_eslesme": 0.0,
+            "cer": 1.65,
+            "wer": 1.75,
+            "sayi_belirteci_dogrulugu": 0.0,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "kod": {
+            "ornek": 2,
+            "tam_eslesme": 0.0,
+            "cer": 1.3103448275862069,
+            "wer": 1.6,
+            "sayi_belirteci_dogrulugu": 0.0,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "negatif_es": {
+            "ornek": 9,
+            "tam_eslesme": 1.0,
+            "cer": 0.0,
+            "wer": 0.0,
+            "sayi_belirteci_dogrulugu": null,
+            "negatif_ornek": 9,
+            "yanlis_donusum_orani": 0.0
+          },
+          "negatif_kalip": {
+            "ornek": 14,
+            "tam_eslesme": 1.0,
+            "cer": 0.0,
+            "wer": 0.0,
+            "sayi_belirteci_dogrulugu": null,
+            "negatif_ornek": 14,
+            "yanlis_donusum_orani": 0.0
+          },
+          "negatif_politika": {
+            "ornek": 1,
+            "tam_eslesme": 1.0,
+            "cer": 0.0,
+            "wer": 0.0,
+            "sayi_belirteci_dogrulugu": null,
+            "negatif_ornek": 1,
+            "yanlis_donusum_orani": 0.0
+          },
+          "negatif_yazili": {
+            "ornek": 3,
+            "tam_eslesme": 1.0,
+            "cer": 0.0,
+            "wer": 0.0,
+            "sayi_belirteci_dogrulugu": 1.0,
+            "negatif_ornek": 3,
+            "yanlis_donusum_orani": 0.0
+          },
+          "olcu": {
+            "ornek": 10,
+            "tam_eslesme": 0.0,
+            "cer": 0.7868020304568528,
+            "wer": 0.75,
+            "sayi_belirteci_dogrulugu": 0.0,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "ondalik": {
+            "ornek": 2,
+            "tam_eslesme": 0.0,
+            "cer": 1.125,
+            "wer": 1.3333333333333333,
+            "sayi_belirteci_dogrulugu": 0.0,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "para": {
+            "ornek": 10,
+            "tam_eslesme": 0.0,
+            "cer": 0.8894472361809045,
+            "wer": 1.0789473684210527,
+            "sayi_belirteci_dogrulugu": 0.0,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "saat": {
+            "ornek": 9,
+            "tam_eslesme": 0.0,
+            "cer": 0.36764705882352944,
+            "wer": 0.5454545454545454,
+            "sayi_belirteci_dogrulugu": 0.0,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "saat_zor": {
+            "ornek": 2,
+            "tam_eslesme": 0.0,
+            "cer": 0.4358974358974359,
+            "wer": 0.6666666666666666,
+            "sayi_belirteci_dogrulugu": 0.0,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "sira": {
+            "ornek": 5,
+            "tam_eslesme": 0.0,
+            "cer": 0.40540540540540543,
+            "wer": 0.3888888888888889,
+            "sayi_belirteci_dogrulugu": 0.0,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "skor": {
+            "ornek": 2,
+            "tam_eslesme": 0.0,
+            "cer": 0.36585365853658536,
+            "wer": 0.5714285714285714,
+            "sayi_belirteci_dogrulugu": 0.0,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "tarih": {
+            "ornek": 5,
+            "tam_eslesme": 0.0,
+            "cer": 0.8283582089552238,
+            "wer": 1.2857142857142858,
+            "sayi_belirteci_dogrulugu": 0.0,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "telefon": {
+            "ornek": 3,
+            "tam_eslesme": 0.0,
+            "cer": 2.2028985507246377,
+            "wer": 2.1875,
+            "sayi_belirteci_dogrulugu": 0.0,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "yuzde": {
+            "ornek": 4,
+            "tam_eslesme": 0.0,
+            "cer": 0.8767123287671232,
+            "wer": 1.3,
+            "sayi_belirteci_dogrulugu": 0.0,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          }
+        },
+        "kural": {
+          "aralik": {
+            "ornek": 2,
+            "tam_eslesme": 0.0,
+            "cer": 0.047619047619047616,
+            "wer": 0.5714285714285714,
+            "sayi_belirteci_dogrulugu": 0.0,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "buyuk": {
+            "ornek": 3,
+            "tam_eslesme": 0.3333333333333333,
+            "cer": 0.24324324324324326,
+            "wer": 0.15384615384615385,
+            "sayi_belirteci_dogrulugu": 1.0,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "buyuk_harf": {
+            "ornek": 4,
+            "tam_eslesme": 0.25,
+            "cer": 0.07954545454545454,
+            "wer": 0.2857142857142857,
+            "sayi_belirteci_dogrulugu": 0.6666666666666666,
+            "negatif_ornek": 1,
+            "yanlis_donusum_orani": 1.0
+          },
+          "eksi": {
+            "ornek": 1,
+            "tam_eslesme": 1.0,
+            "cer": 0.0,
+            "wer": 0.0,
+            "sayi_belirteci_dogrulugu": 1.0,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "kardinal": {
+            "ornek": 8,
+            "tam_eslesme": 1.0,
+            "cer": 0.0,
+            "wer": 0.0,
+            "sayi_belirteci_dogrulugu": 1.0,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "karisik": {
+            "ornek": 1,
+            "tam_eslesme": 1.0,
+            "cer": 0.0,
+            "wer": 0.0,
+            "sayi_belirteci_dogrulugu": 1.0,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "kod": {
+            "ornek": 2,
+            "tam_eslesme": 0.0,
+            "cer": 0.20689655172413793,
+            "wer": 1.6,
+            "sayi_belirteci_dogrulugu": 0.0,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "negatif_es": {
+            "ornek": 9,
+            "tam_eslesme": 0.1111111111111111,
+            "cer": 0.14553990610328638,
+            "wer": 0.25,
+            "sayi_belirteci_dogrulugu": null,
+            "negatif_ornek": 9,
+            "yanlis_donusum_orani": 0.8888888888888888
+          },
+          "negatif_kalip": {
+            "ornek": 14,
+            "tam_eslesme": 0.35714285714285715,
+            "cer": 0.1393939393939394,
+            "wer": 0.21052631578947367,
+            "sayi_belirteci_dogrulugu": null,
+            "negatif_ornek": 14,
+            "yanlis_donusum_orani": 0.6428571428571429
+          },
+          "negatif_politika": {
+            "ornek": 1,
+            "tam_eslesme": 0.0,
+            "cer": 0.13043478260869565,
+            "wer": 0.25,
+            "sayi_belirteci_dogrulugu": null,
+            "negatif_ornek": 1,
+            "yanlis_donusum_orani": 1.0
+          },
+          "negatif_yazili": {
+            "ornek": 3,
+            "tam_eslesme": 1.0,
+            "cer": 0.0,
+            "wer": 0.0,
+            "sayi_belirteci_dogrulugu": 1.0,
+            "negatif_ornek": 3,
+            "yanlis_donusum_orani": 0.0
+          },
+          "olcu": {
+            "ornek": 10,
+            "tam_eslesme": 0.8,
+            "cer": 0.025380710659898477,
+            "wer": 0.045454545454545456,
+            "sayi_belirteci_dogrulugu": 1.0,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "ondalik": {
+            "ornek": 2,
+            "tam_eslesme": 1.0,
+            "cer": 0.0,
+            "wer": 0.0,
+            "sayi_belirteci_dogrulugu": 1.0,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "para": {
+            "ornek": 10,
+            "tam_eslesme": 0.7,
+            "cer": 0.020100502512562814,
+            "wer": 0.10526315789473684,
+            "sayi_belirteci_dogrulugu": 0.9,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "saat": {
+            "ornek": 9,
+            "tam_eslesme": 0.5555555555555556,
+            "cer": 0.0392156862745098,
+            "wer": 0.24242424242424243,
+            "sayi_belirteci_dogrulugu": 0.5555555555555556,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "saat_zor": {
+            "ornek": 2,
+            "tam_eslesme": 0.5,
+            "cer": 0.10256410256410256,
+            "wer": 0.16666666666666666,
+            "sayi_belirteci_dogrulugu": 0.5,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "sira": {
+            "ornek": 5,
+            "tam_eslesme": 1.0,
+            "cer": 0.0,
+            "wer": 0.0,
+            "sayi_belirteci_dogrulugu": 1.0,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "skor": {
+            "ornek": 2,
+            "tam_eslesme": 0.0,
+            "cer": 0.04878048780487805,
+            "wer": 0.5714285714285714,
+            "sayi_belirteci_dogrulugu": 0.0,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "tarih": {
+            "ornek": 5,
+            "tam_eslesme": 0.0,
+            "cer": 0.05970149253731343,
+            "wer": 0.3333333333333333,
+            "sayi_belirteci_dogrulugu": 0.5,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "telefon": {
+            "ornek": 3,
+            "tam_eslesme": 0.0,
+            "cer": 0.13043478260869565,
+            "wer": 0.9375,
+            "sayi_belirteci_dogrulugu": 0.5,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          },
+          "yuzde": {
+            "ornek": 4,
+            "tam_eslesme": 1.0,
+            "cer": 0.0,
+            "wer": 0.0,
+            "sayi_belirteci_dogrulugu": 1.0,
+            "negatif_ornek": 0,
+            "yanlis_donusum_orani": null
+          }
+        }
+      },
+      "hata_sayisi": 47,
+      "hatalar": [
+        {
+          "girdi": "bu ay kiraya on sekiz bin beş yüz lira verdim",
+          "hedef": "bu ay kiraya 18.500 TL verdim",
+          "cikti": "bu ay kiraya 18 1.500 TL verdim",
+          "ham": null,
+          "kategori": "para",
+          "sablon": "elle",
+          "uyari": []
+        },
+        {
+          "girdi": "elli kuruşa simit mi kaldı",
+          "hedef": "50 kuruşa simit mi kaldı",
+          "cikti": "50 kuruş'a simit mi kaldı",
+          "ham": null,
+          "kategori": "para",
+          "sablon": "elle",
+          "uyari": []
+        },
+        {
+          "girdi": "dolar kırk iki lira on beş kuruşa çıktı",
+          "hedef": "dolar 42,15 TL'ye çıktı",
+          "cikti": "dolar 42,15 TL'e çıktı",
+          "ham": null,
+          "kategori": "para",
+          "sablon": "elle",
+          "uyari": []
+        },
+        {
+          "girdi": "otuz beş metrekarelik bir oda",
+          "hedef": "35 m²'lik bir oda",
+          "cikti": "35 m²'lik 1 oda",
+          "ham": null,
+          "kategori": "olcu",
+          "sablon": "elle",
+          "uyari": []
+        },
+        {
+          "girdi": "su otuz derece santigratta ısınır",
+          "hedef": "su 30 °C'de ısınır",
+          "cikti": "su 30 °C'ta ısınır",
+          "ham": null,
+          "kategori": "olcu",
+          "sablon": "elle",
+          "uyari": []
+        },
+        {
+          "girdi": "saat on dört otuzda görüşelim",
+          "hedef": "saat 14.30'da görüşelim",
+          "cikti": "saat 14 30'da görüşelim",
+          "ham": null,
+          "kategori": "saat",
+          "sablon": "elle",
+          "uyari": []
+        },
+        {
+          "girdi": "saat üç buçukta buluşalım",
+          "hedef": "saat 3.30'da buluşalım",
+          "cikti": "saat 3,5'ta buluşalım",
+          "ham": null,
+          "kategori": "saat",
+          "sablon": "elle",
+          "uyari": []
+        },
+        {
+          "girdi": "tren saat on yedi kırk beşte kalkıyor",
+          "hedef": "tren saat 17.45'te kalkıyor",
+          "cikti": "tren saat 17 45'te kalkıyor",
+          "ham": null,
+          "kategori": "saat",
+          "sablon": "elle",
+          "uyari": []
+        },
+        {
+          "girdi": "saat on dokuz sıfır beşte çıktı",
+          "hedef": "saat 19.05'te çıktı",
+          "cikti": "saat 19 0 5'te çıktı",
+          "ham": null,
+          "kategori": "saat",
+          "sablon": "elle",
+          "uyari": []
+        },
+        {
+          "girdi": "gece on bir buçukta yatarım",
+          "hedef": "gece 11.30'da yatarım",
+          "cikti": "gece 11,5'ta yatarım",
+          "ham": null,
+          "kategori": "saat_zor",
+          "sablon": "elle",
+          "uyari": []
+        },
+        {
+          "girdi": "sekiz kasım iki bin yirmi altıda doğdu",
+          "hedef": "8 Kasım 2026'da doğdu",
+          "cikti": "8 kasım 2.026'da doğdu",
+          "ham": null,
+          "kategori": "tarih",
+          "sablon": "elle",
+          "uyari": []
+        },
+        {
+          "girdi": "yirmi dokuz ekim bin dokuz yüz yirmi üçte cumhuriyet ilan edildi",
+          "hedef": "29 Ekim 1923'te cumhuriyet ilan edildi",
+          "cikti": "29 ekim 1.923'te cumhuriyet ilan edildi",
+          "ham": null,
+          "kategori": "tarih",
+          "sablon": "elle",
+          "uyari": []
+        },
+        {
+          "girdi": "on beş kasımda saat on dokuzda konser var",
+          "hedef": "15 Kasım'da saat 19'da konser var",
+          "cikti": "15 kasımda saat 19'da konser var",
+          "ham": null,
+          "kategori": "tarih",
+          "sablon": "elle",
+          "uyari": []
+        },
+        {
+          "girdi": "bin dokuz yüz doksanlarda çok popülerdi",
+          "hedef": "1990'larda çok popülerdi",
+          "cikti": "1.990'larda çok popülerdi",
+          "ham": null,
+          "kategori": "tarih",
+          "sablon": "elle",
+          "uyari": []
+        },
+        {
+          "girdi": "iki bin yirmi beşteki seçimler",
+          "hedef": "2025'teki seçimler",
+          "cikti": "2.025'teki seçimler",
+          "ham": null,
+          "kategori": "tarih",
+          "sablon": "elle",
+          "uyari": []
+        },
+        {
+          "girdi": "numaram sıfır beş yüz otuz iki yüz yirmi üç kırk beş altmış yedi",
+          "hedef": "numaram 0532 123 45 67",
+          "cikti": "numaram 0 532 123 45 67",
+          "ham": null,
+          "kategori": "telefon",
+          "sablon": "elle",
+          "uyari": []
+        },
+        {
+          "girdi": "sıfır iki yüz on iki dört yüz elli altı yetmiş sekiz doksan",
+          "hedef": "0212 456 78 90",
+          "cikti": "0 212 456 78 90",
+          "ham": null,
+          "kategori": "telefon",
+          "sablon": "elle",
+          "uyari": []
+        },
+        {
+          "girdi": "beni sıfır beş üç iki bir iki üç dört beş altı yedi numaradan ara",
+          "hedef": "beni 0532 123 45 67 numaradan ara",
+          "cikti": "beni 0 5 3 2 1 2 3 4 5 6 7 numaradan ara",
+          "ham": null,
+          "kategori": "telefon",
+          "sablon": "elle",
+          "uyari": []
+        },
+        {
+          "girdi": "doğrulama kodu sıfır sekiz dört iki",
+          "hedef": "doğrulama kodu 0842",
+          "cikti": "doğrulama kodu 0 8 4 2",
+          "ham": null,
+          "kategori": "kod",
+          "sablon": "elle",
+          "uyari": []
+        },
+        {
+          "girdi": "şifre dört beş bir dokuz",
+          "hedef": "şifre 4519",
+          "cikti": "şifre 4 5 1 9",
+          "ham": null,
+          "kategori": "kod",
+          "sablon": "elle",
+          "uyari": []
+        },
+        {
+          "girdi": "maç iki bir bitti",
+          "hedef": "maç 2-1 bitti",
+          "cikti": "maç 2 1 bitti",
+          "ham": null,
+          "kategori": "skor",
+          "sablon": "elle",
+          "uyari": []
+        },
+        {
+          "girdi": "galatasaray maçı üç sıfır kazandı",
+          "hedef": "galatasaray maçı 3-0 kazandı",
+          "cikti": "galatasaray maçı 3 0 kazandı",
+          "ham": null,
+          "kategori": "skor",
+          "sablon": "elle",
+          "uyari": []
+        },
+        {
+          "girdi": "beş altı kişi gelecek",
+          "hedef": "5-6 kişi gelecek",
+          "cikti": "5 6 kişi gelecek",
+          "ham": null,
+          "kategori": "aralik",
+          "sablon": "elle",
+          "uyari": []
+        },
+        {
+          "girdi": "on on beş dakika sonra çıkarım",
+          "hedef": "10-15 dakika sonra çıkarım",
+          "cikti": "10 15 dakika sonra çıkarım",
+          "ham": null,
+          "kategori": "aralik",
+          "sablon": "elle",
+          "uyari": []
+        },
+        {
+          "girdi": "şirket iki buçuk milyon lira zarar etti",
+          "hedef": "şirket 2,5 milyon TL zarar etti",
+          "cikti": "şirket 2,5 1.000.000 TL zarar etti",
+          "ham": null,
+          "kategori": "buyuk",
+          "sablon": "elle",
+          "uyari": []
+        },
+        {
+          "girdi": "nüfus seksen beş milyon",
+          "hedef": "nüfus 85 milyon",
+          "cikti": "nüfus 85 1.000.000",
+          "ham": null,
+          "kategori": "buyuk",
+          "sablon": "elle",
+          "uyari": []
+        },
+        {
+          "girdi": "akşam yemeğini yedi ve uyudu",
+          "hedef": "akşam yemeğini yedi ve uyudu",
+          "cikti": "akşam yemeğini 7 ve uyudu",
+          "ham": null,
+          "kategori": "negatif_es",
+          "sablon": "elle",
+          "uyari": []
+        },
+        {
+          "girdi": "çocuk kekin hepsini yedi",
+          "hedef": "çocuk kekin hepsini yedi",
+          "cikti": "çocuk kekin hepsini 7",
+          "ham": null,
+          "kategori": "negatif_es",
+          "sablon": "elle",
+          "uyari": []
+        },
+        {
+          "girdi": "yüzünü yıkadı ve çıktı",
+          "hedef": "yüzünü yıkadı ve çıktı",
+          "cikti": "100'ünü yıkadı ve çıktı",
+          "ham": null,
+          "kategori": "negatif_es",
+          "sablon": "elle",
+          "uyari": []
+        },
+        {
+          "girdi": "denizde bir saat yüzdük",
+          "hedef": "denizde bir saat yüzdük",
+          "cikti": "denizde 1 saat yüzdük",
+          "ham": null,
+          "kategori": "negatif_es",
+          "sablon": "elle",
+          "uyari": []
+        },
+        {
+          "girdi": "otobüse bin hemen",
+          "hedef": "otobüse bin hemen",
+          "cikti": "otobüse 1.000 hemen",
+          "ham": null,
+          "kategori": "negatif_es",
+          "sablon": "elle",
+          "uyari": []
+        },
+        {
+          "girdi": "ona söyledim ama dinlemedi",
+          "hedef": "ona söyledim ama dinlemedi",
+          "cikti": "10'a söyledim ama dinlemedi",
+          "ham": null,
+          "kategori": "negatif_es",
+          "sablon": "elle",
+          "uyari": []
+        },
+        {
+          "girdi": "onların evi çok uzak",
+          "hedef": "onların evi çok uzak",
+          "cikti": "10'ların evi çok uzak",
+          "ham": null,
+          "kategori": "negatif_es",
+          "sablon": "elle",
+          "uyari": []
+        },
+        {
+          "girdi": "pastanın üçte birini yedim",
+          "hedef": "pastanın üçte birini yedim",
+          "cikti": "pastanın 3'te 1'ini yedim",
+          "ham": null,
+          "kategori": "negatif_es",
+          "sablon": "elle",
+          "uyari": []
+        },
+        {
+          "girdi": "dört gözle bekliyorum",
+          "hedef": "dört gözle bekliyorum",
+          "cikti": "4 gözle bekliyorum",
+          "ham": null,
+          "kategori": "negatif_kalip",
+          "sablon": "elle",
+          "uyari": []
+        },
+        {
+          "girdi": "kırk yılda bir böyle şey olur",
+          "hedef": "kırk yılda bir böyle şey olur",
+          "cikti": "40 yılda 1 böyle şey olur",
+          "ham": null,
+          "kategori": "negatif_kalip",
+          "sablon": "elle",
+          "uyari": []
+        },
+        {
+          "girdi": "ikisi de çok güzel",
+          "hedef": "ikisi de çok güzel",
+          "cikti": "2'si de çok güzel",
+          "ham": null,
+          "kategori": "negatif_kalip",
+          "sablon": "elle",
+          "uyari": []
+        },
+        {
+          "girdi": "birinci oldu ve madalya aldı",
+          "hedef": "birinci oldu ve madalya aldı",
+          "cikti": "1. oldu ve madalya aldı",
+          "ham": null,
+          "kategori": "negatif_kalip",
+          "sablon": "elle",
+          "uyari": []
+        },
+        {
+          "girdi": "ikinci el araba aldım",
+          "hedef": "ikinci el araba aldım",
+          "cikti": "2. el araba aldım",
+          "ham": null,
+          "kategori": "negatif_kalip",
+          "sablon": "elle",
+          "uyari": []
+        },
+        {
+          "girdi": "bir iki gün içinde döneriz",
+          "hedef": "bir iki gün içinde döneriz",
+          "cikti": "1 2 gün içinde döneriz",
+          "ham": null,
+          "kategori": "negatif_kalip",
+          "sablon": "elle",
+          "uyari": []
+        },
+        {
+          "girdi": "bir adam geldi ve bir şey sordu",
+          "hedef": "bir adam geldi ve bir şey sordu",
+          "cikti": "1 adam geldi ve 1 şey sordu",
+          "ham": null,
+          "kategori": "negatif_kalip",
+          "sablon": "elle",
+          "uyari": []
+        },
+        {
+          "girdi": "birlikte gidelim mi",
+          "hedef": "birlikte gidelim mi",
+          "cikti": "1'likte gidelim mi",
+          "ham": null,
+          "kategori": "negatif_kalip",
+          "sablon": "elle",
+          "uyari": []
+        },
+        {
+          "girdi": "yedi düvele meydan okudu",
+          "hedef": "yedi düvele meydan okudu",
+          "cikti": "7 düvele meydan okudu",
+          "ham": null,
+          "kategori": "negatif_kalip",
+          "sablon": "elle",
+          "uyari": []
+        },
+        {
+          "girdi": "iki gün sonra geleceğim",
+          "hedef": "iki gün sonra geleceğim",
+          "cikti": "2 gün sonra geleceğim",
+          "ham": null,
+          "kategori": "negatif_politika",
+          "sablon": "elle",
+          "uyari": []
+        },
+        {
+          "girdi": "Saat on dört otuzda görüşelim mi?",
+          "hedef": "Saat 14.30'da görüşelim mi?",
+          "cikti": "Saat 14 30'da görüşelim mi?",
+          "ham": null,
+          "kategori": "buyuk_harf",
+          "sablon": "elle",
+          "uyari": []
+        },
+        {
+          "girdi": "Akşam yemeğini yedi.",
+          "hedef": "Akşam yemeğini yedi.",
+          "cikti": "Akşam yemeğini 7.",
+          "ham": null,
+          "kategori": "buyuk_harf",
+          "sablon": "elle",
+          "uyari": []
+        },
+        {
+          "girdi": "Yirmi dokuz ekimde bayram var.",
+          "hedef": "29 Ekim'de bayram var.",
+          "cikti": "29 ekimde bayram var.",
+          "ham": null,
+          "kategori": "buyuk_harf",
+          "sablon": "elle",
+          "uyari": []
+        }
+      ],
+      "koruma_geri_alma": 0
+    }
+  ]
+}

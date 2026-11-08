@@ -1,0 +1,5 @@
+data/*.jsonl
+__pycache__/
+models/
+*.pyc
+reports/train-*.log
