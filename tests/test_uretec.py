@@ -1,3 +1,4 @@
+import re
 import sys
 from pathlib import Path
 
@@ -197,4 +198,53 @@ def test_bayt_siniri_ve_negatifler(veri):
 def test_ay_adi_buyuk_harf(veri):
     tarihler = [r for r in veri["train"] if r["kategori"] == "tarih" and "Kasım" in r["hedef"]]
     assert tarihler
-    assert any(r["kategori"] == "negatif_kalip" and "mayıs ayında" in r["hedef"].lower() for r in veri["train"])
+    ay = re.compile(r"\b(ocak|şubat|mart|nisan|mayıs|haziran|temmuz|ağustos|eylül|ekim|kasım|aralık)\w*")
+    sayisiz = [r for r in veri["train"] if r["kategori"] == "negatif_kalip" and ay.search(r["hedef"])]
+    assert sayisiz  # sayısız ay adı: küçük harf, kesme işareti yok
+    assert all("'" not in r["hedef"] and not any(c.isdigit() for c in r["hedef"]) for r in sayisiz)
+
+
+
+@pytest.fixture(scope="module")
+def veri_buyuk():
+    cv = {"train": [], "validation": [], "test": []}
+    return uret.uret_bolumler(12000, 200, 200, 11, "yaziyla", cv)
+
+
+def test_negatif_sablonlar_yer_tutuculu_ve_cok():
+    n_es, n_kalip = len(B.SABLONLAR["negatif_es"]), len(B.SABLONLAR["negatif_kalip"])
+    assert n_es + n_kalip >= 120
+    slotlu = [m for k in ("negatif_es", "negatif_kalip") for _, m in B.SABLONLAR[k] if B.SLOT.search(m)]
+    assert len(slotlu) >= 0.6 * (n_es + n_kalip)
+
+
+def test_olgu_basina_cok_sayida_ayri_cumle(veri_buyuk):
+    neg = [r["girdi"].lower() for r in veri_buyuk["train"] if r["kategori"] in ("negatif_es", "negatif_kalip")]
+    kontroller = [("bin", r"\bbin(in)?\b", 40), ("yüzdük", r"yüzdük", 8), ("yedi", r"\byedi\b", 40),
+                  ("ikinci el", r"ikinci el", 30), ("bir iki", r"bir iki", 30), ("ona", r"\bona\b", 30),
+                  ("üçte bir", r"\b\w+(te|da|de|ta) (bir|iki|üç|dokuz)", 30)]
+    for ad, kalip, en_az in kontroller:
+        farkli = {g for g in neg if re.search(kalip, g)}
+        assert len(farkli) >= en_az, (ad, len(farkli))
+
+
+def test_sayisiz_ay_ve_birim_sozcukleri_negatiflerde(veri_buyuk):
+    neg = " ".join(r["girdi"].lower() for r in veri_buyuk["train"] if r["kategori"] == "negatif_kalip")
+    for w in ("liranın", "kuruşu kuruşuna", "saatlerce", "yüzde kaç", "kasımda", "metreyi", "derecesi"):
+        assert w in neg, w
+
+
+def test_ekli_sayi_son_sozcuk_ve_kurus_dolar_ekleri(veri_buyuk):
+    hedefler = [r["hedef"] for r in veri_buyuk["train"] if not r["kategori"].startswith("negatif")]
+    assert sum(bool(re.search(r"\d kuruş(a|u|la|luk|tan)", h)) for h in hedefler) >= 30
+    assert sum(bool(re.search(r"\d (dolar|avro|euro|sterlin)(a|e|ı|i|la|le|dan|den|lık|lik)", h)) for h in hedefler) >= 50
+    assert sum(bool(re.search(r"\d,\d+'(yı|yi|ı|i|u|ü)", h)) for h in hedefler) >= 60
+
+
+def test_aralikta_bir_yok_ve_asagi_yukari_sozcuk_kalir(veri):
+    for r in veri["train"] + veri["validation"] + veri["test"]:
+        g = r["girdi"].lower()
+        if "aşağı beş yukarı" in g:
+            assert r["girdi"] == r["hedef"], r
+        if r["kategori"] == "aralik":
+            assert not re.search(r"(?<![\d.,])1-\d", r["hedef"]), r  # "bir" içeren aralık sözcük kalır

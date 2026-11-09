@@ -43,7 +43,21 @@ _SAYI_DEGIL = re.compile(r'^(?:on(?:a|u|un|da|dan|lar\w*|unla)|(?:on|yuz|bin|mil
                          r'bir(?:i|in|ini|ine|inde|inden|isi|iyle)|kirk(?:in|ma\w*)?(?:ar|ti|mak)?)$')
 
 
-def sayi_benzeri_mi(sozcuk):
+# "on" sayısının zamir gibi okunabilen çekimleri; yalnız saat/yüzde/ay/sayı bağlamında sayı sayılır.
+_ON_ZAMIR_BICIM = {'ona', 'onu', 'onun', 'onda', 'ondan'}
+_SAYI_SOZ = {'sifir', 'bir', 'iki', 'uc', 'dort', 'bes', 'alti', 'yedi', 'sekiz', 'dokuz', 'on', 'yirmi', 'otuz', 'kirk',
+             'elli', 'altmis', 'yetmis', 'seksen', 'doksan', 'yuz', 'bin', 'milyon', 'milyar', 'trilyon'}
+
+
+def _on_baglami_mi(onceki):
+    """``onceki`` (girdideki bir önceki sözcük) saat/yüzde/ay adı ya da sayı sözcüğü/rakamı mı?"""
+    if onceki is None:
+        return False
+    f = fold(onceki)
+    return f in ('saat', 'yuzde') or f in _AY_ADLARI or f in _SAYI_SOZ or (f.isdigit() and bool(f))
+
+
+def sayi_benzeri_mi(sozcuk, onceki=None):
     """Sözcük (noktalama temizlenerek) bir sayı/para/birim/ay sözcüğü ya da eklenmiş biçimi mi?"""
     f = fold(sozcuk)
     if not f:
@@ -51,6 +65,8 @@ def sayi_benzeri_mi(sozcuk):
     if f == 'saat':
         return False
     if f.isdigit() or f in _KOKLER:
+        return True
+    if f in _ON_ZAMIR_BICIM and _on_baglami_mi(onceki):
         return True
     if _SAYI_DEGIL.match(f):
         return False
@@ -71,6 +87,20 @@ def _cikti_sayi_iceriyor(sozcukler):
     return False
 
 
+def _ekli_ay_tarihi(a, b, i, j, x, y):
+    """``kasımda`` → ``Kasım'da``: çıktı büyük harfli ay adı + kesme + ek olmalı ve hemen öncesinde,
+    girdide sözcük olan sayı çıktıda rakama çevrilmiş olmalı (tarih bağlamı)."""
+    if "'" not in y or y.count("'") != 1 or not y[:1].isupper():
+        return False
+    kok, ek = y.split("'")
+    if not ek or fold(kok) not in _AY_ADLARI or kucult(kok + ek) != kucult(x):
+        return False
+    if i == 0 or j == 0:
+        return False
+    onceki_cikti, onceki_girdi = b[j - 1], a[i - 1]
+    return any(c.isdigit() for c in onceki_cikti) and not any(c.isdigit() for c in onceki_girdi)
+
+
 def koru(girdi, ham):
     """(metin, uyarılar). ``ham`` modelin ürettiği metin; yalnız sayı bölgelerindeki değişiklikler kabul edilir."""
     uyarilar = []
@@ -83,9 +113,12 @@ def koru(girdi, ham):
     sonuc = []
     for etiket, i1, i2, j1, j2 in esleyici.get_opcodes():
         if etiket == 'equal':
-            for x, y in zip(a[i1:i2], b[j1:j2]):
-                # Özgün sözcük korunur; tek istisna: tarihte ay adının büyük harfi.
+            for k, (x, y) in enumerate(zip(a[i1:i2], b[j1:j2])):
+                # Özgün sözcük korunur; tek istisna: tarihte ay adının büyük harfi
+                # (ekliyse "Kasım'da": gün sayısı bu çıktıda rakama çevrilmişse).
                 ay = fold(x) in _AY_ADLARI and x != y and kucult(x) == kucult(y)
+                if not ay and x != y and _ekli_ay_tarihi(a, b, i1 + k, j1 + k, x, y):
+                    ay = True
                 sonuc.append(y if ay else x)
             continue
         eski, yeni = a[i1:i2], b[j1:j2]
@@ -96,7 +129,7 @@ def koru(girdi, ham):
             uyarilar.append(f'silinen "{" ".join(eski)}" geri alındı')
             sonuc.extend(eski)
             continue
-        girdi_ok = all(sayi_benzeri_mi(w) for w in eski)
+        girdi_ok = all(sayi_benzeri_mi(w, a[i1 + k - 1] if i1 + k > 0 else None) for k, w in enumerate(eski))
         cikti_ok = _cikti_sayi_iceriyor(yeni)
         if girdi_ok and cikti_ok:
             sonuc.extend(yeni)

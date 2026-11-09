@@ -1,6 +1,6 @@
 """Megazeka-Sayı sentetik veri üreteci.
 
-Kullanım: python training/uret.py --train 60000 --validation 2000 --test 2000 --seed 1234 --out data/
+Kullanım: python training/uret.py --train 70000 --validation 2000 --test 2000 --seed 1234 --out data/
 Önce yazılı biçim (hedef) kurulur, sonra deterministik olarak sözlü biçime (girdi) çevrilir.
 """
 from __future__ import annotations
@@ -24,11 +24,11 @@ from megazeka_sayi.turkce import lower_tr  # noqa: E402
 CV_YOLU = Path(r"C:\Users\Superuser\Desktop\Projeler\proje\megazeka\data\processed\train.jsonl.gz")
 BAYT_SINIRI = 180
 
-# Kategori ağırlıkları (yüzde); pozitif ~62, negatif ~38.
+# Kategori ağırlıkları (yüzde); pozitif ~60, negatif ~40 (v1.1: ek çeşitliliği ve yer tutuculu negatifler için yeniden dengelendi).
 AGIRLIKLAR = {
-    "para": 7, "yuzde": 5, "olcu": 8, "saat": 6.5, "tarih": 6, "sira": 3.5, "telefon": 3, "kod": 2.5,
-    "skor": 2.5, "aralik": 3, "ondalik": 3, "kardinal": 5, "buyuk": 2.5, "eksi": 1.5, "karisik": 3,
-    "negatif_es": 10, "negatif_kalip": 11, "negatif_yazili": 8, "negatif_dogal": 9,
+    "para": 8, "yuzde": 5.5, "olcu": 8, "saat": 6.5, "tarih": 6, "sira": 3.5, "telefon": 3, "kod": 2.5,
+    "skor": 2.5, "aralik": 3, "ondalik": 8, "kardinal": 11, "buyuk": 2.5, "eksi": 1.5, "karisik": 3,
+    "negatif_es": 14.5, "negatif_kalip": 17.5, "negatif_yazili": 8, "negatif_dogal": 9,
 }
 YAZILI_KAYNAK = B.POZITIF_KATEGORILER
 
@@ -169,7 +169,7 @@ def uret_bolumler(train, validation, test, seed, politika, cv):
 
 def main(argv=None):
     ap = argparse.ArgumentParser()
-    ap.add_argument("--train", type=int, default=60000)
+    ap.add_argument("--train", type=int, default=70000)
     ap.add_argument("--validation", type=int, default=2000)
     ap.add_argument("--test", type=int, default=2000)
     ap.add_argument("--seed", type=int, default=1234)

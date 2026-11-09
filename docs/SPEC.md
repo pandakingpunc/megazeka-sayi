@@ -74,6 +74,8 @@ Ek türleri: bulunma `-DA`, ayrılma `-DAn`, yönelme `-(y)A`, belirtme `-(y)I`,
 Ünsüz benzeşmesi (fıstıkçı şahap: f s t k ç ş h p sonrası `D`→`t`): `üçte`, `beşte`, `kırkta`, `altmışta`.
 Ünlü uyumu son ünlüye göre (2'li a/e, 4'lü ı/i/u/ü).
 Sıra sayısına ek verilmez (veri üretilmez).
+Üretimde ekli sayılar son sözcüğe göre dengelenir (`altı/dokuz/otuz/kırk/on/sıfır` gibi kalın ünlülüler dahil; her son sözcük × ek türü
+bileşimi ≥ ~15 kez): `38,6'yı`, `26'yı`, `36,80'i`, `0,0'ı`.
 
 ## 3. Değişmemesi gerekenler (negatif örnekler, eğitimin %35–40'ı)
 
@@ -84,6 +86,17 @@ Sıra sayısına ek verilmez (veri üretilmez).
   `birkaç`, `bir sürü`, `birbirine`, `biri`, `ikisi de`, `ikimiz`, `üçümüz`, `onlarca`, `yüzlerce`,
   `binlerce`, `milyonlarca`, `kırk yılda bir`, `iki gözüm`, `yedi düvel`, `üçgen`, `beşik`, `sekizgen`,
   `birinci oldu`, `ikinci el` (deyim: `2. el` değil).
+- **Kesirler sözcük kalır:** `Nde M` biçimleri (`üçte bir`, `dörtte üç`, `beşte ikisi`, `onda dokuzu`, `pastanın üçte birini`),
+  `yarısı`, `çeyreği`, `yarım kilo`, `ikide bir`. (`yüzde X` yüzdedir ve çevrilir.) İçinde `bir` geçen yaklaşık aralık
+  (`bir iki gün`, `bir kaç`) ve `üç aşağı beş yukarı`, `beş para etmez`, `beş parasız`, `on parmağında on marifet` gibi
+  deyimler de sözcük kalır; `birinci sınıf hizmet` (nitelik) `1. sınıf` olmaz.
+- **Sayısız sözcükler (ek yanlılığını önlemek için):** sayı eşlik etmeyen ay adı, para/birim sözcüğü ve ekleri değişmez
+  ve **kesme işareti almaz**: `kasımda tatile çıkacağız`, `ocaktan beri`, `liranın değeri`, `kuruşu kuruşuna`, `dolara güven`,
+  `kilo vermek`, `metreyi`, `litresi kaç para`, `derecesi yüksek`, `saatlerce`, `saatin kaç olduğu`, `yüzde kaç`.
+  Sayı eşlik ettiğinde sözcük olarak kalan birim yalın ek alır: `elli kuruşa` → `50 kuruşa`, `yüz dolara` → `100 dolara`.
+- Negatif şablonlar yer tutuculu taşıyıcılardır (özne, nesne, yer, zaman, kişi/kip çekimi); her olgu birden çok taşıyıcı
+  yapıda görünür, böylece model cümleyi değil kalıbı öğrenir. `saat ona kadar` → `saat 10'a kadar` gibi bağlamlı
+  `on-` biçimleri çıkarım korumasında (`koru`) saat/yüzde/ay/sayı bağlamında izinlidir.
 - Zaten yazılı biçimde gelen sayılar (girdi = hedef): `1.250,50 TL`, `%12,5`, `saat 14.30'da`
   (ASR bazen rakam verir; model dokunmamalı — idempotentlik).
 - Sayı içermeyen gerçek Türkçe cümleler (Megazeka'nın Common Voice CC0 hedeflerinden, sayı sözcüğü

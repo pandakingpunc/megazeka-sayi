@@ -129,3 +129,34 @@ def test_homograf_sozcukler_sayi_benzeri_degil():
         assert not sayi_benzeri_mi(w), w
     for w in ['dörde', 'otuzda', 'liradan', 'kilogramdan', 'doksanlarda', 'dördüncü', 'buçuk', 'yüzde']:
         assert sayi_benzeri_mi(w), w
+
+
+# ---- koruma: on- zamir biçimleri ve ekli ay adı (v1.1) ---------------------------------------------------
+def test_saat_ona_kadar_baglamda_korunur():
+    assert koru('saat ona kadar bekle', "saat 10'a kadar bekle")[0] == "saat 10'a kadar bekle"
+    assert koru('yüzde ona kadar düştü', "%10'a kadar düştü")[0] == "%10'a kadar düştü"
+    # önceki sözcük sayı sözcüğü: "yirmi ona" gibi bölgede de zamir sayılmaz
+    assert koru('saat yirmi ona kadar', "saat 20 10'a kadar")[0] == "saat 20 10'a kadar"
+
+
+def test_ona_baglamsiz_geri_alinir():
+    metin, uyari = koru('ona söyledim', "10'a söyledim")
+    assert metin == 'ona söyledim' and uyari
+    for g, h in [('onu gördüm', "10'u gördüm"), ('onun evi', "10'un evi"), ('ondan haber aldım', "10'dan haber aldım"),
+                 ('onda bir şey var', "10'da bir şey var")]:
+        assert koru(g, h)[0] == g, g
+    assert not sayi_benzeri_mi('ona') and sayi_benzeri_mi('ona', 'saat') and not sayi_benzeri_mi('ona', 'ben')
+
+
+def test_ekli_ay_adi_tarihte_buyuk_harfle_kabul_edilir():
+    assert koru('sekiz kasımda toplanalım', "8 Kasım'da toplanalım")[0] == "8 Kasım'da toplanalım"
+    assert koru('yirmi dokuz ekimde', "29 Ekim'de")[0] == "29 Ekim'de"
+    assert koru('toplantı beş ocaktan sonra', "toplantı 5 Ocak'tan sonra")[0] == "toplantı 5 Ocak'tan sonra"
+
+
+def test_sayisiz_ekli_ay_adi_degismez():
+    # önünde çevrilen bir sayı yoksa ay adı olduğu gibi kalır
+    g = 'kasımda tatile çıkacağız'
+    assert koru(g, "Kasım'da tatile çıkacağız")[0] == g
+    g = 'bu yıl ekimde döneriz'
+    assert koru(g, "bu yıl Ekim'de döneriz")[0] == g

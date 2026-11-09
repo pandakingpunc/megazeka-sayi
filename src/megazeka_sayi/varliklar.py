@@ -90,6 +90,44 @@ def _kanonik_son(tam, kesir):
     return _num_kelimeleri(tam, kesir)[-1]
 
 
+# ---- Ekli sayılarda son sözcük dengesi (ünlü uyumu çeşitliliği) -----------------------------------------
+# Her (son sözcük x ek türü) bileşimi eşit sıklıkta görünsün diye örnekleyici en az kullanılan son sözcüğü seçer.
+_SON_TAM = ["bir", "iki", "üç", "dört", "beş", "altı", "yedi", "sekiz", "dokuz", "on", "yirmi", "otuz", "kırk", "elli",
+            "altmış", "yetmiş", "seksen", "doksan", "yüz", "bin"]
+_SON_KESIR = {"sıfır": "0", "bir": "1", "iki": "2", "üç": "3", "dört": "4", "beş": "5", "altı": "6", "yedi": "7",
+              "sekiz": "8", "dokuz": "9", "on": "10", "yirmi": "20", "otuz": "30", "kırk": "40", "elli": "50",
+              "altmış": "60", "yetmiş": "70", "seksen": "80", "doksan": "90"}
+_RAKAM_SOZ = {"bir": 1, "iki": 2, "üç": 3, "dört": 4, "beş": 5, "altı": 6, "yedi": 7, "sekiz": 8, "dokuz": 9}
+_ONLAR_SOZ = {"on": 10, "yirmi": 20, "otuz": 30, "kırk": 40, "elli": 50, "altmış": 60, "yetmiş": 70, "seksen": 80,
+              "doksan": 90}
+
+
+def _dengeli_son(rng, adaylar, ek, grup):
+    """(grup, ek) başına sayaçla en az kullanılan adayı seçer; eşitlikte rastgele."""
+    sayac = rng.__dict__.setdefault("_ekli_sayac", {})
+    w = min(adaylar, key=lambda a: (sayac.get((grup, ek, a), 0), rng.random()))
+    sayac[(grup, ek, w)] = sayac.get((grup, ek, w), 0) + 1
+    return w
+
+
+def _tam_sayi_son(rng, son, azami=None):
+    if son in _RAKAM_SOZ:
+        d = _RAKAM_SOZ[son]
+        r = rng.random()
+        n = 10 * rng.randint(1, 9) + d if r < 0.75 else 100 * rng.randint(1, 9) + 10 * rng.randint(0, 9) + d
+        if azami and n > azami:
+            n = 10 * rng.randint(1, azami // 10 - 1) + d
+        return n
+    if son in _ONLAR_SOZ:
+        t = _ONLAR_SOZ[son]
+        if azami or rng.random() < 0.6:
+            return t
+        return 100 * rng.randint(1, 9) + t
+    if son == "yüz":
+        return 100 if azami else rng.choice([100, 200, 300, 400, 500, 600, 700, 800, 900])
+    return rng.choice([1000, 2000, 3000, 4000, 5000, 6000, 8000, 10000, 20000, 25000, 50000])  # bin
+
+
 # ======================= PARA =======================
 
 def kur_para(lira=None, kurus=None, birim="TL", ek=None, ad="lira", virgullu=False):
@@ -173,6 +211,9 @@ _YUZDE_INT = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 15, 18, 20, 25, 30, 35, 40, 45,
 
 
 def ornekle_yuzde(rng, alt=None, ek=None, politika="yaziyla", buyuk_harf=False):
+    if alt == "ekli":
+        son = _dengeli_son(rng, _SON_TAM[:-1], ek, "yuzde")
+        return kur_yuzde(_tam_sayi_son(rng, son, azami=100), ek=ek)
     if rng.random() < 0.68:
         tam = rng.choice(_YUZDE_INT) if rng.random() < 0.75 else rng.randint(1, 100)
         if ek and tam == 1:
@@ -524,6 +565,14 @@ def kur_ondalik(tam, kesir, bucuk=False, rakam_rakam=False, ek=None):
 
 
 def ornekle_ondalik(rng, alt=None, ek=None, politika="yaziyla", buyuk_harf=False):
+    if alt == "ekli":
+        son = _dengeli_son(rng, list(_SON_KESIR), ek, "ondalik")
+        kesir = _SON_KESIR[son]
+        tam = rng.randint(1, 45) if rng.random() < 0.8 else rng.choice([0, 100, 120, 250])
+        if kesir == "0":
+            tam = rng.randint(1, 45)
+        bucuk = kesir == "5" and tam > 0 and rng.random() < 0.4
+        return kur_ondalik(tam, kesir, bucuk, False, ek)
     r = rng.random()
     if alt == "buyuk" or r < 0.04:
         tam = rng.choice([12, 45, 120, 250, 1250, 3400, 15000, 999])
@@ -552,6 +601,9 @@ _ORTA_YUV = [10, 12, 15, 20, 25, 30, 40, 50, 60, 70, 80, 90]
 
 
 def ornekle_kardinal(rng, alt=None, ek=None, politika="yaziyla", buyuk_harf=False):
+    if alt == "ekli":
+        son = _dengeli_son(rng, _SON_TAM, ek, "kardinal")
+        return kur_kardinal(_tam_sayi_son(rng, son), politika, ek)
     alt = alt or rng.choices(["kucuk", "orta", "yuz", "bin"], [20, 40, 22, 18])[0]
     if alt == "yas":
         n = rng.choices(range(2, 91), [3] * 8 + [1] * 81)[0] if rng.random() < 0.25 else rng.randint(10, 90)

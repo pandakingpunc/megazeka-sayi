@@ -35,6 +35,70 @@ FILLERS = {
     "marka": ["iPhone", "Galaxy", "PlayStation", "Windows", "Pixel", "Xbox"],
 }
 
+# Negatif ve ekli-sayı şablonları için ek dolgu listeleri (yer tutucu çeşitliliği)
+FILLERS.update({
+    "tasit_dat": ["otobüse", "vapura", "trene", "taksiye", "metroya", "uçağa", "minibüse", "tramvaya", "feribota",
+                  "dolmuşa", "servise", "teleferiğe"],
+    "binek_dat": ["ata", "bisiklete", "motosiklete", "deveye", "katıra", "tekneye", "eşeğe"],
+    "yiyecek": ["çorba", "pilav", "makarna", "börek", "mantı", "salata", "kebap", "köfte", "tost", "simit", "dondurma",
+                "kek", "menemen", "balık"],
+    "yiyecek_acc": ["çorbayı", "pilavı", "makarnayı", "böreği", "mantıyı", "salatayı", "kebabı", "köfteyi", "tostu",
+                    "simidi", "dondurmayı", "keki", "menemeni", "balığı", "tatlıyı", "pastayı", "karpuzu"],
+    "yiyecek_gen": ["pastanın", "pizzanın", "karpuzun", "kavunun", "ekmeğin", "tatlının", "böreğin", "çikolatanın",
+                    "kekin", "baklavanın"],
+    "tabakli": ["pilav", "makarna", "mantı", "çorba", "salata", "börek", "meze"],
+    "dilimli": ["pizza", "pasta", "karpuz", "kavun", "ekmek", "kek", "tart"],
+    "zaman_gecmis": ["dün akşam", "dün gece", "geçen hafta", "bu sabah", "az önce", "geçen yaz", "pazar günü",
+                     "bayramda", "dün", "öğle arasında", "cuma akşamı", "tatilde"],
+    "zaman_gelecek": ["yarın", "haftaya", "önümüzdeki hafta", "bu akşam", "pazartesi günü", "yaz gelince",
+                      "bayramdan sonra", "cumartesi günü"],
+    "su_yeri": ["denizde", "havuzda", "gölde", "nehirde", "koyda", "kıyıda", "açık denizde", "sahilde",
+                "dalgalı denizde"],
+    "alt_gen": ["masanın", "yatağın", "koltuğun", "sandalyenin", "halının", "dolabın", "köprünün", "çatının",
+                "kutunun", "tezgâhın", "arabanın", "minderin", "merdivenin"],
+    "agac_gen": ["çınarın", "kavağın", "söğüdün", "ceviz ağacının", "dut ağacının", "çam ağacının"],
+    "kucuk_nesne": ["kalem", "anahtar", "çorap", "mektup", "oyuncak", "gözlük", "küpe", "defter"],
+    "kucuk_acc": ["kalemi", "anahtarı", "çorabı", "mektubu", "oyuncağı", "gözlüğü", "küpeyi", "defteri"],
+    "yer_loc": ["bahçede", "kapıda", "markette", "durakta", "okulda", "parkta", "sahilde", "kafede", "istasyonda",
+                "pazarda", "merdivende"],
+    "sey_acc": ["kitabı", "anahtarı", "mektubu", "çiçeği", "paketi", "hediyeyi", "haberi", "çantayı"],
+    "iyelikli": ["evi", "arabası", "sesi", "bahçesi", "fikri", "kitabı", "telefonu", "odası"],
+    "ozellik": ["çok güzel bir ses", "büyük bir sabır", "ince bir zekâ", "ilginç bir yetenek", "tuhaf bir sakinlik",
+                "eşsiz bir hafıza"],
+    "mevsim_loc": ["baharda", "ilkbaharda", "yaz başında", "yaz gelmeden", "sıcaklar başlamadan"],
+    "hayvan_acc": ["koyunları", "kuzuları", "davarları", "tiftik keçilerini"],
+    "ikinci_el_esya": ["araba", "telefon", "bisiklet", "kamera", "bilgisayar", "koltuk", "motosiklet", "buzdolabı",
+                       "tablet", "oyun konsolu", "fotoğraf makinesi", "kitap", "mont", "halı"],
+    "mekan": ["otel", "restoran", "kafe", "berber", "tamirci", "lokanta", "pastane"],
+    "malzeme": ["kumaş", "deri", "ahşap", "mermer", "boya", "yün"],
+    "sure_birim": ["gün", "saat", "hafta", "dakika", "ay"],
+    "beklenen": ["tatili", "bayramı", "sonucu", "mektubu", "haberi", "baharı", "maçı", "yazın gelmesini",
+                 "bebeğin doğumunu"],
+    "olay": ["bayram", "tatil", "haber", "misafir", "bahar", "mektup", "gün"],
+    "kesir_nom": ["üçte biri", "dörtte biri", "dörtte üçü", "beşte ikisi", "beşte üçü", "beşte biri", "altıda biri",
+                  "altıda beşi", "yedide ikisi", "sekizde üçü", "dokuzda biri", "onda biri", "onda dokuzu", "onda üçü",
+                  "üçte ikisi"],
+    "kesir_acc": ["üçte birini", "dörtte birini", "dörtte üçünü", "beşte ikisini", "beşte üçünü", "beşte birini",
+                  "altıda birini", "altıda beşini", "yedide ikisini", "sekizde üçünü", "dokuzda birini", "onda birini",
+                  "onda dokuzunu", "onda üçünü", "üçte ikisini"],
+    "kesir_bare": ["üçte bir", "dörtte bir", "dörtte üç", "beşte iki", "beşte üç", "beşte bir", "altıda bir",
+                   "altıda beş", "yedide iki", "sekizde üç", "dokuzda bir", "onda bir", "onda dokuz", "onda üç",
+                   "üçte iki"],
+    "kesir_dat": ["üçte birine", "dörtte üçüne", "beşte ikisine", "onda birine", "altıda birine"],
+    "ay_ek": ["ocakta", "şubatta", "martta", "nisanda", "mayısta", "haziranda", "temmuzda", "ağustosta", "eylülde",
+              "ekimde", "kasımda", "aralıkta"],
+    "ay_abl": ["ocaktan", "şubattan", "marttan", "nisandan", "mayıstan", "hazirandan", "temmuzdan", "ağustostan",
+               "eylülden", "ekimden", "kasımdan", "aralıktan"],
+    "ay_dat": ["ocağa", "şubata", "marta", "nisana", "mayısa", "hazirana", "temmuza", "ağustosa", "eylüle", "ekime",
+               "kasıma", "aralığa"],
+    "ay_gen": ["ocağın", "şubatın", "martın", "nisanın", "mayısın", "haziranın", "temmuzun", "ağustosun", "eylülün",
+               "ekimin", "kasımın", "aralığın"],
+    "ay_bare": ["ocak", "şubat", "mart", "nisan", "mayıs", "haziran", "temmuz", "ağustos", "eylül", "ekim", "kasım",
+                "aralık"],
+    "urun_gen": ["elmanın", "domatesin", "peynirin", "zeytinin", "çayın", "kahvenin", "şekerin", "unun", "balın",
+                 "tavuğun", "kıymanın"],
+})
+
 # ----------------------------------------------------------------------------
 # Pozitif şablonlar
 # ----------------------------------------------------------------------------
@@ -516,128 +580,454 @@ Sabah {saat.sabah:bulunma} çıktım, hava {olcu.sicaklik}
 {isim} {kardinal.yas} yaşında ve boyu {olcu.boy}
 """
 
+# ---- Ek çeşitliliği: kuruş / döviz / derece (sözcük kalan birim + yalın ek) ----
+_RAW["para"] += """
+Bu {urun} pazarda {para.kurus:yonelme} satılıyordu
+{isim} yerde {para.kurus:belirtme} buldu
+Aradaki {para.kurus:ilgi} farkı için pazarlık yaptık
+{para.kurus:lik} bir şeker aldım
+Fiyat {para.kurus:ayrilma} başlıyor
+Çocuk {para.kurus:vasita} yetindi
+Simidi {para.kurus:yonelme} aldım
+{isim} bozukluğu {para.kurus:yonelme} tamamladı
+Bu {urun} kasada {para.kurus:bulunma} duruyordu
+Eskiden bir poşet {para.kurus:yonelme} satılırdı
+Çay ocağında {para.kurus:ilgi} zam yapıldı
+Bu {esya} {para.doviz:yonelme} satılıyor
+{isim} bu {esya} için {para.doviz:ayrilma} fazla ödedi
+Tatil bütçesi {para.doviz:ilgi} üzerine çıktı
+{isim} {para.doviz:belirtme} cebine koydu
+{para.doviz:lik} bir hediye aldım
+Mağazada {para.doviz:vasita} alışveriş yaptım
+Biletleri {para.doviz:yonelme} sattılar
+Gece başına {para.doviz:yonelme} kalıyoruz
+Kuru {para.doviz:ilgi} altına düşünce satış yaptık
+Pazarlıkla fiyatı {para.doviz:yonelme} indirdiler
+Cüzdanda {para.doviz:bulunma} kalmıştı
+Yolculuk masrafı {para.doviz:ayrilma} başlıyor
+Bu odayı {para.doviz:yonelme} kiraladık
+{isim} bahşişi {para.doviz:belirtme} aştı
+Menüdeki en pahalı yemek {para.doviz:yonelme} geliyor
+{isim} borcunu {para.doviz:vasita} kapattı
+"""
+
+_RAW["olcu"] += """
+Sıcaklık {olcu.sicaklik:yonelme} çıktı
+Fırını {olcu.sicaklik:yonelme} getirin
+Termometre {olcu.sicaklik:belirtme} gösteriyor
+Hava {olcu.sicaklik:ilgi} altına düştü
+Su {olcu.sicaklik:vasita} kaynadı
+"""
+
+# ---- Ek çeşitliliği: son sözcüğe göre dengelenmiş (altı/dokuz/otuz/kırk/on/sıfır ... x ek türü) ----
+_RAW["kardinal"] += """
+Hesap makinesine {kardinal.ekli:belirtme} yazdım
+Kuponda {kardinal.ekli:belirtme} işaretledim
+Ekranda {kardinal.ekli:belirtme} gördüm ve şaşırdım
+Tabelada {kardinal.ekli:belirtme} okudum
+Şifreye {kardinal.ekli:belirtme} ekle
+{kardinal.ekli:ilgi} karesini hesapladım
+Listedeki {kardinal.ekli:ilgi} yerine başka bir sayı yaz
+{kardinal.ekli:ilgi} katlarını tabloya ekleyin
+{kardinal.ekli:ilgi} bir fazlasını bulmamız gerekiyor
+Soruda geçen {kardinal.ekli:ilgi} karekökünü bul
+Gelenlerin {kardinal.ekli:iyelik3} çocuktu
+Oyların {kardinal.ekli:iyelik3} bana geldi
+Sınıftakilerin {kardinal.ekli:iyelik3} devamsızlık yapmıştı
+Ankete katılanların {kardinal.ekli:iyelik3} kararsızdı
+Misafirlerin {kardinal.ekli:iyelik3} erken ayrıldı
+Toplamı {kardinal.ekli:vasita} çarpın
+Sonucu {kardinal.ekli:vasita} bölün
+Bu sayıyı {kardinal.ekli:vasita} toplayınca sonuç değişmiyor
+Cevabı {kardinal.ekli:vasita} karşılaştırdım
+Hesabı {kardinal.ekli:vasita} bitirdik
+{kardinal.ekli:yonelme} kadar say
+Sıra sonunda {kardinal.ekli:yonelme} geldi
+Sayacı {kardinal.ekli:yonelme} getirdik
+Sonuç {kardinal.ekli:yonelme} yuvarlandı
+Puan tablosu {kardinal.ekli:yonelme} ulaştı
+Sayaç şu an {kardinal.ekli:bulunma} duruyor
+Sıra {kardinal.ekli:bulunma} kaldı
+Takip numarası {kardinal.ekli:bulunma} bitiyor
+Hesaplama {kardinal.ekli:bulunma} tıkandı
+Başvurular {kardinal.ekli:bulunma} kapandı
+Sayımı {kardinal.ekli:ayrilma} başlattık
+Liste {kardinal.ekli:ayrilma} sonra devam ediyor
+{kardinal.ekli:ayrilma} geriye doğru saydık
+Numaralandırma {kardinal.ekli:ayrilma} başlıyor
+Tablo {kardinal.ekli:ayrilma} itibaren tekrar ediyor
+Numara {kardinal.ekli:bulunma} sıfırlanıyor
+Kayıtlar {kardinal.ekli:bulunma} sona erdi
+Kontenjan {kardinal.ekli:bulunma} doldu
+Fiyat listesi {kardinal.ekli:ayrilma} sonra değişiyor
+Bilet satışı {kardinal.ekli:ayrilma} başlayacak
+Puanlar {kardinal.ekli:ayrilma} geriye sayılıyor
+Rakam {kardinal.ekli:yonelme} ulaşınca alarm çalıyor
+Sayfa numarası {kardinal.ekli:yonelme} atladı
+Toplamı {kardinal.ekli:yonelme} tamamla
+Katılımcı sayısını {kardinal.ekli:ilgi} üstüne taşıyalım
+Seçilen sayının {kardinal.ekli:ilgi} tersi lazım
+"""
+
+_RAW["ondalik"] += """
+Ateşi ölçtüm, {ondalik.ekli:belirtme} gördüm
+Ekrana {ondalik.ekli:belirtme} yazdım
+Hesap makinesinde {ondalik.ekli:belirtme} buldum
+Notu {ondalik.ekli:belirtme} gören hoca şaşırdı
+Terazi {ondalik.ekli:belirtme} gösterince fark ettim
+{ondalik.ekli:ilgi} karesini aldım
+{ondalik.ekli:ilgi} yuvarlanmış hâli lazım
+Tabloda {ondalik.ekli:ilgi} altında kalan değerler eleniyor
+Ölçümde {ondalik.ekli:ilgi} üstüne çıkmayın
+Sınırı {ondalik.ekli:ilgi} bir tık altına çektik
+Ortalamanın {ondalik.ekli:iyelik3} ders notundan geliyor
+Sonucun {ondalik.ekli:iyelik3} hata payı
+Puanın {ondalik.ekli:iyelik3} yazılıdan geldi
+Değerin {ondalik.ekli:iyelik3} sabit tutuldu
+Ölçümlerin {ondalik.ekli:iyelik3} tabloya girmedi
+Sonucu {ondalik.ekli:vasita} çarpın
+Bu değeri {ondalik.ekli:vasita} toplayın
+Ölçümü {ondalik.ekli:vasita} karşılaştırdık
+Notlar {ondalik.ekli:vasita} eşit çıktı
+Katsayıyı {ondalik.ekli:vasita} hesapladık
+Ortalamam {ondalik.ekli:yonelme} yükseldi
+Değer {ondalik.ekli:yonelme} yuvarlandı
+Ateş {ondalik.ekli:yonelme} çıktı
+Not {ondalik.ekli:yonelme} düştü
+Faiz {ondalik.ekli:yonelme} sabitlendi
+Ateş {ondalik.ekli:bulunma} seyrediyor
+Cihaz {ondalik.ekli:bulunma} kalibre edildi
+Değer {ondalik.ekli:bulunma} sabitlendi
+Ortalama {ondalik.ekli:bulunma} kaldı
+Ölçüm {ondalik.ekli:bulunma} durdu
+Ortalamam {ondalik.ekli:ayrilma} aşağı düşmedi
+Değerler {ondalik.ekli:ayrilma} başlıyor
+Sonuç {ondalik.ekli:ayrilma} fazla çıktı
+Ölçüm {ondalik.ekli:ayrilma} itibaren geçerli
+Ateşim {ondalik.ekli:ayrilma} yukarı çıkmadı
+"""
+
+_RAW["yuzde"] += """
+Zam oranı {yuzde.ekli:belirtme} geçmedi
+Partinin oyu {yuzde.ekli:belirtme} buldu
+{yuzde.ekli:ilgi} üzerindeki faiz oranları yüksek sayılır
+Zam oranı {yuzde.ekli:ilgi} altında kaldı
+Mevcudun {yuzde.ekli:iyelik3} sınavı geçti
+Bütçenin {yuzde.ekli:iyelik3} eğitime gidiyor
+Kâr marjı {yuzde.ekli:vasita} sınırlı kaldı
+Hedefi {yuzde.ekli:vasita} tutturduk
+Oran {yuzde.ekli:yonelme} düştü
+Katılım {yuzde.ekli:yonelme} ulaştı
+Şarj {yuzde.ekli:bulunma} kaldı
+Stok {yuzde.ekli:bulunma} bitti
+Şarj {yuzde.ekli:ayrilma} aşağı düşünce uyardı
+Bu oran {yuzde.ekli:ayrilma} fazla olmamalı
+"""
+
+
 # ----------------------------------------------------------------------------
-# Negatif şablonlar
+# Negatif şablonlar (yer tutuculu; her olgu birden çok taşıyıcı yapıda ve kişi/zaman/kip çeşitliliğiyle)
 # ----------------------------------------------------------------------------
 _RAW["negatif_es"] = """
-{isim} akşam yemeğini erkenden yedi
-Kedi bütün mamasını bir çırpıda yedi
-Çocuk elmayı yedi, çekirdeğini attı
-Dün akşam ne yedin
-Köpek bahçede bulduğu kemiği yedi
-Sabah kahvaltıda peynir ve zeytin yedik
-Bütün tatlıyı tek başına yedi
-Bu yemeği yedim ve çok beğendim
-Masanın altında bir kalem buldum
-Ayakkabılarını yatağın altına koydu
-Köprünün altından küçük bir dere geçiyor
-Ağacın altı yazın çok serin olur
-Halının altına bir not bırakmış
-Kediniz sandalyenin altında uyuyor
-Bu işin altında başka bir şey olmalı
-Altı çizili kelimeleri tekrar oku
-Kutunun altını kontrol edin
-Yağmurdan korunmak için çatının altına girdik
-{isim} yüzünü yıkayıp çıktı
-Yüzü gülüyordu ama gözleri yorgundu
-Yazın denizde saatlerce yüzerim
-Havuzda yüzmeyi yeni öğrendi
-Yüzme kursuna haftada bir gün gidiyor
-{isim} ile yüz yüze konuşmak istiyorum
-Sabahları yüzümü soğuk suyla yıkarım
-Yüzüğünü masanın üstünde unutmuş
-Otobüse bin, ben seni bekleyeceğim
-Son trene zor yetişip bindik
-{isim} vapura binip karşıya geçti
-Çocuk ata binmeyi çok seviyor
-Bisiklete binerek okula gidiyorum
-Taksiye binmeden önce fiyatı sor
-Binanın girişinde bir kedi vardı
-Ona bir şey söylemedim
-Onu dün sokakta gördüm
-Onun evine ilk kez gidiyorum
-Onda bu yetenek var
-Ondan hiç haber alamadık
-Onlar yarın akşam gelecekmiş
-Onlarla uzun uzun konuştum
-Onları kapıda karşıladım
-Onca yoldan geldik, bir çay bile yok
-Çoban koyunları baharda kırkar
-Berber çocuğun saçını kırktı
-{isim} soframızın altına bakıp yüzünü buruşturdu
-Havuzdan çıkınca yüzüm üşüdü
-Annem bana ve ona aynı hediyeyi aldı
-Ona sorarsan yarın gelir
+Hadi {tasit_dat} bin, geç kalıyoruz
+{tasit_dat} bin hemen, {isim} seni bekliyor
+{isim}, {tasit_dat} bin de gel
+{yer_loc} bekleme, {tasit_dat} bin de buraya gel
+Çocuklar, {tasit_dat} binin lütfen
+{zaman_gecmis} {tasit_dat} bindik
+{isim} {zaman_gecmis} {tasit_dat} bindi ve yola çıktı
+{tasit_dat} binerek {sehir} şehrine gittik
+{tasit_dat} binip eve döndüm
+Yarın {tasit_dat} bineceğim
+{isim} her sabah {tasit_dat} biniyor
+Biz {tasit_dat} binmek istemiyoruz
+{tasit_dat} binmeden önce bileti kontrol et
+{zaman_gecmis} {tasit_dat} bindim, hemen uyudum
+Onlar {tasit_dat} binmeye hazırlanıyordu
+{isim} {tasit_dat} binmeyi hiç sevmez
+Bu akşam {tasit_dat} binelim mi
+Hepimiz {tasit_dat} binsek yer kalmaz
+Sakın {tasit_dat} binme, bozuk
+Sen {tasit_dat} bin, ben arkadan gelirim
+Yolcular {tasit_dat} biniyor, kapılar kapanacak
+Haydi {binek_dat} bin de gösterişini yap
+{isim} {binek_dat} binmeyi küçük yaşta öğrendi
+Çocuklar {zaman_gecmis} {binek_dat} bindi
+Ben {binek_dat} binerek köye gittim
+{zaman_gecmis} {binek_dat} binemedim, korktum
+{zaman_gecmis} {su_yeri} bir saat yüzdük
+{isim} {su_yeri} uzun süre yüzdü
+Biz {su_yeri} saatlerce yüzdük
+Ben {su_yeri} biraz yüzdüm
+Çocuklar {su_yeri} sabaha kadar yüzdüler
+{isim} her sabah {su_yeri} yüzüyor
+Yarın {su_yeri} yüzmeye gidiyoruz
+{isim} yüzmeyi çok iyi biliyor
+Yüzmek isteyenler kıyıya gelsin
+Hadi yüz biraz, su çok güzel
+{su_yeri} yüzen çocuklar çok eğleniyordu
+{isim} aynadaki yüzüne baktı
+Sabahları yüzümü yıkamayı unutmam
+{isim} utancından yüzünü kapattı
+Yüzüne bakınca hemen anladım
+Bu yüzden toplantıya gidemedik
+{isim} yüzünden hepimiz geç kaldık
+Yüzü kızaran {isim} hemen odadan çıktı
+{isim} yüzüğünü {yer_loc} unutmuş
+{isim} bana yüz çevirdi
+Yüz yüze konuşmak daha iyi
+{isim} {zaman_gecmis} {yiyecek_acc} yedi
+Biz {zaman_gecmis} {yiyecek} yedik
+Ben {yiyecek_acc} yedim ama hâlâ acıkmıştım
+Çocuklar {zaman_gecmis} {yiyecek} yediler
+Sen {zaman_gecmis} ne yedin
+Siz {yiyecek_acc} yediniz mi
+{isim} yemeğini yedi ve masadan kalktı
+{isim} {tabakli} yedi, sonra çay içti
+Az önce {sehir} lokantasında {yiyecek} yedik
+{isim} iki tabak {tabakli} yedi
+Dün iki dilim {dilimli} yedim
+{agac_gen} altında oturup {yiyecek} yedik
+Ne yedik ne içtik, hepsi boşa gitti
+{alt_gen} altında bir {kucuk_nesne} buldum
+{isim} {kucuk_acc} {alt_gen} altına sakladı
+Kedi {alt_gen} altından çıktı
+{alt_gen} altı çok tozlanmış
+{alt_gen} altını silmeyi unutma
+{zaman_gecmis} {alt_gen} altına bir şey düşürdüm
+Bu işin altında başka bir iş var
+Altı çizili cümleleri tekrar oku
+{isim} bu yükün altından tek başına kalkamaz
+{isim} {alt_gen} altında {kucuk_nesne} aradı
+Bu raporun altına imzanızı atın
+{isim} ona {sey_acc} verdi
+Ona ne dedin
+Onu {zaman_gecmis} {yer_loc} gördüm
+Onun {iyelikli} çok güzelmiş
+Onda {ozellik} var
+Ondan {zaman_gecmis} haber aldım
+Onlar {zaman_gelecek} {sehir} yolculuğuna çıkacak
+Onları {yer_loc} bekledim
+Onlara haberi ben verdim
+Onlarla {zaman_gecmis} {yer_loc} buluştum
+Onlardan hiçbiri gelmedi
+{isim} onu ve beni aradı
+Onca zahmete rağmen {isim} vazgeçmedi
+Ona göre {isim} haklı
+Onunla {yer_loc} konuştum
+Çoban {mevsim_loc} {hayvan_acc} kırkar
+{isim} dün {hayvan_acc} kırktı
+Köylüler {hayvan_acc} kırkmak için toplandı
+Berber müşterinin saçını kırktı
+Biz {zaman_gecmis} koyunları kırktık
+Kırkım mevsimi gelince herkes yaylaya çıkar
+{isim} yarın tüm kuzuları kırkacak
+Her yıl bu zamanlarda koyunlar kırkılır
+{isim} {zaman_gecmis} ikinci el bir {ikinci_el_esya} aldı
+Ben ikinci el bir {ikinci_el_esya} almayı düşünüyorum
+İkinci el {ikinci_el_esya} satan bir dükkân açtılar
+Bu {ikinci_el_esya} ikinci el ama çok temiz
+İkinci el {ikinci_el_esya} ilanlarına baktım
+Kullanılmış ikinci el bir {ikinci_el_esya} bulduk
+{isim} ikinci el {ikinci_el_esya} alırken çok dikkatli davranır
+Pazarda ikinci el {ikinci_el_esya} aradık
+{isim} oradaki hizmeti birinci sınıf buldu
+{sehir} yakınlarında birinci sınıf bir {mekan} bulduk
+Bu {malzeme} birinci sınıf, hiç solmaz
+Mobilyada birinci sınıf {malzeme} kullanılmış
+Bu {urun} birinci sınıf kalitede
+Garsonlar birinci sınıf hizmet veriyordu
 """
 
 _RAW["negatif_kalip"] = """
-Bir gün hepsi anlaşılacak
-Bir şey söyleyeceğim
-Bir an durup düşündü
-Bir de sen gel, hep beraber gidelim
-Bir türlü uyuyamadım
-Birden ışıklar söndü
-Hep birlikte yemek yedik
-Mutfakta birkaç tabak kalmış
-Bir sürü iş birikti
-Çocuklar birbirine sarıldı
-Biri kapıyı çaldı
-İkisi de çok yorgundu
-İkimiz de aynı okula gittik
-Üçümüz birlikte yola çıktık
-Onlarca insan meydanda toplanmıştı
-Yüzlerce kuş gökyüzünde döndü
-Binlerce kişi alanı doldurdu
-Milyonlarca insan bu yayını izledi
-Kırk yılda bir böyle fırsat çıkar
-Seni gördüğüme iki gözüm çok sevindi
-Yedi düvele karşı savaşmışlar
-Tahtaya bir üçgen çizdi
-Bebeğin beşiği odada duruyor
-Sekizgen şeklinde bir masa aldık
-{takim} yarışmada birinci oldu
-Koşuda {isim} ikinci geldi
-Sınavda {isim} üçüncü oldu
-Kullanılmış ikinci el bir araba aldım
-{isim} tatili dört gözle bekliyor
+Bu işi bir iki {sure_birim} içinde bitiririz
+Bir iki {sure_birim} dinlenip yola devam ederiz
+{isim} bir iki {sure_birim} sonra döner
+{isim} bana bir iki kelime söyledi ve çıktı
+Toplantıda bir iki {kisi} söz aldı
+Çantamda bir iki {kucuk_nesne} var
+Bir iki derken akşam oldu
+Sınavda bir iki soru yanlış çıktı
+Bir iki adım attı ve durdu
+Bir iki kez denedim ama olmadı
+Bir ya da iki {sure_birim} sürer
+Bir iki bardak çay içip çıkarız
+Bir kaç {sure_birim} sonra haber veririm
+Birkaç {kisi} kapıda bekliyordu
+{isim} birkaç {urun} aldı
+Bir kaç gündür {isim} ortada yok
+Bir gün {isim} bana {yer_loc} rastladı
+{isim} bir şey söyleyecekti ama vazgeçti
+{isim} bir an durup etrafına baktı
+{isim} bir de {urun} istedi
+Bir türlü {urun} bulamadım
+Birden {yer_loc} ışıklar söndü
+{isim} ve {isim} birlikte {sehir} yoluna çıktı
+Masada bir sürü {urun} vardı
+Yolcular birbirine yer açtı
+Biri {yer_loc} seni arıyordu
+İkisi de {zaman_gecmis} geç kaldı
+İkimiz de {sehir} şehrinde doğduk
+Üçümüz {zaman_gecmis} yola çıktık
+Dördümüz aynı sınıftaydık
+Beşimiz hep aynı masada otururduk
+Onlarca {kisi} {yer_loc} toplanmıştı
+Yüzlerce {kisi} {sehir} sokaklarında yürüdü
+Binlerce {kisi} {sehir} meydanını doldurdu
+Milyonlarca {kisi} bu haberi izledi
+{takim} ligi birinci tamamladı
+{isim} yarışta ikinci geldi
+{isim} sınavda üçüncü oldu
+Ödül töreninde {isim} birinci seçildi
+Koşuda {isim} dördüncü oldu
+Öğretmen tahtaya bir üçgen ve bir sekizgen çizdi
+Bebeğin beşiği {yer_loc} duruyordu
+{isim} sekizgen şeklinde bir masa aldı
+Arıların petekleri altıgen biçimindedir
+{isim} {yiyecek_gen} {kesir_acc} yedi
+{isim} {yiyecek_gen} yarısını yedi
+Sınıfın {kesir_nom} dün gelmedi
+Nüfusun {kesir_nom} gençlerden oluşuyor
+{isim} maaşının {kesir_acc} kiraya veriyor
+Kitabın {kesir_acc} okudum
+Tarlanın {kesir_nom} henüz ekilmedi
+Havuzun {kesir_bare} kadarı doldu
+Yolun {kesir_bare} kadarını yürüdük
+Bütçenin {kesir_nom} eğitime ayrıldı
+Hastaların {kesir_nom} taburcu edildi
+Ormanın {kesir_nom} yandı
+Okulun {kesir_nom} yeni öğrencilerden oluşuyor
+Kazancın {kesir_dat} razıyım
+Dersin {kesir_bare} kadarını dinledim
+Maaşımın yarısı kiraya gidiyor
+Salonun çeyreği boş kaldı
+Çeyrek final maçı {zaman_gelecek} oynanacak
+{isim} bakkaldan yarım kilo {urun} aldı
+Çeyrek kilo {urun} yeter
+{isim} ikide bir saatine bakıyor
+Çocuk ikide bir {urun} istiyor
+{isim} {beklenen} dört gözle bekliyor
+Hepimiz {beklenen} dört gözle bekledik
+Dört gözle beklediğimiz {olay} sonunda geldi
+{isim} kırk yılda bir bizi arar
+Kırk yılda bir {sehir} şehrine gidiyoruz
+Böyle bir fırsat kırk yılda bir çıkar
+Gelirsen iki gözüm üstüne
+Evladım {isim}, iki gözüm, dikkat et
+Yedi düvele karşı {sehir} halkı direndi
+{takim} yedi düvele meydan okudu
+Yedi düvel birleşse bu halkı yenemez
+{isim} {yiyecek_acc} bir çırpıda yedi
+Bu soruyu bir çırpıda çözdü
+Bütün kitabı bir çırpıda okudum
+Sokakta tek tük insan vardı
+Ağaçlarda tek tük yaprak kalmıştı
+Kafede tek tük müşteri oturuyordu
+Yağmur tek tük damlalarla başladı
+Fiyatlar üç aşağı beş yukarı aynı
+{isim} üç aşağı beş yukarı {sure_birim} sürer dedi
+Maaşlar üç aşağı beş yukarı bu civarda
+Üç aşağı beş yukarı bir saatte varırız
+{isim} iki dirhem bir çekirdek giyinip çıktı
+Düğüne iki dirhem bir çekirdek gitti
+Kız iki dirhem bir çekirdek süslenmişti
+{isim} kırk dereden su getirip bahane buldu
+Kırk dereden su getirmeye gerek yok
+Kırk dereden su getiriyorsun ama sebep belli
+Beni bekletip dokuz doğurttu
+Bekleye bekleye dokuz doğurduk
+Salonun ortasında sekiz köşeli bir masa vardı
+{isim} sekiz köşeli yıldız desenini çizdi
+Altı üstü bir {kucuk_nesne} için kavga ettiler
+Altı üstü bir kahve içeceğiz, bu kadar telaşa gerek yok
+Altı üstü iki adım yol, yürüyelim
+O adam beş para etmez biri
+Bu {esya} beş para etmez
+Beş para etmez bir iş yüzünden geç kaldık
+{isim} ay sonunda beş parasız kaldı
+Beş parasız {sehir} sokaklarında dolaştım
+Annemin on parmağında on marifet vardı
+Kızın on parmağında on marifet var, her işi yapar
+{isim} gibi birinin on parmağında on marifet olur
+İki arada bir derede kaldık
+Yedi iklim dört bucak dolaştı
+{isim} dört bir yandan gelen seslere kulak verdi
 At dört nala koştu
-Dört bir yandan ses geliyordu
 Bu iş bire bir aynı
-Sıfır kilometre araba aldık
-Beş para etmez bir adam bu
-Altı üstü bir kâğıt parçası
-Bir iki gün dinlen
-Bir iki dakika bekleyin
-Biraz sonra döneceğim
-Bir kez daha deneyelim
-Bir dakika, hemen geliyorum
-Bir araya geldik
-Bir bakıma haklısın
-Bir ara bunu konuşmuştuk
-Hepsini bir arada tuttu
-Bir daha olmasın
-Birçok kişi bu fikre katıldı
-İkisini de beğendim
-Çocuklar ikişer ikişer sıraya girdi
-Çocuklara üçer elma verdi
-Yüzbaşı toplantıya katıldı
-Binbaşı sabah nöbete geldi
-Dörtlü koltuk takımı aldık
-Üçlü sohbet çok eğlenceliydi
-İkinci bir şansı hak ediyor
-Kasımda hava soğur
-Mart ayında kar yağdı
-Nisan yağmuru bereket getirir
-Haziranda deniz ısınır
-Ekim ayı yağmurlu geçti
-Şubat kısa ama soğuk bir aydır
-Eylülde okullar açılır
-Mayıs ayında çiçekler açar
-{takim} taraftarı stadı doldurdu
-{takim} takımı geçen hafta kazandı
-{sehir} kış turizminde çok gözde
+Sıfır kilometre bir araba aldık, çok memnunuz
+{ay_ek} tatile çıkacağız
+Ben {ay_ek} yeni bir işe başladım
+Okullar {ay_ek} açılacak diyorlar
+Kardeşim {ay_ek} askerden dönecek
+{isim} {ay_ek} {sehir} şehrine taşındı
+Bu proje {ay_ek} tamamlanacak
+{ay_abl} beri {isim} bize uğramadı
+{ay_abl} sonra hava değişti
+{ay_dat} kadar sabret
+{ay_dat} doğru işler yoluna girer
+{ay_gen} sonunda kira artacak
+{ay_gen} başında toplantı yapalım
+{ay_gen} ilk haftasında {isim} gelecek
+Geçen {ay_bare} ayında çok yağmur yağdı
+Her {ay_bare} ayında bu festival yapılır
+{ay_bare} ayı bu yıl çok yoğun geçti
+Liranın değeri son aylarda sürekli düşüyor
+Dolara olan talep birden arttı
+Avro ve sterlin hakkında {isim} bir şey bilmiyor
+Kuruşu kuruşuna hesap yaptı
+{isim} her kuruşunu biriktirdi
+Bir kuruşunu bile boşa harcamaz
+{urun_gen} kilosu kaç lira
+Bu ay {urun_gen} kilosu çok arttı
+Kilo vermek istiyorsan şekeri bırak
+{isim} geçen yıl çok kilo aldı
+Kiloyu korumak vermekten zor
+Terzi metreyi boynuma doladı
+Metreyi alıp odayı ölçtük
+Kumaşın metresi kaç lira
+Bu zeytinyağının litresi kaç para
+Benzinin litresi bu ay çok arttı
+Derecesi yüksek bir ateşle geldi
+Ateşinin derecesi neydi
+Fırının derecesini ayarla
+Termometredeki dereceyi okudum
+Milimetre hassasiyetinde ölçüm yapıldı
+Gram gram altın biriktirdi
+Saatlerce {yer_loc} bekledik
+Dakikalarca uğraştı ama açamadı
+Saatin kaç olduğunu bilmiyorum
+Saat kaç oldu
+Kolundaki saat çok şıktı
+Saatim yine bozuldu, kurmayı unutmuşum
+Yüzde kaç indirim var
+Bu işin yüzde kaçı bitti
+{isim} yüzde hesabını hiç sevmez
+{isim} ikiyüzlü bir insan, ona güvenme
+Yüzsüz biri olduğunu herkes biliyor
+Babam bana altın bir saat hediye etti
+Yeni projeye onay verildi
+Köprünün onarımı {zaman_gelecek} başlıyor
+Arabanın yedek lastiğini {yer_loc} unuttum
+Binici atından düştü
+Binanın girişinde bir kedi vardı
+{isim} yüzücü olmak istiyor
+{isim} ve {isim} sonunda bir araya geldi
+Bir bakıma {isim} haklı
+Bir ara {isim} ile bunu konuşmuştuk
+Çocukları hep bir arada tuttu
+Bir daha {yer_loc} böyle bir şey olmasın
+Birçok {kisi} bu fikre katıldı
+İkisini de {zaman_gecmis} {yer_loc} gördüm
+Çocuklara ikişer {kucuk_nesne} dağıttı
+Yüzbaşı {zaman_gecmis} toplantıya katıldı
+Binbaşı {zaman_gelecek} nöbete gelecek
+Bir dakika {isim}, hemen geliyorum
+Biraz sonra {isim} gelir
+Bir kez daha deneyelim, belki olur
 Hep birlikte {sehir} yoluna çıktık
 Birlik olursak her şeyi başarırız
+{takim} taraftarı {zaman_gecmis} stadı doldurdu
+{sehir} kış turizminde çok gözde
 """
 
 
