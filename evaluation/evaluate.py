@@ -21,6 +21,8 @@ from megazeka_sayi.kural_tabani import donustur as kural
 from megazeka_sayi.olcum import kategori_kirilimi, olc
 
 CHALLENGE = ROOT / 'evaluation' / 'challenge.jsonl'
+# İkinci elle yazılmış küme: v1.1 veri değişiklikleri yapılırken üreteç ajanına gösterilmedi.
+CHALLENGE2 = ROOT / 'evaluation' / 'challenge2.jsonl'
 SISTEMLER = [('kopya', 'Girdiyi kopyala'), ('kural', 'Kural tabanlı (saf)'),
              ('model_korumasiz', 'Model (korumasız)'), ('model_korumali', 'Model + koruma')]
 HATA_SAYISI = 25
@@ -110,7 +112,7 @@ def markdown(raporlar, bilgi):
 
 def ana():
     ap = argparse.ArgumentParser(description='Megazeka-Sayı değerlendirmesi')
-    ap.add_argument('--checkpoint', default='best', choices=['best', 'latest', 'base'])
+    ap.add_argument('--checkpoint', default='best', choices=None)
     ap.add_argument('--ad', help='rapor adı (varsayılan: kontrol noktası)')
     ap.add_argument('--limit', type=int, help='yalnız hızlı denemeler için; varsayılan tam küme')
     ap.add_argument('--data-dir')
@@ -122,8 +124,13 @@ def ana():
     baslangic = time.perf_counter()
     motor = None if args.yalniz_taban else SayiDonusturucu(args.checkpoint)
     kumeler = [('test', depolama.veri_dizini() / 'test.jsonl')]
+    v1_test = depolama.veri_dizini() / 'test-v1.jsonl'
+    if v1_test.exists():
+        kumeler.append(('test_v1_donmus', v1_test))
     if CHALLENGE.exists():
         kumeler.append(('zorluk', CHALLENGE))
+    if CHALLENGE2.exists():
+        kumeler.append(('zorluk2_gizli', CHALLENGE2))
     raporlar = []
     for ku, yol in kumeler:
         satirlar = oku(yol, args.limit)
