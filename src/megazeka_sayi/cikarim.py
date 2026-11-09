@@ -168,9 +168,14 @@ class SayiDonusturucu:
         self.tokenizer, taban, self.kaynak = depolama.temel_model_yukle(self.dtype)
         if kontrol_noktasi != 'base':
             yol = depolama.ROOT / 'models/checkpoints' / kontrol_noktasi
-            if not (yol / 'adapter_config.json').exists():
-                raise RuntimeError(f'Eğitilmiş model bulunamadı: {yol}. Önce training/train.py çalıştırın.')
-            taban = PeftModel.from_pretrained(taban, yol, local_files_only=True)
+            if (yol / 'adapter_config.json').exists():
+                taban = PeftModel.from_pretrained(taban, yol, local_files_only=True)
+            elif '/' in str(kontrol_noktasi):
+                # Yerel klasör yolu ya da Hugging Face depo adı (ör. pandakingpunc/megazeka-sayi-byt5-tr-itn).
+                taban = PeftModel.from_pretrained(taban, str(kontrol_noktasi))
+            else:
+                raise RuntimeError(f'Eğitilmiş model bulunamadı: {yol}. Önce training/train.py çalıştırın '
+                                   'ya da --checkpoint pandakingpunc/megazeka-sayi-byt5-tr-itn verin.')
         self.model = taban.to(self.aygit).eval()
         self.model.config.use_cache = True
         self.kontrol_noktasi = kontrol_noktasi
@@ -209,7 +214,8 @@ def ana():
     import sys
     ap = argparse.ArgumentParser(description='Türkçe ters metin normalleştirme (sözlü sayı → rakam)')
     ap.add_argument('metin', nargs='*', help='dönüştürülecek metin(ler)')
-    ap.add_argument('--checkpoint', default='best', choices=['best', 'latest', 'base'])
+    ap.add_argument('--checkpoint', default='best',
+                    help='models/checkpoints altındaki ad (best, latest, v1.1...), base ya da HF depo adı')
     ap.add_argument('--isin', type=int, default=1, help='ışın sayısı (1 = açgözlü)')
     ap.add_argument('--korumasiz', action='store_true', help='koruma süzgecini kapat')
     ap.add_argument('--ham', action='store_true', help='ham model çıktısını da göster')

@@ -9,6 +9,7 @@ import argparse
 import gzip
 import hashlib
 import json
+import os
 import random
 import re
 import sys
@@ -21,7 +22,9 @@ sys.path.insert(0, str(KOK / "src"))
 from megazeka_sayi import sablonlar as B  # noqa: E402
 from megazeka_sayi.turkce import lower_tr  # noqa: E402
 
-CV_YOLU = Path(r"C:\Users\Superuser\Desktop\Projeler\proje\megazeka\data\processed\train.jsonl.gz")
+# Doğal negatifler: Megazeka verisindeki Common Voice (CC0) hedefleri. MEGAZEKA_CV ya da --cv ile verilir;
+# dosya yoksa bu kota negatif_kalip'e geçer.
+CV_YOLU = Path(os.environ.get("MEGAZEKA_CV", str(KOK.parent / "proje" / "megazeka" / "data" / "processed" / "train.jsonl.gz")))
 BAYT_SINIRI = 180
 
 # Kategori ağırlıkları (yüzde); pozitif ~60, negatif ~40 (v1.1: ek çeşitliliği ve yer tutuculu negatifler için yeniden dengelendi).

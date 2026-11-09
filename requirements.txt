@@ -1,0 +1,7 @@
+# PyTorch ayrıca kurulur: https://pytorch.org (geliştirmede torch 2.6.0+cu124 kullanıldı)
+transformers==4.56.2
+peft==0.17.1
+safetensors==0.6.2
+numpy==2.2.6
+rapidfuzz==3.14.1
+pytest==8.4.2

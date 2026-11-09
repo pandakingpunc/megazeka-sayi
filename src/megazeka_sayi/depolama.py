@@ -12,7 +12,8 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[2]
 TEMEL_MODEL = 'google/byt5-small'
-YEDEK_TEMEL = Path(r'C:\Users\Superuser\Desktop\Projeler\proje\megazeka\models\base')
+# İsteğe bağlı yerel kopya (ör. kardeş proje Megazeka'nın models/base klasörü).
+YEDEK_TEMEL = os.environ.get('MEGAZEKA_SAYI_TEMEL', '')
 VERI_ORTAM = 'MEGAZEKA_SAYI_VERI'
 KONTROL_NOKTALARI = ROOT / 'models' / 'checkpoints'
 
@@ -78,10 +79,12 @@ def temel_model_yukle(dtype=None):
     """(tokenizer, model, kaynak) döndürür. Hiçbir şey indirmez (local_files_only)."""
     from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
     hatalar = []
-    for kaynak in (TEMEL_MODEL, str(YEDEK_TEMEL)):
+    # Önce yalnız yerel (önbellek / MEGAZEKA_SAYI_TEMEL); bulunamazsa ilk çalıştırmada Hub'dan bir kez indirir (~1,2 GB).
+    denemeler = [(k, True) for k in (TEMEL_MODEL, YEDEK_TEMEL) if k] + [(TEMEL_MODEL, False)]
+    for kaynak, yerel in denemeler:
         try:
-            tok = AutoTokenizer.from_pretrained(kaynak, local_files_only=True)
-            model = AutoModelForSeq2SeqLM.from_pretrained(kaynak, local_files_only=True, dtype=dtype)
+            tok = AutoTokenizer.from_pretrained(kaynak, local_files_only=yerel)
+            model = AutoModelForSeq2SeqLM.from_pretrained(kaynak, local_files_only=yerel, dtype=dtype)
             return tok, model, kaynak
         except Exception as hata:  # önbellek eksik/bölünmüş olabilir; sıradaki kaynağı dene
             hatalar.append(f'{kaynak}: {type(hata).__name__}: {str(hata)[:120]}')
