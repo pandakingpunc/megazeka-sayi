@@ -1,0 +1,122 @@
+{
+  "seed": 2200,
+  "bolumler": {
+    "train": {
+      "adet": 109622,
+      "elemeler": {
+        "eski_belirsiz_telefon": 156,
+        "eski": 69835,
+        "yeni_a": 16000,
+        "yeni_b": 10000,
+        "yeni_c": 14000,
+        "yinelenen": 184,
+        "test_cakismasi": 23,
+        "zorluk_cakismasi": 6
+      },
+      "kaynak": {
+        "v1.1": 69835,
+        "c": 13999,
+        "a": 15961,
+        "b": 9827
+      },
+      "kategori": {
+        "aralik": 2992,
+        "bilesik": 1800,
+        "bitisik": 3000,
+        "buyuk": 1857,
+        "eksi": 850,
+        "kardinal": 8629,
+        "karisik": 3494,
+        "kod": 2817,
+        "negatif_dogal": 5101,
+        "negatif_es": 10684,
+        "negatif_kalip": 15592,
+        "negatif_yazili": 4532,
+        "olcu": 9287,
+        "ondalik": 4568,
+        "para": 6246,
+        "saat": 3725,
+        "saat_deyis": 2500,
+        "sira": 2118,
+        "skor": 1414,
+        "tarih": 5401,
+        "telefon": 3350,
+        "yari": 6499,
+        "yuzde": 3166
+      },
+      "negatif_payi": 0.3417
+    },
+    "validation": {
+      "adet": 3092,
+      "elemeler": {
+        "eski_belirsiz_telefon": 7,
+        "eski": 1993,
+        "yeni_a": 400,
+        "yeni_b": 300,
+        "yeni_c": 400,
+        "yinelenen": 1
+      },
+      "kaynak": {
+        "v1.1": 1993,
+        "c": 400,
+        "b": 299,
+        "a": 400
+      },
+      "kategori": {
+        "aralik": 82,
+        "bilesik": 45,
+        "bitisik": 86,
+        "buyuk": 45,
+        "eksi": 24,
+        "kardinal": 246,
+        "karisik": 94,
+        "kod": 75,
+        "negatif_dogal": 146,
+        "negatif_es": 309,
+        "negatif_kalip": 457,
+        "negatif_yazili": 130,
+        "olcu": 253,
+        "ondalik": 131,
+        "para": 165,
+        "saat": 110,
+        "saat_deyis": 71,
+        "sira": 62,
+        "skor": 40,
+        "tarih": 154,
+        "telefon": 87,
+        "yari": 186,
+        "yuzde": 94
+      },
+      "negatif_payi": 0.3545
+    },
+    "test-v2": {
+      "adet": 1400,
+      "kaynak": {
+        "a": 500,
+        "b": 400,
+        "c": 500
+      },
+      "kategori": {
+        "aralik": 41,
+        "bilesik": 56,
+        "bitisik": 107,
+        "buyuk": 9,
+        "kardinal": 91,
+        "karisik": 56,
+        "kod": 44,
+        "negatif_es": 100,
+        "negatif_kalip": 232,
+        "olcu": 138,
+        "para": 55,
+        "saat": 6,
+        "saat_deyis": 89,
+        "sira": 11,
+        "tarih": 72,
+        "telefon": 56,
+        "yari": 232,
+        "yuzde": 5
+      },
+      "negatif_payi": 0.2707
+    }
+  }
+}

@@ -1,16 +1,16 @@
 {
-  "step": 5000,
-  "best_score": 0.9804675791644492,
-  "bad_evaluations": 1,
-  "elapsed_seconds": 1938.2527625,
-  "examples_processed": 80000,
-  "best_step": 4750,
-  "best_exact_match": 0.98046875,
-  "best_cer": 0.0011708355508249068,
-  "epoch": 1.1430041005272107,
-  "loss": 0.00432586669921875,
+  "step": 9000,
+  "best_score": 0.9980467144348105,
+  "bad_evaluations": 0,
+  "elapsed_seconds": 3923.2256808,
+  "examples_processed": 144000,
+  "best_step": 9000,
+  "best_exact_match": 0.998046875,
+  "best_cer": 0.00016056518946692356,
+  "epoch": 1.3136049333163051,
+  "loss": 0.0012180805206298828,
   "learning_rate": 5e-05,
-  "total_steps": 5000,
+  "total_steps": 9000,
   "running": false,
-  "pid": 6556
+  "pid": 16056
 }

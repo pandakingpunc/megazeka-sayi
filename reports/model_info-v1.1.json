@@ -1,0 +1,21 @@
+{
+  "mimari": "ByT5-small + LoRA",
+  "temel": "google/byt5-small",
+  "aygit": "NVIDIA GeForce RTX 4060",
+  "hassasiyet": "torch.bfloat16",
+  "egitilebilir_parametre": 6258688,
+  "config": {
+    "steps": 5000,
+    "batch_size": 8,
+    "gradient_accumulation": 2,
+    "learning_rate": 0.0005,
+    "lr_min_oran": 0.1,
+    "warmup": 50,
+    "eval_every": 250,
+    "eval_ornek": 256,
+    "seed": 42,
+    "rank": 16,
+    "max_bytes": 192,
+    "patience": 8
+  }
+}
