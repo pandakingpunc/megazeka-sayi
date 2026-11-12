@@ -27,7 +27,7 @@ sys.path.insert(0, str(KOK / "src"))
 from megazeka_sayi import sablonlar as B  # noqa: E402
 from megazeka_sayi import sayilar as S  # noqa: E402
 from megazeka_sayi import varliklar as V  # noqa: E402
-from megazeka_sayi.turkce import lower_tr, written_suffix  # noqa: E402
+from megazeka_sayi.turkce import UNLULER, ek_uret, inflect, lower_tr, written_suffix  # noqa: E402
 from megazeka_sayi.varliklar import Varlik  # noqa: E402
 
 BAYT_SINIRI = 180
@@ -186,13 +186,41 @@ YENI_BIRIMLER = {
 BIRIM2 = {**V.BIRIMLER, **YENI_BIRIMLER}
 
 
+def _ince_saat(kok):
+    """`saat` (ve `kilovatsaat`) ince ünlülü ek alır: saatte, saatten, saate, saati, saatin, saatle, saatlik."""
+    k = lower_tr(kok)
+    return k[:-4] + "saet" if k.endswith("saat") else kok
+
+
+def inflect2(kelime, ek):
+    """`turkce.inflect` + `saat` istisnası (turkce.py'ye dokunmadan)."""
+    onceki, bosluk, son = kelime.rpartition(" ")
+    if lower_tr(son).endswith("saat"):
+        return onceki + bosluk + son + ek_uret(_ince_saat(son), ek), ek_uret(_ince_saat(son), ek)
+    return inflect(kelime, ek)
+
+
+def written_suffix2(kanonik, ek):
+    return written_suffix(_ince_saat(kanonik.rpartition(" ")[2]), ek)
+
+
+def _birlestir2(sozcukler, yazili, kanonik_son, ek, kip):
+    """`V._birlestir` ile aynı, ama `saat` istisnalı."""
+    son, _ = inflect2(sozcukler[-1], ek)
+    sozlu = " ".join(sozcukler[:-1] + [son])
+    if kip == "apostrof":
+        return sozlu, yazili + "'" + written_suffix2(kanonik_son, ek)
+    assert yazili.endswith(sozcukler[-1]), (yazili, sozcukler)
+    return sozlu, yazili[: -len(sozcukler[-1])] + son
+
+
 def _birim_varlik(sayi_k, sayi_yaz, anahtar, soz_idx, ek, kategori, son=True):
     yaz, kan, secenekler, kip = BIRIM2[anahtar]
     sozcukler = list(sayi_k) + secenekler[soz_idx % len(secenekler)]
     yazili = f"{sayi_yaz} {yaz}"
     if not (son and ek):
         return Varlik(yazili, " ".join(sozcukler), kategori)
-    s, y = V._birlestir(sozcukler, yazili, kan, ek, kip)
+    s, y = _birlestir2(sozcukler, yazili, kan, ek, kip)
     return Varlik(y, s, kategori)
 
 
@@ -211,6 +239,15 @@ def kur_bilesik(parcalar, ek=None, soz_idx=None):
         sz.append(v.sozlu)
         yz.append(v.yazili)
     return Varlik(" ".join(yz), " ".join(sz), "bilesik")
+
+
+def kur_aralik2(a, b, birim=None, soz_idx=0, ek=None):
+    """`V.kur_aralik` gibi, ama binlik noktası kurallı (`1.000-1.500 TL`; V.kur_aralik `1000-1500` yazar)."""
+    sk = S.sayi_kelimeleri(a) + S.sayi_kelimeleri(b)
+    yaz = f"{S.yaz_sayi(a)}-{S.yaz_sayi(b)}"
+    if birim is None:
+        return Varlik(yaz, " ".join(sk), "aralik")
+    return _birim_varlik(sk, yaz, birim, soz_idx, ek, "aralik")
 
 
 def kur_yas(n, bicim="yaşında"):
@@ -257,6 +294,7 @@ class _Baglam:
 
 
 CTX = _Baglam()
+SON_TUKENEN: Counter = Counter()  # (bölüm, alt başlık) -> yeni benzersiz satır çıkaramayıp vazgeçilen hücre/etiket sayısı
 ZTIP = ("Z", "A", "B", "C")
 
 
@@ -493,13 +531,13 @@ def _aralik_uygun(birim, a, b):
 def ornekle_aralik2(rng, alt=None, ek=None, politika="yaziyla", buyuk_harf=False):
     if alt is None:
         a, b = aralik_cifti(rng)
-        return V.kur_aralik(a, b)
+        return kur_aralik2(a, b)
     birimler, _ = _ARALIK_BIRIM[alt]
     while True:
         a, b = aralik_cifti(rng)
         birim = rng.choice(birimler)
         if _aralik_uygun(birim, a, b):
-            return V.kur_aralik(a, b, birim, rng.randrange(2), ek)
+            return kur_aralik2(a, b, birim, rng.randrange(2), ek)
 
 
 # ---- A4: birim x ek dengesi --------------------------------------------------------------------------
@@ -552,8 +590,10 @@ _ZINCIRLER = {
              (("saat", lambda r: r.randint(1, 6)), ("dakika", _dk_deger), ("saniye", _dk_deger))],
     "gun": [(("gun", lambda r: r.randint(1, 6)), ("saat", lambda r: r.randint(1, 23))),
             (("hafta", lambda r: r.randint(1, 4)), ("gun", lambda r: r.randint(1, 6))),
-            (("ay", lambda r: r.randint(1, 11)), ("gun", lambda r: r.randint(1, 29))),
-            (("yil", lambda r: r.randint(1, 30)), ("ay", lambda r: r.randint(1, 11)))],
+            (("ay", lambda r: r.randint(1, 11)), ("gun", lambda r: r.randint(1, 29)))],
+    "yil": [(("yil", lambda r: r.randint(1, 30)), ("ay", lambda r: r.randint(1, 11)))],
+    "bebek": [(("ay", lambda r: r.randint(1, 11)), ("gun", lambda r: r.randint(1, 29)))],
+    "kisasure": [(("dakika", lambda r: r.randint(1, 40)), ("saniye", _dk_deger))],
 }
 
 
@@ -569,7 +609,8 @@ KISA_YENI = ("mg", "m3", "km2", "kwh", "hz", "mhz")
 FIZ_YENI = ("ton", "inc", "kalori", "hektar", "donum", "beygir", "piksel", "karat")
 ZAMAN_YENI = ("saat", "dakika", "saniye", "gun", "hafta", "ay", "yil")
 YENI_GRUP = {"kisa": KISA_YENI, "fiz": FIZ_YENI, "zaman": ZAMAN_YENI, "yas": ("yas",),
-             "ksure": ("saniye", "dakika", "saat"), "usure": ("gun", "hafta", "ay", "yil")}
+             "ksure": ("saniye", "dakika", "saat"), "usure": ("gun", "hafta", "ay", "yil"),
+             "dksaat": ("dakika", "saat"), "kgun": ("gun", "hafta"), "stajs": ("gun", "hafta", "ay")}
 YENI_ETIKETLER = KISA_YENI + FIZ_YENI + ZAMAN_YENI + ("yas",)
 _YAS_BICIMI = {None: "yaş", "bulunma": "yaşında", "yonelme": "yaşına", "ayrilma": "yaşından",
                "bulunma_ki": "yaşındaki", "belirtme": "yaşını"}
@@ -606,7 +647,7 @@ def _yeni_deger(rng, t):
     if t == "karat":
         return (rng.choice([8, 14, 18, 22, 24]), "") if rng.random() < 0.4 else (rng.randint(2, 30), "")
     if t == "saat":
-        return rng.randint(10, 72), ""
+        return (rng.choice([10, 12, 15, 18, 20, 24, 36, 48, 72]) if rng.random() < 0.6 else rng.randint(10, 24)), ""
     if t == "dakika":
         return (_ad(rng, 10, 90, 5) if rng.random() < 0.6 else rng.randint(10, 90)), ""
     if t == "saniye":
@@ -614,11 +655,11 @@ def _yeni_deger(rng, t):
     if t == "gun":
         return rng.randint(10, 120), ""
     if t == "hafta":
-        return rng.randint(10, 52), ""
+        return rng.randint(10, 40), ""
     if t == "ay":
-        return rng.randint(10, 48), ""
+        return rng.randint(10, 36), ""
     if t == "yil":
-        return rng.randint(10, 100), ""
+        return rng.randint(10, 40), ""
     raise KeyError(t)
 
 
@@ -1027,15 +1068,15 @@ Tahta {v2bil.kucuk} kalınlığında
 Film {v2bil.sure} sürdü
 Toplantı {v2bil.sure} devam etti
 Uçuş {v2bil.sure} sürecek
-Yemeği {v2bil.sure} hazırladı
-Pasta {v2bil.sure} pişti
+Yemeği {v2bil.kisasure} hazırladı
+Pasta {v2bil.kisasure} pişti
 Yarışı {v2bil.sure} bitirdi
 Rekor {v2bil.sure} oldu
-Fırında {v2bil.sure} bekletin
+Fırında {v2bil.kisasure} bekletin
 Kurs {v2bil.gun} sürecek
-Bebek {v2bil.gun} oldu
+Bebek {v2bil.bebek} oldu
 Ev işleri {v2bil.gun} aldı
-{isim} yurt dışında {v2bil.gun} kaldı
+{isim} yurt dışında {v2bil.yil} kaldı
 Proje {v2bil.gun} içinde bitti
 İş {v2bil.gun} sürdü
 Çocuk {v2bil.agirlik:lik} bir paket taşıdı
@@ -1044,11 +1085,11 @@ Hediye olarak {v2bil.agirlik:lik} bir koli yolladılar
 {v2bil.kucuk:lik} bir çıta kestik
 {v2bil.mesafe:lik} bir yolu yürüdük
 {v2bil.boy:lik} bir halı serdik
-Dersi {v2bil.sure:lik} bir videoyla anlattı
+Dersi {v2bil.kisasure:lik} bir videoyla anlattı
 Mola {v2bil.sure:lik} bir arayla bitti
-Yemek {v2bil.sure:bulunma} hazır oldu
+Yemek {v2bil.kisasure:bulunma} hazır oldu
 Kargo {v2bil.gun:bulunma} elimize ulaştı
-Pasta {v2bil.sure:bulunma} soğudu
+Pasta {v2bil.kisasure:bulunma} soğudu
 Yol {v2bil.sure:ayrilma} kısa sürmez
 Şiir {v2bil.sure:ayrilma} fazla sürmedi
 Bavul {v2bil.agirlik:ayrilma} ağır olmamalı
@@ -1061,7 +1102,7 @@ Süreyi {v2bil.sure:ilgi} üstüne taşıdı
 Teslimat {v2bil.gun:ayrilma} geç olmaz
 Yürüyüşü {v2bil.mesafe:yonelme} çıkardık
 Rekora {v2bil.sure:yonelme} çıktı
-Hamuru {v2bil.sure:vasita} dinlendirdik
+Hamuru {v2bil.kisasure:vasita} dinlendirdik
 """
 
 _A["yeni"] = """
@@ -1150,24 +1191,24 @@ Görüntü {v2yeni.piksel:ayrilma} büyük olamaz
 Çiftçi {v2yeni.hektar:belirtme} sulamış
 Arazi {v2yeni.hektar:ayrilma} büyük
 {v2yeni.ksure} sonra döneceğim
-Yemek {v2yeni.ksure:bulunma} hazır olur
-Toplantı {v2yeni.ksure:ayrilma} fazla sürmez
-Mola {v2yeni.ksure} sürdü
-Sınav {v2yeni.ksure:lik} bir süre veriyor
-Ders {v2yeni.ksure:yonelme} uzadı
-Bilet satışı {v2yeni.ksure:vasita} bitti
-Tamirat {v2yeni.ksure:belirtme} aştı
-Film {v2yeni.ksure:ilgi} üzerinde sürdü
+Yemek {v2yeni.dakika:bulunma} hazır olur
+Toplantı {v2yeni.dksaat:ayrilma} fazla sürmez
+Mola {v2yeni.dakika} sürdü
+Sınav {v2yeni.dakika:lik} bir süre veriyor
+Ders {v2yeni.dakika:yonelme} uzadı
+Bilet satışı {v2yeni.dakika:vasita} bitti
+Tamirat {v2yeni.dksaat:belirtme} aştı
+Film {v2yeni.dakika:ilgi} üzerinde sürdü
 Proje {v2yeni.usure} sürdü
 Kitabı {v2yeni.usure} içinde bitirdim
-Teslimat {v2yeni.usure:bulunma} yapılır
+Teslimat {v2yeni.kgun:bulunma} yapılır
 Sipariş {v2yeni.usure:ayrilma} önce verilmişti
 Kurs {v2yeni.usure:lik} bir programla başladı
 Ödemeyi {v2yeni.usure:yonelme} erteledik
-Staj {v2yeni.usure} sürecek
-Tatil planını {v2yeni.usure:belirtme} geçmesin
-Tadilat {v2yeni.usure:vasita} tamamlandı
-{isim} {v2yeni.yas:bulunma} bir adam
+Staj {v2yeni.stajs} sürecek
+Tatil planını {v2yeni.kgun:belirtme} geçmesin
+Tadilat {v2yeni.stajs:vasita} tamamlandı
+Komşumuz {v2yeni.yas:bulunma} bir adam
 Müşterimiz {v2yeni.yas:bulunma} olup {sehir} sakini
 Bu oyun {v2yeni.yas} ve üzeri için uygun
 Dedem {v2yeni.yas:yonelme} girdi
@@ -1198,7 +1239,7 @@ Sabah {saat.sabah:bulunma} kalktım, dışarıda hava {olcu.sicaklik} olduğu i�
 Faturanız {tarih.gunay} tarihine kadar ödenmezse {yuzde} gecikme faizi eklenecek
 Kurs ücreti {para.tam} ama peşin ödeyenlere {yuzde} indirim yapılıyor, bence kaçırmayın
 Sınav {tarih.tam} tarihinde yapılacak, {kardinal.bin} aday {sehir} merkezinde ter döküyor
-Çocuklar {olcu.boy} boyunda ve {olcu.agirlik} ağırlığında, doktor hepsinin sağlıklı olduğunu söyledi
+Çocuklar {olcu.boy} boyunda ve {kardinal.yas} yaşında, doktor hepsinin sağlıklı olduğunu söyledi
 Fabrikada {kardinal.bin} işçi çalışıyor, günlük üretim {olcu.agirlik} civarında
 Bu sabah {saat.sabah:bulunma} ofise geldim, öğlene kadar {kardinal.orta} e-posta cevapladım
 {isim} {olcu.mesafe} koştu ve süresi {aralik} dakika arasındaydı
@@ -1240,7 +1281,30 @@ Bilet {para.tam}, otobüs {saat:bulunma} kalkıyor ve yolculuk {olcu.mesafe} sü
 Maaşıma {yuzde} zam geldi, yeni maaşım {para.tam} oldu ve kira artışı da {yuzde} olmuş
 Mağaza {tarih.gunay} tarihinde açılıyor, ilk gün {kardinal.bin} kişi bekleniyor ve indirim {yuzde}
 {isim} {kardinal.yas} yaşında olmasına rağmen {olcu.mesafe} koştu, süresi {aralik} dakika
-Sahilde sıcaklık {olcu.sicaklik} ve deniz {olcu.sicaklik} civarında, saat {saat.ogle:bulunma} gidelim
+Sahilde hava {olcu.sicaklik} civarında, saat {saat.ogle:bulunma} gidelim ve giriş {para.tam}
+{saat.sabah:bulunma} kalkıp {olcu.mesafe} yürüdük, sonra {sehir} meydanında {kardinal.orta} kişiyle buluştuk
+{kardinal.bin:lik} salonun kirası {para.tam} ve alanı {olcu.alan} büyüklüğünde, bence çok uygun
+{olcu.agirlik} {urun} aldım, hesap {para.tl} tuttu ve fiş {tarih.gunay} tarihliydi
+{yuzde} indirim yapıldı, ürün {para.tam} oldu ve stok sadece {kardinal.yuz} adet kaldı
+{eksi.derece} soğukta {kardinal.orta} kişi sabaha kadar nöbet tuttu, sonra {saat.sabah:bulunma} eve döndüler
+{sira.kat} katta oturan komşumuz {para.tam} kira veriyor, evi ise {olcu.alan} büyüklüğünde
+{skor} biten maçı {kardinal.bin} {kisi} izledi ve bilet gelirleri {para.tl} oldu
+{ondalik} puan alan öğrenci {tarih.gunay} günü ödül alacak ve {para.tam} burs kazanacak
+{aralik} gün sürecek kursun ücreti {para.tam}, başlangıç tarihi ise {tarih.gunay} olarak açıklandı
+{tarih.gunay} günü yapılacak toplantı saat {saat:bulunma} başlayacak, salonun kirası {para.tam} tutuyor
+{olcu.sicaklik} sıcaklıkta {kardinal.orta} dakika bekletilen hamur, fırında {aralik} dakika daha pişiyor
+Garson hesabı getirdi, toplam {para.tl} ve kartla ödeyince {yuzde} indirim yaptılar
+Toplantıya yetiştim, evden okula kadar {olcu.mesafe} yol gelip odaya girdim saat {saat}
+Kasadaki görevli fişi uzattı, toplam tutar {para.tl} ve indirim oranı {yuzde}
+Gelecek hafta sınav var, kayıt süresi bitiyor, sınav tarihi {tarih.tam} ve ücreti {para.tam}
+Uçuş gecikti, yolcular sabaha kadar bekledi, kalkış saati {saat} ve bagaj hakkı {olcu.agirlik}
+Haberlere göre depremin merkezi {sehir}, büyüklüğü {ondalik} ve etkilenen kişi sayısı {kardinal.bin}
+Yarınki hava durumuna göre sıcaklık {olcu.sicaklik}, rüzgâr çok sert ve nem oranı {yuzde}
+Dolabın boyutları sorulunca satıcı yüksekliği {olcu.boy}, fiyatı ise {para.tam} dedi
+Eve gelen faturayı açınca son ödeme tarihini gördüm, {tarih.gunay} ve tutar {para.tl}
+Mağaza açılınca ilk müşteri geldi, açılış saati {saat} ve ilk günkü indirim oranı {yuzde}
+Yeni açılan mağazanın bilet fiyatı {para.tam}, kapasitesi {kardinal.bin} kişi ve alanı {olcu.alan}
+Kuryenin söylediğine göre paket {olcu.agirlik} geliyor, teslimat {tarih.gunay} günü ve ücret {para.tl}
 Tren {saat:bulunma} kalkıyor, bilet {para.tam} ve vagonda {kardinal.yuz} yolcu var
 Kitapçıdan {kardinal.orta} kitap aldım, toplam {para.tl} ödedim ve {yuzde} indirim kazandım
 Akvaryum {olcu.hacim} su alıyor, içinde {kardinal.orta} balık yaşıyor ve değeri {para.tam}
@@ -1492,6 +1556,7 @@ class Uretici:
                         torba.pop()
                         ardisik = 0
                         self.tukenen[ab] += 1
+                        SON_TUKENEN[(self.bolum, ab)] += 1
                 continue
             ardisik = 0
             if ab in ("birim", "kod", "yeni") and torba:
@@ -1505,6 +1570,7 @@ class Uretici:
 def uret_bolumler(train, validation, test, seed):
     """{'train': [...], 'validation': [...], 'test': [...]} döndürür. Deterministik."""
     _dogrula_sablonlar_kayitli()
+    SON_TUKENEN.clear()
     sonuc = {}
     gorulen = (set(), set(), set())  # girdi, hedef, (kullanılmıyor)
     with kayitli():
@@ -1605,6 +1671,9 @@ def olc(satirlar, test_sablonlar_disi=None):
     # A8
     ku = [r for r in satirlar if _alt_baslik(r["sablon"]) == "kucuk"]
     m["a8_girdi_esit_hedef"] = sum(1 for r in ku if r["girdi"] == r["hedef"])
+    havuz = {i for lst in SABLONLAR_A.values() for i, _ in lst if i not in TEST_SABLONLARI}
+    m["egitim_havuzu_sablon"] = len(havuz)
+    m["kullanilmayan_egitim_sablonu"] = sorted(havuz - set(sab))
     m["bayt_en_cok"] = max(max(len(r["girdi"].encode()), len(r["hedef"].encode())) for r in satirlar)
     m["buyuk_harf_orani"] = round(sum(1 for r in satirlar if r["girdi"][:1].isupper()) / n, 3)
     return m
@@ -1651,7 +1720,8 @@ def main(argv=None):
         with open(out / f"a-{bolum}.jsonl", "w", encoding="utf-8", newline="\n") as f:
             for r in satirlar:
                 f.write(json.dumps(r, ensure_ascii=False) + "\n")
-    print(json.dumps({"adet": {k: len(v) for k, v in sonuc.items()}}, ensure_ascii=False))
+    print(json.dumps({"adet": {k: len(v) for k, v in sonuc.items()}, "tukenen_hucre": {f"{b}/{ab}": n for (b, ab), n in SON_TUKENEN.items()}},
+                     ensure_ascii=False))
     if a.rapor:
         print(json.dumps(olc(sonuc["train"]), ensure_ascii=False, indent=1))
         if a.eski_telefon and Path(a.eski_telefon).exists():

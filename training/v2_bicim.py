@@ -361,10 +361,22 @@ def yari_saat(h, m=30, bicim="iki_nokta", ek=None, sifirli=False):
     return f"{hh}:{m:02d}" + ("'" + suf if suf else ""), v.yazili
 
 
+def ay_duzelt(v, ay, ek):
+    """V.kur_tarih, ocak/aralık + ünlüyle başlayan ekte sözlü yumuşamayı (ocağa, aralığı) uygulamaz; düzeltir."""
+    ay_k = lower_tr(V.AYLAR[ay - 1])
+    toks = v.sozlu.split()
+    son = toks[-1]
+    if ek and ay_k.endswith("k") and son.startswith(ay_k) and len(son) > len(ay_k) and son[len(ay_k)] in UNLULER:
+        toks[-1] = ay_k[:-1] + "ğ" + son[len(ay_k):]
+        return V.Varlik(v.yazili, " ".join(toks), v.kategori)
+    return v
+
+
 def yari_tarih(gun, ay, yil=None, ek=None):
     v = V.kur_tarih(gun, ay, yil, ek, False)
     AY = V.AYLAR[ay - 1]
     if yil is None:
+        v = ay_duzelt(v, ay, ek)
         return f"{gun} " + v.sozlu.split()[-1], v.yazili
     return v.yazili.replace(AY, lower_tr(AY), 1), v.yazili
 
@@ -456,6 +468,8 @@ def _buyuk_spec(rng, form):
     """B: 2 buçuk milyon · C: 2,5 milyon · D: 15 milyon."""
     buyukluk = "milyar" if rng.random() < 0.15 else "milyon"
     tam = rng.choice(_MANTIS) if buyukluk == "milyon" else rng.choice([1, 2, 3, 4, 5, 6, 8, 10, 15, 20, 50])
+    if form in ("B", "C") and tam > 100:
+        tam = rng.choice([x for x in _MANTIS if x <= 100])
     if form == "B":
         return ("buyuk", tam, "5", buyukluk, True)
     if form == "C":
@@ -514,6 +528,8 @@ _GRUP = {
     "sicaklik": (["C"], [1]),
 }
 _BUYUK_OLCU = {"km", "m", "kg", "g", "L", "mL", "MB", "GB", "W", "kW", "m2"}
+_OLCU_TAVAN = {"km": 20000, "m": 9999, "kg": 9999, "g": 9999, "L": 9999, "mL": 9999, "MB": 99999, "GB": 9999,
+               "W": 9999, "kW": 9999, "m2": 9999}
 _BUCUK_OLCU = {"kg", "km", "m", "cm", "L", "GB", "TB", "C", "m2", "V", "kW"}
 
 
@@ -580,12 +596,16 @@ def c1_olcu(rng, alt, ek, grup):
     elif alt == "birim":
         tam, kesir = _olcu_kucuk(rng, b)
         spec, mod = (("dec", tam, kesir, False) if kesir else ("int", tam)), "duz"
-    elif alt == "bin_tek":
-        spec, mod = ("int", _bin_katsayi(rng) * 1000), "grup"
-    elif alt == "bin_cift":
-        spec, mod = ("int", _bin_cift(rng)), "grup"
-    elif alt == "duz":
-        spec, mod = ("int", _duz(rng)), "duz"
+    elif alt in ("bin_tek", "bin_cift", "duz"):
+        uret = {"bin_tek": lambda: _bin_katsayi(rng) * 1000, "bin_cift": lambda: _bin_cift(rng), "duz": lambda: _duz(rng)}[alt]
+        n = uret()
+        for _ in range(60):
+            if n <= _OLCU_TAVAN[b]:
+                break
+            n = uret()
+        else:
+            return None
+        spec, mod = ("int", n), ("duz" if alt == "duz" else "grup")
     else:
         return None
     g, h = yari_olcu(spec, b, ek, idx, mod)
@@ -714,6 +734,22 @@ def c1_tel(rng, alt, ek):
     return (h, h) if dogru else (g, h)
 
 
+def c1_kod(rng, alt, ek, sb_alt=None):
+    """Kod / PIN / posta kodu / numara: rakam rakam, noktasız; yalnız zaten doğru biçim (girdi = hedef)."""
+    if alt != "dogru" or ek:
+        return None
+    n = 5 if sb_alt == "posta" else _secim(rng, [(3, 8), (4, 35), (5, 15), (6, 20), (8, 8), (9, 5), (10, 4), (11, 5)])
+    while True:
+        r = "".join(rng.choice("0123456789") for _ in range(n))
+        if rng.random() < 0.2:
+            r = r[0] + r[0] + r[2:]
+        if n == 4 and 1000 <= int(r) <= 2100:
+            continue
+        break
+    h = V.kur_kod(r).yazili
+    return h, h
+
+
 C1_ALT_SINIF = {
     "bin_tek": [("para", .40), ("olcu", .12), ("sayi", .30), ("sayi_ek", .18)],
     "bin_cift": [("para", .40), ("olcu", .10), ("sayi", .30), ("sayi_ek", .20)],
@@ -727,7 +763,7 @@ C1_ALT_SINIF = {
     "eksi": [("derece", .72), ("bakiye", .28)],
     "telefon": [("tel", 1.0)],
     "dogru": [("para", .17), ("olcu", .12), ("yuzde", .12), ("sayi", .17), ("sayi_ek", .05), ("saat", .08),
-              ("saat_ns", .05), ("tarih", .12), ("derece", .04), ("tel", .04), ("bakiye", .04)],
+              ("saat_ns", .05), ("tarih", .12), ("derece", .04), ("tel", .04), ("bakiye", .04), ("kod", .05)],
 }
 C1_ALT_AGIRLIK = {
     "bin_tek": 480, "bin_cift": 440, "milyon": 440, "duz": 480, "birim": 700, "yuzde": 520, "bucuk": 420,
@@ -752,6 +788,8 @@ def c1_varlik(rng, alt, sinif, ek, sb_alt):
         return c1_derece(rng, alt, ek, sinif)
     if sinif == "tel":
         return c1_tel(rng, alt, ek)
+    if sinif == "kod":
+        return c1_kod(rng, alt, ek, sb_alt)
     raise KeyError(sinif)
 
 
@@ -928,7 +966,7 @@ def c2_tarih(tur, gun=None, ay=None, yil=None, ek=None):
         return v, [(0, len(S.sayi_kelimeleri(yil)))]
     gk = len(S.sayi_kelimeleri(gun))
     if tur == "gunay":
-        v = V.kur_tarih(gun, ay, None, ek, False)
+        v = ay_duzelt(V.kur_tarih(gun, ay, None, ek, False), ay, ek)
         return v, [(0, gk)]
     v = V.kur_tarih(gun, ay, yil, ek, False)
     return v, [(0, gk), (gk + 1, len(S.sayi_kelimeleri(yil)))]
@@ -1523,17 +1561,30 @@ Dün gece {E:ayrilma} bir arama geldi
 Dün akşam {E:vasita} konuştum
 """
 
+TASLAK[("yari", "kod")] = """
+Kapı şifresi {E} olarak ayarlandı
+Kartın PIN kodu {E}
+Posta kodumuz {E.posta}
+Doğrulama kodu {E} geldi
+Takip numaranız {E}
+Sipariş numaram {E} olarak görünüyor
+Abone numarası {E} ile kayıt yaptırın
+Güvenlik kodunu {E} girmeniz gerekiyor
+Fatura numarası {E} olan belgeyi gönderin
+Müşteri numaranızı {E} diye yazın
+"""
+
 TASLAK[("yari", "karisik")] = """
 {e.sayi} {kalabalik} {s.kardinal_orta} dakika bekledi
 Servise {e.sayi} {kalabalik} bindi, yolculuk {s.kardinal_orta} dakika sürdü
 {e.para} tutan faturayı {s.kardinal_kucuk} günde ödedik
-Pazardan {e.olcu_agirlik} elma aldım, {s.para_tl} verdim
+Pazardan {e.olcu_agirlik} elma aldım, {s.para_kucuk} verdim
 Mağazada {e.yuzde} indirim var, ceket {s.para_tl} oldu
 Toplantı {e.saat} başlayacak, {s.kardinal_orta} kişi katılacak
 {e.tarih} tarihli sınava {s.kardinal_yuz} öğrenci girecek
 Evimiz okula {e.olcu_mesafe}, yürüyerek {s.kardinal_orta} dakika sürüyor
 Kampanya {e.yuzde} indirim ve {s.para_tl} değerinde hediye çeki içeriyor
-Depoya {e.olcu_hacim} benzin attım, {s.para_tl} tuttu
+Arabaya {e.olcu_hacim} benzin attım, yanında {s.para_kucuk} tutan su aldım
 Hesabımda {e.para} var, {s.para_tl} daha gelecek
 Bu hafta {e.sayi} adım attım, dün {s.kardinal_yuz} adım atmıştım
 Şu an {e.sayi} {kalabalik} çevrimiçi, {s.kardinal_kucuk} yönetici de var
@@ -1541,14 +1592,14 @@ Telefonum {e.olcu_veri}, bilgisayarım {s.olcu_veri}
 Kutu {e.olcu_agirlik}, içindeki ürün {s.olcu_agirlik} ağırlığında
 Sınav {e.tarih} günü, sonuçlar {s.kardinal_orta} gün sonra
 Numaram {e.tel}, dahili numaram {s.kardinal_yuz}
-Okula {e.olcu_mesafe} yol var, otobüs {s.para_tl} alıyor
+Okula {e.olcu_mesafe} yol var, otobüs {s.para_kucuk} alıyor
 Bu {e.sayi} {adet} içinden {s.kardinal_orta} tanesi bozuk çıktı
 Faizi {e.yuzde} olan krediyi {s.kardinal_orta} ayda ödedik
 {e.sayi} {kalabalik} içinden {s.kardinal_orta} kişi seçildi
 Hava {e.derece}, rüzgâr {s.kardinal_orta} gündür sürüyor
 Fiyat {e.para} idi, {s.yuzde} indirimle aldık
 Yolculuk {e.saat} başladı, {s.olcu_mesafe} gittik
-Hesabıma {e.para:yonelme} para yatırdım, {s.para_tl} masraf çıktı
+Hesabıma {e.para:yonelme} para yatırdım, {s.para_kucuk} masraf çıktı
 Salon {e.olcu_alan:lik} ama içeri {s.kardinal_yuz} kişi sığdı
 Depoda {e.sayi} {adet} var, {s.kardinal_kucuk} palet boş
 Bugün {e.sayi} {kalabalik} geldi, dün {s.kardinal_orta} kişi gelmişti

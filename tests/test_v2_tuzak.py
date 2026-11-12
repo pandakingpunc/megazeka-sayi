@@ -149,7 +149,7 @@ def test_cesitlilik_esikleri_train(veri):
     assert o["sablon_sayisi"] >= 400
     assert o["en_buyuk_sablon_payi"] <= 0.01
     assert o["en_buyuk_ilk_sozcuk_payi"] <= 0.06
-    assert 0.20 <= o["kisa_2_5_payi"] <= 0.35, o["kisa_2_5_payi"]
+    assert 0.25 <= o["kisa_2_5_payi"] <= 0.40, o["kisa_2_5_payi"]
     for olgu in ("bin", "ikinciel", "yuz", "sira", "onalti", "deyim", "ozelad", "sozcuk", "birim", "kesir"):
         assert o["olgu_satir"][olgu] >= 500, olgu
     assert o["ayri_deyim"] >= 80
@@ -246,3 +246,48 @@ def test_karsit_ve_negatif_taşıyıcıları_ayri(veri):
         for i in range(30):
             _, _, _, ta = T.render(sb, rng, i % 2 == 0)
             assert T.denetle(ta) == [], (sb.id, ta)
+
+
+def test_kisa_cumle_payi_hedef_olgularda(veri):
+    o = T.olcumler(veri["train"])
+    for olgu in ("bin", "ikinciel", "yuz"):
+        assert 0.45 <= o["olgu_kisa_pay"][olgu] <= 0.60, (olgu, o["olgu_kisa_pay"][olgu])
+    assert o["olgu_kisa_sablon"]["bin"] >= 60
+    assert o["olgu_kisa_sablon"]["ikinciel"] >= 35
+    assert o["olgu_kisa_sablon"]["yuz"] >= 35
+    # hedef olgularda kısa cümleler sarmalayıcısızdır (açılış/kapanış eki yok)
+    ekler = {x.lower() for x in T.ACILISLAR} | {x.lower() for x in T.KAPANISLAR}
+    for r in veri["train"]:
+        if T.olgu_of(r["sablon"]) in ("bin", "ikinciel", "yuz") and T.SABLON_ID[r["sablon"]].kisa:
+            t = " ".join(T.belirteclestir(r["girdi"]))
+            assert not any(t.startswith(e.lower() + " ") or t.endswith(" " + e.lower()) for e in ekler), r
+
+
+def test_kisa_ornekler_bulunur(bolme_siz_cumleler):
+    cumleler = list(bolme_siz_cumleler[0])
+    for x in ["otobüse bin hemen", "taksiye bin de gel", "bin hadi gidiyoruz", "motora bin arkama",
+              "bu yüzden geç kaldım", "bu telefon ikinci el mi", "arabayı ikinci elden aldık", "bu yüzden gelmedim"]:
+        assert _bulunur(x, cumleler), x
+
+
+def test_karsit_kisa_ornekler(bolme_siz_cumleler):
+    kars = bolme_siz_cumleler[1]
+    for g, h in {"bin lira ver": "1.000 TL ver", "yüz metre kaldı": "100 m kaldı",
+                 "ikinci kat burası": "2. kat burası"}.items():
+        assert kars.get(g) == h, (g, [c for c in kars if g.split()[0] in c][:3])
+
+
+def test_onalti_tasiyici_cesitliligi(veri):
+    o = T.olcumler(veri["train"])
+    assert o["olgu_sablon"]["onalti"] >= 90
+    assert o["onalti_en_buyuk_sablon_payi"] <= 0.03
+
+
+def test_bucuk_yalniz_sayi_olmayan_kullanim(veri):
+    bucuk = [r for r in veri["train"] if T.olgu_of(r["sablon"]) == "kesir" and "buçuk" in r["girdi"].lower()]
+    assert bucuk
+    for r in bucuk:
+        t = T.belirteclestir(r["girdi"])
+        for i, w in enumerate(t):
+            if w.startswith("buçuk"):
+                assert i == 0 or t[i - 1] not in T._KARD and t[i - 1] not in T.KARD_FORM, r

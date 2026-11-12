@@ -34,9 +34,13 @@ from megazeka_sayi.turkce import EKLER, ek_uret, ilk_harfi_buyut, inflect, lower
 
 BAYT_SINIRI = 180
 KARSIT_ORANI = 0.17
-KISA_ORANI = 0.12            # kısa şablon havuzundan örnekleme payı (sarmalayıcı sonrası 2-5 sözcük payı ölçülür)
-SARMA_ACILIS = 0.30
-SARMA_KAPANIS = 0.15
+KISA_ORANI = 0.05            # kısa şablon havuzundan örnekleme payı (sarmalayıcı sonrası 2-5 sözcük payı ölçülür)
+VOKATIF_OLGU = {"bin", "ikinciel", "yuz"}
+VOKATIF_ORANI = 0.5
+KISA_OLGU = {"bin": 0.54, "ikinciel": 0.58, "yuz": 0.48}
+KISA_DIGER = {"deyim": 0.35}
+SARMA_ACILIS = 0.40
+SARMA_KAPANIS = 0.20
 BUYUK_HARF_ORANI = 0.40
 TEST_ORANI = 0.18
 
@@ -70,6 +74,9 @@ for _e, _ad in (("yonelme", "dat"), ("belirtme", "acc"), ("ilgi", "gen"), ("ayri
 F["ikinci_el_cogul"] = ["telefonlar", "arabalar", "bisikletler", "kameralar", "bilgisayarlar", "koltuklar",
                         "motosikletler", "buzdolapları", "tabletler", "kitaplar", "montlar", "halılar",
                         "fotoğraf makineleri", "oyun konsolları"]
+F["ikinci_el_acc"] = ["arabayı", "telefonu", "bisikleti", "kamerayı", "bilgisayarı", "koltuğu", "motosikleti",
+                      "buzdolabını", "tableti", "kitabı", "montu", "halıyı", "fotoğraf makinesini", "oyun konsolunu"]
+F["tasit_dat"] += ["arabaya", "kamyona", "traktöre", "kayığa", "motora", "sandala"]
 F["akraba"] = ["annem", "babam", "dedem", "ablam", "ağabeyim", "kardeşim", "teyzem", "amcam", "komşum", "kuzenim"]
 F["meslek"] = ["öğretmen", "doktor", "usta", "şoför", "garson", "kasiyer", "mühendis", "avukat", "ressam", "berber"]
 F["hayvan"] = ["köpek", "kedi", "at", "kuzu", "tavuk", "kuş", "eşek", "inek"]
@@ -124,9 +131,10 @@ _BIN_ONCE = {"hadi", "haydi", "sen", "siz", "ben", "biz", "de", "da", "atla", "�
              "artık", "o", "hepiniz", "hepimiz", "lütfen", "ve", "ama"} | {x.lower() for x in F["tasit_dat"]} | \
             {x.lower() for x in F["binek_dat"]}
 _BIN_SONRA = {"de", "da", "hemen", "şu", "bu", "o", "ama", "bakalım", "artık", "lütfen", "çabuk", "hadi", "ve",
-              "diye", "ki", "mi", "mı", "sonra", "yoksa"}
+              "diye", "ki", "mi", "mı", "sonra", "yoksa", "şimdi", "şuraya", "yanıma", "içeri", "arkama", "hızlı",
+              "öne", "arkaya", "gidelim", "ben", "sen"}
 _YUZ_ONCE = {"hadi", "haydi", "sen", "siz", "ben", "biz", "de", "da", "biraz", "sakın", "hemen", "artık", "çabuk"}
-_YUZ_SONRA = {"biraz", "bakalım", "de", "da", "hemen", "artık", "lütfen", "çabuk", "mi", "mı", "sen", "siz"}
+_YUZ_SONRA = {"biraz", "bakalım", "de", "da", "hemen", "artık", "lütfen", "çabuk", "mi", "mı", "sen", "siz", "hadi"}
 _KIRK_ONCE = {x.lower() for x in F["hayvan_acc"]} | {"saçını", "saçımı", "yünleri", "yünü", "tüyleri", "şunları",
                                                      "bunları"}
 _KIRK_SONRA = {"şu", "bu", "hemen", "artık", "lütfen", "çabuk", "bakalım"}
@@ -304,6 +312,69 @@ Hadi {binek_dat} bin de gösteriş yap
 Turistler {binek_dat} binmek için sıraya girdi
 Küçük çocuk ilk kez {binek_dat} bindi
 Yarın sabah {binek_dat} bineceğiz
+* Bin hadi gidiyoruz
+* Bin hadi
+* Bin artık geç kalıyoruz
+* Bin şuraya
+* Bin yanıma
+* Motora bin arkama
+* Arabaya bin yanıma
+* Bin içeri
+* Bin de gidelim
+* Bin bakalım
+* Bin şimdi
+* Bin yoksa kalırsın
+* Hemen bin
+* Çabuk bin
+* Lütfen bin
+* Sen bin ben iterim
+* Önce ben bineyim
+* Ben bineyim
+* Sen binme
+* Kim bindi
+* Kim biner
+* Biner misin
+* Binmez miyiz
+* Binmedim
+* Bindiniz mi
+* Binecek misin
+* Binelim hadi
+* Binsek mi
+* Binmeyelim
+* Binmeyin
+* Binmesin
+* Binsin
+* Binsinler
+* Binme sakın
+* Bindirelim onu
+* Binmek lazım
+* Binmem lazım
+* Binmek zorundayız
+* Binmek istemiyorum
+* Binmek ister misin
+* Binerim ama
+* Binmeden bekle
+* Bindikten sonra ara
+* {tasit_dat} bin yoksa kalırsın
+* {tasit_dat} binin çocuklar
+* {tasit_dat} binsene
+* {tasit_dat} binmeyelim
+* {tasit_dat} biner misin
+* {tasit_dat} bindi mi
+* {tasit_dat} bindiler
+* {tasit_dat} binmedi
+* {isim} binsin
+* Sen {tasit_dat} bin
+* Hadi {tasit_dat} bin
+* Hemen {tasit_dat} bin
+* {tasit_dat} bin şimdi
+* {tasit_dat} bin lütfen
+* {tasit_dat} bin çabuk
+* Kim {tasit_dat} bindi
+* {isim} nerede bindi
+* {binek_dat} binmem
+* {binek_dat} binelim
+* {isim_ins} {tasit_dat} bindik
 """
 
 IKINCIEL = """
@@ -359,6 +430,45 @@ Müşteri ikinci el {ikinci_el_esya} için pazarlık yaptı
 Ev eşyalarının çoğu ikinci elden
 {isim} yeni bir {ikinci_el_esya} yerine ikinci el bir tane aldı
 Önceki sahibi satınca bu {ikinci_el_esya} ikinci ele düşmüş
+* İkinci el olur
+* İkinci el olsun
+* İkinci el değil
+* Hep ikinci el
+* Hepsi ikinci elden
+* İkinci el alma
+* İkinci el almayalım
+* İkinci el aldık
+* İkinci el bakıyorum
+* İkinci el arıyoruz
+* İkinci el satarız
+* İkinci elden satıyoruz
+* İkinci el fiyatı
+* İkinci el ilanı
+* İkinci el çarşısı
+* İkinci el dükkânı
+* Yeni mi ikinci el mi
+* İkinci el {ikinci_el_esya} fiyatları
+* {ikinci_el_cogul} ikinci el
+* Bu {ikinci_el_esya} ikinci elden
+* {isim} ikinci el sattı
+* {isim} ikinci elden aldı
+* İkinci ele geçti
+* {ikinci_el_esya} ikinci ele düştü
+* İkinci el olmaz
+* İkinci el kullanır mısın
+* İkinci el sever misin
+* Bunu ikinci elden buldum
+* Onu ikinci elden aldım
+* {ikinci_el_acc} ikinci elden aldık
+* {ikinci_el_acc} ikinci elden aldım
+* {ikinci_el_acc} ikinci elden satın aldı
+* İkinci elden {ikinci_el_acc} aldık
+* Bu {ikinci_el_esya} ikinci el mi
+* {ikinci_el_esya} ikinci el mi
+* {isim} ikinci el mi aldı
+* Arabayı ikinci elden aldık
+* Telefonu ikinci elden aldım
+* Motoru ikinci elden aldık
 """
 
 YUZ = """
@@ -426,6 +536,45 @@ Kız kardeşim yüzmeyi öğrenince çok sevindi
 Soğuk su yüzüme çarpınca uyandım
 yüz yüze | Yüz yüze gelmekten kaçınıyorlar
 Hadi yüz de {su_yeri} serinleyelim
+* Bu yüzden geç kaldım
+* Bu yüzden gelmedim
+* Bu yüzden değil
+* O yüzden gitmedim
+* Onun yüzünden geç kaldık
+* Benim yüzümden oldu
+* Trafik yüzünden geç kaldım
+* Yağmur yüzünden gelmedi
+* Hava yüzünden iptal oldu
+* Yüzüne bak
+* Yüzüme bak
+* Yüzünü göster
+* Yüzü kırmızı
+* Yüzü güldü
+* Yüzü düştü
+* Yüzünü ekşitti
+* yüz yüze | Yüz yüze geldik
+* yüz yüze | Yüz yüze görüştük
+* Yüzmeyi seviyorum
+* Yüzmek ister misin
+* Yüzdün mü
+* Yüzüyorlar
+* {su_yeri} yüzelim
+* Yüz hadi
+* Sen de yüz
+* {su_yeri} yüzdüm
+* {isim} yüzdü
+* Çocuklar yüzüyor
+* Yüzme havuzu
+* Yüzme dersi
+* Yüzme bilmem
+* Yüzleşelim
+* Yüzleşti mi
+* Yüzsüz herif
+* Güler yüzlü biri
+* Yüzünde ne var
+* {isim_gen} yüzünden geç kaldık
+* Bu yüzden {isim} gelmedi
+* {isim} yüzmeye gitti
 """
 
 SIRA = """
@@ -571,6 +720,53 @@ Her yıl bu zamanlarda koyunlar kırkılır
 {isim} yarın {hayvan_acc} kırkacak
 dokuz doğur | Bekleye bekleye dokuz doğurduk
 dokuz doğur | {isim} beni bekletip dokuz doğurttu
+Onu aradığımda telefonu kapalıydı
+Onunla {zaman_gecmis} {yer_loc} karşılaştım
+Ona doğum günü hediyesi almak istiyorum
+Onların evi {sehir} yakınlarında
+Ondan hiçbir şey saklamadım
+Onlara kapıyı kimin açtığını bilmiyorum
+Onu bu işe kimin soktuğunu merak ediyorum
+Ona güvenmek bazen zor oluyor
+Onun adını duyunca herkes sustu
+Onlardan biri {zaman_gecmis} bize uğradı
+Ona kızmak yerine konuşmayı denedim
+Onları {sehir} otobüsünde gördüm
+Onunla yarın konuşacağım
+Onun için bir sürpriz hazırladık
+Ondan sonra kimse sesini duymadı
+Onlar da bizimle gelmek istiyor
+Onca yolu yürüyüp geldik
+Ona rağmen yola devam ettik
+Onu kimse tanımıyordu
+Onlarla {yer_loc} kahve içtik
+Çay bardağının altına peçete koydum
+{isim} dolabın altındaki kutuyu çıkardı
+Kitabın altı çizilmiş cümleleri tekrar okudum
+Yağmur başlayınca ağacın altına sığındık
+Halının altında kalan parayı {isim} buldu
+Merdivenin altından garip bir ses geliyordu
+Sandalyenin altına düşen {kucuk_nesne} bulunamadı
+Bu iddianın altını dolduracak delil yok
+Köprünün altında balık tutanlar vardı
+Tablonun altına küçük bir not yapıştırdım
+Arabanın altına bakıp yağ kaçırıp kaçırmadığını kontrol etti
+Masanın altı yine kırıntı dolu
+Kahvaltıda peynir ve zeytin yedik
+{isim} acıkınca dolaptaki {yiyecek_acc} yedi
+Akşam yemeğinde {yiyecek} yediler
+Ne yediğini sorunca hiçbir şey demedi
+Yedikçe şişmanladığını düşünüyordu
+Dün gece {yiyecek_acc} kim yedi
+Hepimiz aynı tabaktan yedik
+Çocuklar elma yedikten sonra oyuna döndü
+{isim} {yiyecek_acc} yediğine pişman oldu
+Misafirlere {yiyecek} yedirdik
+Yün kırkma makinesi bozulunca iş yarım kaldı
+Bu ay {isim} saçını kırktıracak
+Kırkılan koyunlar serin yerde dinlendi
+dokuz doğur | Doktor bizi bekletip dokuz doğurttu
+dokuz doğur | Sıra bir türlü gelmeyince dokuz doğurduk
 """
 
 DEYIM = """
@@ -1113,6 +1309,16 @@ Sınıfın yarısı kantine indi
 Ormanın {kesir_nom} yandı
 Okulun {kesir_nom} yeni öğrencilerden oluşuyor
 Yarım porsiyon {yiyecek} söyledik
+* Saat buçuğu vuruyor
+* Buçuklarda gelirim
+* Buçuğu vurdu
+* Buçuklu saatler uygun
+Buçuklu saatlerde seferler var
+Servis buçuklu saatlerde kalkıyor
+Duvardaki saat buçuğu vurdu
+Tam saatlerde ve buçuklarda zil çalıyor
+Çan her buçukta çalar
+Saat buçuğu vurunca {isim} uyandı
 """
 
 OLGULAR = [
@@ -1304,6 +1510,36 @@ Saat {buc_saat:bulunma} buluşalım
 {yuz_yol} yürüdük, sonra {tasit_dat} bindik
 {yuz_say} {kisi} {yer_loc} bekliyordu
 {bin_say} {kisi} {sehir} yolunda yürüdü
+{bin_tl} kaldı
+{bin_tl} eder
+{bin_tl} yok
+{yuz_tl} eder
+{yuz_tl} yeter
+{yuz_m} kaldı
+{yuz_m} daha
+{yuz_say} kişi var
+{bin_say} kişi var
+{on_say} kişi bindi
+{on_tl} yeter
+{alti_tl} ver
+{yedi_tl} ver
+{kirk_tl} ver
+{dokuz_yuz_tl} eder
+{sira_2} kat burası
+{sira_k} kat burası
+{sira_k} sınıf burası
+{sira_1} kat
+{sira_3} kat solda
+{yuz_yuzde} haklısın
+{on_yuzde} indirim
+{bin_m} kaldı
+{yuz_olcu} yeter
+{on_say} {kisi} geldi
+{kirk_say} {kisi} geldi
+{yuz_tl:yonelme} aldım
+{yuz_tl:yonelme} verdim
+{sira_2} katta
+{sira_3} sınıfta
 """
 F["sure_birim_k"] = ["saat", "gün", "hafta"]
 
@@ -1423,7 +1659,22 @@ def render(sb: Sablon, rng: random.Random, buyuk: bool, sarmala: bool = True):
             v = KS[ad](rng, ek)
             kats.append(v.kategori)
             parcalar.append(["v", v.sozlu if buyuk else lower_tr(v.sozlu), v.yazili, "§"])
-    if sarmala and not sb.karsit:
+    if sarmala and sb.kisa and not sb.karsit and sb.olgu in VOKATIF_OLGU and rng.random() < VOKATIF_ORANI             and sum(len(p[1].split()) for p in parcalar) <= 4 and not sb.metin.rstrip().endswith(("?", "!")):
+        # hitap (vokatif): açılış/kapanış eki değil, kısa cümleye çeşitlilik katar (en çok 5 sözcük)
+        havuz = [x for x in F["isim"] if x not in kullanilan.get("isim", set())]
+        ad_ = rng.choice(havuz)
+        ad_ = ad_ if buyuk else _temiz(lower_tr(ad_))
+        ilk = parcalar[0]
+        if ilk[0] == "m" and rng.random() < 0.5:
+            if buyuk:
+                for j in (1, 2, 3):
+                    ilk[j] = lower_tr(ilk[j][:1]) + ilk[j][1:]
+            sep = ", " if buyuk else " "
+            parcalar.insert(0, ["m", ad_ + sep, ad_ + sep, ad_ + sep])
+        else:
+            sep = ", " if buyuk else " "
+            parcalar.append(["m", sep + ad_, sep + ad_, sep + ad_])
+    if sarmala and not sb.karsit and not (sb.kisa and sb.olgu in KISA_OLGU):
         ilk = parcalar[0]
         ilk_serbest = (ilk[0] == "m" and sb.olgu != "ozelad") or ilk[0] == "dz"
         if ilk_serbest and rng.random() < SARMA_ACILIS:
@@ -1433,7 +1684,7 @@ def render(sb: Sablon, rng: random.Random, buyuk: bool, sarmala: bool = True):
             a = a if buyuk else _temiz(lower_tr(a))
             parcalar.insert(0, ["m", a + ("," if buyuk else "") + " ", a + ("," if buyuk else "") + " ",
                                 a + ", "])
-        if rng.random() < SARMA_KAPANIS:
+        if rng.random() < SARMA_KAPANIS and not sb.metin.rstrip().endswith(("?", "!")):
             c = rng.choice(KAPANISLAR)
             ek_metin = (", " if buyuk else " ") + c + ("?" if buyuk and c.endswith(" mi") else "")
             parcalar.append(["m", ek_metin, ek_metin, ek_metin])
@@ -1519,7 +1770,9 @@ class Uretici:
         durum = {s.id: [0, 0] for s in adaylar}     # [satır, ardışık başarısızlık]
         kisa = [s for s in adaylar if s.kisa]
         uzun = [s for s in adaylar if not s.kisa]
-        p_kisa = 1.0 if olgu == "karsit" else KISA_ORANI
+        p_kisa = 1.0 if olgu == "karsit" else KISA_OLGU.get(olgu, KISA_DIGER.get(olgu, KISA_ORANI))
+        if olgu == "onalti":
+            tavan = min(tavan, max(3, int(0.028 * kota)))
         satirlar = []
         while len(satirlar) < kota:
             musait_k = [s for s in kisa if durum[s.id][0] < tavan and durum[s.id][1] < 25]
@@ -1614,6 +1867,12 @@ def olcumler(satirlar: list[dict]) -> dict:
         "ayri_deyim": len({d for d in deyimler if d}),
         "bin_cekim_sayisi": len(bin_cekim),
         "karsit_payi": olgu_say.get("karsit", 0) / n,
+        "olgu_kisa_pay": {o: sum(1 for r in satirlar if olgu_of(r["sablon"]) == o and SABLON_ID[r["sablon"]].kisa
+                                 and 2 <= sozcuk_sayisi(r["girdi"]) <= 5) / olgu_say[o] for o in olgu_say},
+        "olgu_kisa_sablon": {o: len({r["sablon"] for r in satirlar if olgu_of(r["sablon"]) == o
+                                     and SABLON_ID[r["sablon"]].kisa}) for o in olgu_say},
+        "onalti_en_buyuk_sablon_payi": max(c for k, c in sablon_say.items() if olgu_of(k) == "onalti")
+        / olgu_say["onalti"],
     }
 
 
