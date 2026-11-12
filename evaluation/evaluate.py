@@ -23,6 +23,8 @@ from megazeka_sayi.olcum import kategori_kirilimi, olc
 CHALLENGE = ROOT / 'evaluation' / 'challenge.jsonl'
 # İkinci elle yazılmış küme: v1.1 veri değişiklikleri yapılırken üreteç ajanına gösterilmedi.
 CHALLENGE2 = ROOT / 'evaluation' / 'challenge2.jsonl'
+# Üçüncü elle yazılmış küme: v2 veri kaynaklarını yazan ajanlara gösterilmedi (yeni biçimler + kalan hatalar).
+CHALLENGE3 = ROOT / 'evaluation' / 'challenge3.jsonl'
 SISTEMLER = [('kopya', 'Girdiyi kopyala'), ('kural', 'Kural tabanlı (saf)'),
              ('model_korumasiz', 'Model (korumasız)'), ('model_korumali', 'Model + koruma')]
 HATA_SAYISI = 25
@@ -131,6 +133,11 @@ def ana():
         kumeler.append(('zorluk', CHALLENGE))
     if CHALLENGE2.exists():
         kumeler.append(('zorluk2_gizli', CHALLENGE2))
+    if CHALLENGE3.exists():
+        kumeler.append(('zorluk3_gizli_v2', CHALLENGE3))
+    test_v2 = depolama.veri_dizini() / 'test-v2.jsonl'
+    if test_v2.exists():
+        kumeler.insert(1, ('test_v2_yeni_kaynaklar', test_v2))
     raporlar = []
     for ku, yol in kumeler:
         satirlar = oku(yol, args.limit)

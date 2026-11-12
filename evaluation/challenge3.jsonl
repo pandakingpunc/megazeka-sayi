@@ -1,0 +1,83 @@
+{"girdi": "kasada yedi bin beş lira kalmış", "hedef": "kasada 7.005 TL kalmış", "kategori": "ic_sifir", "sablon": "elle3"}
+{"girdi": "nüfus iki milyon on bin dört yüz kişiye ulaştı", "hedef": "nüfus 2.010.400 kişiye ulaştı", "kategori": "ic_sifir", "sablon": "elle3"}
+{"girdi": "depoda on bin on koli var", "hedef": "depoda 10.010 koli var", "kategori": "ic_sifir", "sablon": "elle3"}
+{"girdi": "Şirket geçen yıl üç yüz bin yedi lira kâr etti.", "hedef": "Şirket geçen yıl 300.007 TL kâr etti.", "kategori": "ic_sifir", "sablon": "elle3"}
+{"girdi": "yolun uzunluğu bin kırk kilometre", "hedef": "yolun uzunluğu 1.040 km", "kategori": "ic_sifir", "sablon": "elle3"}
+{"girdi": "fatura dört bin altmış lira yirmi kuruş gelmiş", "hedef": "fatura 4.060,20 TL gelmiş", "kategori": "ic_sifir", "sablon": "elle3"}
+{"girdi": "numaram sıfır beş yüz otuz üç dört yüz bir yirmi sıfır yedi", "hedef": "numaram 0533 401 20 07", "kategori": "telefon", "sablon": "elle3"}
+{"girdi": "ofisin numarası sıfır iki yüz on iki beş beş beş sıfır bir sıfır iki", "hedef": "ofisin numarası 0212 555 01 02", "kategori": "telefon", "sablon": "elle3"}
+{"girdi": "tc kimlik numaram bir iki üç dört beş altı yedi sekiz dokuz sıfır iki", "hedef": "tc kimlik numaram 12345678902", "kategori": "kod", "sablon": "elle3"}
+{"girdi": "Takip numaranız dokuz dokuz sıfır sıfır yedi bir bir.", "hedef": "Takip numaranız 9900711.", "kategori": "kod", "sablon": "elle3"}
+{"girdi": "tamir kırk elli beş dakika sürer", "hedef": "tamir 40-55 dakika sürer", "kategori": "aralik", "sablon": "elle3"}
+{"girdi": "salona üç yüz üç yüz elli kişi sığıyor", "hedef": "salona 300-350 kişi sığıyor", "kategori": "aralik", "sablon": "elle3"}
+{"girdi": "Yolculuk on beş yirmi saat sürecekmiş.", "hedef": "Yolculuk 15-20 saat sürecekmiş.", "kategori": "aralik", "sablon": "elle3"}
+{"girdi": "dosya sekiz gigabayttan küçük olmalı", "hedef": "dosya 8 GB'tan küçük olmalı", "kategori": "olcu", "sablon": "elle3"}
+{"girdi": "hasta günde beş yüz miligram ilaç alıyor", "hedef": "hasta günde 500 mg ilaç alıyor", "kategori": "olcu", "sablon": "elle3"}
+{"girdi": "depoya yirmi metreküp su sığıyor", "hedef": "depoya 20 m³ su sığıyor", "kategori": "olcu", "sablon": "elle3"}
+{"girdi": "bu ay üç yüz kilovatsaat elektrik harcadık", "hedef": "bu ay 300 kWh elektrik harcadık", "kategori": "olcu", "sablon": "elle3"}
+{"girdi": "Elli beş inç televizyon aldık.", "hedef": "55 inç televizyon aldık.", "kategori": "olcu", "sablon": "elle3"}
+{"girdi": "kamyon kırk tonluk yük taşıyor", "hedef": "kamyon 40 tonluk yük taşıyor", "kategori": "olcu", "sablon": "elle3"}
+{"girdi": "motor yüz elli kilovata çıkıyor", "hedef": "motor 150 kW'a çıkıyor", "kategori": "olcu", "sablon": "elle3"}
+{"girdi": "bebek dört kilo yüz elli gram doğmuş", "hedef": "bebek 4 kg 150 g doğmuş", "kategori": "bilesik", "sablon": "elle3"}
+{"girdi": "boyum bir metre yetmiş sekiz santim", "hedef": "boyum 1 m 78 cm", "kategori": "bilesik", "sablon": "elle3"}
+{"girdi": "film iki saat on dakika sürüyor", "hedef": "film 2 saat 10 dakika sürüyor", "kategori": "bilesik", "sablon": "elle3"}
+{"girdi": "Koşuyu bir saat kırk beş dakikada bitirdi.", "hedef": "Koşuyu 1 saat 45 dakikada bitirdi.", "kategori": "bilesik", "sablon": "elle3"}
+{"girdi": "kirayı 15 bin liraya çıkardılar", "hedef": "kirayı 15.000 TL'ye çıkardılar", "kategori": "yari", "sablon": "elle3"}
+{"girdi": "arabaya 1 milyon 250 bin lira istiyorlar", "hedef": "arabaya 1.250.000 TL istiyorlar", "kategori": "yari", "sablon": "elle3"}
+{"girdi": "enflasyon yüzde 38 buçuk açıklandı", "hedef": "enflasyon %38,5 açıklandı", "kategori": "yari", "sablon": "elle3"}
+{"girdi": "toplantı saat 14:30'da başlayacak", "hedef": "toplantı saat 14.30'da başlayacak", "kategori": "yari", "sablon": "elle3"}
+{"girdi": "marketten 2 buçuk kilo kıyma aldım", "hedef": "marketten 2,5 kg kıyma aldım", "kategori": "yari", "sablon": "elle3"}
+{"girdi": "Maaşlar 22500 liraya yükseldi.", "hedef": "Maaşlar 22.500 TL'ye yükseldi.", "kategori": "yari", "sablon": "elle3"}
+{"girdi": "sınav 15 haziran 2027 tarihinde yapılacak", "hedef": "sınav 15 Haziran 2027 tarihinde yapılacak", "kategori": "yari", "sablon": "elle3"}
+{"girdi": "hava eksi 12 derece", "hedef": "hava -12 derece", "kategori": "yari", "sablon": "elle3"}
+{"girdi": "2026 yılında 3 kişi işe alındı", "hedef": "2026 yılında 3 kişi işe alındı", "kategori": "yari", "sablon": "elle3"}
+{"girdi": "bana 05321234567 numarasından ulaşın", "hedef": "bana 0532 123 45 67 numarasından ulaşın", "kategori": "yari", "sablon": "elle3"}
+{"girdi": "yol 450 kilometre sürüyor", "hedef": "yol 450 km sürüyor", "kategori": "yari", "sablon": "elle3"}
+{"girdi": "nüfusun yüzde 60'ı şehirde yaşıyor", "hedef": "nüfusun %60'ı şehirde yaşıyor", "kategori": "yari", "sablon": "elle3"}
+{"girdi": "sınıfta yirmibeş öğrenci var", "hedef": "sınıfta 25 öğrenci var", "kategori": "bitisik", "sablon": "elle3"}
+{"girdi": "bana ikiyüz elli gram peynir ver", "hedef": "bana 250 g peynir ver", "kategori": "bitisik", "sablon": "elle3"}
+{"girdi": "Fatura üçbin beşyüz lira gelmiş.", "hedef": "Fatura 3.500 TL gelmiş.", "kategori": "bitisik", "sablon": "elle3"}
+{"girdi": "indirim yüzde onbeş", "hedef": "indirim %15", "kategori": "bitisik", "sablon": "elle3"}
+{"girdi": "otobüs saat onbirde kalkıyor", "hedef": "otobüs saat 11'de kalkıyor", "kategori": "bitisik", "sablon": "elle3"}
+{"girdi": "saat beşe on kala çıkalım", "hedef": "saat 5'e 10 kala çıkalım", "kategori": "saat_deyis", "sablon": "elle3"}
+{"girdi": "dokuzu çeyrek geçe oradayım", "hedef": "9'u çeyrek geçe oradayım", "kategori": "saat_deyis", "sablon": "elle3"}
+{"girdi": "Saat üçe yirmi var.", "hedef": "Saat 3'e 20 var.", "kategori": "saat_deyis", "sablon": "elle3"}
+{"girdi": "yediyi beş geçiyordu geldiğinde", "hedef": "7'yi 5 geçiyordu geldiğinde", "kategori": "saat_deyis", "sablon": "elle3"}
+{"girdi": "on bire çeyrek kala aradı", "hedef": "11'e çeyrek kala aradı", "kategori": "saat_deyis", "sablon": "elle3"}
+{"girdi": "altıya beş kala uyandım", "hedef": "6'ya 5 kala uyandım", "kategori": "saat_deyis", "sablon": "elle3"}
+{"girdi": "maaşlar ayın on beşinde yatıyor", "hedef": "maaşlar ayın 15'inde yatıyor", "kategori": "ayin_gunu", "sablon": "elle3"}
+{"girdi": "kirayı her ayın birinde ödüyorum", "hedef": "kirayı her ayın 1'inde ödüyorum", "kategori": "ayin_gunu", "sablon": "elle3"}
+{"girdi": "başvurular ayın yirmi sekizine kadar sürecek", "hedef": "başvurular ayın 28'ine kadar sürecek", "kategori": "ayin_gunu", "sablon": "elle3"}
+{"girdi": "Nisanın üçünden beri bekliyoruz.", "hedef": "Nisanın 3'ünden beri bekliyoruz.", "kategori": "ayin_gunu", "sablon": "elle3"}
+{"girdi": "toplantı on iki mart iki bin yirmi yedide saat on dört otuzda başlayacak ve katılım ücreti yedi yüz elli lira olacak", "hedef": "toplantı 12 Mart 2027'de saat 14.30'da başlayacak ve katılım ücreti 750 TL olacak", "kategori": "karisik", "sablon": "elle3"}
+{"girdi": "geçen ay yüzde yirmi zam geldi maaşım otuz iki bin liradan otuz sekiz bin dört yüz liraya çıktı", "hedef": "geçen ay %20 zam geldi maaşım 32.000 TL'den 38.400 TL'ye çıktı", "kategori": "karisik", "sablon": "elle3"}
+{"girdi": "On beş kilometrelik parkuru bir saat yirmi dakikada koştum ve yüz kırk kişi arasında on ikinci oldum.", "hedef": "15 km'lik parkuru 1 saat 20 dakikada koştum ve 140 kişi arasında on ikinci oldum.", "kategori": "karisik", "sablon": "elle3"}
+{"girdi": "toplantıya yedi kişi katıldı", "hedef": "toplantıya yedi kişi katıldı", "kategori": "negatif_politika", "sablon": "elle3"}
+{"girdi": "toplantıya on yedi kişi katıldı", "hedef": "toplantıya 17 kişi katıldı", "kategori": "kardinal", "sablon": "elle3"}
+{"girdi": "bahçede dokuz ağaç var", "hedef": "bahçede dokuz ağaç var", "kategori": "negatif_politika", "sablon": "elle3"}
+{"girdi": "bin hadi gidiyoruz", "hedef": "bin hadi gidiyoruz", "kategori": "negatif_es", "sablon": "elle3"}
+{"girdi": "çocuklar salıncağa bindi", "hedef": "çocuklar salıncağa bindi", "kategori": "negatif_es", "sablon": "elle3"}
+{"girdi": "motora bin arkama", "hedef": "motora bin arkama", "kategori": "negatif_es", "sablon": "elle3"}
+{"girdi": "bu yüzden geç kaldım", "hedef": "bu yüzden geç kaldım", "kategori": "negatif_es", "sablon": "elle3"}
+{"girdi": "senin yüzünden bin lira ceza yedim", "hedef": "senin yüzünden 1.000 TL ceza yedim", "kategori": "karsit", "sablon": "elle3"}
+{"girdi": "kedi koltuğun altına saklandı", "hedef": "kedi koltuğun altına saklandı", "kategori": "negatif_es", "sablon": "elle3"}
+{"girdi": "ona altı kere söyledim", "hedef": "ona altı kere söyledim", "kategori": "negatif_es", "sablon": "elle3"}
+{"girdi": "elmayı yedi sonra uyudu", "hedef": "elmayı yedi sonra uyudu", "kategori": "negatif_es", "sablon": "elle3"}
+{"girdi": "ikinci el bir bisiklet arıyorum", "hedef": "ikinci el bir bisiklet arıyorum", "kategori": "negatif_kalip", "sablon": "elle3"}
+{"girdi": "bu telefon ikinci el mi", "hedef": "bu telefon ikinci el mi", "kategori": "negatif_kalip", "sablon": "elle3"}
+{"girdi": "arabayı ikinci elden aldık", "hedef": "arabayı ikinci elden aldık", "kategori": "negatif_kalip", "sablon": "elle3"}
+{"girdi": "kardeşim yarışmada ikinci oldu", "hedef": "kardeşim yarışmada ikinci oldu", "kategori": "negatif_kalip", "sablon": "elle3"}
+{"girdi": "üçüncüsü de aynı şeyi söyledi", "hedef": "üçüncüsü de aynı şeyi söyledi", "kategori": "negatif_kalip", "sablon": "elle3"}
+{"girdi": "abim dokuz eylül üniversitesinde okuyor", "hedef": "abim dokuz eylül üniversitesinde okuyor", "kategori": "negatif_kalip", "sablon": "elle3"}
+{"girdi": "dedem askerde onbaşıymış", "hedef": "dedem askerde onbaşıymış", "kategori": "negatif_kalip", "sablon": "elle3"}
+{"girdi": "bu iş dört dörtlük oldu", "hedef": "bu iş dört dörtlük oldu", "kategori": "negatif_kalip", "sablon": "elle3"}
+{"girdi": "kırk yılın başı bir tatile çıktık", "hedef": "kırk yılın başı bir tatile çıktık", "kategori": "negatif_kalip", "sablon": "elle3"}
+{"girdi": "ikizler bugün okula başladı", "hedef": "ikizler bugün okula başladı", "kategori": "negatif_kalip", "sablon": "elle3"}
+{"girdi": "tonlarca çöp toplandı", "hedef": "tonlarca çöp toplandı", "kategori": "negatif_kalip", "sablon": "elle3"}
+{"girdi": "Beşiktaş maçı bu akşam.", "hedef": "Beşiktaş maçı bu akşam.", "kategori": "negatif_kalip", "sablon": "elle3"}
+{"girdi": "sıfırdan bir iş kurdu", "hedef": "sıfırdan bir iş kurdu", "kategori": "negatif_kalip", "sablon": "elle3"}
+{"girdi": "bir taşla iki kuş vurduk", "hedef": "bir taşla iki kuş vurduk", "kategori": "negatif_kalip", "sablon": "elle3"}
+{"girdi": "üçgenin iç açılarını hesapladık", "hedef": "üçgenin iç açılarını hesapladık", "kategori": "negatif_kalip", "sablon": "elle3"}
+{"girdi": "yüzbaşı on iki askerle geldi", "hedef": "yüzbaşı 12 askerle geldi", "kategori": "karsit", "sablon": "elle3"}
+{"girdi": "beşer beşer sıraya girin", "hedef": "beşer beşer sıraya girin", "kategori": "negatif_kalip", "sablon": "elle3"}
+{"girdi": "yarım saat sonra gelirim", "hedef": "yarım saat sonra gelirim", "kategori": "negatif_kalip", "sablon": "elle3"}
