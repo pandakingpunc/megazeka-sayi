@@ -2,7 +2,7 @@
   "bilgi": {
     "ad": "v2",
     "kontrol_noktasi": "best",
-    "saniye": 243.10215289999996,
+    "saniye": 213.31395709999924,
     "limit": null
   },
   "kumeler": [
@@ -40,10 +40,10 @@
         },
         "model_korumali": {
           "ornek": 2000,
-          "tam_eslesme": 0.969,
-          "cer": 0.010420029939240951,
-          "wer": 0.015061361100780959,
-          "sayi_belirteci_dogrulugu": 0.9656019656019657,
+          "tam_eslesme": 0.9855,
+          "cer": 0.0015116381461152367,
+          "wer": 0.0031610264038676086,
+          "sayi_belirteci_dogrulugu": 0.9932432432432432,
           "negatif_ornek": 802,
           "yanlis_donusum_orani": 0.026184538653366583
         }
@@ -598,19 +598,19 @@
           },
           "kardinal": {
             "ornek": 178,
-            "tam_eslesme": 0.949438202247191,
-            "cer": 0.0146503884572697,
-            "wer": 0.023255813953488372,
-            "sayi_belirteci_dogrulugu": 0.9470588235294117,
+            "tam_eslesme": 0.9887640449438202,
+            "cer": 0.0013318534961154272,
+            "wer": 0.0029069767441860465,
+            "sayi_belirteci_dogrulugu": 0.9882352941176471,
             "negatif_ornek": 8,
             "yanlis_donusum_orani": 0.0
           },
           "karisik": {
             "ornek": 49,
-            "tam_eslesme": 0.9795918367346939,
-            "cer": 0.0341545352743561,
-            "wer": 0.038348082595870206,
-            "sayi_belirteci_dogrulugu": 0.9621212121212122,
+            "tam_eslesme": 1.0,
+            "cer": 0.0,
+            "wer": 0.0,
+            "sayi_belirteci_dogrulugu": 1.0,
             "negatif_ornek": 0,
             "yanlis_donusum_orani": null
           },
@@ -670,10 +670,10 @@
           },
           "ondalik": {
             "ornek": 130,
-            "tam_eslesme": 0.8769230769230769,
-            "cer": 0.07555943039814007,
-            "wer": 0.10136452241715399,
-            "sayi_belirteci_dogrulugu": 0.8769230769230769,
+            "tam_eslesme": 1.0,
+            "cer": 0.0,
+            "wer": 0.0,
+            "sayi_belirteci_dogrulugu": 1.0,
             "negatif_ornek": 0,
             "yanlis_donusum_orani": null
           },
@@ -715,57 +715,35 @@
           },
           "tarih": {
             "ornek": 97,
-            "tam_eslesme": 0.9690721649484536,
-            "cer": 0.01388469664956233,
-            "wer": 0.020793950850661626,
-            "sayi_belirteci_dogrulugu": 0.9747899159663865,
+            "tam_eslesme": 1.0,
+            "cer": 0.0,
+            "wer": 0.0,
+            "sayi_belirteci_dogrulugu": 1.0,
             "negatif_ornek": 0,
             "yanlis_donusum_orani": null
           },
           "telefon": {
             "ornek": 49,
-            "tam_eslesme": 0.9183673469387755,
-            "cer": 0.06135531135531135,
-            "wer": 0.08443271767810026,
-            "sayi_belirteci_dogrulugu": 0.9292929292929293,
+            "tam_eslesme": 0.9591836734693877,
+            "cer": 0.0018315018315018315,
+            "wer": 0.010554089709762533,
+            "sayi_belirteci_dogrulugu": 0.9797979797979798,
             "negatif_ornek": 0,
             "yanlis_donusum_orani": null
           },
           "yuzde": {
             "ornek": 89,
-            "tam_eslesme": 0.9550561797752809,
-            "cer": 0.022016732716864818,
-            "wer": 0.026881720430107527,
-            "sayi_belirteci_dogrulugu": 0.9550561797752809,
+            "tam_eslesme": 1.0,
+            "cer": 0.0,
+            "wer": 0.0,
+            "sayi_belirteci_dogrulugu": 1.0,
             "negatif_ornek": 0,
             "yanlis_donusum_orani": null
           }
         }
       },
-      "hata_sayisi": 62,
+      "hata_sayisi": 29,
       "hatalar": [
-        {
-          "girdi": "dokuz yüzün bir fazlasını bulmamız gerekiyor",
-          "hedef": "900'ün bir fazlasını bulmamız gerekiyor",
-          "cikti": "dokuz yüzün bir fazlasını bulmamız gerekiyor",
-          "ham": "900'ün bir fazlasını bulmamız gerekiyor",
-          "kategori": "kardinal",
-          "sablon": "kardinal-046",
-          "uyari": [
-            "\"dokuz yüzün\" → \"900'ün\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "partinin oyu yüzde yüzü buldu",
-          "hedef": "partinin oyu %100'ü buldu",
-          "cikti": "partinin oyu yüzde yüzü buldu",
-          "ham": "partinin oyu %100'ü buldu",
-          "kategori": "yuzde",
-          "sablon": "yuzde-029",
-          "uyari": [
-            "\"yüzde yüzü\" → \"%100'ü\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
         {
           "girdi": "Bir kuruşunu bile boşa harcamaz.",
           "hedef": "Bir kuruşunu bile boşa harcamaz.",
@@ -774,28 +752,6 @@
           "kategori": "negatif_kalip",
           "sablon": "negatif_kalip-136",
           "uyari": []
-        },
-        {
-          "girdi": "iki bin birin ilk günlerinde işe başladım",
-          "hedef": "2001'in ilk günlerinde işe başladım",
-          "cikti": "iki bin birin ilk günlerinde işe başladım",
-          "ham": "2001'in ilk günlerinde işe başladım",
-          "kategori": "tarih",
-          "sablon": "tarih-011",
-          "uyari": [
-            "\"iki bin birin\" → \"2001'in\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Yirmi bir virgül birin üzerindeki notlar geçer sayılıyor.",
-          "hedef": "21,1'in üzerindeki notlar geçer sayılıyor.",
-          "cikti": "Yirmi bir virgül birin üzerindeki notlar geçer sayılıyor.",
-          "ham": "21,1'in üzerindeki notlar geçer sayılıyor.",
-          "kategori": "ondalik",
-          "sablon": "ondalik-020",
-          "uyari": [
-            "\"Yirmi bir virgül birin\" → \"21,1'in\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
         },
         {
           "girdi": "mesaj gelirse sıfır beş yüz elli dokuz yüz dokuz doksan sıfır üç numarasına yönlendir",
@@ -816,28 +772,6 @@
           "uyari": []
         },
         {
-          "girdi": "kırkın bir fazlasını bulmamız gerekiyor",
-          "hedef": "40'ın bir fazlasını bulmamız gerekiyor",
-          "cikti": "kırkın bir fazlasını bulmamız gerekiyor",
-          "ham": "40'ın bir fazlasını bulmamız gerekiyor",
-          "kategori": "kardinal",
-          "sablon": "kardinal-046",
-          "uyari": [
-            "\"kırkın\" → \"40'ın\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Puanı yedi buçuğa yükseldi.",
-          "hedef": "Puanı 7,5'e yükseldi.",
-          "cikti": "Puanı yedi buçuğa yükseldi.",
-          "ham": "Puanı 7,5'e yükseldi.",
-          "kategori": "ondalik",
-          "sablon": "ondalik-018",
-          "uyari": [
-            "\"yedi buçuğa\" → \"7,5'e\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
           "girdi": "bir iki dakika dinlenip yola devam ederiz yani",
           "hedef": "bir iki dakika dinlenip yola devam ederiz yani",
           "cikti": "1-2 dakika dinlenip yola devam ederiz yani",
@@ -845,28 +779,6 @@
           "kategori": "negatif_kalip",
           "sablon": "negatif_kalip-001",
           "uyari": []
-        },
-        {
-          "girdi": "Mevcudun yüzde altmış biri sınavı geçti.",
-          "hedef": "Mevcudun %61'i sınavı geçti.",
-          "cikti": "Mevcudun yüzde altmış biri sınavı geçti.",
-          "ham": "Mevcudun %61'i sınavı geçti.",
-          "kategori": "yuzde",
-          "sablon": "yuzde-032",
-          "uyari": [
-            "\"yüzde altmış biri\" → \"%61'i\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Değerin yirmi dokuz virgül biri sabit tutuldu.",
-          "hedef": "Değerin 29,1'i sabit tutuldu.",
-          "cikti": "Değerin yirmi dokuz virgül biri sabit tutuldu.",
-          "ham": "Değerin 29,1'i sabit tutuldu.",
-          "kategori": "ondalik",
-          "sablon": "ondalik-039",
-          "uyari": [
-            "\"yirmi dokuz virgül biri\" → \"29,1'i\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
         },
         {
           "girdi": "Bir kuruşunu bile boşa harcamaz, herkes biliyor.",
@@ -896,28 +808,6 @@
           "uyari": []
         },
         {
-          "girdi": "Yedi virgül onun karesini aldım.",
-          "hedef": "7,10'un karesini aldım.",
-          "cikti": "Yedi virgül onun karesini aldım.",
-          "ham": "7,10'un karesini aldım.",
-          "kategori": "ondalik",
-          "sablon": "ondalik-031",
-          "uyari": [
-            "\"Yedi virgül onun\" → \"7,10'un\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "mevcudun yüzde yüzü sınavı geçti",
-          "hedef": "mevcudun %100'ü sınavı geçti",
-          "cikti": "mevcudun yüzde yüzü sınavı geçti",
-          "ham": "mevcudun %100'ü sınavı geçti",
-          "kategori": "yuzde",
-          "sablon": "yuzde-032",
-          "uyari": [
-            "\"yüzde yüzü\" → \"%100'ü\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
           "girdi": "geçen hafta birden istasyonda ışıklar söndü",
           "hedef": "geçen hafta birden istasyonda ışıklar söndü",
           "cikti": "geçen hafta 1'den istasyonda ışıklar söndü",
@@ -927,17 +817,6 @@
           "uyari": []
         },
         {
-          "girdi": "Seçilen sayının kırkın tersi lazım.",
-          "hedef": "Seçilen sayının 40'ın tersi lazım.",
-          "cikti": "Seçilen sayının kırkın tersi lazım.",
-          "ham": "Seçilen sayının 40'ın tersi lazım.",
-          "kategori": "kardinal",
-          "sablon": "kardinal-083",
-          "uyari": [
-            "\"kırkın\" → \"40'ın\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
           "girdi": "on on beş yıl önce buraya taşındık",
           "hedef": "10-15 yıl önce buraya taşındık",
           "cikti": "15 yıl önce buraya taşındık",
@@ -945,28 +824,6 @@
           "kategori": "aralik",
           "sablon": "aralik-011",
           "uyari": []
-        },
-        {
-          "girdi": "ateş yirmi virgül ona çıktı",
-          "hedef": "ateş 20,10'a çıktı",
-          "cikti": "ateş yirmi virgül ona çıktı",
-          "ham": "ateş 20,10'a çıktı",
-          "kategori": "ondalik",
-          "sablon": "ondalik-048",
-          "uyari": [
-            "\"yirmi virgül ona\" → \"20,10'a\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "yusuf bana artı doksan beş yüz elli bir iki yüz doksan yedi seksen bir altmış üç numarasını verdi",
-          "hedef": "yusuf bana +90 551 297 81 63 numarasını verdi",
-          "cikti": "yusuf bana artı doksan beş yüz elli bir iki yüz doksan yedi seksen bir altmış üç numarasını verdi",
-          "ham": "yusuf bana +90 551 297 81 63 numarasını verdi",
-          "kategori": "telefon",
-          "sablon": "telefon-003",
-          "uyari": [
-            "\"artı doksan beş yüz elli bir iki yüz doksan yedi seksen bir altmış üç\" → \"+90 551 297 81 63\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
         },
         {
           "girdi": "Hesaplama onda tıkandı.",
@@ -1025,17 +882,6 @@
           "uyari": []
         },
         {
-          "girdi": "Puanı on yedi buçuğa yükseldi.",
-          "hedef": "Puanı 17,5'e yükseldi.",
-          "cikti": "Puanı on yedi buçuğa yükseldi.",
-          "ham": "Puanı 17,5'e yükseldi.",
-          "kategori": "ondalik",
-          "sablon": "ondalik-018",
-          "uyari": [
-            "\"on yedi buçuğa\" → \"17,5'e\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
           "girdi": "şifreye onu ekle",
           "hedef": "şifreye 10'u ekle",
           "cikti": "şifreye onu ekle",
@@ -1044,39 +890,6 @@
           "sablon": "kardinal-042",
           "uyari": [
             "\"onu\" → \"10'u\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Partinin oyu yüzde doksan biri buldu.",
-          "hedef": "Partinin oyu %91'i buldu.",
-          "cikti": "Partinin oyu yüzde doksan biri buldu.",
-          "ham": "Partinin oyu %91'i buldu.",
-          "kategori": "yuzde",
-          "sablon": "yuzde-029",
-          "uyari": [
-            "\"yüzde doksan biri\" → \"%91'i\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "puanı on bir buçuğa yükseldi",
-          "hedef": "puanı 11,5'e yükseldi",
-          "cikti": "puanı on bir buçuğa yükseldi",
-          "ham": "puanı 11,5'e yükseldi",
-          "kategori": "ondalik",
-          "sablon": "ondalik-018",
-          "uyari": [
-            "\"on bir buçuğa\" → \"11,5'e\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Puanı yirmi sekiz buçuğa yükseldi.",
-          "hedef": "Puanı 28,5'e yükseldi.",
-          "cikti": "Puanı yirmi sekiz buçuğa yükseldi.",
-          "ham": "Puanı 28,5'e yükseldi.",
-          "kategori": "ondalik",
-          "sablon": "ondalik-018",
-          "uyari": [
-            "\"yirmi sekiz buçuğa\" → \"28,5'e\" geri alındı (sayı olmayan sözcük değişti)"
           ]
         },
         {
@@ -1107,28 +920,6 @@
           "uyari": []
         },
         {
-          "girdi": "yirmi üç virgül onun karesini aldım",
-          "hedef": "23,10'un karesini aldım",
-          "cikti": "yirmi üç virgül onun karesini aldım",
-          "ham": "23,10'un karesini aldım",
-          "kategori": "ondalik",
-          "sablon": "ondalik-031",
-          "uyari": [
-            "\"yirmi üç virgül onun\" → \"23,10'un\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Yüz yirmi virgül kırkın karesini aldım.",
-          "hedef": "120,40'ın karesini aldım.",
-          "cikti": "Yüz yirmi virgül kırkın karesini aldım.",
-          "ham": "120,40'ın karesini aldım.",
-          "kategori": "ondalik",
-          "sablon": "ondalik-031",
-          "uyari": [
-            "\"Yüz yirmi virgül kırkın\" → \"120,40'ın\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
           "girdi": "neyse bir kuruşunu bile boşa harcamaz diye düşündüm",
           "hedef": "neyse bir kuruşunu bile boşa harcamaz diye düşündüm",
           "cikti": "neyse 1 kuruşunu bile boşa harcamaz diye düşündüm",
@@ -1156,127 +947,6 @@
           "uyari": []
         },
         {
-          "girdi": "İki bin birin ilk günlerinde işe başladım.",
-          "hedef": "2001'in ilk günlerinde işe başladım.",
-          "cikti": "İki bin birin ilk günlerinde işe başladım.",
-          "ham": "2001'in ilk günlerinde işe başladım.",
-          "kategori": "tarih",
-          "sablon": "tarih-011",
-          "uyari": [
-            "\"İki bin birin\" → \"2001'in\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "On bine kadar say.",
-          "hedef": "10.000'e kadar say.",
-          "cikti": "On bine kadar say.",
-          "ham": "10.000'e kadar say.",
-          "kategori": "kardinal",
-          "sablon": "kardinal-058",
-          "uyari": [
-            "\"On bine\" → \"10.000'e\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "şifreye yedi yüzü ekle",
-          "hedef": "şifreye 700'ü ekle",
-          "cikti": "şifreye yedi yüzü ekle",
-          "ham": "şifreye 700'ü ekle",
-          "kategori": "kardinal",
-          "sablon": "kardinal-042",
-          "uyari": [
-            "\"yedi yüzü\" → \"700'ü\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "şifreye yedi yüz yirmi biri ekle",
-          "hedef": "şifreye 721'i ekle",
-          "cikti": "şifreye yedi yüz yirmi biri ekle",
-          "ham": "şifreye 721'i ekle",
-          "kategori": "kardinal",
-          "sablon": "kardinal-042",
-          "uyari": [
-            "\"yedi yüz yirmi biri\" → \"721'i\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "bin dokuz yüz yetmiş birin ilk günlerinde işe başladım",
-          "hedef": "1971'in ilk günlerinde işe başladım",
-          "cikti": "bin dokuz yüz yetmiş birin ilk günlerinde işe başladım",
-          "ham": "1971'in ilk günlerinde işe başladım",
-          "kategori": "tarih",
-          "sablon": "tarih-011",
-          "uyari": [
-            "\"bin dokuz yüz yetmiş birin\" → \"1971'in\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Yirmi iki virgül birin karesini aldım.",
-          "hedef": "22,1'in karesini aldım.",
-          "cikti": "Yirmi iki virgül birin karesini aldım.",
-          "ham": "22,1'in karesini aldım.",
-          "kategori": "ondalik",
-          "sablon": "ondalik-031",
-          "uyari": [
-            "\"Yirmi iki virgül birin\" → \"22,1'in\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "puanı on sekiz buçuğa yükseldi",
-          "hedef": "puanı 18,5'e yükseldi",
-          "cikti": "puanı on sekiz buçuğa yükseldi",
-          "ham": "puanı 18,5'e yükseldi",
-          "kategori": "ondalik",
-          "sablon": "ondalik-018",
-          "uyari": [
-            "\"on sekiz buçuğa\" → \"18,5'e\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Yirmi dört virgül birin üzerindeki notlar geçer sayılıyor.",
-          "hedef": "24,1'in üzerindeki notlar geçer sayılıyor.",
-          "cikti": "Yirmi dört virgül birin üzerindeki notlar geçer sayılıyor.",
-          "ham": "24,1'in üzerindeki notlar geçer sayılıyor.",
-          "kategori": "ondalik",
-          "sablon": "ondalik-020",
-          "uyari": [
-            "\"Yirmi dört virgül birin\" → \"24,1'in\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "On altı buçuğun üzerindeki notlar geçer sayılıyor.",
-          "hedef": "16,5'in üzerindeki notlar geçer sayılıyor.",
-          "cikti": "On altı buçuğun üzerindeki notlar geçer sayılıyor.",
-          "ham": "16,5'in üzerindeki notlar geçer sayılıyor.",
-          "kategori": "ondalik",
-          "sablon": "ondalik-020",
-          "uyari": [
-            "\"On altı buçuğun\" → \"16,5'in\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Puanı yirmi beş buçuğa yükseldi.",
-          "hedef": "Puanı 25,5'e yükseldi.",
-          "cikti": "Puanı yirmi beş buçuğa yükseldi.",
-          "ham": "Puanı 25,5'e yükseldi.",
-          "kategori": "ondalik",
-          "sablon": "ondalik-018",
-          "uyari": [
-            "\"yirmi beş buçuğa\" → \"25,5'e\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "numarayı artı doksan beş yüz kırk iki sekiz yüz kırk iki kırk iki yetmiş dokuz diye kaydettim",
-          "hedef": "numarayı +90 542 842 42 79 diye kaydettim",
-          "cikti": "numarayı artı doksan beş yüz kırk iki sekiz yüz kırk iki kırk iki yetmiş dokuz diye kaydettim",
-          "ham": "numarayı +90 542 842 42 79 diye kaydettim",
-          "kategori": "telefon",
-          "sablon": "telefon-014",
-          "uyari": [
-            "\"artı doksan beş yüz kırk iki sekiz yüz kırk iki kırk iki yetmiş dokuz\" → \"+90 542 842 42 79\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
           "girdi": "Bir kuruşunu bile boşa harcamaz, ama neyse.",
           "hedef": "Bir kuruşunu bile boşa harcamaz, ama neyse.",
           "cikti": "1 kuruşunu bile boşa harcamaz, ama neyse.",
@@ -1286,17 +956,6 @@
           "uyari": []
         },
         {
-          "girdi": "Seçilen sayının yetmiş birin tersi lazım.",
-          "hedef": "Seçilen sayının 71'in tersi lazım.",
-          "cikti": "Seçilen sayının yetmiş birin tersi lazım.",
-          "ham": "Seçilen sayının 71'in tersi lazım.",
-          "kategori": "kardinal",
-          "sablon": "kardinal-083",
-          "uyari": [
-            "\"yetmiş birin\" → \"71'in\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
           "girdi": "seda meze yedi sonra çay içti",
           "hedef": "seda meze yedi sonra çay içti",
           "cikti": "seda meze 7 sonra çay içti",
@@ -1304,17 +963,6 @@
           "kategori": "negatif_es",
           "sablon": "negatif_es-054",
           "uyari": []
-        },
-        {
-          "girdi": "bir buçuğun üzerindeki notlar geçer sayılıyor",
-          "hedef": "1,5'in üzerindeki notlar geçer sayılıyor",
-          "cikti": "bir buçuğun üzerindeki notlar geçer sayılıyor",
-          "ham": "1,5'in üzerindeki notlar geçer sayılıyor",
-          "kategori": "ondalik",
-          "sablon": "ondalik-020",
-          "uyari": [
-            "\"bir buçuğun\" → \"1,5'in\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
         },
         {
           "girdi": "Numarayı sıfır beş yüz kırk altı yüz seksen üç on dört seksen beş diye kaydettim.",
@@ -1333,17 +981,6 @@
           "kategori": "negatif_kalip",
           "sablon": "negatif_kalip-136",
           "uyari": []
-        },
-        {
-          "girdi": "Telefon artı doksan iki yüz yirmi dört beş yüz yedi doksan dört seksen üç, posta kodu beş sekiz üç altı iki.",
-          "hedef": "Telefon +90 224 507 94 83, posta kodu 58362.",
-          "cikti": "Telefon artı doksan iki yüz yirmi dört beş yüz yedi doksan dört seksen üç, posta kodu 58362.",
-          "ham": "Telefon +90 224 507 94 83, posta kodu 58362.",
-          "kategori": "karisik",
-          "sablon": "karisik-020",
-          "uyari": [
-            "\"artı doksan iki yüz yirmi dört beş yüz yedi doksan dört seksen üç,\" → \"+90 224 507 94 83,\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
         },
         {
           "girdi": "bir iki adım attı ve durdu",
@@ -1373,7 +1010,7 @@
           "uyari": []
         }
       ],
-      "koruma_geri_alma": 37
+      "koruma_geri_alma": 4
     },
     {
       "ad": "test_v2_yeni_kaynaklar",
@@ -1409,10 +1046,10 @@
         },
         "model_korumali": {
           "ornek": 1400,
-          "tam_eslesme": 0.8007142857142857,
-          "cer": 0.05838200133265394,
-          "wer": 0.07386503067484662,
-          "sayi_belirteci_dogrulugu": 0.7997347480106101,
+          "tam_eslesme": 0.9735714285714285,
+          "cer": 0.004135146787912045,
+          "wer": 0.007239263803680981,
+          "sayi_belirteci_dogrulugu": 0.9860742705570292,
           "negatif_ornek": 379,
           "yanlis_donusum_orani": 0.052770448548812667
         }
@@ -1931,19 +1568,19 @@
           },
           "bitisik": {
             "ornek": 107,
-            "tam_eslesme": 0.06542056074766354,
-            "cer": 0.4378332865562728,
-            "wer": 0.37906137184115524,
-            "sayi_belirteci_dogrulugu": 0.06542056074766354,
+            "tam_eslesme": 1.0,
+            "cer": 0.0,
+            "wer": 0.0,
+            "sayi_belirteci_dogrulugu": 1.0,
             "negatif_ornek": 0,
             "yanlis_donusum_orani": null
           },
           "buyuk": {
             "ornek": 9,
-            "tam_eslesme": 0.8888888888888888,
-            "cer": 0.0842911877394636,
-            "wer": 0.1111111111111111,
-            "sayi_belirteci_dogrulugu": 0.8888888888888888,
+            "tam_eslesme": 1.0,
+            "cer": 0.0,
+            "wer": 0.0,
+            "sayi_belirteci_dogrulugu": 1.0,
             "negatif_ornek": 0,
             "yanlis_donusum_orani": null
           },
@@ -1958,10 +1595,10 @@
           },
           "karisik": {
             "ornek": 56,
-            "tam_eslesme": 0.9107142857142857,
-            "cer": 0.017406227016425593,
-            "wer": 0.024464831804281346,
-            "sayi_belirteci_dogrulugu": 0.9712230215827338,
+            "tam_eslesme": 0.9285714285714286,
+            "cer": 0.016670752635449867,
+            "wer": 0.022935779816513763,
+            "sayi_belirteci_dogrulugu": 0.9784172661870504,
             "negatif_ornek": 0,
             "yanlis_donusum_orani": null
           },
@@ -1994,10 +1631,10 @@
           },
           "olcu": {
             "ornek": 138,
-            "tam_eslesme": 0.8768115942028986,
-            "cer": 0.11291989664082687,
-            "wer": 0.13178294573643412,
-            "sayi_belirteci_dogrulugu": 0.8343949044585988,
+            "tam_eslesme": 0.9927536231884058,
+            "cer": 0.00025839793281653745,
+            "wer": 0.0015503875968992248,
+            "sayi_belirteci_dogrulugu": 1.0,
             "negatif_ornek": 0,
             "yanlis_donusum_orani": null
           },
@@ -2021,10 +1658,10 @@
           },
           "saat_deyis": {
             "ornek": 89,
-            "tam_eslesme": 0.8876404494382022,
-            "cer": 0.028990124243389613,
-            "wer": 0.04655493482309125,
-            "sayi_belirteci_dogrulugu": 0.8758620689655172,
+            "tam_eslesme": 0.9887640449438202,
+            "cer": 0.0012742911755336094,
+            "wer": 0.00186219739292365,
+            "sayi_belirteci_dogrulugu": 0.993103448275862,
             "negatif_ornek": 0,
             "yanlis_donusum_orani": null
           },
@@ -2039,28 +1676,28 @@
           },
           "tarih": {
             "ornek": 72,
-            "tam_eslesme": 0.5694444444444444,
-            "cer": 0.06708160442600276,
-            "wer": 0.11547344110854503,
-            "sayi_belirteci_dogrulugu": 0.5694444444444444,
+            "tam_eslesme": 1.0,
+            "cer": 0.0,
+            "wer": 0.0,
+            "sayi_belirteci_dogrulugu": 1.0,
             "negatif_ornek": 0,
             "yanlis_donusum_orani": null
           },
           "telefon": {
             "ornek": 56,
-            "tam_eslesme": 0.8214285714285714,
-            "cer": 0.09317484662576687,
-            "wer": 0.14150943396226415,
-            "sayi_belirteci_dogrulugu": 0.8596491228070176,
+            "tam_eslesme": 0.8928571428571429,
+            "cer": 0.006901840490797546,
+            "wer": 0.02830188679245283,
+            "sayi_belirteci_dogrulugu": 0.9473684210526315,
             "negatif_ornek": 0,
             "yanlis_donusum_orani": null
           },
           "yari": {
             "ornek": 232,
-            "tam_eslesme": 0.646551724137931,
-            "cer": 0.030465726058184543,
-            "wer": 0.09590100541376644,
-            "sayi_belirteci_dogrulugu": 0.7128712871287128,
+            "tam_eslesme": 0.9913793103448276,
+            "cer": 0.00037457859907603946,
+            "wer": 0.0015467904098994587,
+            "sayi_belirteci_dogrulugu": 0.9933993399339934,
             "negatif_ornek": 28,
             "yanlis_donusum_orani": 0.0
           },
@@ -2075,41 +1712,8 @@
           }
         }
       },
-      "hata_sayisi": 279,
+      "hata_sayisi": 37,
       "hatalar": [
-        {
-          "girdi": "konya beş yüz kırk sekiz kilometrekarelik bir alana yayılmış",
-          "hedef": "konya 548 km²'lik bir alana yayılmış",
-          "cikti": "konya beş yüz kırk sekiz kilometrekarelik bir alana yayılmış",
-          "ham": "konya 548 km²'lik bir alana yayılmış",
-          "kategori": "olcu",
-          "sablon": "v2a-yeni-017",
-          "uyari": [
-            "\"beş yüz kırk sekiz kilometrekarelik\" → \"548 km²'lik\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "İstanbul bin beş yüz elli dört kilometrekarelik bir alana yayılmış.",
-          "hedef": "İstanbul 1.554 km²'lik bir alana yayılmış.",
-          "cikti": "İstanbul bin beş yüz elli dört kilometrekarelik bir alana yayılmış.",
-          "ham": "İstanbul 1.554 km²'lik bir alana yayılmış.",
-          "kategori": "olcu",
-          "sablon": "v2a-yeni-017",
-          "uyari": [
-            "\"bin beş yüz elli dört kilometrekarelik\" → \"1.554 km²'lik\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Trabzon bin yedi yüz altmış sekiz kilometrekarelik bir alana yayılmış.",
-          "hedef": "Trabzon 1.768 km²'lik bir alana yayılmış.",
-          "cikti": "Trabzon bin yedi yüz altmış sekiz kilometrekarelik bir alana yayılmış.",
-          "ham": "Trabzon 1.768 km²'lik bir alana yayılmış.",
-          "kategori": "olcu",
-          "sablon": "v2a-yeni-017",
-          "uyari": [
-            "\"bin yedi yüz altmış sekiz kilometrekarelik\" → \"1.768 km²'lik\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
         {
           "girdi": "Doktorun sekreteri sıfır iki bir altı yüz altı elli dört otuz numarasını verdi.",
           "hedef": "Doktorun sekreteri 0216 106 54 30 numarasını verdi.",
@@ -2129,17 +1733,6 @@
           "uyari": []
         },
         {
-          "girdi": "Sahibinden satılık ilanda iletişim artı doksan beş yüz elli iki yedi yüz elli doksan bir sıfır yedi.",
-          "hedef": "Sahibinden satılık ilanda iletişim +90 552 750 91 07.",
-          "cikti": "Sahibinden satılık ilanda iletişim artı doksan beş yüz elli iki yedi yüz elli doksan bir sıfır yedi.",
-          "ham": "Sahibinden satılık ilanda iletişim +90 552 750 91 07.",
-          "kategori": "telefon",
-          "sablon": "v2a-tel-021",
-          "uyari": [
-            "\"artı doksan beş yüz elli iki yedi yüz elli doksan bir sıfır yedi.\" → \"+90 552 750 91 07.\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
           "girdi": "servisin hattı sıfır beş beş iki altı yüz yedi dokuz seksen dört",
           "hedef": "servisin hattı 0552 600 79 84",
           "cikti": "servisin hattı 0552 607 98 84",
@@ -2147,17 +1740,6 @@
           "kategori": "telefon",
           "sablon": "v2a-tel-006",
           "uyari": []
-        },
-        {
-          "girdi": "işlemci yüz iki megahertz hızında çalışıyor",
-          "hedef": "işlemci 102 MHz hızında çalışıyor",
-          "cikti": "işlemci yüz iki megahertz hızında çalışıyor",
-          "ham": "işlemci 102 MHz hızında çalışıyor",
-          "kategori": "olcu",
-          "sablon": "v2a-yeni-036",
-          "uyari": [
-            "\"yüz iki megahertz\" → \"102 MHz\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
         },
         {
           "girdi": "Yeni sınır otuz bir derece santigratlık bir değer.",
@@ -2189,17 +1771,6 @@
           "uyari": []
         },
         {
-          "girdi": "dörtyol iki bin üç yüz otuz bir kilometrekarelik bir alana yayılmış",
-          "hedef": "dörtyol 2.331 km²'lik bir alana yayılmış",
-          "cikti": "dörtyol iki bin üç yüz otuz bir kilometrekarelik bir alana yayılmış",
-          "ham": "dörtyol 2.331 km²'lik bir alana yayılmış",
-          "kategori": "olcu",
-          "sablon": "v2a-yeni-017",
-          "uyari": [
-            "\"iki bin üç yüz otuz bir kilometrekarelik\" → \"2.331 km²'lik\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
           "girdi": "rezervasyon sıfır beş yüz elli bir yedi yüz elli sekiz sıfır yetmiş numarasından yapılıyor",
           "hedef": "rezervasyon 0551 750 80 70 numarasından yapılıyor",
           "cikti": "rezervasyon 0551 758 070 numarasından yapılıyor",
@@ -2207,39 +1778,6 @@
           "kategori": "telefon",
           "sablon": "v2a-tel-016",
           "uyari": []
-        },
-        {
-          "girdi": "Depo yedi yüz yetmiş üç kilovat saatlik bir batarya taktık.",
-          "hedef": "Depo 773 kWh'lik bir batarya taktık.",
-          "cikti": "Depo yedi yüz yetmiş üç kilovat saatlik bir batarya taktık.",
-          "ham": "Depo 773 kWh'lik bir batarya taktık.",
-          "kategori": "olcu",
-          "sablon": "v2a-yeni-025",
-          "uyari": [
-            "\"yedi yüz yetmiş üç kilovat saatlik\" → \"773 kWh'lik\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Antalya sekiz yüz altmış beş kilometrekarelik bir alana yayılmış.",
-          "hedef": "Antalya 865 km²'lik bir alana yayılmış.",
-          "cikti": "Antalya sekiz yüz altmış beş kilometrekarelik bir alana yayılmış.",
-          "ham": "Antalya 865 km²'lik bir alana yayılmış.",
-          "kategori": "olcu",
-          "sablon": "v2a-yeni-017",
-          "uyari": [
-            "\"sekiz yüz altmış beş kilometrekarelik\" → \"865 km²'lik\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Doktorun sekreteri artı doksan beş yüz kırk beş sıfır yirmi beş dört sıfır sekiz sekiz numarasını verdi.",
-          "hedef": "Doktorun sekreteri +90 545 025 40 88 numarasını verdi.",
-          "cikti": "Doktorun sekreteri artı doksan beş yüz kırk beş sıfır yirmi beş dört sıfır sekiz sekiz numarasını verdi.",
-          "ham": "Doktorun sekreteri +90 545 025 40 88 numarasını verdi.",
-          "kategori": "telefon",
-          "sablon": "v2a-tel-026",
-          "uyari": [
-            "\"artı doksan beş yüz kırk beş sıfır yirmi beş dört sıfır sekiz sekiz\" → \"+90 545 025 40 88\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
         },
         {
           "girdi": "nüfusun yüzde yedi buçuk kadarı gaziantep şehrinde yaşıyor kentin yüz ölçümü elli sekiz metrekare civarında",
@@ -2260,39 +1798,6 @@
           "uyari": []
         },
         {
-          "girdi": "toplantı bağlantısı artı doksan iki yüz seksen iki üç yüz elli dokuz on yirmi numarasına gelecek",
-          "hedef": "toplantı bağlantısı +90 282 359 10 20 numarasına gelecek",
-          "cikti": "toplantı bağlantısı artı doksan iki yüz seksen iki üç yüz elli dokuz on yirmi numarasına gelecek",
-          "ham": "toplantı bağlantısı +90 282 359 10 20 numarasına gelecek",
-          "kategori": "telefon",
-          "sablon": "v2a-tel-031",
-          "uyari": [
-            "\"artı doksan iki yüz seksen iki üç yüz elli dokuz on yirmi\" → \"+90 282 359 10 20\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "rezervasyon artı doksan beş üç dört yüz yirmi doksan sekiz yetmiş numarasından yapılıyor",
-          "hedef": "rezervasyon +90 534 120 98 70 numarasından yapılıyor",
-          "cikti": "rezervasyon artı doksan beş üç dört yüz yirmi doksan sekiz yetmiş numarasından yapılıyor",
-          "ham": "rezervasyon +90 534 120 98 70 numarasından yapılıyor",
-          "kategori": "telefon",
-          "sablon": "v2a-tel-016",
-          "uyari": [
-            "\"artı doksan beş üç dört yüz yirmi doksan sekiz yetmiş\" → \"+90 534 120 98 70\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "mersin iki bin dört yüz elli kilometrekarelik bir alana yayılmış",
-          "hedef": "mersin 2.450 km²'lik bir alana yayılmış",
-          "cikti": "mersin iki bin dört yüz elli kilometrekarelik bir alana yayılmış",
-          "ham": "mersin 2.450 km²'lik bir alana yayılmış",
-          "kategori": "olcu",
-          "sablon": "v2a-yeni-017",
-          "uyari": [
-            "\"iki bin dört yüz elli kilometrekarelik\" → \"2.450 km²'lik\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
           "girdi": "Duvara beş tablo asılı.",
           "hedef": "Duvara beş tablo asılı.",
           "cikti": "Duvara 5 tablo asılı.",
@@ -2300,39 +1805,6 @@
           "kategori": "kardinal",
           "sablon": "v2a-kucuk-012",
           "uyari": []
-        },
-        {
-          "girdi": "Depo bin üç yüz otuz dokuz kilovat saatlik bir batarya taktık.",
-          "hedef": "Depo 1.339 kWh'lik bir batarya taktık.",
-          "cikti": "Depo bin üç yüz otuz dokuz kilovat saatlik bir batarya taktık.",
-          "ham": "Depo 1.339 kWh'lik bir batarya taktık.",
-          "kategori": "olcu",
-          "sablon": "v2a-yeni-025",
-          "uyari": [
-            "\"bin üç yüz otuz dokuz kilovat saatlik\" → \"1.339 kWh'lik\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Dün gece dört otuzda uyudum, sabah onda kalkınca hava on bir derece santigrat olmuştu.",
-          "hedef": "Dün gece 4.30'da uyudum, sabah 10'da kalkınca hava 11 °C olmuştu.",
-          "cikti": "Dün gece 4.30'da uyudum, sabah onda kalkınca hava 11 °C olmuştu.",
-          "ham": "Dün gece 4.30'da uyudum, sabah 10'da kalkınca hava 11 °C olmuştu.",
-          "kategori": "karisik",
-          "sablon": "v2a-uzun-036",
-          "uyari": [
-            "\"onda\" → \"10'da\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Bu rakam yetmiş milyon yedi bine ulaştı.",
-          "hedef": "Bu rakam 70.007.000'e ulaştı.",
-          "cikti": "Bu rakam yetmiş milyon yedi bine ulaştı.",
-          "ham": "Bu rakam 70.007.000'e ulaştı.",
-          "kategori": "buyuk",
-          "sablon": "v2a-sifir-065",
-          "uyari": [
-            "\"yetmiş milyon yedi bine\" → \"70.007.000'e\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
         },
         {
           "girdi": "birinci katta oturan komşumuz altmış yedi lira kira veriyor evi ise dört yüz kırk sekiz metrekare büyüklüğünde",
@@ -2346,17 +1818,6 @@
           ]
         },
         {
-          "girdi": "mersin bin altı yüz elli dokuz kilometrekarelik bir alana yayılmış",
-          "hedef": "mersin 1.659 km²'lik bir alana yayılmış",
-          "cikti": "mersin bin altı yüz elli dokuz kilometrekarelik bir alana yayılmış",
-          "ham": "mersin 1.659 km²'lik bir alana yayılmış",
-          "kategori": "olcu",
-          "sablon": "v2a-yeni-017",
-          "uyari": [
-            "\"bin altı yüz elli dokuz kilometrekarelik\" → \"1.659 km²'lik\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
           "girdi": "duvara beş tablo asılı",
           "hedef": "duvara beş tablo asılı",
           "cikti": "duvara 5 tablo asılı",
@@ -2364,17 +1825,6 @@
           "kategori": "kardinal",
           "sablon": "v2a-kucuk-012",
           "uyari": []
-        },
-        {
-          "girdi": "Eskişehir bin iki yüz elli iki kilometrekarelik bir alana yayılmış.",
-          "hedef": "Eskişehir 1.252 km²'lik bir alana yayılmış.",
-          "cikti": "Eskişehir bin iki yüz elli iki kilometrekarelik bir alana yayılmış.",
-          "ham": "Eskişehir 1.252 km²'lik bir alana yayılmış.",
-          "kategori": "olcu",
-          "sablon": "v2a-yeni-017",
-          "uyari": [
-            "\"bin iki yüz elli iki kilometrekarelik\" → \"1.252 km²'lik\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
         },
         {
           "girdi": "sekizinci katta oturan komşumuz iki yüz elli lira kira veriyor evi ise dört yüz doksan dört metrekare büyüklüğünde",
@@ -2397,17 +1847,6 @@
           "uyari": []
         },
         {
-          "girdi": "Konya sekiz yüz doksan yedi kilometrekarelik bir alana yayılmış.",
-          "hedef": "Konya 897 km²'lik bir alana yayılmış.",
-          "cikti": "Konya sekiz yüz doksan yedi kilometrekarelik bir alana yayılmış.",
-          "ham": "Konya 897 km²'lik bir alana yayılmış.",
-          "kategori": "olcu",
-          "sablon": "v2a-yeni-017",
-          "uyari": [
-            "\"sekiz yüz doksan yedi kilometrekarelik\" → \"897 km²'lik\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
           "girdi": "sicil numarası dört beş dokuz dört beş dokuz dört beş dokuz dört beş",
           "hedef": "sicil numarası 45945945945",
           "cikti": "sicil numarası 45945945",
@@ -2424,17 +1863,6 @@
           "kategori": "telefon",
           "sablon": "v2a-tel-007",
           "uyari": []
-        },
-        {
-          "girdi": "bursa beş yüz on kilometrekarelik bir alana yayılmış",
-          "hedef": "bursa 510 km²'lik bir alana yayılmış",
-          "cikti": "bursa beş yüz on kilometrekarelik bir alana yayılmış",
-          "ham": "bursa 510 km²'lik bir alana yayılmış",
-          "kategori": "olcu",
-          "sablon": "v2a-yeni-017",
-          "uyari": [
-            "\"beş yüz on kilometrekarelik\" → \"510 km²'lik\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
         },
         {
           "girdi": "kemal yüzüncü yıl üniversitesinde asistan oldu",
@@ -2572,18 +2000,6 @@
           "uyari": []
         },
         {
-          "girdi": "yedi yüz gram yedi",
-          "hedef": "700 g yedi",
-          "cikti": "yedi yüz gram yedi",
-          "ham": "700 g yedi",
-          "kategori": "olcu",
-          "sablon": "v2b-karsit-042",
-          "uyari": [
-            "eklenen \"700 g\" reddedildi (girdide karşılığı yok)",
-            "silinen \"yüz gram yedi\" geri alındı"
-          ]
-        },
-        {
           "girdi": "kırklar dağına tırmandık",
           "hedef": "kırklar dağına tırmandık",
           "cikti": "1940'lar dağına tırmandık",
@@ -2591,30 +2007,6 @@
           "kategori": "negatif_kalip",
           "sablon": "v2b-ozelad-050",
           "uyari": []
-        },
-        {
-          "girdi": "yedi yüz elli gram yedi",
-          "hedef": "750 g yedi",
-          "cikti": "yedi yüz elli gram yedi",
-          "ham": "750 g yedi",
-          "kategori": "olcu",
-          "sablon": "v2b-karsit-042",
-          "uyari": [
-            "eklenen \"750 g\" reddedildi (girdide karşılığı yok)",
-            "silinen \"yüz elli gram yedi\" geri alındı"
-          ]
-        },
-        {
-          "girdi": "yedi yüz yirmi beş gram yedi",
-          "hedef": "725 g yedi",
-          "cikti": "yedi yüz yirmi beş gram yedi",
-          "ham": "725 g yedi",
-          "kategori": "olcu",
-          "sablon": "v2b-karsit-042",
-          "uyari": [
-            "eklenen \"725 g\" reddedildi (girdide karşılığı yok)",
-            "silinen \"yüz yirmi beş gram yedi\" geri alındı"
-          ]
         },
         {
           "girdi": "sofrada bin bir çeşit simit vardı",
@@ -2635,1256 +2027,13 @@
           "uyari": []
         },
         {
-          "girdi": "gelen kişi sayısı doksanyediyi bulmuş",
-          "hedef": "gelen kişi sayısı 97'yi bulmuş",
-          "cikti": "gelen kişi sayısı doksanyediyi bulmuş",
-          "ham": "gelen kişi sayısı 97'yi bulmuş",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-kardinal-021",
-          "uyari": [
-            "\"doksanyediyi\" → \"97'yi\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "geçen hafta dediğim gibi on biri çeyrek geçmişti",
-          "hedef": "geçen hafta dediğim gibi 11'i çeyrek geçmişti",
-          "cikti": "geçen hafta dediğim gibi on biri çeyrek geçmişti",
-          "ham": "geçen hafta dediğim gibi 11'i çeyrek geçmişti",
-          "kategori": "saat_deyis",
-          "sablon": "v2c-saat_deyis-y-000",
-          "uyari": [
-            "\"on biri\" → \"11'i\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "İki binyirmi yediden beri aynı evde oturuyoruz.",
-          "hedef": "2027'den beri aynı evde oturuyoruz.",
-          "cikti": "İki binyirmi yediden beri aynı evde oturuyoruz.",
-          "ham": "2027'den beri aynı evde oturuyoruz.",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-tarih-012",
-          "uyari": [
-            "\"İki binyirmi yediden\" → \"2027'den\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Sınav saat onbir ellidokuzdan sonra başlar.",
-          "hedef": "Sınav saat 11.59'dan sonra başlar.",
-          "cikti": "Sınav saat onbir ellidokuzdan sonra başlar.",
-          "ham": "Sınav saat 11.59'dan sonra başlar.",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-saat-006",
-          "uyari": [
-            "\"onbir ellidokuzdan\" → \"11.59'dan\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "şu an saat 21:00",
-          "hedef": "şu an saat 21.00",
-          "cikti": "şu an saat 21:00",
-          "ham": "şu an saat 21.00",
-          "kategori": "yari",
-          "sablon": "v2c-yari-saat-011",
-          "uyari": []
-        },
-        {
-          "girdi": "çay suyu yirmisekiz derece santigratta kaynar",
-          "hedef": "çay suyu 28 °C'de kaynar",
-          "cikti": "çay suyu yirmisekiz derece santigratta kaynar",
-          "ham": "çay suyu 28 °C'de kaynar",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-olcu-021",
-          "uyari": [
-            "\"yirmisekiz derece santigratta\" → \"28 °C'de\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "şirket 978500 katılımcı çalıştırıyor sence de öyle değil mi",
-          "hedef": "şirket 978.500 katılımcı çalıştırıyor sence de öyle değil mi",
-          "cikti": "şirket 978500 katılımcı çalıştırıyor sence de öyle değil mi",
-          "ham": "şirket 978.500 katılımcı çalıştırıyor sence de öyle değil mi",
-          "kategori": "yari",
-          "sablon": "v2c-yari-sayi-013",
-          "uyari": []
-        },
-        {
-          "girdi": "tabii elektrik faturası binyedi yüz lira geldi dedi bana",
-          "hedef": "tabii elektrik faturası 1.700 TL geldi dedi bana",
-          "cikti": "tabii elektrik faturası binyedi yüz lira geldi dedi bana",
-          "ham": "tabii elektrik faturası 1.700 TL geldi dedi bana",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-para-000",
-          "uyari": [
-            "\"binyedi yüz lira\" → \"1.700 TL\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Hesap otuzsekizde kapandı.",
-          "hedef": "Hesap 38'de kapandı.",
-          "cikti": "Hesap otuzsekizde kapandı.",
-          "ham": "Hesap 38'de kapandı.",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-kardinal-022",
-          "uyari": [
-            "\"otuzsekizde\" → \"38'de\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "raporu ayın on altısına kadar bitir",
-          "hedef": "raporu ayın 16'sına kadar bitir",
-          "cikti": "raporu ayın on altısına kadar bitir",
-          "ham": "raporu ayın 16'sına kadar bitir",
-          "kategori": "tarih",
-          "sablon": "v2c-tarih-yonelme-001",
-          "uyari": [
-            "\"on altısına\" → \"16'sına\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Hatırlıyor musun, gelen kişi sayısı binyediyüzelliyi bulmuş, bunu unutma.",
-          "hedef": "Hatırlıyor musun, gelen kişi sayısı 1.750'yi bulmuş, bunu unutma.",
-          "cikti": "Hatırlıyor musun, gelen kişi sayısı binyediyüzelliyi bulmuş, bunu unutma.",
-          "ham": "Hatırlıyor musun, gelen kişi sayısı 1.750'yi bulmuş, bunu unutma.",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-kardinal-021",
-          "uyari": [
-            "\"binyediyüzelliyi\" → \"1.750'yi\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Alışverişe binyediyüzelli lirayla çıktık.",
-          "hedef": "Alışverişe 1.750 TL'yle çıktık.",
-          "cikti": "Alışverişe binyediyüzelli lirayla çıktık.",
-          "ham": "Alışverişe 1.750 TL'yle çıktık.",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-para-013",
-          "uyari": [
-            "\"binyediyüzelli lirayla\" → \"1.750 TL'yle\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Kuzeyde sıcaklığın eksi 16 derece santigrat olması bekleniyor.",
-          "hedef": "Kuzeyde sıcaklığın -16 °C olması bekleniyor.",
-          "cikti": "Kuzeyde sıcaklığın eksi 16 °C olması bekleniyor.",
-          "ham": "Kuzeyde sıcaklığın -16 °C olması bekleniyor.",
-          "kategori": "yari",
-          "sablon": "v2c-yari-derece-002",
-          "uyari": [
-            "silinen \"eksi\" geri alındı"
-          ]
-        },
-        {
-          "girdi": "yüzde seksendokuzun üstünde zam istiyorlar",
-          "hedef": "%89'un üstünde zam istiyorlar",
-          "cikti": "yüzde seksendokuzun üstünde zam istiyorlar",
-          "ham": "%89'un üstünde zam istiyorlar",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-yuzde-009",
-          "uyari": [
-            "\"yüzde seksendokuzun\" → \"%89'un\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "İkibinyirmidokuzdan beri aynı evde oturuyoruz.",
-          "hedef": "2029'dan beri aynı evde oturuyoruz.",
-          "cikti": "İkibinyirmidokuzdan beri aynı evde oturuyoruz.",
-          "ham": "2029'dan beri aynı evde oturuyoruz.",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-tarih-012",
-          "uyari": [
-            "\"İkibinyirmidokuzdan\" → \"2029'dan\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "salonda dokuz yüzsekseniki öğrenci oturuyordu",
-          "hedef": "salonda 982 öğrenci oturuyordu",
-          "cikti": "salonda dokuz yüzsekseniki öğrenci oturuyordu",
-          "ham": "salonda 982 öğrenci oturuyordu",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-kardinal-000",
-          "uyari": [
-            "\"dokuz yüzsekseniki\" → \"982\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Hava eksi 34 derece, rüzgâr doksan beş gündür sürüyor.",
-          "hedef": "Hava -34 derece, rüzgâr 95 gündür sürüyor.",
-          "cikti": "Hava eksi 34 derece, rüzgâr 95 gündür sürüyor.",
-          "ham": "Hava -34 derece, rüzgâr 95 gündür sürüyor.",
-          "kategori": "yari",
-          "sablon": "v2c-yari-karisik-021",
-          "uyari": [
-            "silinen \"eksi\" geri alındı"
-          ]
-        },
-        {
-          "girdi": "köprü bin dokuz yüz seksensekiz yılında hizmete girdi",
-          "hedef": "köprü 1988 yılında hizmete girdi",
-          "cikti": "köprü bin dokuz yüz seksensekiz yılında hizmete girdi",
-          "ham": "köprü 1988 yılında hizmete girdi",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-tarih-015",
-          "uyari": [
-            "\"bin dokuz yüz seksensekiz\" → \"1988\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Bence, kurs saat bir ondört bitecek.",
-          "hedef": "Bence, kurs saat 1.14 bitecek.",
-          "cikti": "Bence, kurs saat bir ondört bitecek.",
-          "ham": "Bence, kurs saat 1.14 bitecek.",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-saat-008",
-          "uyari": [
-            "\"bir ondört\" → \"1.14\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Şunu söyleyeyim, ondört terabaytlık bir yedek disk aldık.",
-          "hedef": "Şunu söyleyeyim, 14 TB'lık bir yedek disk aldık.",
-          "cikti": "Şunu söyleyeyim, ondört terabaytlık bir yedek disk aldık.",
-          "ham": "Şunu söyleyeyim, 14 TB'lık bir yedek disk aldık.",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-olcu-014",
-          "uyari": [
-            "\"ondört terabaytlık\" → \"14 TB'lık\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Kurs saat beş yirmidokuz bitecek.",
-          "hedef": "Kurs saat 5.29 bitecek.",
-          "cikti": "Kurs saat beş yirmidokuz bitecek.",
-          "ham": "Kurs saat 5.29 bitecek.",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-saat-008",
-          "uyari": [
-            "\"beş yirmidokuz\" → \"5.29\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "etkinlik 24 kasımda başlayacak",
-          "hedef": "etkinlik 24 Kasım'da başlayacak",
-          "cikti": "etkinlik 24 kasımda başlayacak",
-          "ham": "etkinlik 24 Kasım'da başlayacak",
-          "kategori": "yari",
-          "sablon": "v2c-yari-tarih-007",
-          "uyari": []
-        },
-        {
-          "girdi": "Toplantıda doksanikibinbeşyüzotuzaltı izleyici söz aldı.",
-          "hedef": "Toplantıda 92.536 izleyici söz aldı.",
-          "cikti": "Toplantıda doksanikibinbeşyüzotuzaltı izleyici söz aldı.",
-          "ham": "Toplantıda 92.536 izleyici söz aldı.",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-kardinal-003",
-          "uyari": [
-            "\"doksanikibinbeşyüzotuzaltı\" → \"92.536\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "dün biri on geçe telefonum çaldı",
-          "hedef": "dün 1'i 10 geçe telefonum çaldı",
-          "cikti": "dün biri on geçe telefonum çaldı",
-          "ham": "dün 1'i 10 geçe telefonum çaldı",
-          "kategori": "saat_deyis",
-          "sablon": "v2c-saat_deyis-z-009",
-          "uyari": [
-            "\"biri on\" → \"1'i 10\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "faizi yüzde 35,75 olan krediyi on iki ayda ödedik",
-          "hedef": "faizi %35,75 olan krediyi 12 ayda ödedik",
-          "cikti": "faizi yüzde 35,75 olan krediyi 12 ayda ödedik",
-          "ham": "faizi %35,75 olan krediyi 12 ayda ödedik",
-          "kategori": "yari",
-          "sablon": "v2c-yari-karisik-019",
-          "uyari": [
-            "silinen \"yüzde\" geri alındı"
-          ]
-        },
-        {
-          "girdi": "Şu an saat 10:45.",
-          "hedef": "Şu an saat 10.45.",
-          "cikti": "Şu an saat 10:45.",
-          "ham": "Şu an saat 10.45.",
-          "kategori": "yari",
-          "sablon": "v2c-yari-saat-011",
-          "uyari": []
-        },
-        {
-          "girdi": "toplam sayı 47000'i aşmış",
-          "hedef": "toplam sayı 47.000'i aşmış",
-          "cikti": "toplam sayı 47000'i aşmış",
-          "ham": "toplam sayı 47.000'i aşmış",
-          "kategori": "yari",
-          "sablon": "v2c-yari-sayi_ek-007",
-          "uyari": []
-        },
-        {
-          "girdi": "Bence, iki binüçe kadar sürecek.",
-          "hedef": "Bence, 2003'e kadar sürecek.",
-          "cikti": "Bence, iki binüçe kadar sürecek.",
-          "ham": "Bence, 2003'e kadar sürecek.",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-tarih-013",
-          "uyari": [
-            "\"iki binüçe\" → \"2003'e\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "kurs geçen ayın yirmisinde sona eriyor",
-          "hedef": "kurs geçen ayın 20'sinde sona eriyor",
-          "cikti": "kurs geçen ayın yirmisinde sona eriyor",
-          "ham": "kurs geçen ayın 20'sinde sona eriyor",
-          "kategori": "tarih",
-          "sablon": "v2c-tarih-bulunma-014",
-          "uyari": [
-            "\"yirmisinde\" → \"20'sinde\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "kampanya her üründe yüzde 79 indirim sunuyor",
-          "hedef": "kampanya her üründe %79 indirim sunuyor",
-          "cikti": "kampanya her üründe yüzde 79 indirim sunuyor",
-          "ham": "kampanya her üründe %79 indirim sunuyor",
-          "kategori": "yari",
-          "sablon": "v2c-yari-yuzde-008",
-          "uyari": [
-            "silinen \"yüzde\" geri alındı"
-          ]
-        },
-        {
-          "girdi": "köprü ikibin yirmi beş yılında hizmete girdi",
-          "hedef": "köprü 2025 yılında hizmete girdi",
-          "cikti": "köprü ikibin yirmi beş yılında hizmete girdi",
-          "ham": "köprü 2025 yılında hizmete girdi",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-tarih-015",
-          "uyari": [
-            "\"ikibin yirmi beş\" → \"2025\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "hepimiz biliyoruz ki paketler doksandokuzbin beş yüz liradan başlayan fiyatlarla satılıyor diye düşündüm",
-          "hedef": "hepimiz biliyoruz ki paketler 99.500 TL'den başlayan fiyatlarla satılıyor diye düşündüm",
-          "cikti": "hepimiz biliyoruz ki paketler doksandokuzbin beş yüz liradan başlayan fiyatlarla satılıyor diye düşündüm",
-          "ham": "hepimiz biliyoruz ki paketler 99.500 TL'den başlayan fiyatlarla satılıyor diye düşündüm",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-para-010",
-          "uyari": [
-            "\"doksandokuzbin beş yüz liradan\" → \"99.500 TL'den\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "baksana şirket 38000 öğrenci çalıştırıyor",
-          "hedef": "baksana şirket 38.000 öğrenci çalıştırıyor",
-          "cikti": "baksana şirket 38000 öğrenci çalıştırıyor",
-          "ham": "baksana şirket 38.000 öğrenci çalıştırıyor",
-          "kategori": "yari",
-          "sablon": "v2c-yari-sayi-013",
-          "uyari": []
-        },
-        {
-          "girdi": "fatura her ayın on birinde geliyor",
-          "hedef": "fatura her ayın 11'inde geliyor",
-          "cikti": "fatura her ayın on birinde geliyor",
-          "ham": "fatura her ayın 11'inde geliyor",
-          "kategori": "tarih",
-          "sablon": "v2c-tarih-bulunma-004",
-          "uyari": [
-            "\"on birinde\" → \"11'inde\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "kasiyer bana 50500 lirayı bozuk para olarak verdi",
-          "hedef": "kasiyer bana 50.500 TL'yi bozuk para olarak verdi",
-          "cikti": "kasiyer bana 50500 TL'yi bozuk para olarak verdi",
-          "ham": "kasiyer bana 50.500 TL'yi bozuk para olarak verdi",
-          "kategori": "yari",
-          "sablon": "v2c-yari-para-022",
-          "uyari": []
-        },
-        {
-          "girdi": "çay suyu yirmidört derece santigratta kaynar",
-          "hedef": "çay suyu 24 °C'de kaynar",
-          "cikti": "çay suyu yirmidört derece santigratta kaynar",
-          "ham": "çay suyu 24 °C'de kaynar",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-olcu-021",
-          "uyari": [
-            "\"yirmidört derece santigratta\" → \"24 °C'de\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "maalesef taksit temmuzun altısında hesaptan çekilecek ama neyse",
-          "hedef": "maalesef taksit temmuzun 6'sında hesaptan çekilecek ama neyse",
-          "cikti": "maalesef taksit temmuzun altısında hesaptan çekilecek ama neyse",
-          "ham": "maalesef taksit temmuzun 6'sında hesaptan çekilecek ama neyse",
-          "kategori": "tarih",
-          "sablon": "v2c-tarih-bulunma-005",
-          "uyari": [
-            "\"altısında\" → \"6'sında\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "bebek ilk ayında kırkbir kilogram aldı",
-          "hedef": "bebek ilk ayında 41 kg aldı",
-          "cikti": "bebek ilk ayında kırkbir kilogram aldı",
-          "ham": "bebek ilk ayında 41 kg aldı",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-olcu-001",
-          "uyari": [
-            "\"kırkbir kilogram\" → \"41 kg\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Tören saat onbeşte yapılacak.",
-          "hedef": "Tören saat 15'te yapılacak.",
-          "cikti": "Tören saat onbeşte yapılacak.",
-          "ham": "Tören saat 15'te yapılacak.",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-saat-000",
-          "uyari": [
-            "\"onbeşte\" → \"15'te\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "bu ayın yirmi birini gözümüze kestirdik",
-          "hedef": "bu ayın 21'ini gözümüze kestirdik",
-          "cikti": "bu ayın yirmi birini gözümüze kestirdik",
-          "ham": "bu ayın 21'ini gözümüze kestirdik",
-          "kategori": "tarih",
-          "sablon": "v2c-tarih-belirtme-015",
-          "uyari": [
-            "\"yirmi birini\" → \"21'ini\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "ahmet bizi saat on biri altı geçe aradı",
-          "hedef": "ahmet bizi saat 11'i 6 geçe aradı",
-          "cikti": "ahmet bizi saat on biri altı geçe aradı",
-          "ham": "ahmet bizi saat 11'i 6 geçe aradı",
-          "kategori": "saat_deyis",
-          "sablon": "v2c-saat_deyis-z-030",
-          "uyari": [
-            "\"on biri altı\" → \"11'i 6\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Kurs saat onbeş yirmiyedi bitecek.",
-          "hedef": "Kurs saat 15.27 bitecek.",
-          "cikti": "Kurs saat onbeş yirmiyedi bitecek.",
-          "ham": "Kurs saat 15.27 bitecek.",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-saat-008",
-          "uyari": [
-            "\"onbeş yirmiyedi\" → \"15.27\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Yeni telefon beş yüzkırk bir megabayt depolama sunuyor.",
-          "hedef": "Yeni telefon 541 MB depolama sunuyor.",
-          "cikti": "Yeni telefon beş yüzkırk bir megabayt depolama sunuyor.",
-          "ham": "Yeni telefon 541 MB depolama sunuyor.",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-olcu-012",
-          "uyari": [
-            "\"beş yüzkırk bir megabayt\" → \"541 MB\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "köprü bindokuzyüzyetmişbeş yılında hizmete girdi",
-          "hedef": "köprü 1975 yılında hizmete girdi",
-          "cikti": "köprü bindokuzyüzyetmişbeş yılında hizmete girdi",
-          "ham": "köprü 1975 yılında hizmete girdi",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-tarih-015",
-          "uyari": [
-            "\"bindokuzyüzyetmişbeş\" → \"1975\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "lokantada hesap beşyüzyirmialtı dolar tuttu",
-          "hedef": "lokantada hesap 526 dolar tuttu",
-          "cikti": "lokantada hesap beşyüzyirmialtı dolar tuttu",
-          "ham": "lokantada hesap 526 dolar tuttu",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-para-003",
-          "uyari": [
-            "\"beşyüzyirmialtı\" → \"526\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "uçuş 15:30 için bilet aldım",
-          "hedef": "uçuş 15.30 için bilet aldım",
-          "cikti": "uçuş 15:30 için bilet aldım",
-          "ham": "uçuş 15.30 için bilet aldım",
-          "kategori": "yari",
-          "sablon": "v2c-yari-saat_ns-009",
-          "uyari": []
-        },
-        {
-          "girdi": "Paketler altmış beşbin liradan başlayan fiyatlarla satılıyor.",
-          "hedef": "Paketler 65.000 TL'den başlayan fiyatlarla satılıyor.",
-          "cikti": "Paketler altmış beşbin liradan başlayan fiyatlarla satılıyor.",
-          "ham": "Paketler 65.000 TL'den başlayan fiyatlarla satılıyor.",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-para-010",
-          "uyari": [
-            "\"altmış beşbin liradan\" → \"65.000 TL'den\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "etkinlik 25 haziranda başlayacak",
-          "hedef": "etkinlik 25 Haziran'da başlayacak",
-          "cikti": "etkinlik 25 haziranda başlayacak",
-          "ham": "etkinlik 25 Haziran'da başlayacak",
-          "kategori": "yari",
-          "sablon": "v2c-yari-tarih-007",
-          "uyari": []
-        },
-        {
-          "girdi": "Konser aralığın biri akşamı.",
-          "hedef": "Konser aralığın 1'i akşamı.",
-          "cikti": "Konser aralığın biri akşamı.",
-          "ham": "Konser aralığın 1'i akşamı.",
-          "kategori": "tarih",
-          "sablon": "v2c-tarih-iyelik3-005",
-          "uyari": [
-            "\"biri\" → \"1'i\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "dükkândaki mallarda yüzde otuzdört indirim yapıldı",
-          "hedef": "dükkândaki mallarda %34 indirim yapıldı",
-          "cikti": "dükkândaki mallarda yüzde otuzdört indirim yapıldı",
-          "ham": "dükkândaki mallarda %34 indirim yapıldı",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-yuzde-000",
-          "uyari": [
-            "\"yüzde otuzdört\" → \"%34\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Yüzde seksenbeşin üstünde zam istiyorlar.",
-          "hedef": "%85'in üstünde zam istiyorlar.",
-          "cikti": "Yüzde seksenbeşin üstünde zam istiyorlar.",
-          "ham": "%85'in üstünde zam istiyorlar.",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-yuzde-009",
-          "uyari": [
-            "\"Yüzde seksenbeşin\" → \"%85'in\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "hayır toplantıda ikiyüzelli turist söz aldı",
-          "hedef": "hayır toplantıda 250 turist söz aldı",
-          "cikti": "hayır toplantıda ikiyüzelli turist söz aldı",
-          "ham": "hayır toplantıda 250 turist söz aldı",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-kardinal-003",
-          "uyari": [
-            "\"ikiyüzelli\" → \"250\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "kampanya her üründe yüzde 86,25 indirim sunuyor",
-          "hedef": "kampanya her üründe %86,25 indirim sunuyor",
-          "cikti": "kampanya her üründe yüzde 86,25 indirim sunuyor",
-          "ham": "kampanya her üründe %86,25 indirim sunuyor",
-          "kategori": "yari",
-          "sablon": "v2c-yari-yuzde-008",
-          "uyari": [
-            "silinen \"yüzde\" geri alındı"
-          ]
-        },
-        {
-          "girdi": "maalesef elektrik faturası kırkyedi binikiyüzelli lira geldi",
-          "hedef": "maalesef elektrik faturası 47.250 TL geldi",
-          "cikti": "maalesef elektrik faturası kırkyedi binikiyüzelli lira geldi",
-          "ham": "maalesef elektrik faturası 47.250 TL geldi",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-para-000",
-          "uyari": [
-            "\"kırkyedi binikiyüzelli lira\" → \"47.250 TL\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
           "girdi": "yolculuk 02:15 başladı altmış üç kilometre gittik",
           "hedef": "yolculuk 2.15 başladı 63 km gittik",
-          "cikti": "yolculuk 02:15 başladı 63 km gittik",
+          "cikti": "yolculuk 02.15 başladı 63 km gittik",
           "ham": "yolculuk 02.15 başladı 63 km gittik",
           "kategori": "yari",
           "sablon": "v2c-yari-karisik-023",
           "uyari": []
-        },
-        {
-          "girdi": "lokantada hesap yüz yetmişbeş lira tuttu",
-          "hedef": "lokantada hesap 175 TL tuttu",
-          "cikti": "lokantada hesap yüz yetmişbeş lira tuttu",
-          "ham": "lokantada hesap 175 TL tuttu",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-para-003",
-          "uyari": [
-            "\"yüz yetmişbeş lira\" → \"175 TL\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "otobüs 10:30'da kalkıyor",
-          "hedef": "otobüs 10.30'da kalkıyor",
-          "cikti": "otobüs 10:30'da kalkıyor",
-          "ham": "otobüs 10.30'da kalkıyor",
-          "kategori": "yari",
-          "sablon": "v2c-yari-saat_ns-002",
-          "uyari": []
-        },
-        {
-          "girdi": "kitabı her ayın yedisine kadar iade et",
-          "hedef": "kitabı her ayın 7'sine kadar iade et",
-          "cikti": "kitabı her ayın yedisine kadar iade et",
-          "ham": "kitabı her ayın 7'sine kadar iade et",
-          "kategori": "tarih",
-          "sablon": "v2c-tarih-yonelme-009",
-          "uyari": [
-            "\"yedisine\" → \"7'sine\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Öğretmen dedi ki, lokantada hesap kırkyedi lira tuttu.",
-          "hedef": "Öğretmen dedi ki, lokantada hesap 47 TL tuttu.",
-          "cikti": "Öğretmen dedi ki, lokantada hesap kırkyedi lira tuttu.",
-          "ham": "Öğretmen dedi ki, lokantada hesap 47 TL tuttu.",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-para-003",
-          "uyari": [
-            "\"kırkyedi lira\" → \"47 TL\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "elektrik faturası binsekizyüzelli euro geldi",
-          "hedef": "elektrik faturası 1.850 euro geldi",
-          "cikti": "elektrik faturası binsekizyüzelli euro geldi",
-          "ham": "elektrik faturası 1.850 euro geldi",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-para-000",
-          "uyari": [
-            "\"binsekizyüzelli\" → \"1.850\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Derse on biri yirmi yedi geçe geldim.",
-          "hedef": "Derse 11'i 27 geçe geldim.",
-          "cikti": "Derse on biri yirmi yedi geçe geldim.",
-          "ham": "Derse 11'i 27 geçe geldim.",
-          "kategori": "saat_deyis",
-          "sablon": "v2c-saat_deyis-z-029",
-          "uyari": [
-            "\"on biri yirmi yedi\" → \"11'i 27\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "aslında gece eksi 10 derece santigratta don olacak",
-          "hedef": "aslında gece -10 °C'de don olacak",
-          "cikti": "aslında gece eksi 10 °C'de don olacak",
-          "ham": "aslında gece -10 °C'de don olacak",
-          "kategori": "yari",
-          "sablon": "v2c-yari-derece-006",
-          "uyari": [
-            "silinen \"eksi\" geri alındı"
-          ]
-        },
-        {
-          "girdi": "yüzde 35'i henüz gelmedi",
-          "hedef": "%35'i henüz gelmedi",
-          "cikti": "yüzde 35'i henüz gelmedi",
-          "ham": "%35'i henüz gelmedi",
-          "kategori": "yari",
-          "sablon": "v2c-yari-yuzde-010",
-          "uyari": [
-            "silinen \"yüzde\" geri alındı"
-          ]
-        },
-        {
-          "girdi": "okulun zili saat 15:05'le birlikte çalıyor",
-          "hedef": "okulun zili saat 15.05'le birlikte çalıyor",
-          "cikti": "okulun zili saat 15:05'le birlikte çalıyor",
-          "ham": "okulun zili saat 15.05'le birlikte çalıyor",
-          "kategori": "yari",
-          "sablon": "v2c-yari-saat-015",
-          "uyari": []
-        },
-        {
-          "girdi": "faizi yüzde 36,8 olan krediyi seksen iki ayda ödedik",
-          "hedef": "faizi %36,8 olan krediyi 82 ayda ödedik",
-          "cikti": "faizi yüzde 36,8 olan krediyi 82 ayda ödedik",
-          "ham": "faizi %36,8 olan krediyi 82 ayda ödedik",
-          "kategori": "yari",
-          "sablon": "v2c-yari-karisik-019",
-          "uyari": [
-            "silinen \"yüzde\" geri alındı"
-          ]
-        },
-        {
-          "girdi": "Kuzeyde sıcaklığın eksi 28 derece olması bekleniyor.",
-          "hedef": "Kuzeyde sıcaklığın -28 derece olması bekleniyor.",
-          "cikti": "Kuzeyde sıcaklığın eksi 28 derece olması bekleniyor.",
-          "ham": "Kuzeyde sıcaklığın -28 derece olması bekleniyor.",
-          "kategori": "yari",
-          "sablon": "v2c-yari-derece-002",
-          "uyari": [
-            "silinen \"eksi\" geri alındı"
-          ]
-        },
-        {
-          "girdi": "taksit ayın yirmisinde hesaptan çekilecek",
-          "hedef": "taksit ayın 20'sinde hesaptan çekilecek",
-          "cikti": "taksit ayın yirmisinde hesaptan çekilecek",
-          "ham": "taksit ayın 20'sinde hesaptan çekilecek",
-          "kategori": "tarih",
-          "sablon": "v2c-tarih-bulunma-005",
-          "uyari": [
-            "\"yirmisinde\" → \"20'sinde\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "hesap yüzaltmışikide kapandı",
-          "hedef": "hesap 162'de kapandı",
-          "cikti": "hesap yüzaltmışikide kapandı",
-          "ham": "hesap 162'de kapandı",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-kardinal-022",
-          "uyari": [
-            "\"yüzaltmışikide\" → \"162'de\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Kurs saat ondört bitecek.",
-          "hedef": "Kurs saat 14 bitecek.",
-          "cikti": "Kurs saat ondört bitecek.",
-          "ham": "Kurs saat 14 bitecek.",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-saat-008",
-          "uyari": [
-            "\"ondört\" → \"14\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Bebek ilk ayında ellisekiz kilo aldı.",
-          "hedef": "Bebek ilk ayında 58 kg aldı.",
-          "cikti": "Bebek ilk ayında ellisekiz kilo aldı.",
-          "ham": "Bebek ilk ayında 58 kg aldı.",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-olcu-001",
-          "uyari": [
-            "\"ellisekiz kilo\" → \"58 kg\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "0553 140 3607'yi arayıp randevu al",
-          "hedef": "0553 140 36 07'yi arayıp randevu al",
-          "cikti": "0553 140 3607'yi arayıp randevu al",
-          "ham": "0553 140 36 07'yi arayıp randevu al",
-          "kategori": "yari",
-          "sablon": "v2c-yari-tel-005",
-          "uyari": [
-            "\"3607'yi\" → \"36 07'yi\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Şu an saat 15:10.",
-          "hedef": "Şu an saat 15.10.",
-          "cikti": "Şu an saat 15:10.",
-          "ham": "Şu an saat 15.10.",
-          "kategori": "yari",
-          "sablon": "v2c-yari-saat-011",
-          "uyari": []
-        },
-        {
-          "girdi": "Köprü ikibiniki yılında hizmete girdi.",
-          "hedef": "Köprü 2002 yılında hizmete girdi.",
-          "cikti": "Köprü ikibiniki yılında hizmete girdi.",
-          "ham": "Köprü 2002 yılında hizmete girdi.",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-tarih-015",
-          "uyari": [
-            "\"ikibiniki\" → \"2002\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Bankadan yüzde 29,25 faizle kredi çektik.",
-          "hedef": "Bankadan %29,25 faizle kredi çektik.",
-          "cikti": "Bankadan yüzde 29,25 faizle kredi çektik.",
-          "ham": "Bankadan %29,25 faizle kredi çektik.",
-          "kategori": "yari",
-          "sablon": "v2c-yari-yuzde-004",
-          "uyari": [
-            "silinen \"yüzde\" geri alındı"
-          ]
-        },
-        {
-          "girdi": "yarışmaya 33250 ziyaretçi başvurdu",
-          "hedef": "yarışmaya 33.250 ziyaretçi başvurdu",
-          "cikti": "yarışmaya 33250 ziyaretçi başvurdu",
-          "ham": "yarışmaya 33.250 ziyaretçi başvurdu",
-          "kategori": "yari",
-          "sablon": "v2c-yari-sayi-011",
-          "uyari": []
-        },
-        {
-          "girdi": "Mesaj sayısı 40000'in altına düştü.",
-          "hedef": "Mesaj sayısı 40.000'in altına düştü.",
-          "cikti": "Mesaj sayısı 40000'in altına düştü.",
-          "ham": "Mesaj sayısı 40.000'in altına düştü.",
-          "kategori": "yari",
-          "sablon": "v2c-yari-sayi_ek-011",
-          "uyari": []
-        },
-        {
-          "girdi": "Bebek ilk ayında yüzyirmi beş gram aldı.",
-          "hedef": "Bebek ilk ayında 125 g aldı.",
-          "cikti": "Bebek ilk ayında yüzyirmi beş gram aldı.",
-          "ham": "Bebek ilk ayında 125 g aldı.",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-olcu-001",
-          "uyari": [
-            "\"yüzyirmi beş gram\" → \"125 g\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Şu an 9728 aday çevrimiçi.",
-          "hedef": "Şu an 9.728 aday çevrimiçi.",
-          "cikti": "Şu an 9728 aday çevrimiçi.",
-          "ham": "Şu an 9.728 aday çevrimiçi.",
-          "kategori": "yari",
-          "sablon": "v2c-yari-sayi-015",
-          "uyari": []
-        },
-        {
-          "girdi": "toplam sayı 134500'ü aşmış",
-          "hedef": "toplam sayı 134.500'ü aşmış",
-          "cikti": "toplam sayı 134500'ü aşmış",
-          "ham": "toplam sayı 134.500'ü aşmış",
-          "kategori": "yari",
-          "sablon": "v2c-yari-sayi_ek-007",
-          "uyari": []
-        },
-        {
-          "girdi": "Borcu önümüzdeki ayın yedisine kadar kapatmalıyız.",
-          "hedef": "Borcu önümüzdeki ayın 7'sine kadar kapatmalıyız.",
-          "cikti": "Borcu önümüzdeki ayın yedisine kadar kapatmalıyız.",
-          "ham": "Borcu önümüzdeki ayın 7'sine kadar kapatmalıyız.",
-          "kategori": "tarih",
-          "sablon": "v2c-tarih-yonelme-003",
-          "uyari": [
-            "\"yedisine\" → \"7'sine\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "yine de şu an saat 21:15",
-          "hedef": "yine de şu an saat 21.15",
-          "cikti": "yine de şu an saat 21:15",
-          "ham": "yine de şu an saat 21.15",
-          "kategori": "yari",
-          "sablon": "v2c-yari-saat-011",
-          "uyari": []
-        },
-        {
-          "girdi": "toplantıda kırkbeş kişi söz aldı",
-          "hedef": "toplantıda 45 kişi söz aldı",
-          "cikti": "toplantıda kırkbeş kişi söz aldı",
-          "ham": "toplantıda 45 kişi söz aldı",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-kardinal-003",
-          "uyari": [
-            "\"kırkbeş\" → \"45\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "kampanya her üründe yüzde 84 indirim sunuyor",
-          "hedef": "kampanya her üründe %84 indirim sunuyor",
-          "cikti": "kampanya her üründe yüzde 84 indirim sunuyor",
-          "ham": "kampanya her üründe %84 indirim sunuyor",
-          "kategori": "yari",
-          "sablon": "v2c-yari-yuzde-008",
-          "uyari": [
-            "silinen \"yüzde\" geri alındı"
-          ]
-        },
-        {
-          "girdi": "hazneye yirmiyedi litre su doldu",
-          "hedef": "hazneye 27 L su doldu",
-          "cikti": "hazneye yirmiyedi litre su doldu",
-          "ham": "hazneye 27 L su doldu",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-olcu-010",
-          "uyari": [
-            "\"yirmiyedi litre\" → \"27 L\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Fatura her ayın on yedisinde geliyor.",
-          "hedef": "Fatura her ayın 17'sinde geliyor.",
-          "cikti": "Fatura her ayın on yedisinde geliyor.",
-          "ham": "Fatura her ayın 17'sinde geliyor.",
-          "kategori": "tarih",
-          "sablon": "v2c-tarih-bulunma-004",
-          "uyari": [
-            "\"on yedisinde\" → \"17'sinde\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "toplam sayı 883 bin 50'yi aşmış",
-          "hedef": "toplam sayı 883.050'yi aşmış",
-          "cikti": "toplam sayı 883 bin 50'yi aşmış",
-          "ham": "toplam sayı 883.050'yi aşmış",
-          "kategori": "yari",
-          "sablon": "v2c-yari-sayi_ek-007",
-          "uyari": [
-            "\"883 bin 50'yi\" → \"883.050'yi\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Bebek ilk ayında yetmişaltı kilogram aldı.",
-          "hedef": "Bebek ilk ayında 76 kg aldı.",
-          "cikti": "Bebek ilk ayında yetmişaltı kilogram aldı.",
-          "ham": "Bebek ilk ayında 76 kg aldı.",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-olcu-001",
-          "uyari": [
-            "\"yetmişaltı kilogram\" → \"76 kg\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Depodan doksanyedibinsekizyüz elliyedi fotoğraf çıkarıldı.",
-          "hedef": "Depodan 97.857 fotoğraf çıkarıldı.",
-          "cikti": "Depodan doksanyedibinsekizyüz elliyedi fotoğraf çıkarıldı.",
-          "ham": "Depodan 97.857 fotoğraf çıkarıldı.",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-kardinal-009",
-          "uyari": [
-            "\"doksanyedibinsekizyüz elliyedi\" → \"97.857\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Annem söyledi, lokantada hesap üçyüz elli lira tuttu.",
-          "hedef": "Annem söyledi, lokantada hesap 350 TL tuttu.",
-          "cikti": "Annem söyledi, lokantada hesap üçyüz elli lira tuttu.",
-          "ham": "Annem söyledi, lokantada hesap 350 TL tuttu.",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-para-003",
-          "uyari": [
-            "\"üçyüz elli lira\" → \"350 TL\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "fatura gelecek ayın yirmi ikisinde geliyor ama neyse",
-          "hedef": "fatura gelecek ayın 22'sinde geliyor ama neyse",
-          "cikti": "fatura gelecek ayın yirmi ikisinde geliyor ama neyse",
-          "ham": "fatura gelecek ayın 22'sinde geliyor ama neyse",
-          "kategori": "tarih",
-          "sablon": "v2c-tarih-bulunma-004",
-          "uyari": [
-            "\"yirmi ikisinde\" → \"22'sinde\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "kampanya her üründe yüzde 1 indirim sunuyor",
-          "hedef": "kampanya her üründe %1 indirim sunuyor",
-          "cikti": "kampanya her üründe yüzde 1 indirim sunuyor",
-          "ham": "kampanya her üründe %1 indirim sunuyor",
-          "kategori": "yari",
-          "sablon": "v2c-yari-yuzde-008",
-          "uyari": [
-            "silinen \"yüzde\" geri alındı"
-          ]
-        },
-        {
-          "girdi": "4751 liralık fatura geldi bu ay.",
-          "hedef": "4.751 TL'lik fatura geldi bu ay.",
-          "cikti": "4751 TL'lik fatura geldi bu ay.",
-          "ham": "4.751 TL'lik fatura geldi bu ay.",
-          "kategori": "yari",
-          "sablon": "v2c-yari-para-029",
-          "uyari": []
-        },
-        {
-          "girdi": "Aslında, toplam sayı 4500'ü aşmış.",
-          "hedef": "Aslında, toplam sayı 4.500'ü aşmış.",
-          "cikti": "Aslında, toplam sayı 4500'ü aşmış.",
-          "ham": "Aslında, toplam sayı 4.500'ü aşmış.",
-          "kategori": "yari",
-          "sablon": "v2c-yari-sayi_ek-007",
-          "uyari": []
-        },
-        {
-          "girdi": "dükkândaki mallarda yüzde elliüç indirim yapıldı",
-          "hedef": "dükkândaki mallarda %53 indirim yapıldı",
-          "cikti": "dükkândaki mallarda yüzde elliüç indirim yapıldı",
-          "ham": "dükkândaki mallarda %53 indirim yapıldı",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-yuzde-000",
-          "uyari": [
-            "\"yüzde elliüç\" → \"%53\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "hayır hepimiz ayın yirmi altısını iple çekiyoruz",
-          "hedef": "hayır hepimiz ayın 26'sını iple çekiyoruz",
-          "cikti": "hayır hepimiz ayın yirmi altısını iple çekiyoruz",
-          "ham": "hayır hepimiz ayın 26'sını iple çekiyoruz",
-          "kategori": "tarih",
-          "sablon": "v2c-tarih-belirtme-001",
-          "uyari": [
-            "\"yirmi altısını\" → \"26'sını\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "kurs saat onbeş kırk bir bitecek",
-          "hedef": "kurs saat 15.41 bitecek",
-          "cikti": "kurs saat onbeş kırk bir bitecek",
-          "ham": "kurs saat 15.41 bitecek",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-saat-008",
-          "uyari": [
-            "\"onbeş kırk bir\" → \"15.41\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Sınav saat on üç yirmibeşten sonra başlar.",
-          "hedef": "Sınav saat 13.25'ten sonra başlar.",
-          "cikti": "Sınav saat on üç yirmibeşten sonra başlar.",
-          "ham": "Sınav saat 13.25'ten sonra başlar.",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-saat-006",
-          "uyari": [
-            "\"on üç yirmibeşten\" → \"13.25'ten\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "çay suyu ondokuz derece santigratta kaynar",
-          "hedef": "çay suyu 19 °C'de kaynar",
-          "cikti": "çay suyu ondokuz derece santigratta kaynar",
-          "ham": "çay suyu 19 °C'de kaynar",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-olcu-021",
-          "uyari": [
-            "\"ondokuz derece santigratta\" → \"19 °C'de\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Mutfağa indiğimde saat biri yirmi geçiyordu.",
-          "hedef": "Mutfağa indiğimde saat 1'i 20 geçiyordu.",
-          "cikti": "Mutfağa indiğimde saat biri yirmi geçiyordu.",
-          "ham": "Mutfağa indiğimde saat 1'i 20 geçiyordu.",
-          "kategori": "saat_deyis",
-          "sablon": "v2c-saat_deyis-d-010",
-          "uyari": [
-            "\"biri yirmi\" → \"1'i 20\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "kapalı olacağız kasımın yirmisinden önce uğrayın",
-          "hedef": "kapalı olacağız kasımın 20'sinden önce uğrayın",
-          "cikti": "kapalı olacağız kasımın yirmisinden önce uğrayın",
-          "ham": "kapalı olacağız kasımın 20'sinden önce uğrayın",
-          "kategori": "tarih",
-          "sablon": "v2c-tarih-ayrilma-015",
-          "uyari": [
-            "\"yirmisinden\" → \"20'sinden\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "uçuş 6:30 için bilet aldım",
-          "hedef": "uçuş 6.30 için bilet aldım",
-          "cikti": "uçuş 6:30 için bilet aldım",
-          "ham": "uçuş 6.30 için bilet aldım",
-          "kategori": "yari",
-          "sablon": "v2c-yari-saat_ns-009",
-          "uyari": []
-        },
-        {
-          "girdi": "Maç başlamak üzere, ona yirmi sekiz var.",
-          "hedef": "Maç başlamak üzere, 10'a 28 var.",
-          "cikti": "Maç başlamak üzere, ona yirmi sekiz var.",
-          "ham": "Maç başlamak üzere, 10'a 28 var.",
-          "kategori": "saat_deyis",
-          "sablon": "v2c-saat_deyis-p-018",
-          "uyari": [
-            "\"ona yirmi sekiz\" → \"10'a 28\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Hepimiz biliyoruz ki, köprü iki binyirmialtı yılında hizmete girdi.",
-          "hedef": "Hepimiz biliyoruz ki, köprü 2026 yılında hizmete girdi.",
-          "cikti": "Hepimiz biliyoruz ki, köprü iki binyirmialtı yılında hizmete girdi.",
-          "ham": "Hepimiz biliyoruz ki, köprü 2026 yılında hizmete girdi.",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-tarih-015",
-          "uyari": [
-            "\"iki binyirmialtı\" → \"2026\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Salonda yetmişbin ziyaretçi oturuyordu.",
-          "hedef": "Salonda 70.000 ziyaretçi oturuyordu.",
-          "cikti": "Salonda yetmişbin ziyaretçi oturuyordu.",
-          "ham": "Salonda 70.000 ziyaretçi oturuyordu.",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-kardinal-000",
-          "uyari": [
-            "\"yetmişbin\" → \"70.000\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "mesaj sayısı 2799'un altına düştü",
-          "hedef": "mesaj sayısı 2.799'un altına düştü",
-          "cikti": "mesaj sayısı 2799'un altına düştü",
-          "ham": "mesaj sayısı 2.799'un altına düştü",
-          "kategori": "yari",
-          "sablon": "v2c-yari-sayi_ek-011",
-          "uyari": []
-        },
-        {
-          "girdi": "hesap kırkbeşbinbeş yüzde kapandı",
-          "hedef": "hesap 45.500'de kapandı",
-          "cikti": "hesap kırkbeşbinbeş yüzde kapandı",
-          "ham": "hesap 45.500'de kapandı",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-kardinal-022",
-          "uyari": [
-            "\"kırkbeşbinbeş yüzde\" → \"45.500'de\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "taksit ayın yirmi ikisinde hesaptan çekilecek",
-          "hedef": "taksit ayın 22'sinde hesaptan çekilecek",
-          "cikti": "taksit ayın yirmi ikisinde hesaptan çekilecek",
-          "ham": "taksit ayın 22'sinde hesaptan çekilecek",
-          "kategori": "tarih",
-          "sablon": "v2c-tarih-bulunma-005",
-          "uyari": [
-            "\"yirmi ikisinde\" → \"22'sinde\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Yüzyirmisekiz gigabaytlık bir yedek disk aldık.",
-          "hedef": "128 GB'lık bir yedek disk aldık.",
-          "cikti": "Yüzyirmisekiz gigabaytlık bir yedek disk aldık.",
-          "ham": "128 GB'lık bir yedek disk aldık.",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-olcu-014",
-          "uyari": [
-            "\"Yüzyirmisekiz gigabaytlık\" → \"128 GB'lık\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "saati sordum onu on dört geçiyor",
-          "hedef": "saati sordum 10'u 14 geçiyor",
-          "cikti": "saati sordum onu on dört geçiyor",
-          "ham": "saati sordum 10'u 14 geçiyor",
-          "kategori": "saat_deyis",
-          "sablon": "v2c-saat_deyis-y-002",
-          "uyari": [
-            "\"onu on dört\" → \"10'u 14\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Gerçekten, depodan doksanikibinbeşyüz ürün çıkarıldı, bunu unutma.",
-          "hedef": "Gerçekten, depodan 92.500 ürün çıkarıldı, bunu unutma.",
-          "cikti": "Gerçekten, depodan doksanikibinbeşyüz ürün çıkarıldı, bunu unutma.",
-          "ham": "Gerçekten, depodan 92.500 ürün çıkarıldı, bunu unutma.",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-kardinal-009",
-          "uyari": [
-            "\"doksanikibinbeşyüz\" → \"92.500\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "bankadan yüzde 131,5 faizle kredi çektik sence de öyle değil mi",
-          "hedef": "bankadan %131,5 faizle kredi çektik sence de öyle değil mi",
-          "cikti": "bankadan yüzde 131,5 faizle kredi çektik sence de öyle değil mi",
-          "ham": "bankadan %131,5 faizle kredi çektik sence de öyle değil mi",
-          "kategori": "yari",
-          "sablon": "v2c-yari-yuzde-004",
-          "uyari": [
-            "silinen \"yüzde\" geri alındı"
-          ]
-        },
-        {
-          "girdi": "çocuklar ona iki kala uykuya daldı",
-          "hedef": "çocuklar 10'a 2 kala uykuya daldı",
-          "cikti": "çocuklar ona iki kala uykuya daldı",
-          "ham": "çocuklar 10'a 2 kala uykuya daldı",
-          "kategori": "saat_deyis",
-          "sablon": "v2c-saat_deyis-z-024",
-          "uyari": [
-            "\"ona iki\" → \"10'a 2\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "alışverişe ikiyüz otuz altı lirayla çıktık",
-          "hedef": "alışverişe 236 TL'yle çıktık",
-          "cikti": "alışverişe ikiyüz otuz altı lirayla çıktık",
-          "ham": "alışverişe 236 TL'yle çıktık",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-para-013",
-          "uyari": [
-            "\"ikiyüz otuz altı lirayla\" → \"236 TL'yle\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "kurs sonu sınavı geçen ayın otuz biri",
-          "hedef": "kurs sonu sınavı geçen ayın 31'i",
-          "cikti": "kurs sonu sınavı geçen ayın otuz biri",
-          "ham": "kurs sonu sınavı geçen ayın 31'i",
-          "kategori": "tarih",
-          "sablon": "v2c-tarih-iyelik3-013",
-          "uyari": [
-            "\"otuz biri\" → \"31'i\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "toplantı için bu ayın otuz birini seçtik",
-          "hedef": "toplantı için bu ayın 31'ini seçtik",
-          "cikti": "toplantı için bu ayın otuz birini seçtik",
-          "ham": "toplantı için bu ayın 31'ini seçtik",
-          "kategori": "tarih",
-          "sablon": "v2c-tarih-belirtme-003",
-          "uyari": [
-            "\"otuz birini\" → \"31'ini\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "bence uçuş 16:30 için bilet aldım",
-          "hedef": "bence uçuş 16.30 için bilet aldım",
-          "cikti": "bence uçuş 16:30 için bilet aldım",
-          "ham": "bence uçuş 16.30 için bilet aldım",
-          "kategori": "yari",
-          "sablon": "v2c-yari-saat_ns-009",
-          "uyari": []
-        },
-        {
-          "girdi": "Salonda elliikibin abone oturuyordu.",
-          "hedef": "Salonda 52.000 abone oturuyordu.",
-          "cikti": "Salonda elliikibin abone oturuyordu.",
-          "ham": "Salonda 52.000 abone oturuyordu.",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-kardinal-000",
-          "uyari": [
-            "\"elliikibin\" → \"52.000\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "kurs saat dokuz onyedi bitecek",
-          "hedef": "kurs saat 9.17 bitecek",
-          "cikti": "kurs saat dokuz onyedi bitecek",
-          "ham": "kurs saat 9.17 bitecek",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-saat-008",
-          "uyari": [
-            "\"dokuz onyedi\" → \"9.17\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
         },
         {
           "girdi": "kasiyer bana 127 bin 50 lira 99 kuruşu bozuk para olarak verdi",
@@ -3896,278 +2045,18 @@
           "uyari": []
         },
         {
-          "girdi": "hatırlıyor musun şu an 475000 kişi çevrimiçi dedi bana",
-          "hedef": "hatırlıyor musun şu an 475.000 kişi çevrimiçi dedi bana",
-          "cikti": "hatırlıyor musun şu an 475000 kişi çevrimiçi dedi bana",
-          "ham": "hatırlıyor musun şu an 475.000 kişi çevrimiçi dedi bana",
-          "kategori": "yari",
-          "sablon": "v2c-yari-sayi-015",
-          "uyari": []
-        },
-        {
-          "girdi": "altmışdört gigabaytlık bir yedek disk aldık",
-          "hedef": "64 GB'lık bir yedek disk aldık",
-          "cikti": "altmışdört gigabaytlık bir yedek disk aldık",
-          "ham": "64 GB'lık bir yedek disk aldık",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-olcu-014",
+          "girdi": "Kahvaltıyı altıyı çeyrek geçe yaptık.",
+          "hedef": "Kahvaltıyı 6'yı çeyrek geçe yaptık.",
+          "cikti": "Kahvaltıyı altıyı çeyrek geçe yaptık.",
+          "ham": "Kahv6'yı 6'yı çeyrek geçe yaptık.",
+          "kategori": "saat_deyis",
+          "sablon": "v2c-saat_deyis-z-027",
           "uyari": [
-            "\"altmışdört gigabaytlık\" → \"64 GB'lık\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "yeni tarife ayın on yedisinden itibaren geçerli",
-          "hedef": "yeni tarife ayın 17'sinden itibaren geçerli",
-          "cikti": "yeni tarife ayın on yedisinden itibaren geçerli",
-          "ham": "yeni tarife ayın 17'sinden itibaren geçerli",
-          "kategori": "tarih",
-          "sablon": "v2c-tarih-ayrilma-000",
-          "uyari": [
-            "\"on yedisinden\" → \"17'sinden\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Depodan yüz yetmişbeş sipariş çıkarıldı.",
-          "hedef": "Depodan 175 sipariş çıkarıldı.",
-          "cikti": "Depodan yüz yetmişbeş sipariş çıkarıldı.",
-          "ham": "Depodan 175 sipariş çıkarıldı.",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-kardinal-009",
-          "uyari": [
-            "\"yüz yetmişbeş\" → \"175\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Kitabı önümüzdeki ayın yirmi birine kadar iade et.",
-          "hedef": "Kitabı önümüzdeki ayın 21'ine kadar iade et.",
-          "cikti": "Kitabı önümüzdeki ayın yirmi birine kadar iade et.",
-          "ham": "Kitabı önümüzdeki ayın 21'ine kadar iade et.",
-          "kategori": "tarih",
-          "sablon": "v2c-tarih-yonelme-009",
-          "uyari": [
-            "\"yirmi birine\" → \"21'ine\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Kuzeyde sıcaklığın eksi 3 derece olması bekleniyor.",
-          "hedef": "Kuzeyde sıcaklığın -3 derece olması bekleniyor.",
-          "cikti": "Kuzeyde sıcaklığın eksi 3 derece olması bekleniyor.",
-          "ham": "Kuzeyde sıcaklığın -3 derece olması bekleniyor.",
-          "kategori": "yari",
-          "sablon": "v2c-yari-derece-002",
-          "uyari": [
-            "silinen \"eksi\" geri alındı"
-          ]
-        },
-        {
-          "girdi": "dükkândaki mallarda yüzde yirmiyedi indirim yapıldı",
-          "hedef": "dükkândaki mallarda %27 indirim yapıldı",
-          "cikti": "dükkândaki mallarda yüzde yirmiyedi indirim yapıldı",
-          "ham": "dükkândaki mallarda %27 indirim yapıldı",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-yuzde-000",
-          "uyari": [
-            "\"yüzde yirmiyedi\" → \"%27\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Bakım çalışmaları her ayın altısından itibaren başlıyor.",
-          "hedef": "Bakım çalışmaları her ayın 6'sından itibaren başlıyor.",
-          "cikti": "Bakım çalışmaları her ayın altısından itibaren başlıyor.",
-          "ham": "Bakım çalışmaları her ayın 6'sından itibaren başlıyor.",
-          "kategori": "tarih",
-          "sablon": "v2c-tarih-ayrilma-009",
-          "uyari": [
-            "\"altısından\" → \"6'sından\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Elektrik faturası beş yüzdoksanyedi lira geldi.",
-          "hedef": "Elektrik faturası 597 TL geldi.",
-          "cikti": "Elektrik faturası beş yüzdoksanyedi lira geldi.",
-          "ham": "Elektrik faturası 597 TL geldi.",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-para-000",
-          "uyari": [
-            "\"beş yüzdoksanyedi lira\" → \"597 TL\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "tören saat onsekizde yapılacak",
-          "hedef": "tören saat 18'de yapılacak",
-          "cikti": "tören saat onsekizde yapılacak",
-          "ham": "tören saat 18'de yapılacak",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-saat-000",
-          "uyari": [
-            "\"onsekizde\" → \"18'de\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "gece eksi 17 derecede don olacak",
-          "hedef": "gece -17 derecede don olacak",
-          "cikti": "gece eksi 17 derecede don olacak",
-          "ham": "gece -17 derecede don olacak",
-          "kategori": "yari",
-          "sablon": "v2c-yari-derece-006",
-          "uyari": [
-            "silinen \"eksi\" geri alındı"
-          ]
-        },
-        {
-          "girdi": "elektrik faturası yetmişbirbinbeşyüz lira geldi",
-          "hedef": "elektrik faturası 71.500 TL geldi",
-          "cikti": "elektrik faturası yetmişbirbinbeşyüz lira geldi",
-          "ham": "elektrik faturası 71.500 TL geldi",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-para-000",
-          "uyari": [
-            "\"yetmişbirbinbeşyüz lira\" → \"71.500 TL\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "yeni tarife ayın yirmi altısından itibaren geçerli",
-          "hedef": "yeni tarife ayın 26'sından itibaren geçerli",
-          "cikti": "yeni tarife ayın yirmi altısından itibaren geçerli",
-          "ham": "yeni tarife ayın 26'sından itibaren geçerli",
-          "kategori": "tarih",
-          "sablon": "v2c-tarih-ayrilma-000",
-          "uyari": [
-            "\"yirmi altısından\" → \"26'sından\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "kuzeyde sıcaklığın eksi 31 derece olması bekleniyor",
-          "hedef": "kuzeyde sıcaklığın -31 derece olması bekleniyor",
-          "cikti": "kuzeyde sıcaklığın eksi 31 derece olması bekleniyor",
-          "ham": "kuzeyde sıcaklığın -31 derece olması bekleniyor",
-          "kategori": "yari",
-          "sablon": "v2c-yari-derece-002",
-          "uyari": [
-            "silinen \"eksi\" geri alındı"
-          ]
-        },
-        {
-          "girdi": "sonra çay suyu yirmibir derece santigratta kaynar sence de öyle değil mi",
-          "hedef": "sonra çay suyu 21 °C'de kaynar sence de öyle değil mi",
-          "cikti": "sonra çay suyu yirmibir derece santigratta kaynar sence de öyle değil mi",
-          "ham": "sonra çay suyu 21 °C'de kaynar sence de öyle değil mi",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-olcu-021",
-          "uyari": [
-            "\"yirmibir derece santigratta\" → \"21 °C'de\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "kampanya her üründe yüzde 60 indirim sunuyor",
-          "hedef": "kampanya her üründe %60 indirim sunuyor",
-          "cikti": "kampanya her üründe yüzde 60 indirim sunuyor",
-          "ham": "kampanya her üründe %60 indirim sunuyor",
-          "kategori": "yari",
-          "sablon": "v2c-yari-yuzde-008",
-          "uyari": [
-            "silinen \"yüzde\" geri alındı"
-          ]
-        },
-        {
-          "girdi": "geçen hafta toplantı için ayın on ikisini seçtik",
-          "hedef": "geçen hafta toplantı için ayın 12'sini seçtik",
-          "cikti": "geçen hafta toplantı için ayın on ikisini seçtik",
-          "ham": "geçen hafta toplantı için ayın 12'sini seçtik",
-          "kategori": "tarih",
-          "sablon": "v2c-tarih-belirtme-003",
-          "uyari": [
-            "\"on ikisini\" → \"12'sini\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "toplantıda altı binikiyüz elli işçi söz aldı",
-          "hedef": "toplantıda 6.250 işçi söz aldı",
-          "cikti": "toplantıda altı binikiyüz elli işçi söz aldı",
-          "ham": "toplantıda 6.250 işçi söz aldı",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-kardinal-003",
-          "uyari": [
-            "\"altı binikiyüz elli\" → \"6.250\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Kampanya her üründe yüzde 75,5 indirim sunuyor.",
-          "hedef": "Kampanya her üründe %75,5 indirim sunuyor.",
-          "cikti": "Kampanya her üründe yüzde 75,5 indirim sunuyor.",
-          "ham": "Kampanya her üründe %75,5 indirim sunuyor.",
-          "kategori": "yari",
-          "sablon": "v2c-yari-yuzde-008",
-          "uyari": [
-            "silinen \"yüzde\" geri alındı"
-          ]
-        },
-        {
-          "girdi": "ikibinaltıya kadar sürecek",
-          "hedef": "2006'ya kadar sürecek",
-          "cikti": "ikibinaltıya kadar sürecek",
-          "ham": "2006'ya kadar sürecek",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-tarih-013",
-          "uyari": [
-            "\"ikibinaltıya\" → \"2006'ya\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "şu an saat 11:50",
-          "hedef": "şu an saat 11.50",
-          "cikti": "şu an saat 11:50",
-          "ham": "şu an saat 11.50",
-          "kategori": "yari",
-          "sablon": "v2c-yari-saat-011",
-          "uyari": []
-        },
-        {
-          "girdi": "köprü iki binüç yılında hizmete girdi",
-          "hedef": "köprü 2003 yılında hizmete girdi",
-          "cikti": "köprü iki binüç yılında hizmete girdi",
-          "ham": "köprü 2003 yılında hizmete girdi",
-          "kategori": "bitisik",
-          "sablon": "v2c-bitisik-tarih-015",
-          "uyari": [
-            "\"iki binüç\" → \"2003\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "açıkçası hepimiz şubatın birini iple çekiyoruz",
-          "hedef": "açıkçası hepimiz şubatın 1'ini iple çekiyoruz",
-          "cikti": "açıkçası hepimiz şubatın birini iple çekiyoruz",
-          "ham": "açıkçası hepimiz şubatın 1'ini iple çekiyoruz",
-          "kategori": "tarih",
-          "sablon": "v2c-tarih-belirtme-001",
-          "uyari": [
-            "\"birini\" → \"1'ini\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "annem söyledi kuzeyde sıcaklığın eksi 25 derece olması bekleniyor herkes biliyor",
-          "hedef": "annem söyledi kuzeyde sıcaklığın -25 derece olması bekleniyor herkes biliyor",
-          "cikti": "annem söyledi kuzeyde sıcaklığın eksi 25 derece olması bekleniyor herkes biliyor",
-          "ham": "annem söyledi kuzeyde sıcaklığın -25 derece olması bekleniyor herkes biliyor",
-          "kategori": "yari",
-          "sablon": "v2c-yari-derece-002",
-          "uyari": [
-            "silinen \"eksi\" geri alındı"
-          ]
-        },
-        {
-          "girdi": "Kartın bakiyesi eksi 878 lira çıktı, galiba.",
-          "hedef": "Kartın bakiyesi -878 TL çıktı, galiba.",
-          "cikti": "Kartın bakiyesi eksi 878 TL çıktı, galiba.",
-          "ham": "Kartın bakiyesi -878 TL çıktı, galiba.",
-          "kategori": "yari",
-          "sablon": "v2c-yari-bakiye-001",
-          "uyari": [
-            "silinen \"eksi\" geri alındı"
+            "\"Kahvaltıyı altıyı\" → \"Kahv6'yı 6'yı\" geri alındı (sayı olmayan sözcük değişti)"
           ]
         }
       ],
-      "koruma_geri_alma": 208
+      "koruma_geri_alma": 10
     },
     {
       "ad": "test_v1_donmus",
@@ -4203,10 +2092,10 @@
         },
         "model_korumali": {
           "ornek": 2000,
-          "tam_eslesme": 0.9915,
-          "cer": 0.004911236620491413,
-          "wer": 0.00715546882260013,
-          "sayi_belirteci_dogrulugu": 0.9797336421540244,
+          "tam_eslesme": 0.998,
+          "cer": 0.00013000332230712563,
+          "wer": 0.0005575689991636465,
+          "sayi_belirteci_dogrulugu": 0.9965257672264042,
           "negatif_ornek": 776,
           "yanlis_donusum_orani": 0.0
         }
@@ -4761,10 +2650,10 @@
           },
           "kardinal": {
             "ornek": 100,
-            "tam_eslesme": 0.96,
-            "cer": 0.011240164855751217,
-            "wer": 0.015590200445434299,
-            "sayi_belirteci_dogrulugu": 0.9523809523809523,
+            "tam_eslesme": 0.99,
+            "cer": 0.0011240164855751218,
+            "wer": 0.0022271714922048997,
+            "sayi_belirteci_dogrulugu": 0.9880952380952381,
             "negatif_ornek": 16,
             "yanlis_donusum_orani": 0.0
           },
@@ -4833,10 +2722,10 @@
           },
           "ondalik": {
             "ornek": 60,
-            "tam_eslesme": 0.9833333333333333,
-            "cer": 0.011320754716981131,
-            "wer": 0.011450381679389313,
-            "sayi_belirteci_dogrulugu": 0.9833333333333333,
+            "tam_eslesme": 1.0,
+            "cer": 0.0,
+            "wer": 0.0,
+            "sayi_belirteci_dogrulugu": 1.0,
             "negatif_ornek": 0,
             "yanlis_donusum_orani": null
           },
@@ -4851,10 +2740,10 @@
           },
           "saat": {
             "ornek": 130,
-            "tam_eslesme": 0.9769230769230769,
-            "cer": 0.002218387971407444,
-            "wer": 0.0048,
-            "sayi_belirteci_dogrulugu": 0.9769230769230769,
+            "tam_eslesme": 1.0,
+            "cer": 0.0,
+            "wer": 0.0,
+            "sayi_belirteci_dogrulugu": 1.0,
             "negatif_ornek": 0,
             "yanlis_donusum_orani": null
           },
@@ -4887,37 +2776,26 @@
           },
           "telefon": {
             "ornek": 60,
-            "tam_eslesme": 0.9,
-            "cer": 0.08947772657450077,
-            "wer": 0.12387387387387387,
-            "sayi_belirteci_dogrulugu": 0.9016393442622951,
+            "tam_eslesme": 0.95,
+            "cer": 0.002304147465437788,
+            "wer": 0.01126126126126126,
+            "sayi_belirteci_dogrulugu": 0.9795081967213115,
             "negatif_ornek": 0,
             "yanlis_donusum_orani": null
           },
           "yuzde": {
             "ornek": 100,
-            "tam_eslesme": 0.97,
-            "cer": 0.01350621285791464,
-            "wer": 0.019823788546255508,
-            "sayi_belirteci_dogrulugu": 0.97,
+            "tam_eslesme": 1.0,
+            "cer": 0.0,
+            "wer": 0.0,
+            "sayi_belirteci_dogrulugu": 1.0,
             "negatif_ornek": 0,
             "yanlis_donusum_orani": null
           }
         }
       },
-      "hata_sayisi": 17,
+      "hata_sayisi": 4,
       "hatalar": [
-        {
-          "girdi": "Beni artı doksan beş dört sekiz üç üç beş dört dört sıfır altı numarasından arayabilirsin.",
-          "hedef": "Beni +90 548 335 44 06 numarasından arayabilirsin.",
-          "cikti": "Beni artı doksan beş dört sekiz üç üç beş dört dört sıfır altı numarasından arayabilirsin.",
-          "ham": "Beni +90 548 335 44 06 numarasından arayabilirsin.",
-          "kategori": "telefon",
-          "sablon": "telefon-000",
-          "uyari": [
-            "\"artı doksan beş dört sekiz üç üç beş dört dört sıfır altı\" → \"+90 548 335 44 06\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
         {
           "girdi": "telefon numaram sıfır üç yüz yirmi iki yedi yüz otuz dört dokuz kırk dokuz",
           "hedef": "telefon numaram 0322 730 49 49",
@@ -4926,39 +2804,6 @@
           "kategori": "telefon",
           "sablon": "telefon-001",
           "uyari": []
-        },
-        {
-          "girdi": "kredi faizi yüzde seksen yedi buçuğa düştü",
-          "hedef": "kredi faizi %87,5'e düştü",
-          "cikti": "kredi faizi yüzde seksen yedi buçuğa düştü",
-          "ham": "kredi faizi %87,5'e düştü",
-          "kategori": "yuzde",
-          "sablon": "yuzde-019",
-          "uyari": [
-            "\"yüzde seksen yedi buçuğa\" → \"%87,5'e\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Ortalamamı yirmi dokuz buçuğa çıkardım.",
-          "hedef": "Ortalamamı 29,5'e çıkardım.",
-          "cikti": "Ortalamamı yirmi dokuz buçuğa çıkardım.",
-          "ham": "Ortalamamı 29,5'e çıkardım.",
-          "kategori": "ondalik",
-          "sablon": "ondalik-017",
-          "uyari": [
-            "\"yirmi dokuz buçuğa\" → \"29,5'e\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "akşam ondan sonra trafik azalıyor",
-          "hedef": "akşam 10'dan sonra trafik azalıyor",
-          "cikti": "akşam ondan sonra trafik azalıyor",
-          "ham": "akşam 10'dan sonra trafik azalıyor",
-          "kategori": "saat",
-          "sablon": "saat-026",
-          "uyari": [
-            "\"ondan\" → \"10'dan\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
         },
         {
           "girdi": "ben de xbox onu aldım",
@@ -4972,114 +2817,13 @@
           ]
         },
         {
-          "girdi": "puanı yetmiş biri bulan olmadı",
-          "hedef": "puanı 71'i bulan olmadı",
-          "cikti": "puanı yetmiş biri bulan olmadı",
-          "ham": "puanı 71'i bulan olmadı",
-          "kategori": "kardinal",
-          "sablon": "kardinal-023",
-          "uyari": [
-            "\"yetmiş biri\" → \"71'i\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "telefon numaram artı doksan beş dört üç dokuz yüz on sıfır üç üç sıfır",
-          "hedef": "telefon numaram +90 543 910 03 30",
-          "cikti": "telefon numaram artı doksan beş dört üç dokuz yüz on sıfır üç üç sıfır",
-          "ham": "telefon numaram +90 543 910 03 30",
-          "kategori": "telefon",
-          "sablon": "telefon-001",
-          "uyari": [
-            "\"artı doksan beş dört üç dokuz yüz on sıfır üç üç sıfır\" → \"+90 543 910 03 30\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Sabah onda işe çıktık.",
-          "hedef": "Sabah 10'da işe çıktık.",
-          "cikti": "Sabah onda işe çıktık.",
-          "ham": "Sabah 10'da işe çıktık.",
-          "kategori": "saat",
-          "sablon": "saat-023",
-          "uyari": [
-            "\"onda\" → \"10'da\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "puanı elli biri bulan olmadı",
-          "hedef": "puanı 51'i bulan olmadı",
-          "cikti": "puanı elli biri bulan olmadı",
-          "ham": "puanı 51'i bulan olmadı",
-          "kategori": "kardinal",
-          "sablon": "kardinal-023",
-          "uyari": [
-            "\"elli biri\" → \"51'i\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "kredi faizi yüzde yirmi buçuğa düştü",
-          "hedef": "kredi faizi %20,5'e düştü",
-          "cikti": "kredi faizi yüzde yirmi buçuğa düştü",
-          "ham": "kredi faizi %20,5'e düştü",
-          "kategori": "yuzde",
-          "sablon": "yuzde-019",
-          "uyari": [
-            "\"yüzde yirmi buçuğa\" → \"%20,5'e\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "sabah onda işe çıktık",
-          "hedef": "sabah 10'da işe çıktık",
-          "cikti": "sabah onda işe çıktık",
-          "ham": "sabah 10'da işe çıktık",
-          "kategori": "saat",
-          "sablon": "saat-023",
-          "uyari": [
-            "\"onda\" → \"10'da\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Telefon numaram artı doksan iki yüz otuz iki yedi yüz otuz dokuz yetmiş üç kırk dört.",
-          "hedef": "Telefon numaram +90 232 739 73 44.",
-          "cikti": "Telefon numaram artı doksan iki yüz otuz iki yedi yüz otuz dokuz yetmiş üç kırk dört.",
-          "ham": "Telefon numaram +90 232 739 73 44.",
-          "kategori": "telefon",
-          "sablon": "telefon-001",
-          "uyari": [
-            "\"artı doksan iki yüz otuz iki yedi yüz otuz dokuz yetmiş üç kırk dört.\" → \"+90 232 739 73 44.\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Ben de Windows yirmi biri aldım.",
-          "hedef": "Ben de Windows 21'i aldım.",
-          "cikti": "Ben de Windows yirmi biri aldım.",
-          "ham": "Ben de Windows 21'i aldım.",
-          "kategori": "kardinal",
-          "sablon": "kardinal-033",
-          "uyari": [
-            "\"yirmi biri\" → \"21'i\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "hedefimizin yüzde yüzü gerçekleşti",
-          "hedef": "hedefimizin %100'ü gerçekleşti",
-          "cikti": "hedefimizin yüzde yüzü gerçekleşti",
-          "ham": "hedefimizin %100'ü gerçekleşti",
-          "kategori": "yuzde",
-          "sablon": "yuzde-023",
-          "uyari": [
-            "\"yüzde yüzü\" → \"%100'ü\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
           "girdi": "Telefon numaram artı doksan beş yüz elli beş yüz yetmiş altı elli dört yirmi altı.",
           "hedef": "Telefon numaram +90 550 576 54 26.",
-          "cikti": "Telefon numaram artı doksan beş yüz elli beş yüz yetmiş altı elli dört yirmi altı.",
+          "cikti": "Telefon numaram +90 555 576 54 26.",
           "ham": "Telefon numaram +90 555 576 54 26.",
           "kategori": "telefon",
           "sablon": "telefon-001",
-          "uyari": [
-            "\"artı doksan beş yüz elli beş yüz yetmiş altı elli dört yirmi altı.\" → \"+90 555 576 54 26.\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
+          "uyari": []
         },
         {
           "girdi": "siparişiniz için sıfır beş yüz otuz üç yüz altmış yedi seksen dokuz dört sekiz numaralı hattı arayın",
@@ -5091,7 +2835,7 @@
           "uyari": []
         }
       ],
-      "koruma_geri_alma": 18
+      "koruma_geri_alma": 4
     },
     {
       "ad": "zorluk",
@@ -6744,10 +4488,10 @@
         },
         "model_korumali": {
           "ornek": 83,
-          "tam_eslesme": 0.7590361445783133,
-          "cer": 0.06938421509106678,
-          "wer": 0.09462915601023018,
-          "sayi_belirteci_dogrulugu": 0.8117647058823529,
+          "tam_eslesme": 0.9156626506024096,
+          "cer": 0.021248915871639202,
+          "wer": 0.030690537084398978,
+          "sayi_belirteci_dogrulugu": 0.9764705882352941,
           "negatif_ornek": 27,
           "yanlis_donusum_orani": 0.18518518518518517
         }
@@ -7203,10 +4947,10 @@
           },
           "ayin_gunu": {
             "ornek": 4,
-            "tam_eslesme": 0.75,
-            "cer": 0.023622047244094488,
-            "wer": 0.05555555555555555,
-            "sayi_belirteci_dogrulugu": 0.75,
+            "tam_eslesme": 1.0,
+            "cer": 0.0,
+            "wer": 0.0,
+            "sayi_belirteci_dogrulugu": 1.0,
             "negatif_ornek": 0,
             "yanlis_donusum_orani": null
           },
@@ -7221,10 +4965,10 @@
           },
           "bitisik": {
             "ornek": 5,
-            "tam_eslesme": 0.0,
-            "cer": 0.5242718446601942,
-            "wer": 0.5263157894736842,
-            "sayi_belirteci_dogrulugu": 0.0,
+            "tam_eslesme": 1.0,
+            "cer": 0.0,
+            "wer": 0.0,
+            "sayi_belirteci_dogrulugu": 1.0,
             "negatif_ornek": 0,
             "yanlis_donusum_orani": null
           },
@@ -7302,10 +5046,10 @@
           },
           "olcu": {
             "ornek": 7,
-            "tam_eslesme": 0.5714285714285714,
-            "cer": 0.22162162162162163,
-            "wer": 0.22857142857142856,
-            "sayi_belirteci_dogrulugu": 0.5,
+            "tam_eslesme": 1.0,
+            "cer": 0.0,
+            "wer": 0.0,
+            "sayi_belirteci_dogrulugu": 1.0,
             "negatif_ornek": 0,
             "yanlis_donusum_orani": null
           },
@@ -7329,156 +5073,17 @@
           },
           "yari": {
             "ornek": 12,
-            "tam_eslesme": 0.6666666666666666,
-            "cer": 0.03724928366762178,
-            "wer": 0.1111111111111111,
-            "sayi_belirteci_dogrulugu": 0.7647058823529411,
+            "tam_eslesme": 1.0,
+            "cer": 0.0,
+            "wer": 0.0,
+            "sayi_belirteci_dogrulugu": 1.0,
             "negatif_ornek": 1,
             "yanlis_donusum_orani": 0.0
           }
         }
       },
-      "hata_sayisi": 20,
+      "hata_sayisi": 7,
       "hatalar": [
-        {
-          "girdi": "hasta günde beş yüz miligram ilaç alıyor",
-          "hedef": "hasta günde 500 mg ilaç alıyor",
-          "cikti": "hasta günde beş yüz miligram ilaç alıyor",
-          "ham": "hasta günde 500 mg ilaç alıyor",
-          "kategori": "olcu",
-          "sablon": "elle3",
-          "uyari": [
-            "\"beş yüz miligram\" → \"500 mg\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "depoya yirmi metreküp su sığıyor",
-          "hedef": "depoya 20 m³ su sığıyor",
-          "cikti": "depoya yirmi metreküp su sığıyor",
-          "ham": "depoya 20 m³ su sığıyor",
-          "kategori": "olcu",
-          "sablon": "elle3",
-          "uyari": [
-            "\"yirmi metreküp\" → \"20 m³\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "bu ay üç yüz kilovatsaat elektrik harcadık",
-          "hedef": "bu ay 300 kWh elektrik harcadık",
-          "cikti": "bu ay üç yüz kilovatsaat elektrik harcadık",
-          "ham": "bu ay 300 kWh elektrik harcadık",
-          "kategori": "olcu",
-          "sablon": "elle3",
-          "uyari": [
-            "\"üç yüz kilovatsaat\" → \"300 kWh\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "toplantı saat 14:30'da başlayacak",
-          "hedef": "toplantı saat 14.30'da başlayacak",
-          "cikti": "toplantı saat 14:30'da başlayacak",
-          "ham": "toplantı saat 14.30'da başlayacak",
-          "kategori": "yari",
-          "sablon": "elle3",
-          "uyari": []
-        },
-        {
-          "girdi": "Maaşlar 22500 liraya yükseldi.",
-          "hedef": "Maaşlar 22.500 TL'ye yükseldi.",
-          "cikti": "Maaşlar 22500 TL'ye yükseldi.",
-          "ham": "Maaşlar 22.500 TL'ye yükseldi.",
-          "kategori": "yari",
-          "sablon": "elle3",
-          "uyari": []
-        },
-        {
-          "girdi": "hava eksi 12 derece",
-          "hedef": "hava -12 derece",
-          "cikti": "hava eksi 12 derece",
-          "ham": "hava -12 derece",
-          "kategori": "yari",
-          "sablon": "elle3",
-          "uyari": [
-            "silinen \"eksi\" geri alındı"
-          ]
-        },
-        {
-          "girdi": "nüfusun yüzde 60'ı şehirde yaşıyor",
-          "hedef": "nüfusun %60'ı şehirde yaşıyor",
-          "cikti": "nüfusun yüzde 60'ı şehirde yaşıyor",
-          "ham": "nüfusun %60'ı şehirde yaşıyor",
-          "kategori": "yari",
-          "sablon": "elle3",
-          "uyari": [
-            "silinen \"yüzde\" geri alındı"
-          ]
-        },
-        {
-          "girdi": "sınıfta yirmibeş öğrenci var",
-          "hedef": "sınıfta 25 öğrenci var",
-          "cikti": "sınıfta yirmibeş öğrenci var",
-          "ham": "sınıfta 25 öğrenci var",
-          "kategori": "bitisik",
-          "sablon": "elle3",
-          "uyari": [
-            "\"yirmibeş\" → \"25\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "bana ikiyüz elli gram peynir ver",
-          "hedef": "bana 250 g peynir ver",
-          "cikti": "bana ikiyüz elli gram peynir ver",
-          "ham": "bana 250 g peynir ver",
-          "kategori": "bitisik",
-          "sablon": "elle3",
-          "uyari": [
-            "\"ikiyüz elli gram\" → \"250 g\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "Fatura üçbin beşyüz lira gelmiş.",
-          "hedef": "Fatura 3.500 TL gelmiş.",
-          "cikti": "Fatura üçbin beşyüz lira gelmiş.",
-          "ham": "Fatura 3.500 TL gelmiş.",
-          "kategori": "bitisik",
-          "sablon": "elle3",
-          "uyari": [
-            "\"üçbin beşyüz lira\" → \"3.500 TL\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "indirim yüzde onbeş",
-          "hedef": "indirim %15",
-          "cikti": "indirim yüzde onbeş",
-          "ham": "indirim %15",
-          "kategori": "bitisik",
-          "sablon": "elle3",
-          "uyari": [
-            "\"yüzde onbeş\" → \"%15\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "otobüs saat onbirde kalkıyor",
-          "hedef": "otobüs saat 11'de kalkıyor",
-          "cikti": "otobüs saat onbirde kalkıyor",
-          "ham": "otobüs saat 11'de kalkıyor",
-          "kategori": "bitisik",
-          "sablon": "elle3",
-          "uyari": [
-            "\"onbirde\" → \"11'de\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
-        {
-          "girdi": "kirayı her ayın birinde ödüyorum",
-          "hedef": "kirayı her ayın 1'inde ödüyorum",
-          "cikti": "kirayı her ayın birinde ödüyorum",
-          "ham": "kirayı her ayın 1'inde ödüyorum",
-          "kategori": "ayin_gunu",
-          "sablon": "elle3",
-          "uyari": [
-            "\"birinde\" → \"1'inde\" geri alındı (sayı olmayan sözcük değişti)"
-          ]
-        },
         {
           "girdi": "geçen ay yüzde yirmi zam geldi maaşım otuz iki bin liradan otuz sekiz bin dört yüz liraya çıktı",
           "hedef": "geçen ay %20 zam geldi maaşım 32.000 TL'den 38.400 TL'ye çıktı",
@@ -7543,7 +5148,7 @@
           "uyari": []
         }
       ],
-      "koruma_geri_alma": 12
+      "koruma_geri_alma": 1
     }
   ]
 }
