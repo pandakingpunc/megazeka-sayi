@@ -4,10 +4,10 @@ Küme: `evaluation/gercek.jsonl`, 279 Common Voice cümlesi (sayı kökü içere
 
 | Sistem | Katı % | Esnek % | Yanlış dönüşüm % (negatif n) | Pozitifte doğru % (n) | Pozitife hiç dokunmadı |
 |---|---:|---:|---:|---:|---:|
-| Girdiyi kopyala | 58.1 | 60.2 | 0.0 (162) | 5.1 (117) | 111 |
-| Kural tabanlı (saf) | 34.8 | 38.0 | 75.9 (162) | 57.3 (117) | 1 |
-| Model (korumasız) | 81.4 | 82.4 | 18.5 (162) | 83.8 (117) | 3 |
-| Model + koruma | 86.7 | 87.8 | 11.1 (162) | 86.3 (117) | 6 |
+| Girdiyi kopyala | 58.4 | 59.9 | 0.0 (163) | 3.4 (116) | 112 |
+| Kural tabanlı (saf) | 34.8 | 40.9 | 71.2 (163) | 57.8 (116) | 1 |
+| Model (korumasız) | 81.7 | 82.8 | 17.8 (163) | 83.6 (116) | 3 |
+| Model + koruma | 87.1 | 88.2 | 10.4 (163) | 86.2 (116) | 6 |
 
 Koruma 20 örnekte en az bir bölgeyi geri aldı.
 
@@ -15,22 +15,22 @@ Koruma 20 örnekte en az bir bölgeyi geri aldı.
 
 | Kategori | n | Girdiyi kopyala | Kural tabanlı (saf) | Model (korumasız) | Model + koruma |
 |---|---:|---:|---:|---:|---:|
-| aralik | 17 | 1 | 0 | 15 | 15 |
+| aralik | 17 | 0 | 0 | 15 | 15 |
 | atasozu | 12 | 12 | 0 | 4 | 4 |
 | buyuk | 8 | 0 | 0 | 8 | 8 |
-| es_yazim | 35 | 35 | 18 | 34 | 35 |
-| kalip | 53 | 53 | 19 | 50 | 51 |
+| es_yazim | 35 | 35 | 19 | 34 | 35 |
+| kalip | 53 | 53 | 18 | 49 | 50 |
 | kardinal | 45 | 1 | 42 | 40 | 42 |
-| kucuk_sayi | 30 | 30 | 0 | 22 | 24 |
-| olcu | 4 | 1 | 2 | 3 | 3 |
+| kucuk_sayi | 30 | 30 | 10 | 25 | 27 |
+| olcu | 4 | 0 | 2 | 3 | 3 |
 | ondalik | 5 | 0 | 5 | 5 | 5 |
 | para | 20 | 2 | 9 | 11 | 12 |
 | saat | 4 | 0 | 2 | 2 | 2 |
-| sira | 4 | 3 | 3 | 4 | 4 |
+| sira | 4 | 4 | 1 | 3 | 3 |
 | tarih | 12 | 0 | 6 | 12 | 12 |
 | zamir | 30 | 30 | 0 | 20 | 28 |
 
-## Model hataları (50; ham ya da korumalı çıktı yanlış)
+## Model hataları (49; ham ya da korumalı çıktı yanlış)
 
 ```text
 [2 · kalip]
@@ -75,6 +75,13 @@ HEDEF: Ayın en çok 10 gününde aldığı en çok altmışar kuruşla bunları
 GİRDİ: Bir elli boyunda, altmışlık, kırçıl sakallı bir adam.
 HAM  : 1-50 boyunda, 60'lık, kırçıl sakallı bir adam.
 HEDEF: 1,50 boyunda, altmışlık, kırçıl sakallı bir adam.
+```
+
+```text
+[24 · kalip]
+GİRDİ: Yaşından da utanmaz, ak sakalına da bakmaz, yazıhanesine uğrayan altmışlık köylü karılarına saldırır.
+HAM  : Yaşından da utanmaz, ak sakalına da bakmaz, yazıhanesine uğrayan 60'lık köylü karılarına saldırır.
+HEDEF: Yaşından da utanmaz, ak sakalına da bakmaz, yazıhanesine uğrayan altmışlık köylü karılarına saldırır.
 ```
 
 ```text
@@ -168,13 +175,6 @@ HEDEF: Bunun için sekiz kişi iki gündür hep çatıda uğraşıyorlardı.
 ```
 
 ```text
-[98 · kucuk_sayi]
-GİRDİ: Çocuk sekiz yaşında vardı, fakat ilk görüşte altı yaşından fazla denilemezdi.
-HAM  : Çocuk 8 yaşında vardı, fakat ilk görüşte altı yaşından fazla denilemezdi.
-HEDEF: Çocuk sekiz yaşında vardı, fakat ilk görüşte altı yaşından fazla denilemezdi.
-```
-
-```text
 [110 · atasozu]
 GİRDİ: Bir deli kuyuya bir taş atar, kırk akıllı çıkaramaz.
 HAM  : Bir deli kuyuya bir taş atar, 40 akıllı çıkaramaz.
@@ -221,13 +221,6 @@ HEDEF: 40 yıl evinde oturdum, koca öküz gibi çalıştım, bir gün doyunca y
 GİRDİ: Yarın dokuzda gelin, öğrenirsiniz!
 HAM  : Yarın dokuzda gelin, öğrenirsiniz!
 HEDEF: Yarın 9'da gelin, öğrenirsiniz!
-```
-
-```text
-[127 · kucuk_sayi]
-GİRDİ: Şehirle köyün arası yayan dokuz saatti.
-HAM  : Şehirle köyün arası yayan 9 saatti.
-HEDEF: Şehirle köyün arası yayan dokuz saatti.
 ```
 
 ```text
@@ -288,6 +281,13 @@ HEDEF: Bin atın varsa inişte in, bir atın varsa yokuşta bin.
 ```
 
 ```text
+[172 · sira]
+GİRDİ: Zavallı adam üçüncü uykusuz geceyi de yarılamak üzereydi ve direksiyondaki elleri titriyordu.
+HAM  : Zavallı adam 3. uykusuz geceyi de yarılamak üzereydi ve direksiyondaki elleri titriyordu.
+HEDEF: Zavallı adam üçüncü uykusuz geceyi de yarılamak üzereydi ve direksiyondaki elleri titriyordu.
+```
+
+```text
 [173 · kucuk_sayi]
 GİRDİ: Çoban gözlerini karşısındaki üç kişinin üzerinde bir müddet gezdirdikten sonra garip bir çekingenlikle:
 HAM  : Çoban gözlerini karşısındaki üç kişinin üzerinde bir müddet gezdirdikten sonra garip bir çekingenlikle.
@@ -301,13 +301,6 @@ GİRDİ: Beş on adım gitmemiştim ki, arkamdan onun sesini duydum.
 HAM  : 5-10 adım gitmemiştim ki, arkamdan 10'un sesini duydum.
 KORU : 5-10 adım gitmemiştim ki, arkamdan onun sesini duydum.
 HEDEF: 5-10 adım gitmemiştim ki, arkamdan onun sesini duydum.
-```
-
-```text
-[200 · kucuk_sayi]
-GİRDİ: İki gece önce.
-HAM  : 2 gece önce.
-HEDEF: İki gece önce.
 ```
 
 ```text

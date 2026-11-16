@@ -4,42 +4,42 @@
   "genel": {
     "kopya": {
       "ornek": 279,
-      "kati": 162,
-      "esnek": 168,
-      "negatif": 162,
+      "kati": 163,
+      "esnek": 167,
+      "negatif": 163,
       "yanlis_donusum": 0,
-      "pozitif": 117,
-      "pozitif_dogru": 6,
-      "pozitif_dokunulmadi": 111
+      "pozitif": 116,
+      "pozitif_dogru": 4,
+      "pozitif_dokunulmadi": 112
     },
     "kural": {
       "ornek": 279,
       "kati": 97,
-      "esnek": 106,
-      "negatif": 162,
-      "yanlis_donusum": 123,
-      "pozitif": 117,
+      "esnek": 114,
+      "negatif": 163,
+      "yanlis_donusum": 116,
+      "pozitif": 116,
       "pozitif_dogru": 67,
       "pozitif_dokunulmadi": 1
     },
     "ham": {
       "ornek": 279,
-      "kati": 227,
-      "esnek": 230,
-      "negatif": 162,
-      "yanlis_donusum": 30,
-      "pozitif": 117,
-      "pozitif_dogru": 98,
+      "kati": 228,
+      "esnek": 231,
+      "negatif": 163,
+      "yanlis_donusum": 29,
+      "pozitif": 116,
+      "pozitif_dogru": 97,
       "pozitif_dokunulmadi": 3
     },
     "korumali": {
       "ornek": 279,
-      "kati": 242,
-      "esnek": 245,
-      "negatif": 162,
-      "yanlis_donusum": 18,
-      "pozitif": 117,
-      "pozitif_dogru": 101,
+      "kati": 243,
+      "esnek": 246,
+      "negatif": 163,
+      "yanlis_donusum": 17,
+      "pozitif": 116,
+      "pozitif_dogru": 100,
       "pozitif_dokunulmadi": 6
     }
   },
@@ -48,12 +48,12 @@
       "kopya": {
         "ornek": 17,
         "kati": 0,
-        "esnek": 1,
+        "esnek": 0,
         "negatif": 0,
         "yanlis_donusum": 0,
         "pozitif": 17,
-        "pozitif_dogru": 1,
-        "pozitif_dokunulmadi": 16
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 17
       },
       "kural": {
         "ornek": 17,
@@ -184,9 +184,9 @@
       "kural": {
         "ornek": 35,
         "kati": 18,
-        "esnek": 18,
+        "esnek": 19,
         "negatif": 35,
-        "yanlis_donusum": 17,
+        "yanlis_donusum": 16,
         "pozitif": 0,
         "pozitif_dogru": 0,
         "pozitif_dokunulmadi": 0
@@ -226,9 +226,9 @@
       "kural": {
         "ornek": 53,
         "kati": 18,
-        "esnek": 19,
+        "esnek": 18,
         "negatif": 53,
-        "yanlis_donusum": 34,
+        "yanlis_donusum": 35,
         "pozitif": 0,
         "pozitif_dogru": 0,
         "pozitif_dokunulmadi": 0
@@ -236,9 +236,9 @@
       "ham": {
         "ornek": 53,
         "kati": 49,
-        "esnek": 50,
+        "esnek": 49,
         "negatif": 53,
-        "yanlis_donusum": 3,
+        "yanlis_donusum": 4,
         "pozitif": 0,
         "pozitif_dogru": 0,
         "pozitif_dokunulmadi": 0
@@ -246,9 +246,9 @@
       "korumali": {
         "ornek": 53,
         "kati": 50,
-        "esnek": 51,
+        "esnek": 50,
         "negatif": 53,
-        "yanlis_donusum": 2,
+        "yanlis_donusum": 3,
         "pozitif": 0,
         "pozitif_dogru": 0,
         "pozitif_dokunulmadi": 0
@@ -310,9 +310,9 @@
       "kural": {
         "ornek": 30,
         "kati": 0,
-        "esnek": 0,
+        "esnek": 10,
         "negatif": 30,
-        "yanlis_donusum": 30,
+        "yanlis_donusum": 20,
         "pozitif": 0,
         "pozitif_dogru": 0,
         "pozitif_dokunulmadi": 0
@@ -320,9 +320,9 @@
       "ham": {
         "ornek": 30,
         "kati": 22,
-        "esnek": 22,
+        "esnek": 25,
         "negatif": 30,
-        "yanlis_donusum": 8,
+        "yanlis_donusum": 5,
         "pozitif": 0,
         "pozitif_dogru": 0,
         "pozitif_dokunulmadi": 0
@@ -330,9 +330,9 @@
       "korumali": {
         "ornek": 30,
         "kati": 24,
-        "esnek": 24,
+        "esnek": 27,
         "negatif": 30,
-        "yanlis_donusum": 6,
+        "yanlis_donusum": 3,
         "pozitif": 0,
         "pozitif_dogru": 0,
         "pozitif_dokunulmadi": 0
@@ -342,12 +342,12 @@
       "kopya": {
         "ornek": 4,
         "kati": 0,
-        "esnek": 1,
+        "esnek": 0,
         "negatif": 0,
         "yanlis_donusum": 0,
         "pozitif": 4,
-        "pozitif_dogru": 1,
-        "pozitif_dokunulmadi": 3
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 4
       },
       "kural": {
         "ornek": 4,
@@ -509,42 +509,42 @@
     "sira": {
       "kopya": {
         "ornek": 4,
-        "kati": 2,
-        "esnek": 3,
-        "negatif": 2,
+        "kati": 3,
+        "esnek": 4,
+        "negatif": 3,
         "yanlis_donusum": 0,
-        "pozitif": 2,
+        "pozitif": 1,
         "pozitif_dogru": 1,
-        "pozitif_dokunulmadi": 1
+        "pozitif_dokunulmadi": 0
       },
       "kural": {
         "ornek": 4,
         "kati": 1,
-        "esnek": 3,
-        "negatif": 2,
-        "yanlis_donusum": 0,
-        "pozitif": 2,
+        "esnek": 1,
+        "negatif": 3,
+        "yanlis_donusum": 3,
+        "pozitif": 1,
         "pozitif_dogru": 1,
         "pozitif_dokunulmadi": 0
       },
       "ham": {
         "ornek": 4,
-        "kati": 2,
-        "esnek": 4,
-        "negatif": 2,
-        "yanlis_donusum": 0,
-        "pozitif": 2,
-        "pozitif_dogru": 2,
+        "kati": 3,
+        "esnek": 3,
+        "negatif": 3,
+        "yanlis_donusum": 1,
+        "pozitif": 1,
+        "pozitif_dogru": 1,
         "pozitif_dokunulmadi": 0
       },
       "korumali": {
         "ornek": 4,
-        "kati": 2,
-        "esnek": 4,
-        "negatif": 2,
-        "yanlis_donusum": 0,
-        "pozitif": 2,
-        "pozitif_dogru": 2,
+        "kati": 3,
+        "esnek": 3,
+        "negatif": 3,
+        "yanlis_donusum": 1,
+        "pozitif": 1,
+        "pozitif_dogru": 1,
         "pozitif_dokunulmadi": 0
       }
     },
@@ -662,9 +662,7 @@
       "no": 13,
       "girdi": "Hatırladığıma göre yol bir buçuk iki saat çekiyordu.",
       "hedef": "Hatırladığıma göre yol 1,5-2 saat çekiyordu.",
-      "kabul": [
-        "Hatırladığıma göre yol bir buçuk iki saat çekiyordu."
-      ],
+      "kabul": [],
       "ham": "Hatırladığıma göre yol 1,5 saat çekiyordu.",
       "korumali": "Hatırladığıma göre yol 1,5 saat çekiyordu.",
       "kural": "Hatırladığıma göre yol 1,5 2 saat çekiyordu.",
@@ -701,15 +699,22 @@
       "no": 22,
       "girdi": "Bir elli boyunda, altmışlık, kırçıl sakallı bir adam.",
       "hedef": "1,50 boyunda, altmışlık, kırçıl sakallı bir adam.",
-      "kabul": [
-        "Bir elli boyunda, altmışlık, kırçıl sakallı bir adam.",
-        "Bir elli boyunda, 60'lık, kırçıl sakallı bir adam.",
-        "1,50 boyunda, 60'lık, kırçıl sakallı bir adam."
-      ],
+      "kabul": [],
       "ham": "1-50 boyunda, 60'lık, kırçıl sakallı bir adam.",
       "korumali": "1-50 boyunda, 60'lık, kırçıl sakallı bir adam.",
       "kural": "1 50 boyunda, 60'lık, kırçıl sakallı 1 adam.",
       "kategori": "olcu",
+      "uyari": []
+    },
+    {
+      "no": 24,
+      "girdi": "Yaşından da utanmaz, ak sakalına da bakmaz, yazıhanesine uğrayan altmışlık köylü karılarına saldırır.",
+      "hedef": "Yaşından da utanmaz, ak sakalına da bakmaz, yazıhanesine uğrayan altmışlık köylü karılarına saldırır.",
+      "kabul": [],
+      "ham": "Yaşından da utanmaz, ak sakalına da bakmaz, yazıhanesine uğrayan 60'lık köylü karılarına saldırır.",
+      "korumali": "Yaşından da utanmaz, ak sakalına da bakmaz, yazıhanesine uğrayan 60'lık köylü karılarına saldırır.",
+      "kural": "Yaşından da utanmaz, ak sakalına da bakmaz, yazıhanesine uğrayan 60'lık köylü karılarına saldırır.",
+      "kategori": "kalip",
       "uyari": []
     },
     {
@@ -851,21 +856,12 @@
       "no": 93,
       "girdi": "Bunun için sekiz kişi iki gündür hep çatıda uğraşıyorlardı.",
       "hedef": "Bunun için sekiz kişi iki gündür hep çatıda uğraşıyorlardı.",
-      "kabul": [],
+      "kabul": [
+        "Bunun için sekiz kişi 2 gündür hep çatıda uğraşıyorlardı."
+      ],
       "ham": "Bunun için 8 kişi iki gündür hep çatıda uğraşıyorlardı.",
       "korumali": "Bunun için 8 kişi iki gündür hep çatıda uğraşıyorlardı.",
       "kural": "Bunun için 8 kişi 2 gündür hep çatıda uğraşıyorlardı.",
-      "kategori": "kucuk_sayi",
-      "uyari": []
-    },
-    {
-      "no": 98,
-      "girdi": "Çocuk sekiz yaşında vardı, fakat ilk görüşte altı yaşından fazla denilemezdi.",
-      "hedef": "Çocuk sekiz yaşında vardı, fakat ilk görüşte altı yaşından fazla denilemezdi.",
-      "kabul": [],
-      "ham": "Çocuk 8 yaşında vardı, fakat ilk görüşte altı yaşından fazla denilemezdi.",
-      "korumali": "Çocuk 8 yaşında vardı, fakat ilk görüşte altı yaşından fazla denilemezdi.",
-      "kural": "Çocuk 8 yaşında vardı, fakat ilk görüşte 6 yaşından fazla denilemezdi.",
       "kategori": "kucuk_sayi",
       "uyari": []
     },
@@ -946,17 +942,6 @@
       "korumali": "Yarın dokuzda gelin, öğrenirsiniz!",
       "kural": "Yarın 9'da gelin, öğrenirsiniz!",
       "kategori": "saat",
-      "uyari": []
-    },
-    {
-      "no": 127,
-      "girdi": "Şehirle köyün arası yayan dokuz saatti.",
-      "hedef": "Şehirle köyün arası yayan dokuz saatti.",
-      "kabul": [],
-      "ham": "Şehirle köyün arası yayan 9 saatti.",
-      "korumali": "Şehirle köyün arası yayan 9 saatti.",
-      "kural": "Şehirle köyün arası yayan 9 saatti.",
-      "kategori": "kucuk_sayi",
       "uyari": []
     },
     {
@@ -1048,6 +1033,17 @@
       "uyari": []
     },
     {
+      "no": 172,
+      "girdi": "Zavallı adam üçüncü uykusuz geceyi de yarılamak üzereydi ve direksiyondaki elleri titriyordu.",
+      "hedef": "Zavallı adam üçüncü uykusuz geceyi de yarılamak üzereydi ve direksiyondaki elleri titriyordu.",
+      "kabul": [],
+      "ham": "Zavallı adam 3. uykusuz geceyi de yarılamak üzereydi ve direksiyondaki elleri titriyordu.",
+      "korumali": "Zavallı adam 3. uykusuz geceyi de yarılamak üzereydi ve direksiyondaki elleri titriyordu.",
+      "kural": "Zavallı adam 3. uykusuz geceyi de yarılamak üzereydi ve direksiyondaki elleri titriyordu.",
+      "kategori": "sira",
+      "uyari": []
+    },
+    {
       "no": 173,
       "girdi": "Çoban gözlerini karşısındaki üç kişinin üzerinde bir müddet gezdirdikten sonra garip bir çekingenlikle:",
       "hedef": "Çoban gözlerini karşısındaki üç kişinin üzerinde bir müddet gezdirdikten sonra garip bir çekingenlikle:",
@@ -1070,17 +1066,6 @@
       "uyari": [
         "\"onun\" → \"10'un\" geri alındı (sayı olmayan sözcük değişti)"
       ]
-    },
-    {
-      "no": 200,
-      "girdi": "İki gece önce.",
-      "hedef": "İki gece önce.",
-      "kabul": [],
-      "ham": "2 gece önce.",
-      "korumali": "2 gece önce.",
-      "kural": "2 gece önce.",
-      "kategori": "kucuk_sayi",
-      "uyari": []
     },
     {
       "no": 209,

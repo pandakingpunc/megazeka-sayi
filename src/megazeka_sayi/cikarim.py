@@ -6,7 +6,7 @@ sözcükler). Değişen/eklenen/silinen her bölge için
     rakamlı sözcükler (``22500``, ``60'ı``), bitişik yazılmış sayılar (``onbeş``, ``ikiyüzelli``: yalnız sayı
     köklerinin art arda dizilimi + ek; ``onbaşı``, ``kırkayak``, ``üçgen``, ``birlik`` sayı değildir),
     virgül/buçuk/yüzde/eksi/artı, lira/kuruş, birim sözcükleri (``miligram``, ``metreküp``, ``kilometrekare``,
-    ``kilovat saat``, ``hertz`` ... dahil), ay adları; ``saat`` değiştirilemez (``kilovat saat`` hariç);
+    ``kilovat saat``, ``hertz`` ... dahil; para/ölçü sözcüklerinde iyelik ve ``-dır`` ekleri: ``liram``, ``liradır``), ay adları; ``saat`` değiştirilemez (``kilovat saat`` hariç);
   * eş yazımlı biçimler (``ona/onu/onda/ondan``, ``yüzü/yüzün``, ``biri/birinde``, ``bine``) ve iyelik + n'li ekler
     (``altısına``, ``yirmisinde``) yalnız sayı bağlamında sayı sayılır: önceki sözcük ``saat``/``yüzde``/``virgül``/
     ``ayın``/ay adı (ya da tamlayanlı hâli)/gün zamanı (``sabah``, ``akşam`` ...)/sayı sözcüğü/rakam ise ya da sözcüğü
@@ -14,7 +14,10 @@ sözcükler). Değişen/eklenen/silinen her bölge için
     sözcükler bağlamdan bağımsız sayı değildir;
   * çıktı tarafı en az bir rakam, ``%`` ya da birim kısaltması içermeli ve her çıktı sözcüğü rakam/``%``/birim
     kısaltması ya da girdi bölgesinden gelen sözcük olmalı (bölgeye başka sözcük sızdırılamaz);
-aksi hâlde bölge girdideki özgün hâline döndürülür. Değişmeyen (eşit) bölgeler girdiden alınır, böylece
+  * çıktıdaki rakamlar girdi bölgesindeki sayı sözcüklerinden türetilebilmeli (``dogrula.deger_tutuyor_mu``: uydurma
+    rakam, düşen sayı, iç sıfır kaybı yakalanır);
+aksi hâlde bölge girdideki özgün hâline döndürülür. Kabul edilen bölgede girdi bölgesinin ilk/son sözcüğündeki kenar
+noktalaması (``"``, ``…``, ``.`` ...) çıktıda eksikse girdiden tamamlanır. Değişmeyen (eşit) bölgeler girdiden alınır, böylece
 büyük/küçük harf ve noktalama bayt bayt korunur. İstisnalar: tarihte ay adının büyük harfi (``kasımda`` →
 ``Kasım'da``; girdide gün zaten rakamsa da) ve yarı normalleşmiş girdide rakamlı sözcüğün yalnız noktalama/işaret
 farkı (``14:30'da`` → ``14.30'da``). Fold'u eşit ama biçimi farklı rakamlı sözcük (``12``/``-12``, ``60'ı``/
@@ -25,6 +28,8 @@ CLI:  python -m megazeka_sayi.cikarim "yüzde on iki buçuk indirim"
 """
 from difflib import SequenceMatcher
 import re
+
+from .dogrula import deger_tutuyor_mu
 
 # ---- Türkçe katlama -------------------------------------------------------------------------------
 _KATLA = str.maketrans('çğıöşüâîû', 'cgiosuaiu')
@@ -57,6 +62,10 @@ _EK_DESEN = r'(?:' + _EK_GOVDE + r')+'
 # İyelik + zamir n'si (``altısına``, ``yirmisinde``): ``ikisini de`` gibi sözcük kalıplarıyla karışmasın diye
 # yalnız sayı bağlamında (``ayın``, ay adı, ``saat``, önceki sayı sözcüğü ...) ek sayılır.
 _EK_DESEN_N = r'(?:' + _EK_GOVDE + r'|s[iu]n(?:[ae]|d[ae]n?|i))+'
+# Para/ölçü sözcüklerine özgü ek: iyelik (``liram``, ``liranız``) ve -dır/-di (``liradır``, ``liraydı``). Sayı köklerine
+# eklenmez: ``yedim``, ``birim``, ``bindir`` gibi eş yazımlı sözcükler sayı sayılmasın.
+_EK_PARA_DESEN = r'(?:' + _EK_GOVDE + r'|[iu]?[mn](?:[iu]z)?|[dt][iu]r|y?[dt][iu])+'
+_EK_PARA = re.compile(r'^' + _EK_PARA_DESEN + r'$')
 _EK = re.compile(r'^' + _EK_DESEN + r'$')
 _EK_N = re.compile(r'^' + _EK_DESEN_N + r'$')
 # Bitişik yazılmış sayı: yalnız sayı köklerinin art arda dizilimi (en az iki kök) + isteğe bağlı ek.
@@ -70,6 +79,10 @@ _SAYI_DEGIL = re.compile(r'^(?:(?:on|yuz|bin|milyon|milyar)l[ae]r\w*|on(?:unla|l
 # Yalnız sayı bağlamında (``saat``, ``yüzde``, ay adı, öncesinde sayı sözcüğü/rakamı ...) sayı sayılan zamir/ad çekimleri.
 _BAGLAMLI = re.compile(r'^(?:on(?:a|u|un|da|dan)|yuz(?:u|un|um|unu|une|unde|unden|le)|bine|'
                        r'bir(?:i|in|ini|ine|inde|inden|isi|iyle))$')
+_PARA_OLCU_KOKLERI = ('lira', 'kurus', 'lirasi', 'kilogram', 'miligram', 'kilo', 'gram', 'kilometrekare', 'kilometre',
+                      'santimetre', 'santim', 'milimetre', 'metrekare', 'metrekup', 'metre', 'mililitre', 'litre',
+                      'gigabayt', 'megabayt', 'terabayt', 'kilovat', 'vat', 'volt', 'megahertz', 'kilohertz', 'hertz',
+                      'derece', 'santigrat')
 _SAYI_SOZ = frozenset(_SAYI_KOKLERI)
 # Saat deyişleri: "bire on kala", "biri on geçe", "ona çeyrek var".
 _SAAT_YUKLEM = frozenset({'gece', 'geciyor', 'geciyordu', 'gececek', 'kala', 'kalmisti', 'kalir', 'var', 'vardi', 'varken'})
@@ -132,6 +145,8 @@ def sayi_benzeri_mi(sozcuk, onceki=None, sonraki=()):
         return False
     if any(f.startswith(k) and _EK.match(f[len(k):]) for k in _KOKLER) or _BITISIK.match(f):
         return True
+    if any(f.startswith(k) and _EK_PARA.match(f[len(k):]) for k in _PARA_OLCU_KOKLERI):
+        return True
     if _on_baglami_mi(onceki):
         return any(f.startswith(k) and _EK_N.match(f[len(k):]) for k in _KOKLER) or bool(_BITISIK_N.match(f))
     return False
@@ -141,8 +156,42 @@ _BIRIMLER = {'kg', 'g', 'km', 'm', 'cm', 'mm', 'l', 'ml', 'm²', 'gb', 'mb', 'tb
              'mg', 'm³', 'km²', 'kwh', 'hz', 'mhz', 'khz'}
 
 
+# Sözcüğün kenarındaki noktalama (kesme işareti ve ek buna dahil değildir).
+_KENAR_NOKTALAMA = '.,;:!?()[]"“”„«»…'
+
+
+def _kenar_ayir(w):
+    """``w`` → (baştaki noktalama, çekirdek, sondaki noktalama); yalnız noktalamadan oluşan sözcükte baş doludur."""
+    cekirdek = w.lstrip(_KENAR_NOKTALAMA)
+    bas = w[:len(w) - len(cekirdek)]
+    govde = cekirdek.rstrip(_KENAR_NOKTALAMA)
+    return bas, govde, cekirdek[len(govde):]
+
+
+def _kenar_tamamla(eski_kenar, yeni_kenar):
+    """Çıktı kenarında girdidekinin eksik/kısalmış hâli varsa girdideki kenarı döndürür (ilişkisiz noktalamaya dokunmaz)."""
+    if eski_kenar and eski_kenar != yeni_kenar and (eski_kenar.startswith(yeni_kenar) or eski_kenar.endswith(yeni_kenar)):
+        return eski_kenar
+    return yeni_kenar
+
+
+def _kenar_noktalama(eski, yeni):
+    """Kabul edilen bölgede girdi bölgesinin ilk sözcüğünün başındaki ve son sözcüğünün sonundaki noktalama çıktıda
+    eksikse girdiden tamamlanır (``"Otuz yaşında`` → ``30 yaşında`` ise ``"30 yaşında``; ``lira."`` → ``TL.`` ise ``TL."``)."""
+    yeni = list(yeni)
+    bas_e, _, _ = _kenar_ayir(eski[0])
+    bas_y, govde_y, son_y = _kenar_ayir(yeni[0])
+    if govde_y or son_y:
+        yeni[0] = _kenar_tamamla(bas_e, bas_y) + govde_y + son_y
+    _, govde_e, son_e = _kenar_ayir(eski[-1])
+    bas_y, govde_y, son_y = _kenar_ayir(yeni[-1])
+    if govde_e or son_e:
+        yeni[-1] = bas_y + govde_y + _kenar_tamamla(son_e, son_y)
+    return yeni
+
+
 def _sayisal_sozcuk_mu(s):
-    cekirdek = kucult(s.split("'")[0].strip('.,;:!?()"“”'))
+    cekirdek = kucult(s.split("'")[0].strip(_KENAR_NOKTALAMA))
     return any(c.isdigit() for c in s) or '%' in s or cekirdek in _BIRIMLER
 
 
@@ -256,8 +305,12 @@ def koru(girdi, ham):
         girdi_ok = all(sayi_benzeri_mi(w, a[i1 + k - 1] if i1 + k > 0 else None, a[i1 + k + 1:i1 + k + 4])
                        for k, w in enumerate(eski))
         cikti_ok = _cikti_sayi_iceriyor(yeni) and _cikti_temiz_mi(eski, yeni)
-        if girdi_ok and cikti_ok:
-            sonuc.extend(yeni)
+        if girdi_ok and cikti_ok and not deger_tutuyor_mu(eski, yeni, a[i1 - 1] if i1 > 0 else None,
+                                                           a[i2] if i2 < len(a) else None):
+            uyarilar.append(f'"{" ".join(eski)}" → "{" ".join(yeni)}" geri alındı (sayı değeri tutmuyor)')
+            sonuc.extend(eski)
+        elif girdi_ok and cikti_ok:
+            sonuc.extend(_kenar_noktalama(eski, yeni))
         else:
             neden = 'sayı olmayan sözcük değişti' if not girdi_ok else 'çıktıda rakam/birim yok'
             uyarilar.append(f'"{" ".join(eski)}" → "{" ".join(yeni)}" geri alındı ({neden})')

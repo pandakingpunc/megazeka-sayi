@@ -85,3 +85,32 @@ gibi görev adları; `bir elli boyunda`; `altmışlık`/`milyonluk` ile `-lık` 
    `bir` + sayı, küçük sayı + `kişi/yaş/saat/kat/gece`, cümle başında büyük harfli sayı.
 3. Bu kümeyle çakışmayı önlemek için eğitim verisine alınacak gerçek cümlelerden `evaluation/gercek.jsonl`
    girdileri çıkarılmalı.
+
+## Şartname kararları ve yeni koruma (2026-11-16, ikinci tur)
+
+Yukarıdaki bölümler ilk ölçümün kaydıdır; güncel sayılar bu bölümdedir.
+
+**Etiketler:** beş açık soru `docs/SPEC-v3-kararlar.md` ile kapandı ve kümeye işlendi (küçük sayı + yaş/süre satırlarında
+rakamlı yazım da kabul; `bir buçuk iki saat` yalnız `1,5-2 saat`; `üçüncü uykusuz gece`, `ikinci kaptan`, `altmışlık`
+yalnız yazıyla; `bir elli boyunda` yalnız `1,50 boyunda`). 163 değişmez, 116 değişir, 25 satır çok cevaplı.
+
+**Koruma:** `src/megazeka_sayi/dogrula.py` çıktıdaki rakamların girdideki sayı sözcüklerinden türetilebildiğini denetler
+(eğitim yok). Ayrıca bölge kenarındaki düşen noktalama girdiden tamamlanır, para/ölçü sözcüklerinde iyelik ve `-dır`
+ekleri tanınır. Üreteç altın çiftlerinde (8.492 satır) yeni geri alma yok; rakamı bozulmuş 21.157 çıktının hepsi yakalandı
+(eski koruma %2,2).
+
+| Küme | Eski koruma | Yeni koruma |
+|---|---:|---:|
+| Gerçek metin (279, yeni etiketlerle) | 246 (%88,2) | 249 (%89,2) |
+| test (2.000) | %98,6 | %98,6 |
+| test-v2 (1.400) | %97,4 | %97,4 |
+| test-v1 donmuş (2.000) | %99,8 | %99,8 |
+| zorluk / gizli 2 / gizli 3 | %98 / %98 / %91,6 | %98 / %98 / %91,6 |
+
+Gerçek metinde değişen satırlar: 27 (`165 TL'dir."`), 76 (`40-50 TL…`) düzeldi; 117 `1940 yıl` → girdi (kabul); 116
+`1940 yaşında` ve 13 `1,5 saat` artık girdiye dönüyor (hâlâ yanlış ama içerik bozulmuyor). Bozulan satır yok.
+Yeni açık: 74'te çıktı `150 TL var` oldu (`liram`daki iyelik düştü); eski koruma bunu girdiye döndürüyordu.
+
+Kalan 30 hata: atasözü/deyim 9, `bir` + sayı 4, küçük sayı 4, dönüşmeyen/geri alınan sayı 4 (6, 13, 112, 116), ek 3,
+saat 2, zamir 2, `altmışlık` → `60'lık` 1, `3. uykusuz` 1. Bunların çoğu eğitimde hiç bulunmayan kalıplar; koruma
+değil veri işi.
