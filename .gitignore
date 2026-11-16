@@ -4,3 +4,4 @@ models/
 *.pyc
 reports/train-*.log
 data/v2/
+data/v3/d-*

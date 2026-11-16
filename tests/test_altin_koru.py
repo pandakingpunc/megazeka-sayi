@@ -1,6 +1,6 @@
 """Altın çiftlerde koruma ve bozma testi (model gerektirmez).
 
-* Altın: ``data/{test,test-v1,test-v2,validation}.jsonl`` içindeki her satırda ``koru(girdi, hedef) == hedef`` olmalı.
+* Altın: ``data/{test,test-v1,test-v2,test-v3,validation}.jsonl`` içindeki her satırda ``koru(girdi, hedef) == hedef`` olmalı.
   Değer denetimi tek bir altın satırı bile geri almamalı; denetimden önce de geri alınan 5 satır (hepsi ``on-`` zamiri
   eş yazımı, aşağıda) bilinen istisnadır.
 * Bozma: girdi ≠ hedef satırlarda hedefin rakamları (değiştir/sil/ekle/takas, sabit tohum) bozulduğunda ``koru`` bozuk
@@ -15,7 +15,7 @@ import pytest
 from megazeka_sayi.cikarim import koru
 
 VERI = Path(__file__).resolve().parent.parent / 'data'
-DOSYALAR = ['test.jsonl', 'test-v1.jsonl', 'test-v2.jsonl', 'validation.jsonl']
+DOSYALAR = ['test.jsonl', 'test-v1.jsonl', 'test-v2.jsonl', 'test-v3.jsonl', 'validation.jsonl']
 RAKAMLAR = '0123456789'
 
 # Değer denetiminden ÖNCE de geri alınan satırlar: ``onda/onu/ondan`` eş yazımı (bağlam yok) -- etiket tartışmalı
@@ -42,9 +42,11 @@ def altin():
     return _satirlar()
 
 
-def test_dort_dosya_da_okundu(altin):
+def test_butun_dosyalar_okundu(altin):
     assert {d for d, _ in altin} == set(DOSYALAR)
-    assert len(altin) == 8492
+    # Satır sayısı sabiti yok: her dosyanın satırları (boş olmayan) eksiksiz okunmalı.
+    beklenen = sum(1 for d in DOSYALAR for l in open(VERI / d, encoding='utf-8') if l.strip())
+    assert len(altin) == beklenen and beklenen > 15000
 
 
 def test_altin_satirlarda_yeni_geri_alma_yok(altin):
@@ -59,7 +61,7 @@ def test_altin_satirlarda_yeni_geri_alma_yok(altin):
     assert not deger_geri_alinan, f'değer denetimi altın satırı geri aldı: {deger_geri_alinan[:5]}'
     yeni = [b for b in basarisiz if b[1] not in BILINEN_GERI_ALINAN]
     assert not yeni, f'yeni geri alınan altın satırlar: {yeni[:5]}'
-    assert gecen >= 8487
+    assert gecen >= len(altin) - len(BILINEN_GERI_ALINAN)
 
 
 def test_bozulan_rakamlar_yakalanir(altin):
@@ -101,3 +103,26 @@ def test_bozulan_rakamlar_yakalanir(altin):
     for tur, esik in (('degistir', 0.995), ('takas', 0.995), ('sil', 0.98), ('ekle', 0.98)):
         oran = yakalanan.get(tur, 0) / sayac[tur]
         assert oran >= esik, f'{tur}: {oran:.4f} (< {esik})'
+
+
+@pytest.mark.parametrize('girdi,hedef', [
+    ('Saat henüz dörtmüş.', "Saat henüz 4'müş."), ('Salondaki saat birdi.', "Salondaki saat 1'di."),
+    ('Saat henüz on ikiydi.', "Saat henüz 12'ydi."), ('Salondaki saat altıdır.', "Salondaki saat 6'dır."),
+    ('saat beştir', "saat 5'tir"), ('cebimdeki saat üçmüş', "cebimdeki saat 3'müş"),
+    ('saat dokuzdu', "saat 9'du"), ('saat altıymış', "saat 6'ymış"), ('saat ondur', "saat 10'dur"),
+    ('Borcu seksen liraymış.', "Borcu 80 TL'ymiş."), ('Fiyatı yirmi liraydı.', "Fiyatı 20 TL'ydi."),
+    ('borcun yüz liradır', "borcun 100 TL'dir"), ('Hesap ne kadar? Altı yüz yetmiş dört lira mı?', 'Hesap ne kadar? 674 TL mı?'),
+    ('Perşembe onda kalkıyoruz.', "Perşembe 10'da kalkıyoruz."),
+])
+def test_ek_fiil_saat_ve_para_baglaminda_kabul(girdi, hedef):
+    assert koru(girdi, hedef)[0] == hedef
+
+
+@pytest.mark.parametrize('girdi,hedef', [
+    ('Ekmeği yedik.', "Ekmeği 7'dik."), ('Dün akşam yediydi.', "Dün akşam 7'ydi."),
+    ('Çocuk birdi.', "Çocuk 1'di."), ('Su ondur.', "Su 10'dur."), ('Havuzda yüzdü.', "Havuzda 100'dü."),
+    ('Arabaya bindi.', "Arabaya 1000'di."), ('Bu iş altıdır.', "Bu iş 6'dır."),
+    ('Saat bindi.', "Saat 1000'di."), ('Pazartesi ona söylerim.', "Pazartesi 10'a söylerim."),
+])
+def test_ek_fiil_baglamsiz_es_yazimlar_sayi_sayilmaz(girdi, hedef):
+    assert koru(girdi, hedef)[0] == girdi

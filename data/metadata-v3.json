@@ -1,0 +1,120 @@
+{
+  "seed": 3300,
+  "celiskili_girdi": 1,
+  "bolumler": {
+    "train": {
+      "satir": 136029,
+      "kaynak": {
+        "a": 15923,
+        "b": 9810,
+        "c": 13998,
+        "d": 26747,
+        "v1.1": 69551
+      },
+      "kategori": {
+        "aralik": 3607,
+        "bilesik": 1800,
+        "bitisik": 3000,
+        "buyuk": 1857,
+        "eksi": 850,
+        "kardinal": 13965,
+        "karisik": 3481,
+        "kod": 2817,
+        "negatif_dogal": 12793,
+        "negatif_es": 10680,
+        "negatif_kalip": 23670,
+        "negatif_yazili": 4532,
+        "olcu": 9469,
+        "ondalik": 5354,
+        "para": 8580,
+        "saat": 4728,
+        "saat_deyis": 2500,
+        "sira": 2414,
+        "skor": 1414,
+        "tarih": 5401,
+        "telefon": 3350,
+        "yari": 6498,
+        "yuzde": 3269
+      },
+      "negatif_payi": 0.3912033463452646,
+      "elemeler": {
+        "cikarilan_bolum_cakismasi": 31,
+        "cikarilan_celiskili": 1,
+        "cikarilan_dislanan": 2,
+        "cikarilan_eski_karar": 307,
+        "cikarilan_yinelenen": 161,
+        "karar_kucuk_sure_yas": 307,
+        "saptanan_celiskili": 1,
+        "saptanan_dislanan": 2,
+        "saptanan_eski_karar": 307
+      },
+      "cikarilan_toplam": 502
+    },
+    "validation": {
+      "satir": 5769,
+      "kaynak": {
+        "a": 400,
+        "b": 299,
+        "c": 400,
+        "d": 2683,
+        "v1.1": 1987
+      },
+      "kategori": {
+        "aralik": 168,
+        "bilesik": 45,
+        "bitisik": 86,
+        "buyuk": 45,
+        "eksi": 24,
+        "kardinal": 591,
+        "karisik": 94,
+        "kod": 75,
+        "negatif_dogal": 1265,
+        "negatif_es": 309,
+        "negatif_kalip": 1129,
+        "negatif_yazili": 130,
+        "olcu": 269,
+        "ondalik": 283,
+        "para": 306,
+        "saat": 220,
+        "saat_deyis": 71,
+        "sira": 80,
+        "skor": 40,
+        "tarih": 154,
+        "telefon": 87,
+        "yari": 186,
+        "yuzde": 112
+      },
+      "negatif_payi": 0.50043335066736,
+      "elemeler": {
+        "cikarilan_celiskili": 1,
+        "cikarilan_eski_karar": 5,
+        "cikarilan_yinelenen": 5,
+        "karar_kucuk_sure_yas": 5,
+        "saptanan_celiskili": 1,
+        "saptanan_eski_karar": 5
+      },
+      "cikarilan_toplam": 11
+    },
+    "test-v3": {
+      "satir": 5494,
+      "kaynak": {
+        "d": 5494
+      },
+      "kategori": {
+        "aralik": 120,
+        "kardinal": 1213,
+        "karisik": 9,
+        "negatif_dogal": 1112,
+        "negatif_kalip": 1730,
+        "olcu": 39,
+        "ondalik": 169,
+        "para": 786,
+        "saat": 237,
+        "sira": 79
+      },
+      "negatif_payi": 0.517291590826356,
+      "elemeler": {},
+      "cikarilan_toplam": 0
+    }
+  }
+}

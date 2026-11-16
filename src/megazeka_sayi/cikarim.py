@@ -64,7 +64,10 @@ _EK_DESEN = r'(?:' + _EK_GOVDE + r')+'
 _EK_DESEN_N = r'(?:' + _EK_GOVDE + r'|s[iu]n(?:[ae]|d[ae]n?|i))+'
 # Para/ölçü sözcüklerine özgü ek: iyelik (``liram``, ``liranız``) ve -dır/-di (``liradır``, ``liraydı``). Sayı köklerine
 # eklenmez: ``yedim``, ``birim``, ``bindir`` gibi eş yazımlı sözcükler sayı sayılmasın.
-_EK_PARA_DESEN = r'(?:' + _EK_GOVDE + r'|[iu]?[mn](?:[iu]z)?|[dt][iu]r|y?[dt][iu])+'
+_EK_PARA_DESEN = r'(?:' + _EK_GOVDE + r'|[iu]?[mn](?:[iu]z)?|[dt][iu]r|y?[dt][iu]|y?m[iu]s)+'
+# Ek-fiil (katlanmış): -DI, -(y)DI, -(y)mIş, -DIr (``dörttü``, ``on ikiydi``, ``altıymış``, ``beştir``). Sayı köklerine
+# yalnız saat bağlamında eklenir (``saat henüz dörtmüş``); bağlamsız ``birdi``, ``altıdır``, ``ondur`` sayı değildir.
+_EK_FIIL = re.compile(r'^(?:y?[dt][iu]|y?m[iu]s|[dt][iu]r)$')
 _EK_PARA = re.compile(r'^' + _EK_PARA_DESEN + r'$')
 _EK = re.compile(r'^' + _EK_DESEN + r'$')
 _EK_N = re.compile(r'^' + _EK_DESEN_N + r'$')
@@ -92,6 +95,9 @@ _AY_ADLARI = frozenset({'ocak', 'subat', 'mart', 'nisan', 'mayis', 'haziran', 't
 _AY_TAMLAYAN = frozenset({'ayin'} | {(m[:-1] + 'g' if m in ('ocak', 'aralik') else m) + e
                                       for m in _AY_ADLARI for e in ('in', 'un')})
 _GUN_ZAMANI = frozenset({'sabah', 'aksam', 'gece', 'ogle', 'ogleden', 'oglen', 'ikindi', 'sabahin', 'aksamin', 'gecenin'})
+# Gün adları: yalnız ``onda`` (saat 10'da) için bağlamdır (``pazartesi onda toplanalım``); ``ona``/``onu``/``ondan``
+# gün adından sonra da zamir okunur (``pazartesi ona söylerim``).
+_GUN_ADLARI = frozenset({'pazartesi', 'sali', 'carsamba', 'persembe', 'cuma', 'cumartesi', 'pazar', 'bugun', 'yarin', 'dun'})
 _BAGLAM_SOZ = frozenset({'saat', 'yuzde', 'virgul', 'eksi', 'arti'})
 
 
@@ -124,12 +130,13 @@ def _rakamli_ek_mi(f):
     return k > 0 and (k == len(f) or bool(_EK.match(f[k:])))
 
 
-def sayi_benzeri_mi(sozcuk, onceki=None, sonraki=()):
+def sayi_benzeri_mi(sozcuk, onceki=None, sonraki=(), saat_once=False):
     """Sözcük (noktalama temizlenerek) bir sayı/para/birim/ay sözcüğü ya da eklenmiş biçimi mi?
 
     ``onceki``/``sonraki``: girdide sözcükten önceki sözcük / sonraki sözcükler. ``ona``, ``yüzü``, ``biri`` gibi eş yazımlı biçimler yalnız
     sayı bağlamında (saat, yüzde, ay adı/ayın, sayı sözcüğü ya da rakamı, virgül, ``biri on geçe`` gibi saat deyişi ...) sayı sayılır;
-    ``kilovat`` + ``saat`` birimin parçasıdır."""
+    ``kilovat`` + ``saat`` birimin parçasıdır. ``saat_once``: girdide sözcükten önceki birkaç sözcük arasında ``saat`` var;
+    bu durumda sayı kökü + ek-fiil (``dörttü``, ``on ikiydi``, ``altıymış``) saat deyişidir."""
     f = fold(sozcuk)
     if not f:
         return True  # yalnız noktalama (örn. "-") bölgeyi bozmasın
@@ -140,12 +147,15 @@ def sayi_benzeri_mi(sozcuk, onceki=None, sonraki=()):
     if f[0].isdigit():
         return _rakamli_ek_mi(f)
     if _BAGLAMLI.match(f):
-        return _on_baglami_mi(onceki) or _saat_deyisi_mi(sonraki)
+        return (_on_baglami_mi(onceki) or _saat_deyisi_mi(sonraki)
+                or (f == 'onda' and fold(onceki or '') in _GUN_ADLARI))
     if _SAYI_DEGIL.match(f):
         return False
     if any(f.startswith(k) and _EK.match(f[len(k):]) for k in _KOKLER) or _BITISIK.match(f):
         return True
     if any(f.startswith(k) and _EK_PARA.match(f[len(k):]) for k in _PARA_OLCU_KOKLERI):
+        return True
+    if saat_once and any(f.startswith(k) and _EK_FIIL.match(f[len(k):]) for k in _SAYI_KOKLERI):
         return True
     if _on_baglami_mi(onceki):
         return any(f.startswith(k) and _EK_N.match(f[len(k):]) for k in _KOKLER) or bool(_BITISIK_N.match(f))
@@ -302,7 +312,8 @@ def koru(girdi, ham):
             uyarilar.append(f'silinen "{" ".join(eski)}" geri alındı')
             sonuc.extend(eski)
             continue
-        girdi_ok = all(sayi_benzeri_mi(w, a[i1 + k - 1] if i1 + k > 0 else None, a[i1 + k + 1:i1 + k + 4])
+        girdi_ok = all(sayi_benzeri_mi(w, a[i1 + k - 1] if i1 + k > 0 else None, a[i1 + k + 1:i1 + k + 4],
+                                       any(fold(x) == 'saat' for x in a[max(0, i1 + k - 4):i1 + k]))
                        for k, w in enumerate(eski))
         cikti_ok = _cikti_sayi_iceriyor(yeni) and _cikti_temiz_mi(eski, yeni)
         if girdi_ok and cikti_ok and not deger_tutuyor_mu(eski, yeni, a[i1 - 1] if i1 > 0 else None,

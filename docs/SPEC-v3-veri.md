@@ -25,7 +25,7 @@ Etiketler elle yazılmaz: sentetik olgularda hedef kurulur, girdi ondan determin
 `megazeka_sayi.sayilar`, `.turkce`, `.varliklar`, `.sablonlar`); gerçek cümlelerde yalnız "hiçbir şey değişmez"
 etiketi verilir ve bu, aşağıdaki güvenli biçim listesiyle garanti edilir.
 
-## D1. Gerçek cümle negatifleri (girdi = hedef) · ~12.000 satır
+## D1. Gerçek cümle negatifleri (girdi = hedef) · ~8.000 satır (derlemin elverdiği kadar)
 
 Kaynak: Common Voice Türkçe cümle derlemi (CC0), `--cv` ile verilir (varsayılan
 `../proje/megazeka/data/raw/common_voice_tr.txt`, satır başına bir cümle, 47.781 cümle). v2 verisindeki doğal
@@ -52,7 +52,7 @@ Güvenli biçimler (cümledeki sayı köküyle başlayan HER sözcük bu listede
 Her seçilen cümle iki biçimde kullanılabilir: özgün (büyük harf + noktalama) ve düzleştirilmiş (küçük harf,
 noktalamasız; `training/uret.py` içindeki `cv_duz`). Oran yaklaşık yarı yarıya; aynı cümlenin iki biçimi aynı bölümde
 (train/validation/test) kalır. Bölüm, cümlenin md5'ine göre atanır (test %6, validation %6).
-Hedef dağılım: zamir (`on-`) cümleleri en az 5.000 satır, `bir` ailesi en çok 3.000, kalanı öteki eş yazımlılar.
+Hedef dağılım: zamir (`on-`) cümleleri en az 4.500 satır, `bir` ailesi en çok 3.000, kalanı öteki eş yazımlılar.
 
 **Dışlama (zorunlu):** `data/v3/haric-md5.txt` dosyasında bağımsız ölçüm kümelerindeki cümlelerin özetleri var
 (satır başına `md5(cv_duz(cümle))`, UTF-8). Özeti bu listede olan hiçbir cümle D1'e (hiçbir biçimde) alınmaz.
@@ -99,6 +99,7 @@ Sayı büyük harfle cümleyi açar ya da tırnak/iki nokta/üç noktanın yanı
 tek başına sayı cümlesi `Yüz altmış dört.` → `164.`, `İki yüz on sekiz.` → `218.`.
 Kardinal, para, yaş, yıl sayısı, ölçü ve aralık; 10–999 ağırlıklı, cümle başı payı en az %50. Tırnak işaretleri
 `"…"`, `“…”` ve tırnaksız `:`; cümle sonu `.`, `!`, `?`, `…`. Yalın yıl (`Bin dokuz yüz otuz beş.`) üretilmez.
+Soru eki (`mı/mi/mu/mü`) ayrı sözcüktür: hedefte girdideki haliyle aynen kalır (`Dört yüz doksan üç lira mı?` → `493 TL mı?`); yalnız kesme işaretiyle rakama ya da kısaltmaya bağlanan ekler kanonik okunuşa göre değişir.
 
 ## D6. `saat` sözcüksüz ve yüklem ekli saat · ~1.500 satır
 
