@@ -343,9 +343,11 @@ class SayiDonusturucu:
         self.torch, self.isin, self.max_bayt = torch, isin, max_bayt
         self.aygit = aygit or ('cuda' if torch.cuda.is_available() else 'cpu')
         self.dtype = torch.bfloat16 if self.aygit == 'cuda' and torch.cuda.is_bf16_supported() else torch.float32
-        self.tokenizer, taban, self.kaynak = depolama.temel_model_yukle(self.dtype)
+        yol = depolama.ROOT / 'models/checkpoints' / kontrol_noktasi
+        # Kontrol noktası hangi tabanla eğitildiyse o yüklenir (taban.json; yoksa ByT5-small).
+        taban_adi = depolama.kontrol_noktasi_tabani(yol) if kontrol_noktasi != 'base' else None
+        self.tokenizer, taban, self.kaynak = depolama.temel_model_yukle(self.dtype, taban_adi)
         if kontrol_noktasi != 'base':
-            yol = depolama.ROOT / 'models/checkpoints' / kontrol_noktasi
             if (yol / 'adapter_config.json').exists():
                 taban = PeftModel.from_pretrained(taban, yol, local_files_only=True)
             elif '/' in str(kontrol_noktasi):

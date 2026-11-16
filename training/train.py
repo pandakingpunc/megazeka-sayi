@@ -1,7 +1,12 @@
-"""Megazeka-Sayı LoRA eğitimi (ByT5-small + LoRA, bf16). Megazeka eğitim betiğinden uyarlanmıştır.
+"""Megazeka-Sayı LoRA eğitimi (ByT5 + LoRA, bf16; taban ayarda ``taban`` ile seçilir, yoksa ByT5-small).
+Megazeka eğitim betiğinden uyarlanmıştır.
 
 Kullanım:
-    python training/train.py --config configs/medium.json [--resume] [--steps N] [--data-dir DIR]
+    python training/train.py --config configs/medium.json [--resume] [--steps N] [--data-dir DIR] [--ad ADI]
+
+``--ad ADI`` verilirse kontrol noktaları ``models/checkpoints/ADI-best`` ve ``ADI-latest`` olur;
+``reports/`` altındaki durum/geçmiş/model bilgisi dosyalarına da ``-ADI`` eklenir (ör. ``history-ADI.jsonl``).
+Verilmezse bugünkü adlar (``best``, ``latest``, ``history.jsonl`` ...) kullanılır.
 """
 import sys
 from pathlib import Path
@@ -10,6 +15,7 @@ import argparse
 import json
 import os
 import random
+import re
 import time
 
 from megazeka_sayi import depolama
@@ -36,7 +42,7 @@ def json_yaz(yol, deger):
     print('Dosya meşgul; sonraki adımda yazılacak:', yol.name, flush=True)
 
 
-def kontrol_noktasi_kaydet(model, optimizer, config, durum, ad):
+def kontrol_noktasi_kaydet(model, optimizer, config, durum, ad, taban=None):
     depolama.butce_kontrol(250_000_000, 'LoRA kontrol noktası: ' + ad)
     ust = ROOT / 'models/checkpoints'
     gecici, hedef = ust / ('temporary-' + ad), ust / ad
@@ -46,6 +52,8 @@ def kontrol_noktasi_kaydet(model, optimizer, config, durum, ad):
     model.save_pretrained(gecici, safe_serialization=True)
     json_yaz(gecici / 'training_config.json', config)
     json_yaz(gecici / 'state.json', durum)
+    # Çıkarım, kontrol noktasının hangi tabanla eğitildiğini buradan okur (adapter_config yolu güvenilir değil).
+    json_yaz(gecici / depolama.TABAN_DOSYASI, {'taban': taban or depolama.TEMEL_MODEL})
     if optimizer is not None:
         torch.save({'optimizer': optimizer.state_dict(), 'random': random.getstate(),
                     'numpy': np.random.get_state(), 'torch': torch.get_rng_state(),
@@ -88,14 +96,19 @@ def ana():
     ap.add_argument('--resume', action='store_true')
     ap.add_argument('--steps', type=int)
     ap.add_argument('--data-dir', help='data/ yerine başka bir veri dizini (ör. duman testi)')
+    ap.add_argument('--ad', help='kontrol noktası/rapor adı: models/checkpoints/ADI-best, ADI-latest; reports/*-ADI.*')
     args = ap.parse_args()
+    if args.ad is not None and not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9._-]*', args.ad):
+        raise SystemExit('--ad yalnız harf, rakam, nokta, tire ve alt çizgi içermeli (ilk karakter harf/rakam).')
+    en_iyi_ad, son_ad = (f'{args.ad}-best', f'{args.ad}-latest') if args.ad else ('best', 'latest')
+    ek = f'-{args.ad}' if args.ad else ''
     if args.data_dir:
         os.environ[depolama.VERI_ORTAM] = str(Path(args.data_dir).resolve())
     yol = Path(args.config)
     config = json.loads((yol if yol.is_absolute() else ROOT / yol).read_text(encoding='utf-8'))
     if args.steps:
         config['steps'] = args.steps
-    onceki = ROOT / 'models/checkpoints/latest/state.json'
+    onceki = ROOT / 'models/checkpoints' / son_ad / 'state.json'
     if args.resume and onceki.exists():
         if json.loads(onceki.read_text(encoding='utf-8'))['step'] >= config['steps']:
             print(f'Hedef {config["steps"]} adım zaten tamamlanmış. Devam için --steps değerini artırın.', flush=True)
@@ -107,10 +120,14 @@ def ana():
     if cihaz == 'cpu':
         config['batch_size'] = min(config['batch_size'], 2)
     dtype = torch.bfloat16 if cihaz == 'cuda' and torch.cuda.is_bf16_supported() else torch.float32
-    tokenizer, model, kaynak = depolama.temel_model_yukle(dtype)
+    taban = config.get('taban') or depolama.TEMEL_MODEL
+    devam_dizini = ROOT / 'models/checkpoints' / son_ad
+    if args.resume and depolama.kontrol_noktasi_tabani(devam_dizini) != taban:
+        raise SystemExit(f'--resume: {son_ad} kontrol noktası başka tabanla eğitilmiş '
+                         f'({depolama.kontrol_noktasi_tabani(devam_dizini)} ≠ {taban}).')
+    tokenizer, model, kaynak = depolama.temel_model_yukle(dtype, taban)
     print(f'Temel model: {kaynak} | hassasiyet {dtype}', flush=True)
     durum = {'step': 0, 'best_score': -1.0, 'bad_evaluations': 0, 'elapsed_seconds': 0, 'examples_processed': 0}
-    devam_dizini = ROOT / 'models/checkpoints/latest'
     if args.resume:
         durum = json.loads((devam_dizini / 'state.json').read_text(encoding='utf-8'))
         model = PeftModel.from_pretrained(model, devam_dizini, is_trainable=True)
@@ -142,9 +159,9 @@ def ana():
         y[y == tokenizer.pad_token_id] = -100
         return {**{k: v.to(cihaz) for k, v in x.items()}, 'labels': y.to(cihaz)}
 
-    bilgi = {'mimari': 'ByT5-small + LoRA', 'temel': kaynak, 'aygit': torch.cuda.get_device_name() if cihaz == 'cuda' else 'CPU',
+    bilgi = {'mimari': depolama.mimari_adi(taban), 'temel': kaynak, 'aygit': torch.cuda.get_device_name() if cihaz == 'cuda' else 'CPU',
              'hassasiyet': str(dtype), 'egitilebilir_parametre': sum(p.numel() for p in parametreler), 'config': config}
-    json_yaz(RAPOR / 'model_info.json', bilgi)
+    json_yaz(RAPOR / f'model_info{ek}.json', bilgi)
     print(json.dumps(bilgi, ensure_ascii=False), flush=True)
 
     etkin = config['batch_size'] * config['gradient_accumulation']
@@ -162,10 +179,10 @@ def ana():
             sonuc.append(permutasyon[i])
         return sonuc
 
-    durdur = RAPOR / 'stop-training'
+    durdur = RAPOR / f'stop-training{ek}'
     durdur.unlink(missing_ok=True)
     if not args.resume:
-        (RAPOR / 'history.jsonl').write_text('', encoding='utf-8')
+        (RAPOR / f'history{ek}.jsonl').write_text('', encoding='utf-8')
     baslangic = time.perf_counter(); onceki_sure = durum['elapsed_seconds']
     adim_sureleri = []; kayiplar = []
     durum_kaydi = dict(durum)
@@ -206,7 +223,7 @@ def ana():
                   f'100 adım ≈ {sum(son) / len(son) * 100:.1f}s{vram} | geçen {durum["elapsed_seconds"]:.0f}s', flush=True)
         durum_kaydi = {**durum, 'epoch': durum['examples_processed'] / len(egitim), 'loss': toplam_kayip,
                        'learning_rate': lr, 'total_steps': config['steps'], 'running': True, 'pid': os.getpid()}
-        json_yaz(RAPOR / 'training_status.json', durum_kaydi)
+        json_yaz(RAPOR / f'training_status{ek}.json', durum_kaydi)
         dur = durdur.exists()
         if adim % config['eval_every'] == 0 or adim == config['steps'] or dur:
             olcum = dogrula(model, tokenizer, alt_kume, cihaz, max_bytes)
@@ -215,10 +232,10 @@ def ana():
             durum['bad_evaluations'] = 0 if iyi else durum['bad_evaluations'] + 1
             if iyi:
                 durum.update(best_score=puan, best_step=adim, best_exact_match=olcum['tam_eslesme'], best_cer=olcum['cer'])
-                kontrol_noktasi_kaydet(model, None, config, durum, 'best')
-            kontrol_noktasi_kaydet(model, optimizer, config, durum, 'latest')
+                kontrol_noktasi_kaydet(model, None, config, durum, en_iyi_ad, taban)
+            kontrol_noktasi_kaydet(model, optimizer, config, durum, son_ad, taban)
             gecmis = {**durum_kaydi, 'loss': sum(kayiplar) / len(kayiplar), 'metrics': olcum, 'storage': depolama.kullanim()}
-            with (RAPOR / 'history.jsonl').open('a', encoding='utf-8') as akis:
+            with (RAPOR / f'history{ek}.jsonl').open('a', encoding='utf-8') as akis:
                 akis.write(json.dumps(gecmis, ensure_ascii=False) + '\n')
             print(f'DOĞRULAMA adım {adim} | tam eşleşme {olcum["tam_eslesme"]:.3f} | CER {olcum["cer"]:.4f} | '
                   f'en iyi adım {durum.get("best_step")} | sabır {durum["bad_evaluations"]}/{config["patience"]}', flush=True)
@@ -227,7 +244,7 @@ def ana():
                 print('Durdurma isteği alındı.' if dur else 'Erken durdurma.', flush=True)
                 break
     durum_kaydi.update(durum, running=False)
-    json_yaz(RAPOR / 'training_status.json', durum_kaydi)
+    json_yaz(RAPOR / f'training_status{ek}.json', durum_kaydi)
     if cihaz == 'cuda':
         print(f'Tepe VRAM: {torch.cuda.max_memory_allocated() / 2**30:.2f} GB (ayrılan {torch.cuda.max_memory_reserved() / 2**30:.2f} GB)', flush=True)
     print('Eğitim tamamlandı.', flush=True)

@@ -1,8 +1,9 @@
 """Küçük depolama yardımcıları: proje kökü, veri dizini, temel model yükleme, güvenli silme.
 
 Depolama en aza indirilir: yalnızca ``models/checkpoints/best`` ve ``latest`` tutulur.
-Temel model (ByT5-small) bu projeye kopyalanmaz; Hugging Face önbelleğinden (veya kardeş proje
-Megazeka'nın ``models/base`` klasöründen) salt-okunur yüklenir.
+Temel model (varsayılan ByT5-small; ayarda ``taban`` ile ByT5-base) bu projeye kopyalanmaz; Hugging Face
+önbelleğinden (veya kardeş proje Megazeka'nın yerel kopyasından: small ``models/base``, base
+``models/base-byt5-base``) salt-okunur yüklenir.
 """
 from pathlib import Path
 import json
@@ -14,6 +15,10 @@ ROOT = Path(__file__).resolve().parents[2]
 TEMEL_MODEL = 'google/byt5-small'
 # İsteğe bağlı yerel kopya (ör. kardeş proje Megazeka'nın models/base klasörü).
 YEDEK_TEMEL = os.environ.get('MEGAZEKA_SAYI_TEMEL', '')
+TEMEL_MODEL_BASE = 'google/byt5-base'
+# ByT5-base için ayrı yerel kopya (small'ın MEGAZEKA_SAYI_TEMEL değişkeni base'e uygulanmaz).
+YEDEK_TEMEL_BASE = os.environ.get('MEGAZEKA_SAYI_TEMEL_BASE', '')
+TABAN_DOSYASI = 'taban.json'
 VERI_ORTAM = 'MEGAZEKA_SAYI_VERI'
 KONTROL_NOKTALARI = ROOT / 'models' / 'checkpoints'
 
@@ -75,12 +80,34 @@ def guvenli_sil(yol):
         yol.unlink()
 
 
-def temel_model_yukle(dtype=None):
-    """(tokenizer, model, kaynak) döndürür. Hiçbir şey indirmez (local_files_only)."""
+def yedek_yol(taban):
+    """Verilen tabana özgü yerel yedek yolu (yoksa boş metin)."""
+    return {TEMEL_MODEL: YEDEK_TEMEL, TEMEL_MODEL_BASE: YEDEK_TEMEL_BASE}.get(taban, '')
+
+
+def mimari_adi(taban=None):
+    """``google/byt5-base`` → ``ByT5-base + LoRA`` (varsayılan: ``ByT5-small + LoRA``)."""
+    ad = (taban or TEMEL_MODEL).rsplit('/', 1)[-1]
+    return ('ByT5-' + ad[len('byt5-'):] if ad.startswith('byt5-') else ad) + ' + LoRA'
+
+
+def kontrol_noktasi_tabani(yol):
+    """Kontrol noktası klasöründeki ``taban.json`` içindeki tabanı döndürür; yoksa/bozuksa small varsayılır."""
+    try:
+        taban = json.loads((Path(yol) / TABAN_DOSYASI).read_text(encoding='utf-8'))['taban']
+    except (OSError, ValueError, KeyError, TypeError):
+        return TEMEL_MODEL
+    return taban.strip() if isinstance(taban, str) and taban.strip() else TEMEL_MODEL
+
+
+def temel_model_yukle(dtype=None, taban=None):
+    """(tokenizer, model, kaynak) döndürür. Önce yalnız yerel kopyalar denenir; ``taban`` verilmezse ByT5-small."""
     from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
+    taban = taban or TEMEL_MODEL
     hatalar = []
-    # Önce yalnız yerel (önbellek / MEGAZEKA_SAYI_TEMEL); bulunamazsa ilk çalıştırmada Hub'dan bir kez indirir (~1,2 GB).
-    denemeler = [(k, True) for k in (TEMEL_MODEL, YEDEK_TEMEL) if k] + [(TEMEL_MODEL, False)]
+    # Önce yalnız yerel (önbellek / tabana özgü yedek: MEGAZEKA_SAYI_TEMEL ya da MEGAZEKA_SAYI_TEMEL_BASE);
+    # bulunamazsa ilk çalıştırmada Hub'dan bir kez indirir (small ~1,2 GB, base ~2,3 GB).
+    denemeler = [(k, True) for k in (taban, yedek_yol(taban)) if k] + [(taban, False)]
     for kaynak, yerel in denemeler:
         try:
             tok = AutoTokenizer.from_pretrained(kaynak, local_files_only=yerel)

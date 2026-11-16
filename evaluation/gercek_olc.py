@@ -1,6 +1,6 @@
 """Gerçek metin kümesinde ölçüm: evaluation/gercek.jsonl (Common Voice cümleleri, elle etiketli).
 
-    python evaluation/gercek_olc.py [--checkpoint best] [--ad v2]
+    python evaluation/gercek_olc.py [--checkpoint best] [--ad v2] [--kume gercek2]
 
 Her satırda `hedef` şartnameye göre birincil cevaptır; `kabul` varsa şartnamenin açık bırakmadığı
 durumlarda eşit derecede savunulabilir öteki yazımlardır. İki sonuç verilir: katı (yalnız hedef) ve
@@ -41,8 +41,10 @@ def ana():
     ap = argparse.ArgumentParser()
     ap.add_argument('--checkpoint', default='best')
     ap.add_argument('--ad', default='v2')
+    ap.add_argument('--kume', default='gercek', help='evaluation/<kume>.jsonl (gercek, gercek2)')
     a = ap.parse_args()
-    satirlar = [json.loads(s) for s in KUME.read_text(encoding='utf-8').splitlines() if s.strip()]
+    kume = ROOT / 'evaluation' / f'{a.kume}.jsonl'
+    satirlar = [json.loads(s) for s in kume.read_text(encoding='utf-8').splitlines() if s.strip()]
     girdiler = [r['girdi'] for r in satirlar]
     motor = SayiDonusturucu(a.checkpoint)
     ham = motor.ham(girdiler)
@@ -60,11 +62,11 @@ def ana():
                if any(c != r['hedef'] and c not in r.get('kabul', ()) for c in (ham[i], cikti['korumali'][i]))]
     rapor = {'ad': a.ad, 'kontrol_noktasi': a.checkpoint, 'genel': genel, 'kategori': kategori, 'hatalar': hatalar,
              'koruma_geri_alma': sum(1 for k in korunan if k[1])}
-    (ROOT / f'reports/gercek-{a.ad}.json').write_text(json.dumps(rapor, ensure_ascii=False, indent=2), encoding='utf-8')
+    (ROOT / f'reports/{a.kume}-{a.ad}.json').write_text(json.dumps(rapor, ensure_ascii=False, indent=2), encoding='utf-8')
 
     y = lambda a_, b: '—' if not b else f'{100 * a_ / b:.1f}'
     md = [f'# Gerçek metin ölçümü — {a.ad}', '',
-          f'Küme: `evaluation/gercek.jsonl`, {len(satirlar)} Common Voice cümlesi (sayı kökü içerenler, köke göre katmanlı, '
+          f'Küme: `evaluation/{a.kume}.jsonl`, {len(satirlar)} Common Voice cümlesi (sayı kökü içerenler, köke göre katmanlı, '
           'elle etiketli). Katı = yalnız birincil hedef; esnek = hedef ya da kabul edilen öteki yazım.', '',
           '| Sistem | Katı % | Esnek % | Yanlış dönüşüm % (negatif n) | Pozitifte doğru % (n) | Pozitife hiç dokunmadı |',
           '|---|---:|---:|---:|---:|---:|']
@@ -82,9 +84,9 @@ def ana():
         if h['korumali'] != h['ham']:
             md.append('KORU : ' + h['korumali'])
         md += ['HEDEF: ' + h['hedef'], '```', '']
-    (ROOT / f'reports/gercek-{a.ad}.md').write_text('\n'.join(md), encoding='utf-8')
+    (ROOT / f'reports/{a.kume}-{a.ad}.md').write_text('\n'.join(md), encoding='utf-8')
     print('\n'.join(md[4:4 + 2 + len(SISTEMLER)]))
-    print(f'hata {len(hatalar)}; rapor reports/gercek-{a.ad}.md')
+    print(f'hata {len(hatalar)}; rapor reports/{a.kume}-{a.ad}.md')
 
 
 if __name__ == '__main__':

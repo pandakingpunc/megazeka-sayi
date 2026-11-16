@@ -36,11 +36,12 @@ def kokler(cumle):
     return {k for j in jetonlar for k in KOKLER if j.startswith(k)}
 
 
-def sec(cumleler):
-    rng = random.Random(TOHUM)
+def sec(cumleler, tohum=TOHUM, haric=(), kok_kotasi=KOK_KOTASI, on_kotasi=ON_KOTASI, bir_kotasi=BIR_KOTASI):
+    rng = random.Random(tohum)
+    haric = set(haric)
     havuz = []
     for t in sorted(set(c.strip() for c in cumleler)):
-        if len(t.encode("utf-8")) > BAYT_SINIRI or len(t.split()) < 3 or re.search(r"\d", t):
+        if t in haric or len(t.encode("utf-8")) > BAYT_SINIRI or len(t.split()) < 3 or re.search(r"\d", t):
             continue
         ks = kokler(t)
         if ks:
@@ -61,9 +62,9 @@ def sec(cumleler):
     sayim = {k: sum(1 for _, ks in havuz if k in ks) for k in KOKLER}
     # seyrek kökten sık köke: seyrek olanlar başka katmana kapılmasın
     for k in sorted((k for k in KOKLER if k not in ("bir", "on") and sayim[k]), key=lambda k: (sayim[k], k)):
-        al(lambda ks, k=k: k in ks, KOK_KOTASI, k)
-    al(lambda ks: ks == {"on"} or ks == {"on", "bir"}, ON_KOTASI, "on")
-    al(lambda ks: ks == {"bir"}, BIR_KOTASI, "bir")
+        al(lambda ks, k=k: k in ks, kok_kotasi, k)
+    al(lambda ks: ks == {"on"} or ks == {"on", "bir"}, on_kotasi, "on")
+    al(lambda ks: ks == {"bir"}, bir_kotasi, "bir")
     return secilen, len(havuz)
 
 
@@ -71,8 +72,12 @@ def ana():
     ap = argparse.ArgumentParser()
     ap.add_argument("--cv", required=True)
     ap.add_argument("--cikti", default=str(KOK / "evaluation" / "gercek-aday.jsonl"))
+    ap.add_argument("--tohum", type=int, default=TOHUM)
+    ap.add_argument("--haric", nargs="*", default=[], help="girdileri dışlanacak .jsonl dosyaları (önceki kümeler)")
+    ap.add_argument("--kotalar", type=int, nargs=3, default=[KOK_KOTASI, ON_KOTASI, BIR_KOTASI], metavar=("KOK", "ON", "BIR"))
     a = ap.parse_args()
-    secilen, havuz = sec(Path(a.cv).read_text(encoding="utf-8").splitlines())
+    haric = [json.loads(s)["girdi"] for y in a.haric for s in Path(y).read_text(encoding="utf-8").splitlines() if s.strip()]
+    secilen, havuz = sec(Path(a.cv).read_text(encoding="utf-8").splitlines(), a.tohum, haric, *a.kotalar)
     Path(a.cikti).write_text("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in secilen), encoding="utf-8")
     print(f"havuz {havuz}, seçilen {len(secilen)} -> {a.cikti}")
 

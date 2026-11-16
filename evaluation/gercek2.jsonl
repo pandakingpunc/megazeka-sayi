@@ -1,0 +1,150 @@
+{"girdi": "Üç yüz yirmi… Yarısı ne eder? Yüz altmış…", "hedef": "320… Yarısı ne eder? 160…", "kategori": "kardinal", "sablon": "gercek2-cv", "katman": "altmış"}
+{"girdi": "Bankada seksen, yüz bin lirası olduğu herkesçe muhakkak sayılırdı.", "hedef": "Bankada 80, 100.000 TL'si olduğu herkesçe muhakkak sayılırdı.", "kategori": "para", "sablon": "gercek2-cv", "katman": "seksen", "kabul": ["Bankada 80.000, 100.000 TL'si olduğu herkesçe muhakkak sayılırdı.", "Bankada 80-100.000 TL'si olduğu herkesçe muhakkak sayılırdı.", "Bankada 80.000-100.000 TL'si olduğu herkesçe muhakkak sayılırdı."]}
+{"girdi": "Kendi kalbini bir aşkın elinden kurtaramayan adam nasıl milyonlarca insanı kurtarmaya kalkar?", "hedef": "Kendi kalbini bir aşkın elinden kurtaramayan adam nasıl milyonlarca insanı kurtarmaya kalkar?", "kategori": "kalip", "sablon": "gercek2-cv", "katman": "milyon"}
+{"girdi": "Ama bugünkü haliyle on sekiz milyonu zor besliyor…", "hedef": "Ama bugünkü haliyle 18 milyonu zor besliyor…", "kategori": "buyuk", "sablon": "gercek2-cv", "katman": "milyon"}
+{"girdi": "Hususi muhasebe memuru, harcırahlan eksik tahakkuk ettirmekteki maharetiyle meşhurdur.", "hedef": "Hususi muhasebe memuru, harcırahlan eksik tahakkuk ettirmekteki maharetiyle meşhurdur.", "kategori": "es_yazim", "sablon": "gercek2-cv", "katman": "eksi"}
+{"girdi": "Bir şeyler eksik.", "hedef": "Bir şeyler eksik.", "kategori": "es_yazim", "sablon": "gercek2-cv", "katman": "eksi"}
+{"girdi": "Deniz kenarında dalga eksik olmaz.", "hedef": "Deniz kenarında dalga eksik olmaz.", "kategori": "es_yazim", "sablon": "gercek2-cv", "katman": "eksi"}
+{"girdi": "On ikinci maddenin birinci fıkrasındaki hallerde koruma süresi, eserin aleniyet tarihinden sonra yetmiş yıldır.", "hedef": "12. maddenin 1. fıkrasındaki hallerde koruma süresi, eserin aleniyet tarihinden sonra 70 yıldır.", "kategori": "sira", "sablon": "gercek2-cv", "katman": "yetmiş"}
+{"girdi": "Bu yetmiş beş kişi gözlerini benim saraydaki odama dikecek ve bekleyecekler…", "hedef": "Bu 75 kişi gözlerini benim saraydaki odama dikecek ve bekleyecekler…", "kategori": "kardinal", "sablon": "gercek2-cv", "katman": "yetmiş"}
+{"girdi": "Yüz yetmiş dört.", "hedef": "174.", "kategori": "kardinal", "sablon": "gercek2-cv", "katman": "yetmiş"}
+{"girdi": "Çok olmuş… Kırk elli sene var…", "hedef": "Çok olmuş… 40-50 sene var…", "kategori": "aralik", "sablon": "gercek2-cv", "katman": "elli"}
+{"girdi": "Öyle ya… elli sene olacak.", "hedef": "Öyle ya… 50 sene olacak.", "kategori": "kardinal", "sablon": "gercek2-cv", "katman": "elli"}
+{"girdi": "Bu sekiz yüz evli küçük kasabada, şimdi belki elli aile bile oturmuyordu.", "hedef": "Bu 800 evli küçük kasabada, şimdi belki 50 aile bile oturmuyordu.", "kategori": "kardinal", "sablon": "gercek2-cv", "katman": "elli"}
+{"girdi": "İki yüz elli lira getirir, karını alırsın!", "hedef": "250 TL getirir, karını alırsın!", "kategori": "para", "sablon": "gercek2-cv", "katman": "elli"}
+{"girdi": "O zaman iki Mehmetler, aralarında yüz elli adım mesafe olduğu halde, birbirlerine şöyle bakıştılar.", "hedef": "O zaman iki Mehmetler, aralarında 150 adım mesafe olduğu halde, birbirlerine şöyle bakıştılar.", "kategori": "kardinal", "sablon": "gercek2-cv", "katman": "elli"}
+{"girdi": "Hepsi elli kadar vardı.", "hedef": "Hepsi 50 kadar vardı.", "kategori": "kardinal", "sablon": "gercek2-cv", "katman": "elli"}
+{"girdi": "Öteki omuzlarını silkti: \"İki şarap şişesi kırıldı, yüz ellişerden üç lira…\"", "hedef": "Öteki omuzlarını silkti: \"İki şarap şişesi kırıldı, yüz ellişerden 3 TL…\"", "kategori": "para", "sablon": "gercek2-cv", "katman": "elli"}
+{"girdi": "Yüz otuz sekiz.", "hedef": "138.", "kategori": "kardinal", "sablon": "gercek2-cv", "katman": "otuz"}
+{"girdi": "Çünkü otuz kırk sopadan sonra insan çok kere bir şey hissetmiyor.", "hedef": "Çünkü 30-40 sopadan sonra insan çok kere bir şey hissetmiyor.", "kategori": "aralik", "sablon": "gercek2-cv", "katman": "otuz"}
+{"girdi": "Bayıra tırmanmaya başlayınca otuz sene evvel geçtiğim yolu çok güzel hatırladım.", "hedef": "Bayıra tırmanmaya başlayınca 30 sene evvel geçtiğim yolu çok güzel hatırladım.", "kategori": "kardinal", "sablon": "gercek2-cv", "katman": "otuz"}
+{"girdi": "Bin dokuz yüz otuz yedi.", "hedef": "1937.", "kategori": "tarih", "sablon": "gercek2-cv", "katman": "otuz", "kabul": ["1.937."]}
+{"girdi": "bin dokuz yüz otuz beş.", "hedef": "1935.", "kategori": "tarih", "sablon": "gercek2-cv", "katman": "otuz", "kabul": ["1.935."]}
+{"girdi": "Yaşım otuzu geçti.", "hedef": "Yaşım 30'u geçti.", "kategori": "kardinal", "sablon": "gercek2-cv", "katman": "otuz"}
+{"girdi": "Yüz otuz liraya sezeryan yapılır mı?", "hedef": "130 TL'ye sezeryan yapılır mı?", "kategori": "para", "sablon": "gercek2-cv", "katman": "otuz"}
+{"girdi": "Bir, iki, üç, dört, beş, altı, yedi, sekiz, dokuz, on.", "hedef": "Bir, iki, üç, dört, beş, altı, yedi, sekiz, dokuz, on.", "kategori": "kucuk_sayi", "sablon": "gercek2-cv", "katman": "sekiz", "kabul": ["Bir, iki, üç, dört, beş, altı, yedi, sekiz, dokuz, 10."]}
+{"girdi": "Koskocaman bir lügat büyüklüğündeki kitabın sahifesini böylece kırk sekiz kuruşa Türkçeye çevirmiş olurdum.", "hedef": "Koskocaman bir lügat büyüklüğündeki kitabın sahifesini böylece 48 kuruşa Türkçeye çevirmiş olurdum.", "kategori": "para", "sablon": "gercek2-cv", "katman": "sekiz"}
+{"girdi": "Sekiz ay oluyor çocuğu doğurdum. Görme, nurtopu gibi bir oğlan, Hoca.", "hedef": "Sekiz ay oluyor çocuğu doğurdum. Görme, nurtopu gibi bir oğlan, Hoca.", "kategori": "kucuk_sayi", "sablon": "gercek2-cv", "katman": "sekiz", "kabul": ["8 ay oluyor çocuğu doğurdum. Görme, nurtopu gibi bir oğlan, Hoca."]}
+{"girdi": "Adı çıktı dokuza, inmez sekize.", "hedef": "Adı çıktı dokuza, inmez sekize.", "kategori": "atasozu", "sablon": "gercek2-cv", "katman": "sekiz"}
+{"girdi": "Kahvenin kapısı aralanarak içeri sekiz on yaşlarında bir kız başı uzandı.", "hedef": "Kahvenin kapısı aralanarak içeri 8-10 yaşlarında bir kız başı uzandı.", "kategori": "aralik", "sablon": "gercek2-cv", "katman": "sekiz"}
+{"girdi": "Saat sekizi geçiyordu.", "hedef": "Saat 8'i geçiyordu.", "kategori": "saat", "sablon": "gercek2-cv", "katman": "sekiz"}
+{"girdi": "Hiç de on yedi on sekizden yukarı göstermiyordu.", "hedef": "Hiç de 17-18'den yukarı göstermiyordu.", "kategori": "aralik", "sablon": "gercek2-cv", "katman": "sekiz"}
+{"girdi": "Bu, onun homurtusunu ve başlamış olduğu fena bir kelimeyi yarım bıraktırdı.", "hedef": "Bu, onun homurtusunu ve başlamış olduğu fena bir kelimeyi yarım bıraktırdı.", "kategori": "kalip", "sablon": "gercek2-cv", "katman": "yarım"}
+{"girdi": "Sözü yarım kaldı.", "hedef": "Sözü yarım kaldı.", "kategori": "kalip", "sablon": "gercek2-cv", "katman": "yarım"}
+{"girdi": "Daha akşama yarım saat kadar vardı.", "hedef": "Daha akşama yarım saat kadar vardı.", "kategori": "kalip", "sablon": "gercek2-cv", "katman": "yarım"}
+{"girdi": "Bana yarım saat ver.", "hedef": "Bana yarım saat ver.", "kategori": "kalip", "sablon": "gercek2-cv", "katman": "yarım"}
+{"girdi": "Onu kesmeye, yarım bırakmaya, hakikat pahasına da olsa uyanmaya hakkım yoktu.", "hedef": "Onu kesmeye, yarım bırakmaya, hakikat pahasına da olsa uyanmaya hakkım yoktu.", "kategori": "kalip", "sablon": "gercek2-cv", "katman": "yarım"}
+{"girdi": "Belki bizden yarım saat, bir saat ötede bulunuyor.", "hedef": "Belki bizden yarım saat, bir saat ötede bulunuyor.", "kategori": "kalip", "sablon": "gercek2-cv", "katman": "yarım"}
+{"girdi": "Öğleyin şöyle on dakika dinlenip biraz ekmekle yarım karpuz yemiş, hemen işe başlamıştı.", "hedef": "Öğleyin şöyle 10 dakika dinlenip biraz ekmekle yarım karpuz yemiş, hemen işe başlamıştı.", "kategori": "kardinal", "sablon": "gercek2-cv", "katman": "yarım"}
+{"girdi": "Bin dokuz yüz kırk iki yılının bahar aylarındaydı.", "hedef": "1942 yılının bahar aylarındaydı.", "kategori": "tarih", "sablon": "gercek2-cv", "katman": "dokuz"}
+{"girdi": "Bin dokuz yüz yirmi dokuz.", "hedef": "1929.", "kategori": "tarih", "sablon": "gercek2-cv", "katman": "dokuz", "kabul": ["1.929."]}
+{"girdi": "bin dokuz yüz yirmi yedi.", "hedef": "1927.", "kategori": "tarih", "sablon": "gercek2-cv", "katman": "dokuz", "kabul": ["1.927."]}
+{"girdi": "Meydan yerindeki büyük saat dokuzu vurdu…", "hedef": "Meydan yerindeki büyük saat 9'u vurdu…", "kategori": "saat", "sablon": "gercek2-cv", "katman": "dokuz"}
+{"girdi": "Üç Mart bin dokuz yüz kırk dört.", "hedef": "3 Mart 1944.", "kategori": "tarih", "sablon": "gercek2-cv", "katman": "dokuz"}
+{"girdi": "Bir baba dokuz oğlu besler, dokuz oğul bir babayı beslemez.", "hedef": "Bir baba dokuz oğlu besler, dokuz oğul bir babayı beslemez.", "kategori": "atasozu", "sablon": "gercek2-cv", "katman": "dokuz"}
+{"girdi": "Şubat bin dokuz yüz kırk bir.", "hedef": "Şubat 1941.", "kategori": "tarih", "sablon": "gercek2-cv", "katman": "dokuz"}
+{"girdi": "Kırk okka yükle dört saatlik dağa çıkan adama eğri bakacak babayiğit bizim obamızda yoktur.", "hedef": "40 okka yükle dört saatlik dağa çıkan adama eğri bakacak babayiğit bizim obamızda yoktur.", "kategori": "kardinal", "sablon": "gercek2-cv", "katman": "kırk", "kabul": ["40 okka yükle 4 saatlik dağa çıkan adama eğri bakacak babayiğit bizim obamızda yoktur."]}
+{"girdi": "Bu aydan itibaren maaşıma ilave olarak kırk lira kadar da ücret alacağım…", "hedef": "Bu aydan itibaren maaşıma ilave olarak 40 TL kadar da ücret alacağım…", "kategori": "para", "sablon": "gercek2-cv", "katman": "kırk"}
+{"girdi": "Soğuk; kırk kat keçe, ben ondan geçe; bir kat deri, ben ondan geri demiş.", "hedef": "Soğuk; kırk kat keçe, ben ondan geçe; bir kat deri, ben ondan geri demiş.", "kategori": "atasozu", "sablon": "gercek2-cv", "katman": "kırk"}
+{"girdi": "Ayının bildiği kırk türkü, kırkı da armut üstüne…", "hedef": "Ayının bildiği kırk türkü, kırkı da armut üstüne…", "kategori": "atasozu", "sablon": "gercek2-cv", "katman": "kırk"}
+{"girdi": "Baban bana öğüt verirken, ben inek gözünde kırk sinek saydım.", "hedef": "Baban bana öğüt verirken, ben inek gözünde kırk sinek saydım.", "kategori": "atasozu", "sablon": "gercek2-cv", "katman": "kırk"}
+{"girdi": "İçeri kırk yaşlarında, kesik saçları kulaklarına ve yüzüne dökülmüş, şişmanca bir kadın girdi.", "hedef": "İçeri 40 yaşlarında, kesik saçları kulaklarına ve yüzüne dökülmüş, şişmanca bir kadın girdi.", "kategori": "kardinal", "sablon": "gercek2-cv", "katman": "kırk"}
+{"girdi": "Bir yiğit kırk yılda meydana gelir.", "hedef": "Bir yiğit kırk yılda meydana gelir.", "kategori": "atasozu", "sablon": "gercek2-cv", "katman": "kırk"}
+{"girdi": "Babamın kanını, yediğim dayakların hesabını…", "hedef": "Babamın kanını, yediğim dayakların hesabını…", "kategori": "es_yazim", "sablon": "gercek2-cv", "katman": "yedi"}
+{"girdi": "Bir şeyler yedin mi?", "hedef": "Bir şeyler yedin mi?", "kategori": "es_yazim", "sablon": "gercek2-cv", "katman": "yedi"}
+{"girdi": "Ders verdiği yedi çocuk ellerinde çantaları ile beş on adım ilerden gidiyorlardı.", "hedef": "Ders verdiği yedi çocuk ellerinde çantaları ile 5-10 adım ilerden gidiyorlardı.", "kategori": "aralik", "sablon": "gercek2-cv", "katman": "yedi"}
+{"girdi": "Parça hesabıyla iki bin yedi yüz lira aldı.", "hedef": "Parça hesabıyla 2.700 TL aldı.", "kategori": "para", "sablon": "gercek2-cv", "katman": "yedi"}
+{"girdi": "Kaç gece umumhaneye girmek isteyerek nöbetçi candarmadan azar ve tekme yedi.", "hedef": "Kaç gece umumhaneye girmek isteyerek nöbetçi candarmadan azar ve tekme yedi.", "kategori": "es_yazim", "sablon": "gercek2-cv", "katman": "yedi"}
+{"girdi": "Felek, kimine kavun yedirir kimine kelek.", "hedef": "Felek, kimine kavun yedirir kimine kelek.", "kategori": "es_yazim", "sablon": "gercek2-cv", "katman": "yedi"}
+{"girdi": "En aşağı yedi sene yiyecekti.", "hedef": "En aşağı yedi sene yiyecekti.", "kategori": "kucuk_sayi", "sablon": "gercek2-cv", "katman": "yedi", "kabul": ["En aşağı 7 sene yiyecekti."]}
+{"girdi": "İbrahim yüz yirmi lirayı delikleştiremedi.", "hedef": "İbrahim 120 TL'yi delikleştiremedi.", "kategori": "para", "sablon": "gercek2-cv", "katman": "yirmi"}
+{"girdi": "Onun kenarını takip ederek on beş yirmi adım daha gidince önü birdenbire açıldı.", "hedef": "Onun kenarını takip ederek 15-20 adım daha gidince önü birdenbire açıldı.", "kategori": "aralik", "sablon": "gercek2-cv", "katman": "yirmi"}
+{"girdi": "Arkalarından, on beş yirmi adım uzaktan Ömer geliyordu.", "hedef": "Arkalarından, 15-20 adım uzaktan Ömer geliyordu.", "kategori": "aralik", "sablon": "gercek2-cv", "katman": "yirmi"}
+{"girdi": "Bu satırları yazdığım sırada aradan yirmi dört saatten biraz fazla bir zaman geçmiş bulunuyor.", "hedef": "Bu satırları yazdığım sırada aradan 24 saatten biraz fazla bir zaman geçmiş bulunuyor.", "kategori": "kardinal", "sablon": "gercek2-cv", "katman": "yirmi"}
+{"girdi": "Öleli yirmi yılı aşkındır.", "hedef": "Öleli 20 yılı aşkındır.", "kategori": "kardinal", "sablon": "gercek2-cv", "katman": "yirmi"}
+{"girdi": "Daha yüz yirmi getireceksin!", "hedef": "Daha 120 getireceksin!", "kategori": "kardinal", "sablon": "gercek2-cv", "katman": "yirmi"}
+{"girdi": "On beş yirmi günde bir gelip çamaşırlarımı yıkayan yaşlıca bir kadın vardı.", "hedef": "15-20 günde bir gelip çamaşırlarımı yıkayan yaşlıca bir kadın vardı.", "kategori": "aralik", "sablon": "gercek2-cv", "katman": "yirmi"}
+{"girdi": "Dört yerinden karnını deştiği adamlar bir hafta sonra Haydarpaşa'ya, trene yürüye yürüye gidiyorlar.", "hedef": "Dört yerinden karnını deştiği adamlar bir hafta sonra Haydarpaşa'ya, trene yürüye yürüye gidiyorlar.", "kategori": "kucuk_sayi", "sablon": "gercek2-cv", "katman": "dört"}
+{"girdi": "Bir masada ortalama dört beş kişi oturur.", "hedef": "Bir masada ortalama 4-5 kişi oturur.", "kategori": "aralik", "sablon": "gercek2-cv", "katman": "dört"}
+{"girdi": "Sonra da burun kanamadan, üç dört kişiden alamayacağın bir para…", "hedef": "Sonra da burun kanamadan, 3-4 kişiden alamayacağın bir para…", "kategori": "aralik", "sablon": "gercek2-cv", "katman": "dört"}
+{"girdi": "Dört taraf dört duvar.", "hedef": "Dört taraf dört duvar.", "kategori": "kalip", "sablon": "gercek2-cv", "katman": "dört"}
+{"girdi": "Böylece her birimiz üç dört kere girip çıktık.", "hedef": "Böylece her birimiz 3-4 kere girip çıktık.", "kategori": "aralik", "sablon": "gercek2-cv", "katman": "dört"}
+{"girdi": "Dört yana koşuşan tavuklarla çocukların saçtığı çamur, efendilerin ütülü külotlarına sıçramış ve yüzlerini buruşturmuştu.", "hedef": "Dört yana koşuşan tavuklarla çocukların saçtığı çamur, efendilerin ütülü külotlarına sıçramış ve yüzlerini buruşturmuştu.", "kategori": "kalip", "sablon": "gercek2-cv", "katman": "dört"}
+{"girdi": "Nereye gitsen okka dört yüz dirhem.", "hedef": "Nereye gitsen okka dört yüz dirhem.", "kategori": "atasozu", "sablon": "gercek2-cv", "katman": "dört"}
+{"girdi": "Bin dost az, bir düşman çok.", "hedef": "Bin dost az, bir düşman çok.", "kategori": "atasozu", "sablon": "gercek2-cv", "katman": "bin"}
+{"girdi": "At binicisini tanır.", "hedef": "At binicisini tanır.", "kategori": "es_yazim", "sablon": "gercek2-cv", "katman": "bin"}
+{"girdi": "Garibe bir selam bin altın değer.", "hedef": "Garibe bir selam bin altın değer.", "kategori": "atasozu", "sablon": "gercek2-cv", "katman": "bin"}
+{"girdi": "Beş bin mi?", "hedef": "5.000 mi?", "kategori": "kardinal", "sablon": "gercek2-cv", "katman": "bin"}
+{"girdi": "Yüzlerce metre uzunluğundaki büyük taş bina içime ürperme verdi.", "hedef": "Yüzlerce metre uzunluğundaki büyük taş bina içime ürperme verdi.", "kategori": "es_yazim", "sablon": "gercek2-cv", "katman": "bin"}
+{"girdi": "Binaenaleyh serbestçe çıkıp izi takip edebilirdi.", "hedef": "Binaenaleyh serbestçe çıkıp izi takip edebilirdi.", "kategori": "es_yazim", "sablon": "gercek2-cv", "katman": "bin"}
+{"girdi": "At binenin kılıç kuşananındır.", "hedef": "At binenin kılıç kuşananındır.", "kategori": "es_yazim", "sablon": "gercek2-cv", "katman": "bin"}
+{"girdi": "Aç olması lazım… Üç gündür bir şey yemedim.", "hedef": "Aç olması lazım… Üç gündür bir şey yemedim.", "kategori": "kucuk_sayi", "sablon": "gercek2-cv", "katman": "üç", "kabul": ["Aç olması lazım… 3 gündür bir şey yemedim."]}
+{"girdi": "Trenin üçüncü mevki vagonlarından birinin penceresi indirildi.", "hedef": "Trenin üçüncü mevki vagonlarından birinin penceresi indirildi.", "kategori": "sira", "sablon": "gercek2-cv", "katman": "üç", "kabul": ["Trenin 3. mevki vagonlarından birinin penceresi indirildi."]}
+{"girdi": "Derken iki üç ay evvel buraya bir kumpanya geldi.", "hedef": "Derken 2-3 ay evvel buraya bir kumpanya geldi.", "kategori": "aralik", "sablon": "gercek2-cv", "katman": "üç"}
+{"girdi": "Erkek parmaklarıyla üç diye gösterdi.", "hedef": "Erkek parmaklarıyla üç diye gösterdi.", "kategori": "kucuk_sayi", "sablon": "gercek2-cv", "katman": "üç"}
+{"girdi": "Üç aydır mektup yazmadım!", "hedef": "Üç aydır mektup yazmadım!", "kategori": "kucuk_sayi", "sablon": "gercek2-cv", "katman": "üç", "kabul": ["3 aydır mektup yazmadım!"]}
+{"girdi": "Üç beş adım ötede ve karşı sıradaki evin kapısını yumruğumla çaldım.", "hedef": "3-5 adım ötede ve karşı sıradaki evin kapısını yumruğumla çaldım.", "kategori": "aralik", "sablon": "gercek2-cv", "katman": "üç"}
+{"girdi": "Bir eylül sabahı üç ressam rıhtımda birbirleriyle göz göze gelmekten kaçınarak dolaşıyorlardı.", "hedef": "Bir eylül sabahı üç ressam rıhtımda birbirleriyle göz göze gelmekten kaçınarak dolaşıyorlardı.", "kategori": "kucuk_sayi", "sablon": "gercek2-cv", "katman": "üç"}
+{"girdi": "Altın eşik, ağaç eşiğe muhtaçtır.", "hedef": "Altın eşik, ağaç eşiğe muhtaçtır.", "kategori": "es_yazim", "sablon": "gercek2-cv", "katman": "altı"}
+{"girdi": "Karlar ayaklarının altında, ağızda kauçuk çiğneniyormuş gibi sesler çıkarıyordu…", "hedef": "Karlar ayaklarının altında, ağızda kauçuk çiğneniyormuş gibi sesler çıkarıyordu…", "kategori": "es_yazim", "sablon": "gercek2-cv", "katman": "altı"}
+{"girdi": "Kızıyla beraber büyük çınarın altına bir hasır atıyor, bağdaş kurup oturarak bizi dinliyordu.", "hedef": "Kızıyla beraber büyük çınarın altına bir hasır atıyor, bağdaş kurup oturarak bizi dinliyordu.", "kategori": "es_yazim", "sablon": "gercek2-cv", "katman": "altı"}
+{"girdi": "Altın kepeğe muhtaç.", "hedef": "Altın kepeğe muhtaç.", "kategori": "es_yazim", "sablon": "gercek2-cv", "katman": "altı"}
+{"girdi": "Havuz yosunlu ve sarmaşıklı kayaların altında kayboluyordu.", "hedef": "Havuz yosunlu ve sarmaşıklı kayaların altında kayboluyordu.", "kategori": "es_yazim", "sablon": "gercek2-cv", "katman": "altı"}
+{"girdi": "Demiryolu köprülerinin altından, buz tutmuş kanalların üstünden yürüdüm.", "hedef": "Demiryolu köprülerinin altından, buz tutmuş kanalların üstünden yürüdüm.", "kategori": "es_yazim", "sablon": "gercek2-cv", "katman": "altı"}
+{"girdi": "Altı ay sonraydı, köye tahsildarlar geldi.", "hedef": "Altı ay sonraydı, köye tahsildarlar geldi.", "kategori": "kucuk_sayi", "sablon": "gercek2-cv", "katman": "altı", "kabul": ["6 ay sonraydı, köye tahsildarlar geldi."]}
+{"girdi": "Hafıza-i beşer nisyan ile malüldür.", "hedef": "Hafıza-i beşer nisyan ile malüldür.", "kategori": "es_yazim", "sablon": "gercek2-cv", "katman": "beş"}
+{"girdi": "Beş gün sonra karın taburcudur.", "hedef": "Beş gün sonra karın taburcudur.", "kategori": "kucuk_sayi", "sablon": "gercek2-cv", "katman": "beş", "kabul": ["5 gün sonra karın taburcudur."]}
+{"girdi": "Beş dakika uyuyayım!", "hedef": "Beş dakika uyuyayım!", "kategori": "kucuk_sayi", "sablon": "gercek2-cv", "katman": "beş", "kabul": ["5 dakika uyuyayım!"]}
+{"girdi": "Ameliyattan beri on beş gün kadar geçmişti.", "hedef": "Ameliyattan beri 15 gün kadar geçmişti.", "kategori": "kardinal", "sablon": "gercek2-cv", "katman": "beş"}
+{"girdi": "Beş on günde Yusuf kendine gelir gibi oldu.", "hedef": "5-10 günde Yusuf kendine gelir gibi oldu.", "kategori": "aralik", "sablon": "gercek2-cv", "katman": "beş"}
+{"girdi": "Bunlar beş tane irice banknottu.", "hedef": "Bunlar beş tane irice banknottu.", "kategori": "kucuk_sayi", "sablon": "gercek2-cv", "katman": "beş"}
+{"girdi": "\"Büyük\" meclislerde saz çalıp beş on kuruş alacağını ümit ediyordu.", "hedef": "\"Büyük\" meclislerde saz çalıp 5-10 kuruş alacağını ümit ediyordu.", "kategori": "aralik", "sablon": "gercek2-cv", "katman": "beş"}
+{"girdi": "Kapıyı on iki yaşlarında bir kız çocuğu açtı.", "hedef": "Kapıyı 12 yaşlarında bir kız çocuğu açtı.", "kategori": "kardinal", "sablon": "gercek2-cv", "katman": "iki"}
+{"girdi": "İkimiz de biliyoruz.", "hedef": "İkimiz de biliyoruz.", "kategori": "kalip", "sablon": "gercek2-cv", "katman": "iki"}
+{"girdi": "İkinci perde başlamak üzeredir.", "hedef": "2. perde başlamak üzeredir.", "kategori": "sira", "sablon": "gercek2-cv", "katman": "iki", "kabul": ["İkinci perde başlamak üzeredir."]}
+{"girdi": "İkincide gene yoktu.", "hedef": "İkincide gene yoktu.", "kategori": "kalip", "sablon": "gercek2-cv", "katman": "iki"}
+{"girdi": "Ve sazını, iki kuvvetli vuruştan sonra, yanına bırakarak başını kaldırdı.", "hedef": "Ve sazını, iki kuvvetli vuruştan sonra, yanına bırakarak başını kaldırdı.", "kategori": "kucuk_sayi", "sablon": "gercek2-cv", "katman": "iki"}
+{"girdi": "Bu akşam bu ikinci ağlayışı idi.", "hedef": "Bu akşam bu ikinci ağlayışı idi.", "kategori": "sira", "sablon": "gercek2-cv", "katman": "iki", "kabul": ["Bu akşam bu 2. ağlayışı idi."]}
+{"girdi": "İki saatlik bir yürüyüş, uzaktan perişan fakat mağrur gelen Arnavut kuvvetlerini göstermişti.", "hedef": "İki saatlik bir yürüyüş, uzaktan perişan fakat mağrur gelen Arnavut kuvvetlerini göstermişti.", "kategori": "kucuk_sayi", "sablon": "gercek2-cv", "katman": "iki", "kabul": ["2 saatlik bir yürüyüş, uzaktan perişan fakat mağrur gelen Arnavut kuvvetlerini göstermişti."]}
+{"girdi": "Yüzüme baktı, cevap vermedi.", "hedef": "Yüzüme baktı, cevap vermedi.", "kategori": "es_yazim", "sablon": "gercek2-cv", "katman": "yüz"}
+{"girdi": "Bir müddet sabit nazarlarla yüzüne baktım, gözlerini benden çevirdi.", "hedef": "Bir müddet sabit nazarlarla yüzüne baktım, gözlerini benden çevirdi.", "kategori": "es_yazim", "sablon": "gercek2-cv", "katman": "yüz"}
+{"girdi": "Yüzüme dikkatle baktıktan sonra, ters bir tavırla:", "hedef": "Yüzüme dikkatle baktıktan sonra, ters bir tavırla:", "kategori": "es_yazim", "sablon": "gercek2-cv", "katman": "yüz"}
+{"girdi": "Sonra, yer yer çatlamış dudakları gerilerek, yüzünü tebessüme benzeyen korkunç bir ifade kapladı.", "hedef": "Sonra, yer yer çatlamış dudakları gerilerek, yüzünü tebessüme benzeyen korkunç bir ifade kapladı.", "kategori": "es_yazim", "sablon": "gercek2-cv", "katman": "yüz"}
+{"girdi": "Sonra, yüzüme o cesur ve manalı gözlerini dikerek ilave etti.", "hedef": "Sonra, yüzüme o cesur ve manalı gözlerini dikerek ilave etti.", "kategori": "es_yazim", "sablon": "gercek2-cv", "katman": "yüz"}
+{"girdi": "Bunları söylerken yüzümü, dizlerimin üstünde duran ellerimin hareketlerini tetkik ediyordu.", "hedef": "Bunları söylerken yüzümü, dizlerimin üstünde duran ellerimin hareketlerini tetkik ediyordu.", "kategori": "es_yazim", "sablon": "gercek2-cv", "katman": "yüz"}
+{"girdi": "Yanağını yüzüme sürdü.", "hedef": "Yanağını yüzüme sürdü.", "kategori": "es_yazim", "sablon": "gercek2-cv", "katman": "yüz"}
+{"girdi": "Birkaç adım sonra bu ona fevkalade soğuk ve çocukça göründü.", "hedef": "Birkaç adım sonra bu ona fevkalade soğuk ve çocukça göründü.", "kategori": "zamir", "sablon": "gercek2-cv", "katman": "on"}
+{"girdi": "Bu anda onu, etrafını saran tabiattan ayırmaya imkan yoktu.", "hedef": "Bu anda onu, etrafını saran tabiattan ayırmaya imkan yoktu.", "kategori": "zamir", "sablon": "gercek2-cv", "katman": "on"}
+{"girdi": "Onu hatırladın mı?", "hedef": "Onu hatırladın mı?", "kategori": "zamir", "sablon": "gercek2-cv", "katman": "on"}
+{"girdi": "Ben onun ardından yetişmeye uğraşırken, dönüp dönüp bu görülmemiş güzelliğe bakmaktan kendimi alamıyordum.", "hedef": "Ben onun ardından yetişmeye uğraşırken, dönüp dönüp bu görülmemiş güzelliğe bakmaktan kendimi alamıyordum.", "kategori": "zamir", "sablon": "gercek2-cv", "katman": "on"}
+{"girdi": "Fakat çobanı onun elinden kim kurtarabilirdi?", "hedef": "Fakat çobanı onun elinden kim kurtarabilirdi?", "kategori": "zamir", "sablon": "gercek2-cv", "katman": "on"}
+{"girdi": "Beni bizim mektebin müsamerelerinde görmüş, rollerimi beğenmiş, onun için konuşmak istiyormuş.", "hedef": "Beni bizim mektebin müsamerelerinde görmüş, rollerimi beğenmiş, onun için konuşmak istiyormuş.", "kategori": "zamir", "sablon": "gercek2-cv", "katman": "on"}
+{"girdi": "Topu topu bir kazı vardı; onun da yumurtalarını bakkal İlyas Efendi'ye bağlamıştı.", "hedef": "Topu topu bir kazı vardı; onun da yumurtalarını bakkal İlyas Efendi'ye bağlamıştı.", "kategori": "zamir", "sablon": "gercek2-cv", "katman": "on"}
+{"girdi": "Herhalde dostumun kafasından geçen opera muganniliği ve fraklı Avrupa konserleri, ona yabancı idi.", "hedef": "Herhalde dostumun kafasından geçen opera muganniliği ve fraklı Avrupa konserleri, ona yabancı idi.", "kategori": "zamir", "sablon": "gercek2-cv", "katman": "on"}
+{"girdi": "Ben anlamayarak ona doğru bakarken yanıma yaklaşmış bulundu.", "hedef": "Ben anlamayarak ona doğru bakarken yanıma yaklaşmış bulundu.", "kategori": "zamir", "sablon": "gercek2-cv", "katman": "on"}
+{"girdi": "Bu sırada Yakup Hoca, gardiyan Ali Faik'le konuşuyor, onu sorguya çekiyordu.", "hedef": "Bu sırada Yakup Hoca, gardiyan Ali Faik'le konuşuyor, onu sorguya çekiyordu.", "kategori": "zamir", "sablon": "gercek2-cv", "katman": "on"}
+{"girdi": "Herhalde onu bulmalıyım! dedi.", "hedef": "Herhalde onu bulmalıyım! dedi.", "kategori": "zamir", "sablon": "gercek2-cv", "katman": "on"}
+{"girdi": "Hayvanını onların gittiği söylenen Türkmen köylerine doğru sürdü.", "hedef": "Hayvanını onların gittiği söylenen Türkmen köylerine doğru sürdü.", "kategori": "zamir", "sablon": "gercek2-cv", "katman": "on"}
+{"girdi": "Onu ne yapacaksın?", "hedef": "Onu ne yapacaksın?", "kategori": "zamir", "sablon": "gercek2-cv", "katman": "on"}
+{"girdi": "Onun bu duraklayışının farkına varan arkadaşı: \"Yok canım\" dedi, \"evini filan soymam.\"", "hedef": "Onun bu duraklayışının farkına varan arkadaşı: \"Yok canım\" dedi, \"evini filan soymam.\"", "kategori": "zamir", "sablon": "gercek2-cv", "katman": "on"}
+{"girdi": "Birdenbire durdu; odadaki sessizlik onu şaşırttı.", "hedef": "Birdenbire durdu; odadaki sessizlik onu şaşırttı.", "kategori": "zamir", "sablon": "gercek2-cv", "katman": "on"}
+{"girdi": "Onları bulundukları yerde bırakarak bayır aşağı yürüdüm.", "hedef": "Onları bulundukları yerde bırakarak bayır aşağı yürüdüm.", "kategori": "zamir", "sablon": "gercek2-cv", "katman": "on"}
+{"girdi": "Peki ama, bu sevmek midir be adaşım, bir kadını öpmek, onu istemek sevmek midir?", "hedef": "Peki ama, bu sevmek midir be adaşım, bir kadını öpmek, onu istemek sevmek midir?", "kategori": "zamir", "sablon": "gercek2-cv", "katman": "on"}
+{"girdi": "Onun için mi?", "hedef": "Onun için mi?", "kategori": "zamir", "sablon": "gercek2-cv", "katman": "on"}
+{"girdi": "Ona yardım edin!", "hedef": "Ona yardım edin!", "kategori": "zamir", "sablon": "gercek2-cv", "katman": "on"}
+{"girdi": "Onu buradan çıkar.", "hedef": "Onu buradan çıkar.", "kategori": "zamir", "sablon": "gercek2-cv", "katman": "on"}
+{"girdi": "Uzaktaki bir köşede müdürün iskambil kâğıdı karıştırmakta olduğunu gördü.", "hedef": "Uzaktaki bir köşede müdürün iskambil kâğıdı karıştırmakta olduğunu gördü.", "kategori": "kalip", "sablon": "gercek2-cv", "katman": "bir"}
+{"girdi": "Birdenbire karnına bir sancı girdi.", "hedef": "Birdenbire karnına bir sancı girdi.", "kategori": "kalip", "sablon": "gercek2-cv", "katman": "bir"}
+{"girdi": "Bir şeyler düşündü, sonra çapkınca bir gülüşle:", "hedef": "Bir şeyler düşündü, sonra çapkınca bir gülüşle:", "kategori": "kalip", "sablon": "gercek2-cv", "katman": "bir"}
+{"girdi": "Bir şey hissettim.", "hedef": "Bir şey hissettim.", "kategori": "kalip", "sablon": "gercek2-cv", "katman": "bir"}
+{"girdi": "Adam adamı bir kere aldatır.", "hedef": "Adam adamı bir kere aldatır.", "kategori": "kalip", "sablon": "gercek2-cv", "katman": "bir"}
+{"girdi": "Yanındakilerden biri: \"Sen de kendini avrat mı sayıyon?\"", "hedef": "Yanındakilerden biri: \"Sen de kendini avrat mı sayıyon?\"", "kategori": "kalip", "sablon": "gercek2-cv", "katman": "bir"}
+{"girdi": "Kolumdan tutup atsan bile kapının önünden bir adım gitmem, geleni geçeni başıma toplarım.", "hedef": "Kolumdan tutup atsan bile kapının önünden bir adım gitmem, geleni geçeni başıma toplarım.", "kategori": "kalip", "sablon": "gercek2-cv", "katman": "bir"}
+{"girdi": "O bir sanatçı.", "hedef": "O bir sanatçı.", "kategori": "kalip", "sablon": "gercek2-cv", "katman": "bir"}
+{"girdi": "Bunun bir sebebi olmalı.", "hedef": "Bunun bir sebebi olmalı.", "kategori": "kalip", "sablon": "gercek2-cv", "katman": "bir"}
+{"girdi": "Hakikaten büyüklerimiz her şeyi görüyorlar ve bir işaretleriyle uyuyanları uyandırıyorlar.", "hedef": "Hakikaten büyüklerimiz her şeyi görüyorlar ve bir işaretleriyle uyuyanları uyandırıyorlar.", "kategori": "kalip", "sablon": "gercek2-cv", "katman": "bir"}
+{"girdi": "Zaten senin gibi akıllı bir kıza yakışan da buydu…", "hedef": "Zaten senin gibi akıllı bir kıza yakışan da buydu…", "kategori": "kalip", "sablon": "gercek2-cv", "katman": "bir"}
+{"girdi": "Birkaç gün uğramayıp tekrar göründüğü zamanlar genç adamın ilk sözü:", "hedef": "Birkaç gün uğramayıp tekrar göründüğü zamanlar genç adamın ilk sözü:", "kategori": "kalip", "sablon": "gercek2-cv", "katman": "bir"}
+{"girdi": "Bir aralık Ömer:", "hedef": "Bir aralık Ömer:", "kategori": "kalip", "sablon": "gercek2-cv", "katman": "bir"}
+{"girdi": "Dün akşam bir tesadüf sayesinde yakamı kurtardım.", "hedef": "Dün akşam bir tesadüf sayesinde yakamı kurtardım.", "kategori": "kalip", "sablon": "gercek2-cv", "katman": "bir"}
+{"girdi": "Kadın tekrar acele bir şey söyleyecekmiş gibi başını uzattı, sonra eski haline dönerek…", "hedef": "Kadın tekrar acele bir şey söyleyecekmiş gibi başını uzattı, sonra eski haline dönerek…", "kategori": "kalip", "sablon": "gercek2-cv", "katman": "bir"}
