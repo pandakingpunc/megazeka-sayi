@@ -1,0 +1,16 @@
+{
+  "step": 9000,
+  "best_score": 0.9843725501694032,
+  "bad_evaluations": 3,
+  "elapsed_seconds": 4613.1693971,
+  "examples_processed": 144000,
+  "best_step": 8250,
+  "best_exact_match": 0.984375,
+  "best_cer": 0.0024498305968204325,
+  "epoch": 1.058597798998743,
+  "loss": 0.00013518333435058594,
+  "learning_rate": 5e-05,
+  "total_steps": 9000,
+  "running": false,
+  "pid": 5220
+}

@@ -21,66 +21,96 @@ Asıl zorluk bağlamdır. "yedi" hem sayı hem fiil, "altı" hem sayı hem "alt"
 "bin" hem 1.000 hem "binmek". Bağlama bakmadan her sayı sözcüğünü çeviren bir kural sistemi bu
 cümleleri bozar ("yemeğini 7"). Megazeka-Sayı'nın değeri tam olarak burada ölçülür.
 
-## Sonuçlar (v2.0)
+## Sonuçlar (v2.5)
 
 "Girdiyi kopyala" hiçbir şeyi değiştirmeyen başlangıç değeridir. "Kural tabanlı" ise bağlama bakmadan her
 sayı sözcüğü dizisini rakama çeviren saf bir taban çizgisidir
 ([`src/megazeka_sayi/kural_tabani.py`](src/megazeka_sayi/kural_tabani.py)). Yanlış dönüşüm, değişmemesi
 gereken cümlelerden (girdi = hedef) kaçının bozulduğudur. Model sayıları koruma filtresiyle birliktedir.
 
-**Elle yazılmış gizli kümeler** · en dürüst ölçüt. Her küme, o sürümün verisini yazan taraf görmeden,
-üreteçten bağımsız elle yazıldı. Gizli küme 3 ([`evaluation/challenge3.jsonl`](evaluation/challenge3.jsonl))
-v2.0'ın yeni biçimlerini (rakamlı girdi, bitişik sayı, saat deyişleri, yeni birimler) ve v1.0'ın bilinen
-hatalarını ölçer; gizli küme 2 ([`evaluation/challenge2.jsonl`](evaluation/challenge2.jsonl)) v1.0 içindi.
-Koruma filtresi de gizli küme 3 görülmeden güncellendi.
+**Gerçek metin** · v2.5'in asıl hedefi. Common Voice Türkçe'den (CC0) sayı sözcüğü içeren gerçek cümleler
+örneklendi ve şartnameye göre elle etiketlendi; hiçbiri üreteç şablonundan gelmez. Şartnamenin açık
+bırakmadığı yerlerde eşit derecede savunulabilir ikinci yazım da doğru sayılır. v2.0 sütunu, v2.0
+ağırlıklarının v2.5 koruma filtresiyle ölçümüdür.
+
+| Küme | Girdiyi kopyala | Kural tabanlı | v2.0 | **v2.5** | Yanlış dönüşüm v2.0 → v2.5 |
+|---|---:|---:|---:|---:|---:|
+| Gerçek küme 2 (150), **görülmemiş** | %64,7 | %36,7 | %90,7 | **%93,3** | %9,4 → %5,2 (96) |
+| Gerçek küme 1 (279), geliştirme | %59,9 | %40,9 | %89,2 | **%95,7** | %10,4 → %4,9 (163) |
+
+Gerçek küme 1 **şişkindir**: v2.5'in yeni verisi, v2.0'ın tam bu kümedeki hata sınıflarına bakılarak
+tasarlandı (cümlelerin kendisi eğitim verisinden çıkarıldı). Dürüst ölçüt gerçek küme 2'dir: veri ve koruma
+filtresi yazılırken hataları incelenmedi, cümleleri eğitim verisinden çıkarıldı. İki kümenin etiketleri
+depoda: [`evaluation/gercek.jsonl`](evaluation/gercek.jsonl), [`evaluation/gercek2.jsonl`](evaluation/gercek2.jsonl).
+
+**Elle yazılmış gizli kümeler** · her küme, o sürümün verisini yazan taraf görmeden, üreteçten bağımsız
+elle yazıldı. Gizli küme 3 ([`evaluation/challenge3.jsonl`](evaluation/challenge3.jsonl)) v2.0'ın yeni
+biçimlerini ölçer; gizli küme 2 ([`evaluation/challenge2.jsonl`](evaluation/challenge2.jsonl)) v1.0 içindi.
 
 | Sistem | Gizli küme 3 (83) | Yanlış dönüşüm (27) | Gizli küme 2 (50) | Yanlış dönüşüm (21) |
 |---|---:|---:|---:|---:|
 | Girdiyi kopyala | %32,5 | %0 | %42,0 | %0 |
 | Kural tabanlı | %43,4 | %63,0 | %56,0 | %52,4 |
 | Megazeka-Sayı v1.0 | %49,4 | %37,0 | %94,0 | %9,5 |
-| **Megazeka-Sayı v2.0** | **%91,6** | **%18,5** | **%98,0** | **%0** |
+| Megazeka-Sayı v2.0 | %91,6 | %18,5 | %98,0 | %0 |
+| **Megazeka-Sayı v2.5** | **%92,8** | **%7,4** | **%98,0** | **%0** |
 
 **Üreteç test kümeleri** · eğitimde hiç kullanılmamış taşıyıcı şablonlarla üretildi.
 
-| Küme | Kural tabanlı | v1.0 | **v2.0** | v2.0 yanlış dönüşüm |
-|---|---:|---:|---:|---:|
-| v1.0 test kümesi (2.000) | %59,2 | %93,8 | **%98,6** | %2,6 (802) |
-| İlk iç sürümün dondurulmuş testi (2.000) | %53,2 | %96,8 | **%99,8** | %0 (776) |
-| v2.0 yeni kaynaklar testi (1.400) | %42,3 | — | **%97,4** | %5,3 (379) |
+| Küme | Kural tabanlı | v1.0 | v2.0 | **v2.5** | v2.5 yanlış dönüşüm |
+|---|---:|---:|---:|---:|---:|
+| v1.0 test kümesi (2.000) | %59,2 | %93,8 | %98,6 | **%99,1** | %0,6 (802) |
+| İlk iç sürümün dondurulmuş testi (2.000) | %53,2 | %96,8 | %99,8 | **%99,7** | %0 (776) |
+| v2.0 yeni kaynaklar testi (1.400) | %42,3 | — | %97,4 | **%97,7** | %2,9 (379) |
+| v2.5 testi, yeni kaynak dahil (5.494) | — | — | %78,1 | **%97,6** | %2,5 (2.842) |
+
+Son satırda v2.0 ile karşılaştırma adil değildir: bu küme v2.5'in yeni şartname kararlarını ve yeni
+kalıplarını içerir, v2.0 bunları hiç görmedi.
 
 **İlk elle yazılmış küme (100 cümle):** %98 (kural tabanlı %53). Bu sayı **şişkindir**: v1.0, ilk sürümün
 tam bu kümedeki hatalarına bakılarak geliştirildi.
 
-Ham ölçümler ve hata örnekleri: [`reports/degerlendirme-v2.md`](reports/degerlendirme-v2.md). v1.0'ın
-raporu: [`reports/degerlendirme-v1.1.md`](reports/degerlendirme-v1.1.md) (iç adı v1.1).
+Ham ölçümler ve hata örnekleri: [`reports/degerlendirme-v2.5.md`](reports/degerlendirme-v2.5.md),
+[`reports/gercek-v2.5.md`](reports/gercek-v2.5.md), [`reports/gercek2-v2.5.md`](reports/gercek2-v2.5.md)
+(raporların içinde modelin iç adı `v3-small` geçer). Gerçek metin çalışmasının ayrıntısı:
+[`reports/gercek-v2-analiz.md`](reports/gercek-v2-analiz.md). Önceki sürümler:
+[`reports/degerlendirme-v2.md`](reports/degerlendirme-v2.md), [`reports/degerlendirme-v1.1.md`](reports/degerlendirme-v1.1.md).
 
-### v2.0'da ne değişti
+### v2.5'te ne değişti
 
-- **Yeni girdi biçimleri:** yarı rakamlı girdi (`5 bin lira` → `5.000 TL`, `saat 14:30'da` → `saat 14.30'da`),
-  bitişik yazılmış sayılar (`yirmibeş` → `25`), saat deyişleri (`beşe on kala` → `5'e 10 kala`),
-  ayın günü (`ayın on beşinde` → `ayın 15'inde`).
-- **Sayısal doğruluk:** iç sıfırlı sayılar (`bin doksan` artık `1.090`), bileşik ölçü (`3 kg 200 g`),
-  aralıklar, birim ekleri (`GB'tan`), yeni birimler (`mg`, `m³`, `km²`, `kWh`, `Hz`, `MHz`).
-- **Tuzaklar:** kısa `bin` emirleri, `ikinci el`, `bu yüzden`, `onbaşı` gibi sözcükler için 10.000 yeni çift.
-- **Veri temizliği:** v1.0 verisindeki telefon satırlarının %8,8'i iki farklı numaraya çözülebiliyordu
-  (`beş yüz kırk yedi yüz altmış altı` = `540 766` ya da `547 166`); bu satırlar çıkarıldı.
-- **Koruma filtresi** yeni biçimleri tanıyacak şekilde yeniden yazıldı; artık hiçbir kümede ham modelin
-  altına düşmüyor.
+- **Gerçek metinde ölçüm:** ilk kez üreteç dışı, gerçek cümlelerde ölçüldü. v2.0 üreteç testlerinde %98
+  alırken gerçek cümlelerde %89-91'de kalıyordu; hataların çoğu atasözleri, `bir` ile başlayan sayılar,
+  küçük sayılar ve zamir olan `ona`, `onun`, `onlar` idi.
+- **Gerçek cümlelerden veri:** 26.747 yeni eğitim çifti. Common Voice'tan sayı sözcüğü içeren ama
+  değişmemesi gereken gerçek cümleler (zamirler, eş yazımlılar, deyimler), atasözleri ve deyimler,
+  `bir buçuk iki saat` → `1,5-2 saat`, `bir elli boyunda` → `1,50 boyunda`, cümle başında ve tırnak içinde
+  sayılar, ek almış para tutarları (`liraymış`, `liram`), eski birimler (`okka`, `kuruş`).
+- **Yeni şartname kararları** ([`docs/SPEC-v3-kararlar.md`](docs/SPEC-v3-kararlar.md)): küçük sayı + yaş
+  ya da süre sözcük kalır (`sekiz yaşında`), anlatımdaki sıra sayıları ve unvanlar sözcük kalır
+  (`ikinci kaptan`), `altmışlık adam` sözcük kalır. Soru eki girdideki gibi kalır (`493 TL mı`).
+- **Koruma filtresi sayı değerini de denetliyor:** çıktıdaki rakamların girdideki sayı sözcüklerinden
+  türeyip türemediği eğitimsiz bir gidiş-dönüş denetimiyle ölçülür; tutmuyorsa o bölge geri alınır.
+  Düşen cümle sonu noktalaması geri konur.
+- **Yanlış dönüşüm yarıya indi:** gerçek küme 2'de %9,4 → %5,2, gizli küme 3'te %18,5 → %7,4.
+
+v2.0'da ne değiştiği: [v2.0 sürüm notu](https://github.com/pandakingpunc/megazeka-sayi/releases/tag/v2.0).
 
 ### Bilinen hatalar
 
+- **Görmediği atasözleri ve deyimler:** `inek gözünde kırk sinek saydım` → `40 sinek`,
+  `Adı çıktı dokuza, inmez sekize` → `9'a, 8'e`. Gerçek küme 2'deki 10 hatanın 5'i böyle.
 - Bazı kısa emirlerde "bin": `motora bin arkama` → `motora 1.000 arkama`.
-- Fiil olan "yedi" nadiren sayıya döner: `elmayı yedi sonra uyudu` → `elmayı 7 sonra uyudu`.
-- Bağlamsız küçük sayı bazen rakama döner: `toplantıya yedi kişi katıldı` → `7 kişi`.
-- Sayı içeren özel adlar ve deyimler: `dokuz eylül üniversitesi` → `9 Eylül`, `dört dörtlük` → `4-4'lük`.
-- Aynı cümlede art arda iki para tutarı birleşebilir (`otuz iki bin liradan otuz sekiz bin dört yüz liraya`).
-- Veri tamamen sentetiktir. Gerçek ASR çıktısındaki tanıma hatalarıyla (yanlış duyulmuş sözcükler)
-  test edilmedi.
+- Ek almış aralıklar: `on yedi on sekizden yukarı` → `17.18'den` (doğrusu `17-18'den`).
+- Resmî metinde art arda sıra sayıları: `on ikinci maddenin birinci fıkrası` → `12. maddenin birinci fıkrası`.
+- Virgülle ayrılmış kaba tutarlar: `seksen, yüz bin lirası` → `80,100.000 TL`.
+- Veri sentetik ve gerçek cümle karışımıdır, ama gerçek ASR çıktısındaki tanıma hatalarıyla (yanlış
+  duyulmuş sözcükler) test edilmedi. Gerçek kümeler edebî ağırlıklı Common Voice cümleleridir; haber,
+  finans ya da konuşma dili için ayrı ölçüm yok.
 
 ## Yazım kuralları
 
-Ayrıntılı şartname: [`docs/SPEC.md`](docs/SPEC.md), v2.0 ekleri [`docs/SPEC-v2.md`](docs/SPEC-v2.md). Özetle:
+Ayrıntılı şartname: [`docs/SPEC.md`](docs/SPEC.md), v2.0 ekleri [`docs/SPEC-v2.md`](docs/SPEC-v2.md), v2.5 kararları
+[`docs/SPEC-v3-kararlar.md`](docs/SPEC-v3-kararlar.md). Özetle:
 
 - Binlik ayırıcı nokta, ondalık virgül: `1.250`, `3,14`. Yıl, telefon ve kodlar noktasız: `2026`, `0842`.
 - Para: `lira` → `TL` (`1.250,50 TL`); dolar, avro gibi yabancı paralar sözcük kalır (`100 dolar`).
@@ -98,14 +128,16 @@ Ayrıntılı şartname: [`docs/SPEC.md`](docs/SPEC.md), v2.0 ekleri [`docs/SPEC-
 
 - **Model:** `google/byt5-small` + LoRA (r=32). Bayt düzeyinde çalıştığı
   için rakam ve Türkçe ekler için uygundur.
-- **Veri:** tamamen sentetik ve **ters yönde** üretilir. Önce doğru yazılı cümle kurulur, sonra
+- **Veri:** büyük bölümü sentetik ve **ters yönde** üretilir. Önce doğru yazılı cümle kurulur, sonra
   deterministik bir sözlüleştirici onu konuşma biçimine çevirir. Böylece etiketler kusursuzdur.
-  109.622 eğitim çifti, yaklaşık %34'ü değişmemesi gereken cümleler: eş yazımlı sözcükler, deyimler, zaten
-  rakamlı metinler ve Common Voice'tan (CC0) sayı içermeyen gerçek cümleler. Her olgu yüzlerce farklı
+  136.029 eğitim çifti, yaklaşık %39'u değişmemesi gereken cümleler: eş yazımlı sözcükler, deyimler, zaten
+  rakamlı metinler ve Common Voice'tan (CC0) gerçek cümleler (sayı içermeyenler ve sayı sözcüğü zamir, eş
+  yazımlı ya da deyim olanlar). Her olgu yüzlerce farklı
   cümlede geçer. İlk denemede tek bir sabit cümle kullanılmıştı ve model onu ezberleyip genelleyemedi.
 - **Koruma filtresi:** model çıktısı sözcük düzeyinde girdiyle hizalanır. Sayı olmayan bir sözcüğün
-  değiştiği bölge geri alınır, yani model "sayı dışındaki her şeye dokunmama" sözünü bozamaz.
-- **Eğitim:** RTX 4060 8 GB'ta 9.000 adım, yaklaşık 65 dakika, tepe VRAM 3,6 GB, bf16.
+  değiştiği ya da rakamın değeri girdideki sayı sözcükleriyle tutmadığı bölge geri alınır, yani model
+  "sayı dışındaki her şeye dokunmama" sözünü bozamaz.
+- **Eğitim:** RTX 4060 8 GB'ta 9.000 adım, yaklaşık 77 dakika, tepe VRAM 3,5 GB, bf16.
 
 ## Kurulum ve kullanım
 
@@ -147,9 +179,12 @@ PYTHONPATH=src python training/v2_sayisal.py --out data/v2 --seed 2201 --train 1
 PYTHONPATH=src python training/v2_tuzak.py --out data/v2 --seed 2202 --train 10000 --validation 300 --test 400
 PYTHONPATH=src python training/v2_bicim.py --out data/v2 --seed 2203 --train 14000 --validation 400 --test 500
 PYTHONPATH=src python training/v2_birlestir.py    # hepsini birleştirir, belirsiz telefon satırlarını eler
-PYTHONPATH=src python training/train.py --config configs/v2.json
-PYTHONPATH=src python evaluation/evaluate.py --checkpoint best
-PYTHONPATH=src python -m pytest -q                # 370 test
+PYTHONPATH=src python training/v3_gercek.py --cv <common-voice-cümleleri> --out data/v3   # v2.5 kaynağı
+PYTHONPATH=src python training/v3_birlestir.py    # v2.0 verisine ekler
+PYTHONPATH=src python training/train.py --config configs/v3-small.json --ad v3-small
+PYTHONPATH=src python evaluation/evaluate.py --checkpoint v3-small-best
+PYTHONPATH=src python evaluation/gercek_olc.py --checkpoint v3-small-best --kume gercek2
+PYTHONPATH=src python -m pytest -q                # 636 test
 ```
 
 Doğal negatifler için Megazeka'nın Common Voice verisi `MEGAZEKA_CV` ortam değişkeni ya da `--cv` ile
@@ -168,9 +203,11 @@ Megazeka-Sayı is a small Turkish inverse text normalization (ITN) model: it tur
 ASR output into TDK-style written forms (`bin iki yüz elli lira elli kuruş` → `1.250,50 TL`, `saat on dört
 otuzda` → `saat 14.30'da`) and leaves everything else untouched, including homographs such as *yedi*
 ("ate" / seven) or *ona* ("to him" / to ten). ByT5-small + LoRA, trained on fully synthetic, reverse-generated
-data. v2.0 also handles half-normalized input (`5 bin lira`, `saat 14:30`), run-together numerals (`yirmibeş`)
-and clock idioms. On the newest held-out hand-written set (83 sentences) it reaches 92% exact match vs. 49%
-for v1.0 and 43% for a context-free rule baseline.
+data plus real Common Voice sentences. It also handles half-normalized input (`5 bin lira`, `saat 14:30`),
+run-together numerals (`yirmibeş`) and clock idioms. v2.5 is the first version measured on real text: on 150
+held-out, hand-labelled Common Voice sentences it reaches 93.3% (v2.0: 90.7%, context-free rule baseline:
+36.7%) and halves false conversions (9.4% → 5.2%). On the held-out hand-written set (83 sentences) it
+reaches 93% vs. 49% for v1.0.
 
 ## Lisans
 
