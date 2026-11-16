@@ -4,43 +4,43 @@
   "genel": {
     "kopya": {
       "ornek": 279,
-      "kati": 163,
-      "esnek": 170,
-      "negatif": 163,
+      "kati": 162,
+      "esnek": 168,
+      "negatif": 162,
       "yanlis_donusum": 0,
-      "pozitif": 116,
-      "pozitif_dogru": 7,
-      "pozitif_dokunulmadi": 109
+      "pozitif": 117,
+      "pozitif_dogru": 6,
+      "pozitif_dokunulmadi": 111
     },
     "kural": {
       "ornek": 279,
       "kati": 97,
-      "esnek": 109,
-      "negatif": 163,
-      "yanlis_donusum": 124,
-      "pozitif": 116,
-      "pozitif_dogru": 70,
-      "pozitif_dokunulmadi": 0
+      "esnek": 106,
+      "negatif": 162,
+      "yanlis_donusum": 123,
+      "pozitif": 117,
+      "pozitif_dogru": 67,
+      "pozitif_dokunulmadi": 1
     },
     "ham": {
       "ornek": 279,
-      "kati": 228,
-      "esnek": 232,
-      "negatif": 163,
+      "kati": 227,
+      "esnek": 230,
+      "negatif": 162,
       "yanlis_donusum": 30,
-      "pozitif": 116,
-      "pozitif_dogru": 99,
-      "pozitif_dokunulmadi": 1
+      "pozitif": 117,
+      "pozitif_dogru": 98,
+      "pozitif_dokunulmadi": 3
     },
     "korumali": {
       "ornek": 279,
-      "kati": 243,
-      "esnek": 247,
-      "negatif": 163,
+      "kati": 242,
+      "esnek": 245,
+      "negatif": 162,
       "yanlis_donusum": 18,
-      "pozitif": 116,
-      "pozitif_dogru": 102,
-      "pozitif_dokunulmadi": 4
+      "pozitif": 117,
+      "pozitif_dogru": 101,
+      "pozitif_dokunulmadi": 6
     }
   },
   "kategori": {
@@ -426,21 +426,21 @@
       "kopya": {
         "ornek": 20,
         "kati": 0,
-        "esnek": 1,
+        "esnek": 2,
         "negatif": 0,
         "yanlis_donusum": 0,
         "pozitif": 20,
-        "pozitif_dogru": 1,
-        "pozitif_dokunulmadi": 19
+        "pozitif_dogru": 2,
+        "pozitif_dokunulmadi": 18
       },
       "kural": {
         "ornek": 20,
         "kati": 9,
-        "esnek": 11,
+        "esnek": 9,
         "negatif": 0,
         "yanlis_donusum": 0,
         "pozitif": 20,
-        "pozitif_dogru": 11,
+        "pozitif_dogru": 9,
         "pozitif_dokunulmadi": 0
       },
       "ham": {
@@ -468,6 +468,26 @@
       "kopya": {
         "ornek": 4,
         "kati": 0,
+        "esnek": 0,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 4,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 4
+      },
+      "kural": {
+        "ornek": 4,
+        "kati": 2,
+        "esnek": 2,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 4,
+        "pozitif_dogru": 2,
+        "pozitif_dokunulmadi": 1
+      },
+      "ham": {
+        "ornek": 4,
+        "kati": 2,
         "esnek": 2,
         "negatif": 0,
         "yanlis_donusum": 0,
@@ -475,76 +495,56 @@
         "pozitif_dogru": 2,
         "pozitif_dokunulmadi": 2
       },
-      "kural": {
-        "ornek": 4,
-        "kati": 2,
-        "esnek": 3,
-        "negatif": 0,
-        "yanlis_donusum": 0,
-        "pozitif": 4,
-        "pozitif_dogru": 3,
-        "pozitif_dokunulmadi": 0
-      },
-      "ham": {
-        "ornek": 4,
-        "kati": 2,
-        "esnek": 4,
-        "negatif": 0,
-        "yanlis_donusum": 0,
-        "pozitif": 4,
-        "pozitif_dogru": 4,
-        "pozitif_dokunulmadi": 0
-      },
       "korumali": {
         "ornek": 4,
         "kati": 2,
-        "esnek": 4,
+        "esnek": 2,
         "negatif": 0,
         "yanlis_donusum": 0,
         "pozitif": 4,
-        "pozitif_dogru": 4,
-        "pozitif_dokunulmadi": 0
+        "pozitif_dogru": 2,
+        "pozitif_dokunulmadi": 2
       }
     },
     "sira": {
       "kopya": {
         "ornek": 4,
-        "kati": 3,
-        "esnek": 4,
-        "negatif": 3,
+        "kati": 2,
+        "esnek": 3,
+        "negatif": 2,
         "yanlis_donusum": 0,
-        "pozitif": 1,
+        "pozitif": 2,
         "pozitif_dogru": 1,
-        "pozitif_dokunulmadi": 0
+        "pozitif_dokunulmadi": 1
       },
       "kural": {
         "ornek": 4,
         "kati": 1,
         "esnek": 3,
-        "negatif": 3,
-        "yanlis_donusum": 1,
-        "pozitif": 1,
+        "negatif": 2,
+        "yanlis_donusum": 0,
+        "pozitif": 2,
         "pozitif_dogru": 1,
         "pozitif_dokunulmadi": 0
       },
       "ham": {
         "ornek": 4,
-        "kati": 3,
+        "kati": 2,
         "esnek": 4,
-        "negatif": 3,
+        "negatif": 2,
         "yanlis_donusum": 0,
-        "pozitif": 1,
-        "pozitif_dogru": 1,
+        "pozitif": 2,
+        "pozitif_dogru": 2,
         "pozitif_dokunulmadi": 0
       },
       "korumali": {
         "ornek": 4,
-        "kati": 3,
+        "kati": 2,
         "esnek": 4,
-        "negatif": 3,
+        "negatif": 2,
         "yanlis_donusum": 0,
-        "pozitif": 1,
-        "pozitif_dogru": 1,
+        "pozitif": 2,
+        "pozitif_dogru": 2,
         "pozitif_dokunulmadi": 0
       }
     },
@@ -788,9 +788,7 @@
       "no": 74,
       "girdi": "Yanındakine: \"Yüz elli liram var, yol parası ile otel parası da içinde!\" dedi.",
       "hedef": "Yanındakine: \"150 TL'm var, yol parası ile otel parası da içinde!\" dedi.",
-      "kabul": [
-        "Yanındakine: \"150 liram var, yol parası ile otel parası da içinde!\" dedi."
-      ],
+      "kabul": [],
       "ham": "Yanındakine: \"150 TL var, yol parası ile otel parası da içinde!",
       "korumali": "Yanındakine: \"Yüz elli liram var, yol parası ile otel parası da içinde!\" dedi.",
       "kural": "Yanındakine: \"150 liram var, yol parası ile otel parası da içinde!\" dedi.",
@@ -831,9 +829,7 @@
       "no": 77,
       "girdi": "Elli lirasını peşin aldım, yukarı kattaki odama çıktığım gibi, işe koyuldum.",
       "hedef": "50 TL'sini peşin aldım, yukarı kattaki odama çıktığım gibi, işe koyuldum.",
-      "kabul": [
-        "50 lirasını peşin aldım, yukarı kattaki odama çıktığım gibi, işe koyuldum."
-      ],
+      "kabul": [],
       "ham": "50 TL'sinı peşin aldım, yukarı kattaki odama çıktığım gibi, işe koyuldum.",
       "korumali": "50 TL'sinı peşin aldım, yukarı kattaki odama çıktığım gibi, işe koyuldum.",
       "kural": "50 lirasını peşin aldım, yukarı kattaki odama çıktığım gibi, işe koyuldum.",
@@ -942,6 +938,17 @@
       "uyari": []
     },
     {
+      "no": 120,
+      "girdi": "Yarın dokuzda gelin, öğrenirsiniz!",
+      "hedef": "Yarın 9'da gelin, öğrenirsiniz!",
+      "kabul": [],
+      "ham": "Yarın dokuzda gelin, öğrenirsiniz!",
+      "korumali": "Yarın dokuzda gelin, öğrenirsiniz!",
+      "kural": "Yarın 9'da gelin, öğrenirsiniz!",
+      "kategori": "saat",
+      "uyari": []
+    },
+    {
       "no": 127,
       "girdi": "Şehirle köyün arası yayan dokuz saatti.",
       "hedef": "Şehirle köyün arası yayan dokuz saatti.",
@@ -994,6 +1001,17 @@
       "korumali": "5432…",
       "kural": "5, 4, 3, 2…",
       "kategori": "kucuk_sayi",
+      "uyari": []
+    },
+    {
+      "no": 159,
+      "girdi": "Saat henüz dörttü.",
+      "hedef": "Saat henüz 4'tü.",
+      "kabul": [],
+      "ham": "Saat henüz dörttü.",
+      "korumali": "Saat henüz dörttü.",
+      "kural": "Saat henüz dörttü.",
+      "kategori": "saat",
       "uyari": []
     },
     {

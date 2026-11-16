@@ -8,24 +8,26 @@ Sayılar `reports/gercek-v2.md` / `.json` dosyasından; sınıflandırma elle ya
   279'u seçildi (`evaluation/gercek_ornekle.py`): `bir` 30, `on` 30, öteki her kök en çok 10.
 - Eğitimdeki doğal negatifler aynı derlemin yalnız sayı kökü **içermeyen** cümleleriydi; çakışma yok.
 - Etiketler modelin çıktısı görülmeden, SPEC ve SPEC-v2'ye göre tek kişi tarafından yazıldı; çıktı görüldükten
-  sonra değiştirilmedi. İkinci etiketleyici yok.
-- 163 cümle değişmemeli, 116 cümle değişmeli. 19 cümlede şartnamenin açık bırakmadığı ikinci bir yazım `kabul`
-  olarak işaretli (yalın `bin dokuz yüz otuz beş` yıl mı sayı mı, `yarın dokuzda`, `üçüncü günü`, `liram`).
+  sonra değiştirilmedi.
+- İkinci göz: GPT-6 Astra (Codex CLI, salt okunur, `reports/` klasörünü görmeden) 279 etiketi şartnameye göre denetledi;
+  ayrıntı aşağıda. Buradaki sayılar o denetimden sonraki etiketlerle.
+- 162 cümle değişmemeli, 117 cümle değişmeli. 16 cümlede şartnamenin açık bırakmadığı ikinci bir yazım `kabul`
+  olarak işaretli (yalın `bin dokuz yüz otuz beş` yıl mı sayı mı, `bir buçuk iki saat`, `ikinci kaptanı`, `kırk yıl evinde oturdum`).
 - Sınır: derlem ağırlıklı olarak eski roman, atasözü ve altyazı cümlesi; güncel konuşma (fiyat, telefon, saat,
   yüzde) az. Köke göre katmanlı olduğu için oranlar derlemin doğal dağılımını değil, köklerin eşit temsilini gösterir.
 
 ## Sonuç
 
-| Sistem | Esnek doğru | Yanlış dönüşüm (163 negatif) | Pozitifte doğru (116) |
+| Sistem | Esnek doğru | Yanlış dönüşüm (162 negatif) | Pozitifte doğru (117) |
 |---|---:|---:|---:|
-| Girdiyi kopyala | 170/279 (%60,9) | 0 | 7 |
-| Kural tabanlı | 109/279 (%39,1) | 124 (%76,1) | 70 |
-| Model, korumasız | 232/279 (%83,2) | 30 (%18,4) | 99 (%85,3) |
-| Model + koruma | 247/279 (%88,5) | 18 (%11,0) | 102 (%87,9) |
+| Girdiyi kopyala | 168/279 (%60,2) | 0 | 6 |
+| Kural tabanlı | 106/279 (%38,0) | 123 (%75,9) | 67 |
+| Model, korumasız | 230/279 (%82,4) | 30 (%18,5) | 98 (%83,8) |
+| Model + koruma | 245/279 (%87,8) | 18 (%11,1) | 101 (%86,3) |
 
 Koruma 16 ham hatayı düzeltti, 1 doğru çıktıyı bozdu (`Kırk elli lira…` → geri alındı).
 
-## Korumalı çıktıdaki 32 hata
+## Korumalı çıktıdaki 34 hata
 
 | Sınıf | n | Satırlar | Örnek |
 |---|---:|---|---|
@@ -35,6 +37,7 @@ Koruma 16 ham hatayı düzeltti, 1 doğru çıktıyı bozdu (`Kırk elli lira…
 | Sayı bozuldu / uyduruldu | 4 | 6, 13, 116, 117 | cümle başında `Kırk yaşında` → `1940 yaşında`; `yüz seksen öbür gün` → `184 gün` |
 | Ek ya da kapsam | 3 | 43, 77, 112 | `50 TL'sinı`; `her biri` → `her 1'i`; `kırk okka` dönüşmedi |
 | Kapanış tırnağından sonrası kesildi, koruma hepsini geri aldı | 2 | 27, 74 | `"…165 TL'dir.` (kapanış `"` ve ` dedi.` yok) |
+| Saat bağlamı açıkken dönüşmedi | 2 | 120, 159 | `Yarın dokuzda gelin` · `Saat henüz dörttü.` |
 | Zamir / `bir` sızıntısı | 2 | 243, 245 | `Bir gece 10'u çağırdım` · `1 müddet` |
 | Koruma doğru çıktıyı geri aldı | 1 | 76 | `Kırk elli lira…` |
 
@@ -42,7 +45,7 @@ Koruma 16 ham hatayı düzeltti, 1 doğru çıktıyı bozdu (`Kırk elli lira…
 
 1. **Ham model zamirde zayıf, yükü koruma taşıyor.** 30 gerçek `ona/onu/onun` cümlesinin 10'unda ham model
    `10'u`, `10'un` yazdı; koruma 8'ini kurtardı. Üreteç testlerinde bu görünmüyordu.
-2. **Gizli küme 3'teki yanlış dönüşüm oranı gerçek metinde de aynı:** ham %18,4 (gizli küme 3: %18,5). O küme
+2. **Gizli küme 3'teki yanlış dönüşüm oranı gerçek metinde de aynı:** ham %18,5 (gizli küme 3: %18,5). O küme
    iyimser ya da kötümser değilmiş.
 3. **En büyük tek sınıf atasözü/deyim (9/12 yanlış).** Eğitimde ~80 sabit deyim vardı; model listeyi öğrenmiş,
    "atasözü" kavramını değil. Bu bir politika sorusu da: `Otuz iki dişten çıkan` rakamla yazılırsa hata mı?
@@ -54,6 +57,26 @@ Koruma 16 ham hatayı düzeltti, 1 doğru çıktıyı bozdu (`Kırk elli lira…
    `2-0'a çocuk` gibilerini kuralsız yakalar.
 6. `bir` + sayı (`bir elli kuruş`, `bir yirmi beş kuruşluk`) eğitimde hiç yok; model en yakın bildiği kalıba
    (aralık) çekiyor.
+
+## İkinci göz denetimi (GPT-6 Astra, 2026-11-16)
+
+279 satırın 10'una itiraz etti; sayı değeri, binlik ayırıcı, yıl, tarih, birim ve ek hatası bulmadı. Küçük sayı
+yorumunu ve 12 atasözünün sözcük bırakılmasını (SPEC-v2 B6) doğru buldu.
+
+| Satır | İtiraz | Karar |
+|---|---|---|
+| 74, 77 | `150 liram`, `50 lirasını` kabulden çıksın (iyelik TL'yi engellemez) | uygulandı |
+| 120, 159 | `Yarın dokuzda`, `Saat henüz dörttü` olduğu gibi bırakılamaz, saat bağlamı açık | uygulandı; model ikisini de dönüştürmediği için 2 yeni hata |
+| 171 | `Üçüncü günü` kabulden çıksın (sıra sayısı + ad) | uygulandı |
+| 207 | `bir ikinci dansta` → hedef `bir 2. dansta` olmalı | uygulandı, sözcük biçimi kabulde kaldı |
+| 15 | `üç buçuk kuruş` kalıp olabilir, sözcük biçimi kabule girsin | uygulandı |
+| 157 | `Dört beş ajansı` saat de olabilir (`4.05 ajansı`) | kabule eklendi |
+| 13 | `bir buçuk iki saat` sözcük kalmalı (`bir` içeren aralık) | uygulanmadı: `bir buçuk` 1,5'tir, kural yalın `bir` için; iki yazım da zaten kabul |
+| 172 | `üçüncü uykusuz geceyi` rakamla tercih | değişmedi, iki yazım da kabul |
+
+Etki: esnek sonuç 247 → 245 (%88,5 → %87,8). Şartnamede açık kalan sorular: yaş/süre sözcükleri küçük sayıyı ne zaman
+rakama zorlar (A6 ile A8 arası); `bir buçuk` içeren aralık; sıra sayısı ile ad arasına sıfat girmesi ve `ikinci kaptan`
+gibi görev adları; `bir elli boyunda`; `altmışlık`/`milyonluk` ile `-lık` eki arasındaki sınır.
 
 ## v3 için sıralama
 

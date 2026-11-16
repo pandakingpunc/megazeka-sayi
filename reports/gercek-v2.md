@@ -4,10 +4,10 @@ Küme: `evaluation/gercek.jsonl`, 279 Common Voice cümlesi (sayı kökü içere
 
 | Sistem | Katı % | Esnek % | Yanlış dönüşüm % (negatif n) | Pozitifte doğru % (n) | Pozitife hiç dokunmadı |
 |---|---:|---:|---:|---:|---:|
-| Girdiyi kopyala | 58.4 | 60.9 | 0.0 (163) | 6.0 (116) | 109 |
-| Kural tabanlı (saf) | 34.8 | 39.1 | 76.1 (163) | 60.3 (116) | 0 |
-| Model (korumasız) | 81.7 | 83.2 | 18.4 (163) | 85.3 (116) | 1 |
-| Model + koruma | 87.1 | 88.5 | 11.0 (163) | 87.9 (116) | 4 |
+| Girdiyi kopyala | 58.1 | 60.2 | 0.0 (162) | 5.1 (117) | 111 |
+| Kural tabanlı (saf) | 34.8 | 38.0 | 75.9 (162) | 57.3 (117) | 1 |
+| Model (korumasız) | 81.4 | 82.4 | 18.5 (162) | 83.8 (117) | 3 |
+| Model + koruma | 86.7 | 87.8 | 11.1 (162) | 86.3 (117) | 6 |
 
 Koruma 20 örnekte en az bir bölgeyi geri aldı.
 
@@ -24,13 +24,13 @@ Koruma 20 örnekte en az bir bölgeyi geri aldı.
 | kucuk_sayi | 30 | 30 | 0 | 22 | 24 |
 | olcu | 4 | 1 | 2 | 3 | 3 |
 | ondalik | 5 | 0 | 5 | 5 | 5 |
-| para | 20 | 1 | 11 | 11 | 12 |
-| saat | 4 | 2 | 3 | 4 | 4 |
-| sira | 4 | 4 | 3 | 4 | 4 |
+| para | 20 | 2 | 9 | 11 | 12 |
+| saat | 4 | 0 | 2 | 2 | 2 |
+| sira | 4 | 3 | 3 | 4 | 4 |
 | tarih | 12 | 0 | 6 | 12 | 12 |
 | zamir | 30 | 30 | 0 | 20 | 28 |
 
-## Model hataları (48; ham ya da korumalı çıktı yanlış)
+## Model hataları (50; ham ya da korumalı çıktı yanlış)
 
 ```text
 [2 · kalip]
@@ -217,6 +217,13 @@ HEDEF: 40 yıl evinde oturdum, koca öküz gibi çalıştım, bir gün doyunca y
 ```
 
 ```text
+[120 · saat]
+GİRDİ: Yarın dokuzda gelin, öğrenirsiniz!
+HAM  : Yarın dokuzda gelin, öğrenirsiniz!
+HEDEF: Yarın 9'da gelin, öğrenirsiniz!
+```
+
+```text
 [127 · kucuk_sayi]
 GİRDİ: Şehirle köyün arası yayan dokuz saatti.
 HAM  : Şehirle köyün arası yayan 9 saatti.
@@ -250,6 +257,13 @@ HEDEF: Dört katlı otelin en üst penceresinden beyaz bir gölge sarkıyordu.
 GİRDİ: Beş, dört, üç, iki…
 HAM  : 5432…
 HEDEF: Beş, dört, üç, iki…
+```
+
+```text
+[159 · saat]
+GİRDİ: Saat henüz dörttü.
+HAM  : Saat henüz dörttü.
+HEDEF: Saat henüz 4'tü.
 ```
 
 ```text
