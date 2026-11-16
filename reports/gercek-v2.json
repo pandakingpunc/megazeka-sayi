@@ -1,0 +1,1223 @@
+{
+  "ad": "v2",
+  "kontrol_noktasi": "best",
+  "genel": {
+    "kopya": {
+      "ornek": 279,
+      "kati": 163,
+      "esnek": 170,
+      "negatif": 163,
+      "yanlis_donusum": 0,
+      "pozitif": 116,
+      "pozitif_dogru": 7,
+      "pozitif_dokunulmadi": 109
+    },
+    "kural": {
+      "ornek": 279,
+      "kati": 97,
+      "esnek": 109,
+      "negatif": 163,
+      "yanlis_donusum": 124,
+      "pozitif": 116,
+      "pozitif_dogru": 70,
+      "pozitif_dokunulmadi": 0
+    },
+    "ham": {
+      "ornek": 279,
+      "kati": 228,
+      "esnek": 232,
+      "negatif": 163,
+      "yanlis_donusum": 30,
+      "pozitif": 116,
+      "pozitif_dogru": 99,
+      "pozitif_dokunulmadi": 1
+    },
+    "korumali": {
+      "ornek": 279,
+      "kati": 243,
+      "esnek": 247,
+      "negatif": 163,
+      "yanlis_donusum": 18,
+      "pozitif": 116,
+      "pozitif_dogru": 102,
+      "pozitif_dokunulmadi": 4
+    }
+  },
+  "kategori": {
+    "aralik": {
+      "kopya": {
+        "ornek": 17,
+        "kati": 0,
+        "esnek": 1,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 17,
+        "pozitif_dogru": 1,
+        "pozitif_dokunulmadi": 16
+      },
+      "kural": {
+        "ornek": 17,
+        "kati": 0,
+        "esnek": 0,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 17,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 0
+      },
+      "ham": {
+        "ornek": 17,
+        "kati": 15,
+        "esnek": 15,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 17,
+        "pozitif_dogru": 15,
+        "pozitif_dokunulmadi": 0
+      },
+      "korumali": {
+        "ornek": 17,
+        "kati": 15,
+        "esnek": 15,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 17,
+        "pozitif_dogru": 15,
+        "pozitif_dokunulmadi": 1
+      }
+    },
+    "atasozu": {
+      "kopya": {
+        "ornek": 12,
+        "kati": 12,
+        "esnek": 12,
+        "negatif": 12,
+        "yanlis_donusum": 0,
+        "pozitif": 0,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 0
+      },
+      "kural": {
+        "ornek": 12,
+        "kati": 0,
+        "esnek": 0,
+        "negatif": 12,
+        "yanlis_donusum": 12,
+        "pozitif": 0,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 0
+      },
+      "ham": {
+        "ornek": 12,
+        "kati": 4,
+        "esnek": 4,
+        "negatif": 12,
+        "yanlis_donusum": 8,
+        "pozitif": 0,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 0
+      },
+      "korumali": {
+        "ornek": 12,
+        "kati": 4,
+        "esnek": 4,
+        "negatif": 12,
+        "yanlis_donusum": 8,
+        "pozitif": 0,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 0
+      }
+    },
+    "buyuk": {
+      "kopya": {
+        "ornek": 8,
+        "kati": 0,
+        "esnek": 0,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 8,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 8
+      },
+      "kural": {
+        "ornek": 8,
+        "kati": 0,
+        "esnek": 0,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 8,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 0
+      },
+      "ham": {
+        "ornek": 8,
+        "kati": 8,
+        "esnek": 8,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 8,
+        "pozitif_dogru": 8,
+        "pozitif_dokunulmadi": 0
+      },
+      "korumali": {
+        "ornek": 8,
+        "kati": 8,
+        "esnek": 8,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 8,
+        "pozitif_dogru": 8,
+        "pozitif_dokunulmadi": 0
+      }
+    },
+    "es_yazim": {
+      "kopya": {
+        "ornek": 35,
+        "kati": 35,
+        "esnek": 35,
+        "negatif": 35,
+        "yanlis_donusum": 0,
+        "pozitif": 0,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 0
+      },
+      "kural": {
+        "ornek": 35,
+        "kati": 18,
+        "esnek": 18,
+        "negatif": 35,
+        "yanlis_donusum": 17,
+        "pozitif": 0,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 0
+      },
+      "ham": {
+        "ornek": 35,
+        "kati": 34,
+        "esnek": 34,
+        "negatif": 35,
+        "yanlis_donusum": 1,
+        "pozitif": 0,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 0
+      },
+      "korumali": {
+        "ornek": 35,
+        "kati": 35,
+        "esnek": 35,
+        "negatif": 35,
+        "yanlis_donusum": 0,
+        "pozitif": 0,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 0
+      }
+    },
+    "kalip": {
+      "kopya": {
+        "ornek": 53,
+        "kati": 53,
+        "esnek": 53,
+        "negatif": 53,
+        "yanlis_donusum": 0,
+        "pozitif": 0,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 0
+      },
+      "kural": {
+        "ornek": 53,
+        "kati": 18,
+        "esnek": 19,
+        "negatif": 53,
+        "yanlis_donusum": 34,
+        "pozitif": 0,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 0
+      },
+      "ham": {
+        "ornek": 53,
+        "kati": 49,
+        "esnek": 50,
+        "negatif": 53,
+        "yanlis_donusum": 3,
+        "pozitif": 0,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 0
+      },
+      "korumali": {
+        "ornek": 53,
+        "kati": 50,
+        "esnek": 51,
+        "negatif": 53,
+        "yanlis_donusum": 2,
+        "pozitif": 0,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 0
+      }
+    },
+    "kardinal": {
+      "kopya": {
+        "ornek": 45,
+        "kati": 0,
+        "esnek": 1,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 45,
+        "pozitif_dogru": 1,
+        "pozitif_dokunulmadi": 44
+      },
+      "kural": {
+        "ornek": 45,
+        "kati": 42,
+        "esnek": 42,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 45,
+        "pozitif_dogru": 42,
+        "pozitif_dokunulmadi": 0
+      },
+      "ham": {
+        "ornek": 45,
+        "kati": 40,
+        "esnek": 40,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 45,
+        "pozitif_dogru": 40,
+        "pozitif_dokunulmadi": 1
+      },
+      "korumali": {
+        "ornek": 45,
+        "kati": 42,
+        "esnek": 42,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 45,
+        "pozitif_dogru": 42,
+        "pozitif_dokunulmadi": 1
+      }
+    },
+    "kucuk_sayi": {
+      "kopya": {
+        "ornek": 30,
+        "kati": 30,
+        "esnek": 30,
+        "negatif": 30,
+        "yanlis_donusum": 0,
+        "pozitif": 0,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 0
+      },
+      "kural": {
+        "ornek": 30,
+        "kati": 0,
+        "esnek": 0,
+        "negatif": 30,
+        "yanlis_donusum": 30,
+        "pozitif": 0,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 0
+      },
+      "ham": {
+        "ornek": 30,
+        "kati": 22,
+        "esnek": 22,
+        "negatif": 30,
+        "yanlis_donusum": 8,
+        "pozitif": 0,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 0
+      },
+      "korumali": {
+        "ornek": 30,
+        "kati": 24,
+        "esnek": 24,
+        "negatif": 30,
+        "yanlis_donusum": 6,
+        "pozitif": 0,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 0
+      }
+    },
+    "olcu": {
+      "kopya": {
+        "ornek": 4,
+        "kati": 0,
+        "esnek": 1,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 4,
+        "pozitif_dogru": 1,
+        "pozitif_dokunulmadi": 3
+      },
+      "kural": {
+        "ornek": 4,
+        "kati": 2,
+        "esnek": 2,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 4,
+        "pozitif_dogru": 2,
+        "pozitif_dokunulmadi": 0
+      },
+      "ham": {
+        "ornek": 4,
+        "kati": 3,
+        "esnek": 3,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 4,
+        "pozitif_dogru": 3,
+        "pozitif_dokunulmadi": 0
+      },
+      "korumali": {
+        "ornek": 4,
+        "kati": 3,
+        "esnek": 3,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 4,
+        "pozitif_dogru": 3,
+        "pozitif_dokunulmadi": 0
+      }
+    },
+    "ondalik": {
+      "kopya": {
+        "ornek": 5,
+        "kati": 0,
+        "esnek": 0,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 5,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 5
+      },
+      "kural": {
+        "ornek": 5,
+        "kati": 5,
+        "esnek": 5,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 5,
+        "pozitif_dogru": 5,
+        "pozitif_dokunulmadi": 0
+      },
+      "ham": {
+        "ornek": 5,
+        "kati": 5,
+        "esnek": 5,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 5,
+        "pozitif_dogru": 5,
+        "pozitif_dokunulmadi": 0
+      },
+      "korumali": {
+        "ornek": 5,
+        "kati": 5,
+        "esnek": 5,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 5,
+        "pozitif_dogru": 5,
+        "pozitif_dokunulmadi": 0
+      }
+    },
+    "para": {
+      "kopya": {
+        "ornek": 20,
+        "kati": 0,
+        "esnek": 1,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 20,
+        "pozitif_dogru": 1,
+        "pozitif_dokunulmadi": 19
+      },
+      "kural": {
+        "ornek": 20,
+        "kati": 9,
+        "esnek": 11,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 20,
+        "pozitif_dogru": 11,
+        "pozitif_dokunulmadi": 0
+      },
+      "ham": {
+        "ornek": 20,
+        "kati": 11,
+        "esnek": 11,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 20,
+        "pozitif_dogru": 11,
+        "pozitif_dokunulmadi": 0
+      },
+      "korumali": {
+        "ornek": 20,
+        "kati": 12,
+        "esnek": 12,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 20,
+        "pozitif_dogru": 12,
+        "pozitif_dokunulmadi": 2
+      }
+    },
+    "saat": {
+      "kopya": {
+        "ornek": 4,
+        "kati": 0,
+        "esnek": 2,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 4,
+        "pozitif_dogru": 2,
+        "pozitif_dokunulmadi": 2
+      },
+      "kural": {
+        "ornek": 4,
+        "kati": 2,
+        "esnek": 3,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 4,
+        "pozitif_dogru": 3,
+        "pozitif_dokunulmadi": 0
+      },
+      "ham": {
+        "ornek": 4,
+        "kati": 2,
+        "esnek": 4,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 4,
+        "pozitif_dogru": 4,
+        "pozitif_dokunulmadi": 0
+      },
+      "korumali": {
+        "ornek": 4,
+        "kati": 2,
+        "esnek": 4,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 4,
+        "pozitif_dogru": 4,
+        "pozitif_dokunulmadi": 0
+      }
+    },
+    "sira": {
+      "kopya": {
+        "ornek": 4,
+        "kati": 3,
+        "esnek": 4,
+        "negatif": 3,
+        "yanlis_donusum": 0,
+        "pozitif": 1,
+        "pozitif_dogru": 1,
+        "pozitif_dokunulmadi": 0
+      },
+      "kural": {
+        "ornek": 4,
+        "kati": 1,
+        "esnek": 3,
+        "negatif": 3,
+        "yanlis_donusum": 1,
+        "pozitif": 1,
+        "pozitif_dogru": 1,
+        "pozitif_dokunulmadi": 0
+      },
+      "ham": {
+        "ornek": 4,
+        "kati": 3,
+        "esnek": 4,
+        "negatif": 3,
+        "yanlis_donusum": 0,
+        "pozitif": 1,
+        "pozitif_dogru": 1,
+        "pozitif_dokunulmadi": 0
+      },
+      "korumali": {
+        "ornek": 4,
+        "kati": 3,
+        "esnek": 4,
+        "negatif": 3,
+        "yanlis_donusum": 0,
+        "pozitif": 1,
+        "pozitif_dogru": 1,
+        "pozitif_dokunulmadi": 0
+      }
+    },
+    "tarih": {
+      "kopya": {
+        "ornek": 12,
+        "kati": 0,
+        "esnek": 0,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 12,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 12
+      },
+      "kural": {
+        "ornek": 12,
+        "kati": 0,
+        "esnek": 6,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 12,
+        "pozitif_dogru": 6,
+        "pozitif_dokunulmadi": 0
+      },
+      "ham": {
+        "ornek": 12,
+        "kati": 12,
+        "esnek": 12,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 12,
+        "pozitif_dogru": 12,
+        "pozitif_dokunulmadi": 0
+      },
+      "korumali": {
+        "ornek": 12,
+        "kati": 12,
+        "esnek": 12,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 12,
+        "pozitif_dogru": 12,
+        "pozitif_dokunulmadi": 0
+      }
+    },
+    "zamir": {
+      "kopya": {
+        "ornek": 30,
+        "kati": 30,
+        "esnek": 30,
+        "negatif": 30,
+        "yanlis_donusum": 0,
+        "pozitif": 0,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 0
+      },
+      "kural": {
+        "ornek": 30,
+        "kati": 0,
+        "esnek": 0,
+        "negatif": 30,
+        "yanlis_donusum": 30,
+        "pozitif": 0,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 0
+      },
+      "ham": {
+        "ornek": 30,
+        "kati": 20,
+        "esnek": 20,
+        "negatif": 30,
+        "yanlis_donusum": 10,
+        "pozitif": 0,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 0
+      },
+      "korumali": {
+        "ornek": 30,
+        "kati": 28,
+        "esnek": 28,
+        "negatif": 30,
+        "yanlis_donusum": 2,
+        "pozitif": 0,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 0
+      }
+    }
+  },
+  "hatalar": [
+    {
+      "no": 2,
+      "girdi": "Çocuk güğümünü olduğu yerde bırakarak ona koştu, parayı uzattı: \"Şunu iki çeyrek yapsana!\"",
+      "hedef": "Çocuk güğümünü olduğu yerde bırakarak ona koştu, parayı uzattı: \"Şunu iki çeyrek yapsana!\"",
+      "kabul": [],
+      "ham": "Çocuk güğümünü olduğu yerde bırakarak ona koştu, parayı uzattı: \"Şunu 2 çeyrek yapsana!",
+      "korumali": "Çocuk güğümünü olduğu yerde bırakarak ona koştu, parayı uzattı: \"Şunu 2 çeyrek yapsana!\"",
+      "kural": "Çocuk güğümünü olduğu yerde bırakarak 10'a koştu, parayı uzattı: \"Şunu 2 çeyrek yapsana!\"",
+      "kategori": "kalip",
+      "uyari": []
+    },
+    {
+      "no": 6,
+      "girdi": "Yarın yüz seksen öbür gün yüz doksan beş lira.",
+      "hedef": "Yarın 180 öbür gün 195 TL.",
+      "kabul": [],
+      "ham": "Yarın 184 gün 195 TL.",
+      "korumali": "Yarın yüz seksen öbür gün 195 TL.",
+      "kural": "Yarın 180 öbür gün 195 TL.",
+      "kategori": "para",
+      "uyari": [
+        "\"yüz seksen öbür\" → \"184\" geri alındı (sayı olmayan sözcük değişti)"
+      ]
+    },
+    {
+      "no": 13,
+      "girdi": "Hatırladığıma göre yol bir buçuk iki saat çekiyordu.",
+      "hedef": "Hatırladığıma göre yol 1,5-2 saat çekiyordu.",
+      "kabul": [
+        "Hatırladığıma göre yol bir buçuk iki saat çekiyordu."
+      ],
+      "ham": "Hatırladığıma göre yol 1,5 saat çekiyordu.",
+      "korumali": "Hatırladığıma göre yol 1,5 saat çekiyordu.",
+      "kural": "Hatırladığıma göre yol 1,5 2 saat çekiyordu.",
+      "kategori": "aralik",
+      "uyari": []
+    },
+    {
+      "no": 19,
+      "girdi": "Hiç olmazsa bir iki buçuk liralık koparmalıydı.",
+      "hedef": "Hiç olmazsa bir 2,5 TL'lik koparmalıydı.",
+      "kabul": [
+        "Hiç olmazsa bir iki buçuk liralık koparmalıydı."
+      ],
+      "ham": "Hiç olmazsa 1-2,5 TL'lik koparmalıydı.",
+      "korumali": "Hiç olmazsa 1-2,5 TL'lik koparmalıydı.",
+      "kural": "Hiç olmazsa 1 2,5 TL'lik koparmalıydı.",
+      "kategori": "para",
+      "uyari": []
+    },
+    {
+      "no": 21,
+      "girdi": "Ayın en çok on gününde aldığı en çok altmışar kuruşla bunları doyuramıyordu.",
+      "hedef": "Ayın en çok 10 gününde aldığı en çok altmışar kuruşla bunları doyuramıyordu.",
+      "kabul": [],
+      "ham": "Ayın en çok 10 gününde aldığı en çok 60'ar kuruşla bunları doyuramıyordu.",
+      "korumali": "Ayın en çok 10 gününde aldığı en çok altmışar kuruşla bunları doyuramıyordu.",
+      "kural": "Ayın en çok 10 gününde aldığı en çok altmışar kuruşla bunları doyuramıyordu.",
+      "kategori": "kardinal",
+      "uyari": [
+        "\"altmışar\" → \"60'ar\" geri alındı (sayı olmayan sözcük değişti)"
+      ]
+    },
+    {
+      "no": 22,
+      "girdi": "Bir elli boyunda, altmışlık, kırçıl sakallı bir adam.",
+      "hedef": "1,50 boyunda, altmışlık, kırçıl sakallı bir adam.",
+      "kabul": [
+        "Bir elli boyunda, altmışlık, kırçıl sakallı bir adam.",
+        "Bir elli boyunda, 60'lık, kırçıl sakallı bir adam.",
+        "1,50 boyunda, 60'lık, kırçıl sakallı bir adam."
+      ],
+      "ham": "1-50 boyunda, 60'lık, kırçıl sakallı bir adam.",
+      "korumali": "1-50 boyunda, 60'lık, kırçıl sakallı bir adam.",
+      "kural": "1 50 boyunda, 60'lık, kırçıl sakallı 1 adam.",
+      "kategori": "olcu",
+      "uyari": []
+    },
+    {
+      "no": 27,
+      "girdi": "Bir hafta sonra tekrar doğumevine gelen delikanlıya: \"Şimdi borcun yüz altmış beş liradır.\"",
+      "hedef": "Bir hafta sonra tekrar doğumevine gelen delikanlıya: \"Şimdi borcun 165 TL'dir.\"",
+      "kabul": [],
+      "ham": "Bir hafta sonra tekrar doğumevine gelen delikanlıya: \"Şimdi borcun 165 TL'dir.",
+      "korumali": "Bir hafta sonra tekrar doğumevine gelen delikanlıya: \"Şimdi borcun yüz altmış beş liradır.\"",
+      "kural": "1 hafta sonra tekrar doğumevine gelen delikanlıya: \"Şimdi borcun 165 liradır.\"",
+      "kategori": "para",
+      "uyari": [
+        "\"yüz altmış beş liradır.\"\" → \"165 TL'dir.\" geri alındı (sayı olmayan sözcük değişti)"
+      ]
+    },
+    {
+      "no": 43,
+      "girdi": "İçinde seksen portakal bulunan sandıklardan her biri üç liradan hesap edildi.",
+      "hedef": "İçinde 80 portakal bulunan sandıklardan her biri 3 TL'den hesap edildi.",
+      "kabul": [],
+      "ham": "İçinde 80 portakal bulunan sandıklardan her 1'i 3 TL'den hesap edildi.",
+      "korumali": "İçinde 80 portakal bulunan sandıklardan her biri üç liradan hesap edildi.",
+      "kural": "İçinde 80 portakal bulunan sandıklardan her 1'i 3 TL'den hesap edildi.",
+      "kategori": "para",
+      "uyari": [
+        "\"biri üç liradan\" → \"1'i 3 TL'den\" geri alındı (sayı olmayan sözcük değişti)"
+      ]
+    },
+    {
+      "no": 46,
+      "girdi": "Onun sırtına giyeceği yoktu ve mal sahibi seksen kat üst üste giyebilirdi.",
+      "hedef": "Onun sırtına giyeceği yoktu ve mal sahibi 80 kat üst üste giyebilirdi.",
+      "kabul": [],
+      "ham": "10'un sırtına giyeceği yoktu ve mal sahibi 80 kat üst üste giyebilirdi.",
+      "korumali": "Onun sırtına giyeceği yoktu ve mal sahibi 80 kat üst üste giyebilirdi.",
+      "kural": "10'un sırtına giyeceği yoktu ve mal sahibi 80 kat üst üste giyebilirdi.",
+      "kategori": "kardinal",
+      "uyari": [
+        "\"Onun\" → \"10'un\" geri alındı (sayı olmayan sözcük değişti)"
+      ]
+    },
+    {
+      "no": 60,
+      "girdi": "Yaş yetmiş, iş bitmiş.",
+      "hedef": "Yaş yetmiş, iş bitmiş.",
+      "kabul": [],
+      "ham": "Yaş 70, iş bitmiş.",
+      "korumali": "Yaş 70, iş bitmiş.",
+      "kural": "Yaş 70, iş bitmiş.",
+      "kategori": "atasozu",
+      "uyari": []
+    },
+    {
+      "no": 68,
+      "girdi": "Yerinden oynayan yetmiş kazaya uğrar; en küçüğü ölüm.",
+      "hedef": "Yerinden oynayan yetmiş kazaya uğrar; en küçüğü ölüm.",
+      "kabul": [],
+      "ham": "Yerinden oynayan 70 kazaya uğrar; en küçüğü ölüm.",
+      "korumali": "Yerinden oynayan 70 kazaya uğrar; en küçüğü ölüm.",
+      "kural": "Yerinden oynayan 70 kazaya uğrar; en küçüğü ölüm.",
+      "kategori": "atasozu",
+      "uyari": []
+    },
+    {
+      "no": 70,
+      "girdi": "Cebimden bir elli kuruş çıkarıp uzattım: \"Kardeş misiniz?\" diye sordum.",
+      "hedef": "Cebimden bir 50 kuruş çıkarıp uzattım: \"Kardeş misiniz?\" diye sordum.",
+      "kabul": [],
+      "ham": "Cebimden 1-50 kuruş çıkarıp uzattım: \"Kardeş misiniz?\" diye sordum.",
+      "korumali": "Cebimden 1-50 kuruş çıkarıp uzattım: \"Kardeş misiniz?\" diye sordum.",
+      "kural": "Cebimden 1 50 kuruş çıkarıp uzattım: \"Kardeş misiniz?\" diye sordum.",
+      "kategori": "para",
+      "uyari": []
+    },
+    {
+      "no": 74,
+      "girdi": "Yanındakine: \"Yüz elli liram var, yol parası ile otel parası da içinde!\" dedi.",
+      "hedef": "Yanındakine: \"150 TL'm var, yol parası ile otel parası da içinde!\" dedi.",
+      "kabul": [
+        "Yanındakine: \"150 liram var, yol parası ile otel parası da içinde!\" dedi."
+      ],
+      "ham": "Yanındakine: \"150 TL var, yol parası ile otel parası da içinde!",
+      "korumali": "Yanındakine: \"Yüz elli liram var, yol parası ile otel parası da içinde!\" dedi.",
+      "kural": "Yanındakine: \"150 liram var, yol parası ile otel parası da içinde!\" dedi.",
+      "kategori": "para",
+      "uyari": [
+        "\"\"Yüz elli liram\" → \"\"150 TL\" geri alındı (sayı olmayan sözcük değişti)",
+        "silinen \"dedi.\" geri alındı"
+      ]
+    },
+    {
+      "no": 75,
+      "girdi": "Kısa bir pazarlıktan sonra ellişer kuruşa şoförün yanına binmek hususunda mutabık kaldık.",
+      "hedef": "Kısa bir pazarlıktan sonra ellişer kuruşa şoförün yanına binmek hususunda mutabık kaldık.",
+      "kabul": [],
+      "ham": "41 pazarlıktan sonra 50'şer kuruşa şoförün yanına binmek hususunda mutabık kaldık.",
+      "korumali": "Kısa bir pazarlıktan sonra ellişer kuruşa şoförün yanına binmek hususunda mutabık kaldık.",
+      "kural": "Kısa 1 pazarlıktan sonra ellişer kuruşa şoförün yanına binmek hususunda mutabık kaldık.",
+      "kategori": "kalip",
+      "uyari": [
+        "\"Kısa bir\" → \"41\" geri alındı (sayı olmayan sözcük değişti)",
+        "\"ellişer\" → \"50'şer\" geri alındı (sayı olmayan sözcük değişti)"
+      ]
+    },
+    {
+      "no": 76,
+      "girdi": "Fakat sana şimdilik pek fazla veremeyeceğiz: Kırk elli lira…",
+      "hedef": "Fakat sana şimdilik pek fazla veremeyeceğiz: 40-50 TL…",
+      "kabul": [],
+      "ham": "Fakat sana şimdilik pek fazla veremeyeceğiz: 40-50 TL…",
+      "korumali": "Fakat sana şimdilik pek fazla veremeyeceğiz: Kırk elli lira…",
+      "kural": "Fakat sana şimdilik pek fazla veremeyeceğiz: 40 50 TL…",
+      "kategori": "aralik",
+      "uyari": [
+        "\"Kırk elli lira…\" → \"40-50 TL…\" geri alındı (çıktıda rakam/birim yok)"
+      ]
+    },
+    {
+      "no": 77,
+      "girdi": "Elli lirasını peşin aldım, yukarı kattaki odama çıktığım gibi, işe koyuldum.",
+      "hedef": "50 TL'sini peşin aldım, yukarı kattaki odama çıktığım gibi, işe koyuldum.",
+      "kabul": [
+        "50 lirasını peşin aldım, yukarı kattaki odama çıktığım gibi, işe koyuldum."
+      ],
+      "ham": "50 TL'sinı peşin aldım, yukarı kattaki odama çıktığım gibi, işe koyuldum.",
+      "korumali": "50 TL'sinı peşin aldım, yukarı kattaki odama çıktığım gibi, işe koyuldum.",
+      "kural": "50 lirasını peşin aldım, yukarı kattaki odama çıktığım gibi, işe koyuldum.",
+      "kategori": "para",
+      "uyari": []
+    },
+    {
+      "no": 87,
+      "girdi": "Otuz iki dişten çıkan, otuz iki mahalleye yayılır.",
+      "hedef": "Otuz iki dişten çıkan, otuz iki mahalleye yayılır.",
+      "kabul": [],
+      "ham": "32 dişten çıkan, 32 mahalleye yayılır.",
+      "korumali": "32 dişten çıkan, 32 mahalleye yayılır.",
+      "kural": "32 dişten çıkan, 32 mahalleye yayılır.",
+      "kategori": "atasozu",
+      "uyari": []
+    },
+    {
+      "no": 93,
+      "girdi": "Bunun için sekiz kişi iki gündür hep çatıda uğraşıyorlardı.",
+      "hedef": "Bunun için sekiz kişi iki gündür hep çatıda uğraşıyorlardı.",
+      "kabul": [],
+      "ham": "Bunun için 8 kişi iki gündür hep çatıda uğraşıyorlardı.",
+      "korumali": "Bunun için 8 kişi iki gündür hep çatıda uğraşıyorlardı.",
+      "kural": "Bunun için 8 kişi 2 gündür hep çatıda uğraşıyorlardı.",
+      "kategori": "kucuk_sayi",
+      "uyari": []
+    },
+    {
+      "no": 98,
+      "girdi": "Çocuk sekiz yaşında vardı, fakat ilk görüşte altı yaşından fazla denilemezdi.",
+      "hedef": "Çocuk sekiz yaşında vardı, fakat ilk görüşte altı yaşından fazla denilemezdi.",
+      "kabul": [],
+      "ham": "Çocuk 8 yaşında vardı, fakat ilk görüşte altı yaşından fazla denilemezdi.",
+      "korumali": "Çocuk 8 yaşında vardı, fakat ilk görüşte altı yaşından fazla denilemezdi.",
+      "kural": "Çocuk 8 yaşında vardı, fakat ilk görüşte 6 yaşından fazla denilemezdi.",
+      "kategori": "kucuk_sayi",
+      "uyari": []
+    },
+    {
+      "no": 110,
+      "girdi": "Bir deli kuyuya bir taş atar, kırk akıllı çıkaramaz.",
+      "hedef": "Bir deli kuyuya bir taş atar, kırk akıllı çıkaramaz.",
+      "kabul": [],
+      "ham": "Bir deli kuyuya bir taş atar, 40 akıllı çıkaramaz.",
+      "korumali": "Bir deli kuyuya bir taş atar, 40 akıllı çıkaramaz.",
+      "kural": "1 deli kuyuya 1 taş atar, 40 akıllı çıkaramaz.",
+      "kategori": "atasozu",
+      "uyari": []
+    },
+    {
+      "no": 112,
+      "girdi": "Biz dağlıyız, sizin boş çıkamadığınız bayıra biz kırk okka yükle çıkarız!",
+      "hedef": "Biz dağlıyız, sizin boş çıkamadığınız bayıra biz 40 okka yükle çıkarız!",
+      "kabul": [],
+      "ham": "Biz dağlıyız, sizin boş çıkamadığınız bayıra biz kırk okka yükle çıkarız!",
+      "korumali": "Biz dağlıyız, sizin boş çıkamadığınız bayıra biz kırk okka yükle çıkarız!",
+      "kural": "Biz dağlıyız, sizin boş çıkamadığınız bayıra biz 40 okka yükle çıkarız!",
+      "kategori": "kardinal",
+      "uyari": []
+    },
+    {
+      "no": 113,
+      "girdi": "Dervişlik olaydı taç ile hırka, ben de alırdım otuza kırka.",
+      "hedef": "Dervişlik olaydı taç ile hırka, ben de alırdım otuza kırka.",
+      "kabul": [],
+      "ham": "Dervişlik olaydı taç ile hırka, ben de alırdım 30'a 40'a.",
+      "korumali": "Dervişlik olaydı taç ile hırka, ben de alırdım 30'a 40'a.",
+      "kural": "Dervişlik olaydı taç ile hırka, ben de alırdım 30'a 40'a.",
+      "kategori": "atasozu",
+      "uyari": []
+    },
+    {
+      "no": 115,
+      "girdi": "Sıtma ben tuttuğumu kırk yıl sonra tanırım demiş.",
+      "hedef": "Sıtma ben tuttuğumu kırk yıl sonra tanırım demiş.",
+      "kabul": [],
+      "ham": "Sıtma ben tuttuğumu 40 yıl sonra tanırım demiş.",
+      "korumali": "Sıtma ben tuttuğumu 40 yıl sonra tanırım demiş.",
+      "kural": "Sıtma ben tuttuğumu 40 yıl sonra tanırım demiş.",
+      "kategori": "atasozu",
+      "uyari": []
+    },
+    {
+      "no": 116,
+      "girdi": "\"Kırk yaşında adam aklı başında oturmazsa işte böyle olur\" diye başladı.",
+      "hedef": "\"40 yaşında adam aklı başında oturmazsa işte böyle olur\" diye başladı.",
+      "kabul": [],
+      "ham": "1940 yaşında adam aklı başında oturmazsa işte böyle olur\" diye başladı.",
+      "korumali": "1940 yaşında adam aklı başında oturmazsa işte böyle olur\" diye başladı.",
+      "kural": "\"40 yaşında adam aklı başında oturmazsa işte böyle olur\" diye başladı.",
+      "kategori": "kardinal",
+      "uyari": []
+    },
+    {
+      "no": 117,
+      "girdi": "Kırk yıl evinde oturdum, koca öküz gibi çalıştım, bir gün doyunca yemek yemedim…",
+      "hedef": "40 yıl evinde oturdum, koca öküz gibi çalıştım, bir gün doyunca yemek yemedim…",
+      "kabul": [
+        "Kırk yıl evinde oturdum, koca öküz gibi çalıştım, bir gün doyunca yemek yemedim…"
+      ],
+      "ham": "1940 yıl evinde oturdum, koca öküz gibi çalıştım, bir gün doyunca yemek yemedim…",
+      "korumali": "1940 yıl evinde oturdum, koca öküz gibi çalıştım, bir gün doyunca yemek yemedim…",
+      "kural": "40 yıl evinde oturdum, koca öküz gibi çalıştım, 1 gün doyunca yemek yemedim…",
+      "kategori": "kardinal",
+      "uyari": []
+    },
+    {
+      "no": 127,
+      "girdi": "Şehirle köyün arası yayan dokuz saatti.",
+      "hedef": "Şehirle köyün arası yayan dokuz saatti.",
+      "kabul": [],
+      "ham": "Şehirle köyün arası yayan 9 saatti.",
+      "korumali": "Şehirle köyün arası yayan 9 saatti.",
+      "kural": "Şehirle köyün arası yayan 9 saatti.",
+      "kategori": "kucuk_sayi",
+      "uyari": []
+    },
+    {
+      "no": 145,
+      "girdi": "Kerim Ağa yerinde doğrulmaya çalışarak, kısık sesiyle: \"Yirmi kuruştan ver!\"",
+      "hedef": "Kerim Ağa yerinde doğrulmaya çalışarak, kısık sesiyle: \"20 kuruştan ver!\"",
+      "kabul": [],
+      "ham": "Kerim Ağa yerinde doğrulmaya çalışarak, kısık sesiyle: \"20 kuruştan ver!",
+      "korumali": "Kerim Ağa yerinde doğrulmaya çalışarak, kısık sesiyle: \"20 kuruştan ver!\"",
+      "kural": "Kerim Ağa yerinde doğrulmaya çalışarak, kısık sesiyle: \"20 kuruş'tan ver!\"",
+      "kategori": "para",
+      "uyari": []
+    },
+    {
+      "no": 146,
+      "girdi": "Cebimden bir yirmi beş kuruşluk çıkardım.",
+      "hedef": "Cebimden bir 25 kuruşluk çıkardım.",
+      "kabul": [],
+      "ham": "Cebimden 1-25 kuruşluk çıkardım.",
+      "korumali": "Cebimden 1-25 kuruşluk çıkardım.",
+      "kural": "Cebimden 1 25 kuruş'luk çıkardım.",
+      "kategori": "para",
+      "uyari": []
+    },
+    {
+      "no": 150,
+      "girdi": "Dört katlı otelin en üst penceresinden beyaz bir gölge sarkıyordu.",
+      "hedef": "Dört katlı otelin en üst penceresinden beyaz bir gölge sarkıyordu.",
+      "kabul": [],
+      "ham": "4 katlı otelin en üst penceresinden beyaz bir gölge sarkıyordu.",
+      "korumali": "4 katlı otelin en üst penceresinden beyaz bir gölge sarkıyordu.",
+      "kural": "4 katlı otelin en üst penceresinden beyaz 1 gölge sarkıyordu.",
+      "kategori": "kucuk_sayi",
+      "uyari": []
+    },
+    {
+      "no": 152,
+      "girdi": "Beş, dört, üç, iki…",
+      "hedef": "Beş, dört, üç, iki…",
+      "kabul": [],
+      "ham": "5432…",
+      "korumali": "5432…",
+      "kural": "5, 4, 3, 2…",
+      "kategori": "kucuk_sayi",
+      "uyari": []
+    },
+    {
+      "no": 163,
+      "girdi": "Bin dert vardı başında.",
+      "hedef": "Bin dert vardı başında.",
+      "kabul": [],
+      "ham": "1.000 dert vardı başında.",
+      "korumali": "1.000 dert vardı başında.",
+      "kural": "1.000 dert vardı başında.",
+      "kategori": "kalip",
+      "uyari": []
+    },
+    {
+      "no": 166,
+      "girdi": "Bin atın varsa bin dinlen, bir atın varsa in dinlen.",
+      "hedef": "Bin atın varsa bin dinlen, bir atın varsa in dinlen.",
+      "kabul": [],
+      "ham": "1.000 atın varsa bin dinlen, bir atın varsa in dinlen.",
+      "korumali": "1.000 atın varsa bin dinlen, bir atın varsa in dinlen.",
+      "kural": "1.000 atın varsa 1.000 dinlen, 1 atın varsa in dinlen.",
+      "kategori": "atasozu",
+      "uyari": []
+    },
+    {
+      "no": 167,
+      "girdi": "Bin atın varsa inişte in, bir atın varsa yokuşta bin.",
+      "hedef": "Bin atın varsa inişte in, bir atın varsa yokuşta bin.",
+      "kabul": [],
+      "ham": "1.000 atın varsa inişte in, bir atın varsa yokuşta bin.",
+      "korumali": "1.000 atın varsa inişte in, bir atın varsa yokuşta bin.",
+      "kural": "1.000 atın varsa inişte in, 1 atın varsa yokuşta 1.000.",
+      "kategori": "atasozu",
+      "uyari": []
+    },
+    {
+      "no": 173,
+      "girdi": "Çoban gözlerini karşısındaki üç kişinin üzerinde bir müddet gezdirdikten sonra garip bir çekingenlikle:",
+      "hedef": "Çoban gözlerini karşısındaki üç kişinin üzerinde bir müddet gezdirdikten sonra garip bir çekingenlikle:",
+      "kabul": [],
+      "ham": "Çoban gözlerini karşısındaki üç kişinin üzerinde bir müddet gezdirdikten sonra garip bir çekingenlikle.",
+      "korumali": "Çoban gözlerini karşısındaki üç kişinin üzerinde bir müddet gezdirdikten sonra garip bir çekingenlikle:",
+      "kural": "Çoban gözlerini karşısındaki 3 kişinin üzerinde 1 müddet gezdirdikten sonra garip 1 çekingenlikle:",
+      "kategori": "kucuk_sayi",
+      "uyari": []
+    },
+    {
+      "no": 198,
+      "girdi": "Beş on adım gitmemiştim ki, arkamdan onun sesini duydum.",
+      "hedef": "5-10 adım gitmemiştim ki, arkamdan onun sesini duydum.",
+      "kabul": [],
+      "ham": "5-10 adım gitmemiştim ki, arkamdan 10'un sesini duydum.",
+      "korumali": "5-10 adım gitmemiştim ki, arkamdan onun sesini duydum.",
+      "kural": "5 10 adım gitmemiştim ki, arkamdan 10'un sesini duydum.",
+      "kategori": "aralik",
+      "uyari": [
+        "\"onun\" → \"10'un\" geri alındı (sayı olmayan sözcük değişti)"
+      ]
+    },
+    {
+      "no": 200,
+      "girdi": "İki gece önce.",
+      "hedef": "İki gece önce.",
+      "kabul": [],
+      "ham": "2 gece önce.",
+      "korumali": "2 gece önce.",
+      "kural": "2 gece önce.",
+      "kategori": "kucuk_sayi",
+      "uyari": []
+    },
+    {
+      "no": 209,
+      "girdi": "İki sıska çocuk büyük bir ağacın dibinde ve birbirlerinin kucağında uyumuşlardı.",
+      "hedef": "İki sıska çocuk büyük bir ağacın dibinde ve birbirlerinin kucağında uyumuşlardı.",
+      "kabul": [],
+      "ham": "2-0'a çocuk büyük bir ağacın dibinde ve birbirlerinin kucağında uyumuşlardı.",
+      "korumali": "İki sıska çocuk büyük bir ağacın dibinde ve birbirlerinin kucağında uyumuşlardı.",
+      "kural": "2 sıska çocuk büyük 1 ağacın dibinde ve birbirlerinin kucağında uyumuşlardı.",
+      "kategori": "kucuk_sayi",
+      "uyari": [
+        "\"İki sıska\" → \"2-0'a\" geri alındı (sayı olmayan sözcük değişti)"
+      ]
+    },
+    {
+      "no": 210,
+      "girdi": "Arefe günü yalan söyleyenin, bayram günü yüzü kara çıkar.",
+      "hedef": "Arefe günü yalan söyleyenin, bayram günü yüzü kara çıkar.",
+      "kabul": [],
+      "ham": "Arefe günü yalan söyleyenin, bayram günü 100'ü kara çıkar.",
+      "korumali": "Arefe günü yalan söyleyenin, bayram günü yüzü kara çıkar.",
+      "kural": "Arefe günü yalan söyleyenin, bayram günü 100'ü kara çıkar.",
+      "kategori": "es_yazim",
+      "uyari": [
+        "\"yüzü\" → \"100'ü\" geri alındı (sayı olmayan sözcük değişti)"
+      ]
+    },
+    {
+      "no": 220,
+      "girdi": "Hayret edişim onu güldürdü:",
+      "hedef": "Hayret edişim onu güldürdü:",
+      "kabul": [],
+      "ham": "Hayret edişim 10'u güldürdü.",
+      "korumali": "Hayret edişim onu güldürdü:",
+      "kural": "Hayret edişim 10'u güldürdü:",
+      "kategori": "zamir",
+      "uyari": [
+        "\"onu\" → \"10'u\" geri alındı (sayı olmayan sözcük değişti)"
+      ]
+    },
+    {
+      "no": 222,
+      "girdi": "Ondan sonra heyecan içinde neticeyi beklemeye başladı.",
+      "hedef": "Ondan sonra heyecan içinde neticeyi beklemeye başladı.",
+      "kabul": [],
+      "ham": "10'dan sonra heyecan içinde neticeyi beklemeye başladı.",
+      "korumali": "Ondan sonra heyecan içinde neticeyi beklemeye başladı.",
+      "kural": "10'dan sonra heyecan içinde neticeyi beklemeye başladı.",
+      "kategori": "zamir",
+      "uyari": [
+        "\"Ondan\" → \"10'dan\" geri alındı (sayı olmayan sözcük değişti)"
+      ]
+    },
+    {
+      "no": 233,
+      "girdi": "Bir taş var, onu söktürmek lazım.",
+      "hedef": "Bir taş var, onu söktürmek lazım.",
+      "kabul": [],
+      "ham": "Bir taş var, 10'u söktürmek lazım.",
+      "korumali": "Bir taş var, onu söktürmek lazım.",
+      "kural": "1 taş var, 10'u söktürmek lazım.",
+      "kategori": "zamir",
+      "uyari": [
+        "\"onu\" → \"10'u\" geri alındı (sayı olmayan sözcük değişti)"
+      ]
+    },
+    {
+      "no": 234,
+      "girdi": "Onun herhangi bir şeye içi sıkıldığını söylemesi beni şaşırttı.",
+      "hedef": "Onun herhangi bir şeye içi sıkıldığını söylemesi beni şaşırttı.",
+      "kabul": [],
+      "ham": "10'un herhangi bir şeye içi sıkıldığını söylemesi beni şaşırttı.",
+      "korumali": "Onun herhangi bir şeye içi sıkıldığını söylemesi beni şaşırttı.",
+      "kural": "10'un herhangi 1 şeye içi sıkıldığını söylemesi beni şaşırttı.",
+      "kategori": "zamir",
+      "uyari": [
+        "\"Onun\" → \"10'un\" geri alındı (sayı olmayan sözcük değişti)"
+      ]
+    },
+    {
+      "no": 237,
+      "girdi": "Birkaç mahkumun pek açık alaylan onun kulağını bükmüştü.",
+      "hedef": "Birkaç mahkumun pek açık alaylan onun kulağını bükmüştü.",
+      "kabul": [],
+      "ham": "Birkaç mahkumun pek açık alaylan 10'un kulağını bükmüştü.",
+      "korumali": "Birkaç mahkumun pek açık alaylan onun kulağını bükmüştü.",
+      "kural": "Birkaç mahkumun pek açık alaylan 10'un kulağını bükmüştü.",
+      "kategori": "zamir",
+      "uyari": [
+        "\"onun\" → \"10'un\" geri alındı (sayı olmayan sözcük değişti)"
+      ]
+    },
+    {
+      "no": 239,
+      "girdi": "Aradan geçen zamanın kısalığı onu korkuttu.",
+      "hedef": "Aradan geçen zamanın kısalığı onu korkuttu.",
+      "kabul": [],
+      "ham": "Aradan geçen zamanın kısalığı 10'u korkuttu.",
+      "korumali": "Aradan geçen zamanın kısalığı onu korkuttu.",
+      "kural": "Aradan geçen zamanın kısalığı 10'u korkuttu.",
+      "kategori": "zamir",
+      "uyari": [
+        "\"onu\" → \"10'u\" geri alındı (sayı olmayan sözcük değişti)"
+      ]
+    },
+    {
+      "no": 242,
+      "girdi": "Git onunla konuş.",
+      "hedef": "Git onunla konuş.",
+      "kabul": [],
+      "ham": "Git 10'unla konuş.",
+      "korumali": "Git onunla konuş.",
+      "kural": "Git 10'unla konuş.",
+      "kategori": "zamir",
+      "uyari": [
+        "\"onunla\" → \"10'unla\" geri alındı (sayı olmayan sözcük değişti)"
+      ]
+    },
+    {
+      "no": 243,
+      "girdi": "Bir müddet onu seyrettiler.",
+      "hedef": "Bir müddet onu seyrettiler.",
+      "kabul": [],
+      "ham": "1 müddet 10'u seyrettiler.",
+      "korumali": "1 müddet onu seyrettiler.",
+      "kural": "1 müddet 10'u seyrettiler.",
+      "kategori": "zamir",
+      "uyari": [
+        "\"onu\" → \"10'u\" geri alındı (sayı olmayan sözcük değişti)"
+      ]
+    },
+    {
+      "no": 244,
+      "girdi": "Evet, onu anladım.",
+      "hedef": "Evet, onu anladım.",
+      "kabul": [],
+      "ham": "Evet, 10'u anladım.",
+      "korumali": "Evet, onu anladım.",
+      "kural": "Evet, 10'u anladım.",
+      "kategori": "zamir",
+      "uyari": [
+        "\"onu\" → \"10'u\" geri alındı (sayı olmayan sözcük değişti)"
+      ]
+    },
+    {
+      "no": 245,
+      "girdi": "Bir gece onu çağırdım, derenin alt başına gittik, kavak fidanlarının arasına oturduk.",
+      "hedef": "Bir gece onu çağırdım, derenin alt başına gittik, kavak fidanlarının arasına oturduk.",
+      "kabul": [],
+      "ham": "Bir gece 10'u çağırdım, derenin alt başına gittik, kavak fidanlarının arasına oturduk.",
+      "korumali": "Bir gece 10'u çağırdım, derenin alt başına gittik, kavak fidanlarının arasına oturduk.",
+      "kural": "1 gece 10'u çağırdım, derenin alt başına gittik, kavak fidanlarının arasına oturduk.",
+      "kategori": "zamir",
+      "uyari": []
+    }
+  ],
+  "koruma_geri_alma": 20
+}
