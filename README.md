@@ -11,7 +11,7 @@ LoRA (r=32)** modeli, ağırlıklar indirildikten sonra çevrimdışı çalış�
 | yüzde on iki buçuk indirim | %12,5 indirim |
 | iki buçuk kilogram domates | 2,5 kg domates |
 | saat on dört otuzda görüşelim | saat 14.30'da görüşelim |
-| sıfır beş yüz otuz iki yüz yirmi üç kırk beş altmış yedi | 0532 123 45 67 |
+| sıfır iki yüz on iki üç yüz kırk beş altmış yedi seksen dokuz | 0212 345 67 89 |
 | sekiz kasım iki bin yirmi altıda doğdu | 8 Kasım 2026'da doğdu |
 | saat yedide yemek **yedik** | saat 7'de yemek **yedik** |
 | akşam yemeğini **yedi** | akşam yemeğini **yedi** (değişmez) |
@@ -120,6 +120,10 @@ v2.5'te bilinen hatalardan bazıları düzeldi. `on ikinci maddenin birinci fık
 - Fiil olan `yedi` bazen sayıya dönüşüyor. `elmayı yedi sonra uyudu` → `elmayı 7 sonra uyudu`.
 - Yaşın `-lık` biçimi bazen rakama dönüşüyor. `otuz beşlik kadın` → `35'lik`.
 - Virgülle ayrılmış kaba tutarlar birleşebiliyor. `seksen, yüz bin lirası` → `80,100.000 TL'si`.
+- Telefon numarasında bir grup yalın `yüz` ile başlayınca söyleyiş iki türlü okunabilir. Örneğin
+  `sıfır beş yüz otuz iki yüz yirmi üç kırk beş altmış yedi`, `0532 123 45 67` ya da `0530 223 45 67` olabilir.
+  Model ikisini karıştırıp `0532 223 45 67` üretiyor. Koruma filtresi sayı değerinin tutmadığını görüp metni
+  değiştirmeden bırakıyor. v2.5'te de aynı; bu cümle ilk elle yazılmış kümedeki hatalardan biri.
 - `bin` bazen çevrilmiyor. `Belki bini de aşar` cümlesinde `bini` kalıyor (doğrusu `1.000'i`).
   `bir buçuk ay` da yazıyla kalıyor.
 - Veri sentetik ve gerçek cümle karışımıdır, ama gerçek ASR çıktısındaki tanıma hatalarıyla (yanlış
