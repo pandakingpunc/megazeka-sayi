@@ -5,3 +5,4 @@ models/
 reports/train-*.log
 data/v2/
 data/v3/d-*
+data/v3/e-*.jsonl

@@ -1,0 +1,53 @@
+{
+  "seed": 3322,
+  "elemeler": {
+    "yinelenen": 3811,
+    "haric": 4,
+    "celiskili_train": 0,
+    "celiskili_validation": 0
+  },
+  "e5_olcumle_ortusen_atilan": [],
+  "bolumler": {
+    "train": {
+      "satir": 5595,
+      "olgu": {
+        "E1": 827,
+        "E2": 2738,
+        "E3": 1154,
+        "E4": 584,
+        "E5": 292
+      },
+      "kategori": {
+        "aralik": 1250,
+        "buyuk": 112,
+        "kardinal": 2659,
+        "negatif_dogal": 262,
+        "negatif_kalip": 836,
+        "para": 48,
+        "sira": 428
+      },
+      "negatif_payi": 0.196,
+      "sablon": 557
+    },
+    "validation": {
+      "satir": 496,
+      "olgu": {
+        "E1": 78,
+        "E2": 210,
+        "E3": 152,
+        "E4": 32,
+        "E5": 24
+      },
+      "kategori": {
+        "aralik": 162,
+        "buyuk": 74,
+        "kardinal": 138,
+        "negatif_dogal": 30,
+        "negatif_kalip": 90,
+        "para": 2
+      },
+      "negatif_payi": 0.242,
+      "sablon": 52
+    }
+  }
+}

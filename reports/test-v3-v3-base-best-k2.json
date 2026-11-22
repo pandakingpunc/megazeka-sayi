@@ -1,0 +1,1247 @@
+{
+  "ad": "test-v3",
+  "ornek": 5494,
+  "hata_kaynagi": "model_korumali",
+  "olcumler": {
+    "kopya": {
+      "ornek": 5494,
+      "tam_eslesme": 0.517291590826356,
+      "cer": 0.1110646200136339,
+      "wer": 0.16671764130168829,
+      "sayi_belirteci_dogrulugu": 0.0,
+      "negatif_ornek": 2842,
+      "yanlis_donusum_orani": 0.0
+    },
+    "kural": {
+      "ornek": 5494,
+      "tam_eslesme": 0.3545686203130688,
+      "cer": 0.06276768294116264,
+      "wer": 0.13659163200391486,
+      "sayi_belirteci_dogrulugu": 0.8808718526869598,
+      "negatif_ornek": 2842,
+      "yanlis_donusum_orani": 0.8406052076002815
+    },
+    "model_korumasiz": {
+      "ornek": 5494,
+      "tam_eslesme": 0.9830724426647252,
+      "cer": 0.0028443148962177664,
+      "wer": 0.004159530217763641,
+      "sayi_belirteci_dogrulugu": 0.9891018414130026,
+      "negatif_ornek": 2842,
+      "yanlis_donusum_orani": 0.015833919774806474
+    },
+    "model_korumali": {
+      "ornek": 5494,
+      "tam_eslesme": 0.9832544594102658,
+      "cer": 0.0028067041207305893,
+      "wer": 0.004098360655737705,
+      "sayi_belirteci_dogrulugu": 0.9891018414130026,
+      "negatif_ornek": 2842,
+      "yanlis_donusum_orani": 0.015482054890921885
+    }
+  },
+  "kirilim": {
+    "kopya": {
+      "aralik": {
+        "ornek": 120,
+        "tam_eslesme": 0.0,
+        "cer": 0.3583379810373675,
+        "wer": 0.5188356164383562,
+        "sayi_belirteci_dogrulugu": 0.0,
+        "negatif_ornek": 0,
+        "yanlis_donusum_orani": null
+      },
+      "kardinal": {
+        "ornek": 1213,
+        "tam_eslesme": 0.0,
+        "cer": 0.2750819755471391,
+        "wer": 0.39438184415172195,
+        "sayi_belirteci_dogrulugu": 0.0,
+        "negatif_ornek": 0,
+        "yanlis_donusum_orani": null
+      },
+      "karisik": {
+        "ornek": 9,
+        "tam_eslesme": 0.0,
+        "cer": 0.14712153518123666,
+        "wer": 0.2839506172839506,
+        "sayi_belirteci_dogrulugu": 0.0,
+        "negatif_ornek": 0,
+        "yanlis_donusum_orani": null
+      },
+      "negatif_dogal": {
+        "ornek": 1112,
+        "tam_eslesme": 1.0,
+        "cer": 0.0,
+        "wer": 0.0,
+        "sayi_belirteci_dogrulugu": null,
+        "negatif_ornek": 1112,
+        "yanlis_donusum_orani": 0.0
+      },
+      "negatif_kalip": {
+        "ornek": 1730,
+        "tam_eslesme": 1.0,
+        "cer": 0.0,
+        "wer": 0.0,
+        "sayi_belirteci_dogrulugu": null,
+        "negatif_ornek": 1730,
+        "yanlis_donusum_orani": 0.0
+      },
+      "olcu": {
+        "ornek": 39,
+        "tam_eslesme": 0.0,
+        "cer": 0.8869908015768725,
+        "wer": 0.9807692307692307,
+        "sayi_belirteci_dogrulugu": 0.0,
+        "negatif_ornek": 0,
+        "yanlis_donusum_orani": null
+      },
+      "ondalik": {
+        "ornek": 169,
+        "tam_eslesme": 0.0,
+        "cer": 0.30955872550326624,
+        "wer": 0.49,
+        "sayi_belirteci_dogrulugu": 0.0,
+        "negatif_ornek": 0,
+        "yanlis_donusum_orani": null
+      },
+      "para": {
+        "ornek": 786,
+        "tam_eslesme": 0.0,
+        "cer": 0.29731514084507044,
+        "wer": 0.3955610357583231,
+        "sayi_belirteci_dogrulugu": 0.0,
+        "negatif_ornek": 0,
+        "yanlis_donusum_orani": null
+      },
+      "saat": {
+        "ornek": 237,
+        "tam_eslesme": 0.0,
+        "cer": 0.16762436381546544,
+        "wer": 0.3219178082191781,
+        "sayi_belirteci_dogrulugu": 0.0,
+        "negatif_ornek": 0,
+        "yanlis_donusum_orani": null
+      },
+      "sira": {
+        "ornek": 79,
+        "tam_eslesme": 0.0,
+        "cer": 0.3013392857142857,
+        "wer": 0.31444759206798867,
+        "sayi_belirteci_dogrulugu": 0.0,
+        "negatif_ornek": 0,
+        "yanlis_donusum_orani": null
+      }
+    },
+    "kural": {
+      "aralik": {
+        "ornek": 120,
+        "tam_eslesme": 0.0,
+        "cer": 0.03346346904629113,
+        "wer": 0.410958904109589,
+        "sayi_belirteci_dogrulugu": 0.0,
+        "negatif_ornek": 0,
+        "yanlis_donusum_orani": null
+      },
+      "kardinal": {
+        "ornek": 1213,
+        "tam_eslesme": 0.8112118713932399,
+        "cer": 0.02036043821966905,
+        "wer": 0.03824789715918108,
+        "sayi_belirteci_dogrulugu": 1.0,
+        "negatif_ornek": 0,
+        "yanlis_donusum_orani": null
+      },
+      "karisik": {
+        "ornek": 9,
+        "tam_eslesme": 1.0,
+        "cer": 0.0,
+        "wer": 0.0,
+        "sayi_belirteci_dogrulugu": 1.0,
+        "negatif_ornek": 0,
+        "yanlis_donusum_orani": null
+      },
+      "negatif_dogal": {
+        "ornek": 1112,
+        "tam_eslesme": 0.24280575539568344,
+        "cer": 0.057949146667210405,
+        "wer": 0.1281458304992518,
+        "sayi_belirteci_dogrulugu": null,
+        "negatif_ornek": 1112,
+        "yanlis_donusum_orani": 0.7571942446043165
+      },
+      "negatif_kalip": {
+        "ornek": 1730,
+        "tam_eslesme": 0.10578034682080925,
+        "cer": 0.08539522933059923,
+        "wer": 0.16182259820755507,
+        "sayi_belirteci_dogrulugu": null,
+        "negatif_ornek": 1730,
+        "yanlis_donusum_orani": 0.8942196531791907
+      },
+      "olcu": {
+        "ornek": 39,
+        "tam_eslesme": 1.0,
+        "cer": 0.0,
+        "wer": 0.0,
+        "sayi_belirteci_dogrulugu": 1.0,
+        "negatif_ornek": 0,
+        "yanlis_donusum_orani": null
+      },
+      "ondalik": {
+        "ornek": 169,
+        "tam_eslesme": 0.0,
+        "cer": 0.04252766297826956,
+        "wer": 0.388,
+        "sayi_belirteci_dogrulugu": 0.0,
+        "negatif_ornek": 0,
+        "yanlis_donusum_orani": null
+      },
+      "para": {
+        "ornek": 786,
+        "tam_eslesme": 0.22264631043256997,
+        "cer": 0.0988556338028169,
+        "wer": 0.16991368680641183,
+        "sayi_belirteci_dogrulugu": 1.0,
+        "negatif_ornek": 0,
+        "yanlis_donusum_orani": null
+      },
+      "saat": {
+        "ornek": 237,
+        "tam_eslesme": 0.8818565400843882,
+        "cer": 0.018059431948776884,
+        "wer": 0.03881278538812785,
+        "sayi_belirteci_dogrulugu": 0.8818565400843882,
+        "negatif_ornek": 0,
+        "yanlis_donusum_orani": null
+      },
+      "sira": {
+        "ornek": 79,
+        "tam_eslesme": 1.0,
+        "cer": 0.0,
+        "wer": 0.0,
+        "sayi_belirteci_dogrulugu": 1.0,
+        "negatif_ornek": 0,
+        "yanlis_donusum_orani": null
+      }
+    },
+    "model_korumasiz": {
+      "aralik": {
+        "ornek": 120,
+        "tam_eslesme": 1.0,
+        "cer": 0.0,
+        "wer": 0.0,
+        "sayi_belirteci_dogrulugu": 1.0,
+        "negatif_ornek": 0,
+        "yanlis_donusum_orani": null
+      },
+      "kardinal": {
+        "ornek": 1213,
+        "tam_eslesme": 0.9670239076669415,
+        "cer": 0.005668386670394754,
+        "wer": 0.006506903666084749,
+        "sayi_belirteci_dogrulugu": 0.9826875515251443,
+        "negatif_ornek": 0,
+        "yanlis_donusum_orani": null
+      },
+      "karisik": {
+        "ornek": 9,
+        "tam_eslesme": 0.8888888888888888,
+        "cer": 0.006396588486140725,
+        "wer": 0.012345679012345678,
+        "sayi_belirteci_dogrulugu": 0.9444444444444444,
+        "negatif_ornek": 0,
+        "yanlis_donusum_orani": null
+      },
+      "negatif_dogal": {
+        "ornek": 1112,
+        "tam_eslesme": 0.9991007194244604,
+        "cer": 0.00012234161857961381,
+        "wer": 0.00027207182696231805,
+        "sayi_belirteci_dogrulugu": null,
+        "negatif_ornek": 1112,
+        "yanlis_donusum_orani": 0.0008992805755395684
+      },
+      "negatif_kalip": {
+        "ornek": 1730,
+        "tam_eslesme": 0.9745664739884393,
+        "cer": 0.004088792262176818,
+        "wer": 0.007119524248261998,
+        "sayi_belirteci_dogrulugu": null,
+        "negatif_ornek": 1730,
+        "yanlis_donusum_orani": 0.025433526011560695
+      },
+      "olcu": {
+        "ornek": 39,
+        "tam_eslesme": 1.0,
+        "cer": 0.0,
+        "wer": 0.0,
+        "sayi_belirteci_dogrulugu": 1.0,
+        "negatif_ornek": 0,
+        "yanlis_donusum_orani": null
+      },
+      "ondalik": {
+        "ornek": 169,
+        "tam_eslesme": 1.0,
+        "cer": 0.0,
+        "wer": 0.0,
+        "sayi_belirteci_dogrulugu": 1.0,
+        "negatif_ornek": 0,
+        "yanlis_donusum_orani": null
+      },
+      "para": {
+        "ornek": 786,
+        "tam_eslesme": 1.0,
+        "cer": 0.0,
+        "wer": 0.0,
+        "sayi_belirteci_dogrulugu": 1.0,
+        "negatif_ornek": 0,
+        "yanlis_donusum_orani": null
+      },
+      "saat": {
+        "ornek": 237,
+        "tam_eslesme": 0.9915611814345991,
+        "cer": 0.0009850599244787392,
+        "wer": 0.00228310502283105,
+        "sayi_belirteci_dogrulugu": 0.9915611814345991,
+        "negatif_ornek": 0,
+        "yanlis_donusum_orani": null
+      },
+      "sira": {
+        "ornek": 79,
+        "tam_eslesme": 0.9367088607594937,
+        "cer": 0.01607142857142857,
+        "wer": 0.014164305949008499,
+        "sayi_belirteci_dogrulugu": 0.9367088607594937,
+        "negatif_ornek": 0,
+        "yanlis_donusum_orani": null
+      }
+    },
+    "model_korumali": {
+      "aralik": {
+        "ornek": 120,
+        "tam_eslesme": 1.0,
+        "cer": 0.0,
+        "wer": 0.0,
+        "sayi_belirteci_dogrulugu": 1.0,
+        "negatif_ornek": 0,
+        "yanlis_donusum_orani": null
+      },
+      "kardinal": {
+        "ornek": 1213,
+        "tam_eslesme": 0.9670239076669415,
+        "cer": 0.005668386670394754,
+        "wer": 0.006506903666084749,
+        "sayi_belirteci_dogrulugu": 0.9826875515251443,
+        "negatif_ornek": 0,
+        "yanlis_donusum_orani": null
+      },
+      "karisik": {
+        "ornek": 9,
+        "tam_eslesme": 0.8888888888888888,
+        "cer": 0.006396588486140725,
+        "wer": 0.012345679012345678,
+        "sayi_belirteci_dogrulugu": 0.9444444444444444,
+        "negatif_ornek": 0,
+        "yanlis_donusum_orani": null
+      },
+      "negatif_dogal": {
+        "ornek": 1112,
+        "tam_eslesme": 0.9991007194244604,
+        "cer": 0.00012234161857961381,
+        "wer": 0.00027207182696231805,
+        "sayi_belirteci_dogrulugu": null,
+        "negatif_ornek": 1112,
+        "yanlis_donusum_orani": 0.0008992805755395684
+      },
+      "negatif_kalip": {
+        "ornek": 1730,
+        "tam_eslesme": 0.9751445086705203,
+        "cer": 0.0039899694884686174,
+        "wer": 0.006952006030655834,
+        "sayi_belirteci_dogrulugu": null,
+        "negatif_ornek": 1730,
+        "yanlis_donusum_orani": 0.02485549132947977
+      },
+      "olcu": {
+        "ornek": 39,
+        "tam_eslesme": 1.0,
+        "cer": 0.0,
+        "wer": 0.0,
+        "sayi_belirteci_dogrulugu": 1.0,
+        "negatif_ornek": 0,
+        "yanlis_donusum_orani": null
+      },
+      "ondalik": {
+        "ornek": 169,
+        "tam_eslesme": 1.0,
+        "cer": 0.0,
+        "wer": 0.0,
+        "sayi_belirteci_dogrulugu": 1.0,
+        "negatif_ornek": 0,
+        "yanlis_donusum_orani": null
+      },
+      "para": {
+        "ornek": 786,
+        "tam_eslesme": 1.0,
+        "cer": 0.0,
+        "wer": 0.0,
+        "sayi_belirteci_dogrulugu": 1.0,
+        "negatif_ornek": 0,
+        "yanlis_donusum_orani": null
+      },
+      "saat": {
+        "ornek": 237,
+        "tam_eslesme": 0.9915611814345991,
+        "cer": 0.0009850599244787392,
+        "wer": 0.00228310502283105,
+        "sayi_belirteci_dogrulugu": 0.9915611814345991,
+        "negatif_ornek": 0,
+        "yanlis_donusum_orani": null
+      },
+      "sira": {
+        "ornek": 79,
+        "tam_eslesme": 0.9367088607594937,
+        "cer": 0.01607142857142857,
+        "wer": 0.014164305949008499,
+        "sayi_belirteci_dogrulugu": 0.9367088607594937,
+        "negatif_ornek": 0,
+        "yanlis_donusum_orani": null
+      }
+    }
+  },
+  "hata_sayisi": 92,
+  "hatalar": [
+    {
+      "girdi": "Saat henüz dörtmüş.",
+      "hedef": "Saat henüz 4'müş.",
+      "cikti": "Saat henüz dörtmüş.",
+      "ham": "Saat henüz 40.",
+      "kategori": "saat",
+      "sablon": "v3d-d6-0295",
+      "uyari": [
+        "\"dörtmüş.\" → \"40.\" geri alındı (sayı değeri tutmuyor)"
+      ]
+    },
+    {
+      "girdi": "romanda birden on beşinde kız ya erde gerek ya yerde sözüyle karşılaştım",
+      "hedef": "romanda birden on beşinde kız ya erde gerek ya yerde sözüyle karşılaştım",
+      "cikti": "romanda 1'den 15'inde kız ya erde gerek ya yerde sözüyle karşılaştım",
+      "ham": "romanda 1'den 15'inde kız ya erde gerek ya yerde sözüyle karşılaştım",
+      "kategori": "negatif_kalip",
+      "sablon": "v3d-d2-076-07",
+      "uyari": []
+    },
+    {
+      "girdi": "Anlatıcı tam burada \"yetmiş iki millete bir gözle bakmak\" dedi.",
+      "hedef": "Anlatıcı tam burada \"yetmiş iki millete bir gözle bakmak\" dedi.",
+      "cikti": "Anlatıcı tam burada \"72 millete bir gözle bakmak\" dedi.",
+      "ham": "Anlatıcı tam burada \"72 millete bir gözle bakmak\" dedi.",
+      "kategori": "negatif_kalip",
+      "sablon": "v3d-d2-086-04",
+      "uyari": []
+    },
+    {
+      "girdi": "Metinde \"yüzlük bir kasa\" sözü geçiyor.",
+      "hedef": "Metinde \"100'lük bir kasa\" sözü geçiyor.",
+      "cikti": "Metinde \"yüzlük bir kasa\" sözü geçiyor.",
+      "ham": "Metinde \"yüzlük bir kasa\" sözü geçiyor.",
+      "kategori": "kardinal",
+      "sablon": "v3d-d8-0071",
+      "uyari": []
+    },
+    {
+      "girdi": "İki yüz kırk dört kilometre yürüdük.",
+      "hedef": "244 kilometre yürüdük.",
+      "cikti": "244 km yürüdük.",
+      "ham": "244 km yürüdük.",
+      "kategori": "kardinal",
+      "sablon": "v3d-d5-0096",
+      "uyari": []
+    },
+    {
+      "girdi": "anlatıcı tam burada otuz iki dişini göstermek dedi",
+      "hedef": "anlatıcı tam burada otuz iki dişini göstermek dedi",
+      "cikti": "anlatıcı tam burada 32 dişini göstermek dedi",
+      "ham": "anlatıcı tam burada 32 dişini göstermek dedi",
+      "kategori": "negatif_kalip",
+      "sablon": "v3d-d2-009-04",
+      "uyari": []
+    },
+    {
+      "girdi": "sohbet uzayınca on beşinde kız ya erde gerek ya yerde sözü aklıma geldi",
+      "hedef": "sohbet uzayınca on beşinde kız ya erde gerek ya yerde sözü aklıma geldi",
+      "cikti": "sohbet uzayınca 15'inde kız ya erde gerek ya yerde sözü aklıma geldi",
+      "ham": "sohbet uzayınca 15'inde kız ya erde gerek ya yerde sözü aklıma geldi",
+      "kategori": "negatif_kalip",
+      "sablon": "v3d-d2-076-02",
+      "uyari": []
+    },
+    {
+      "girdi": "Yedi yüz seksen kilometre yürüdük.",
+      "hedef": "780 kilometre yürüdük.",
+      "cikti": "780 km yürüdük.",
+      "ham": "780 km yürüdük.",
+      "kategori": "kardinal",
+      "sablon": "v3d-d5-0096",
+      "uyari": []
+    },
+    {
+      "girdi": "Doksan üç kilometre yürüdük.",
+      "hedef": "93 kilometre yürüdük.",
+      "cikti": "93 km yürüdük.",
+      "ham": "93 km yürüdük.",
+      "kategori": "kardinal",
+      "sablon": "v3d-d5-0096",
+      "uyari": []
+    },
+    {
+      "girdi": "Sohbet uzayınca \"on beşinde kız ya erde gerek ya yerde\" sözü aklıma geldi.",
+      "hedef": "Sohbet uzayınca \"on beşinde kız ya erde gerek ya yerde\" sözü aklıma geldi.",
+      "cikti": "Sohbet uzayınca \"15'inde kız ya erde gerek ya yerde\" sözü aklıma geldi.",
+      "ham": "Sohbet uzayınca \"15'inde kız ya erde gerek ya yerde\" sözü aklıma geldi.",
+      "kategori": "negatif_kalip",
+      "sablon": "v3d-d2-076-02",
+      "uyari": []
+    },
+    {
+      "girdi": "Yüz altmış dört kilometre yürüdük.",
+      "hedef": "164 kilometre yürüdük.",
+      "cikti": "164 km yürüdük.",
+      "ham": "164 km yürüdük.",
+      "kategori": "kardinal",
+      "sablon": "v3d-d5-0096",
+      "uyari": []
+    },
+    {
+      "girdi": "anlaşılan altı bavul yola çıkmadan önce hazırlandı",
+      "hedef": "anlaşılan altı bavul yola çıkmadan önce hazırlandı",
+      "cikti": "anlaşılan 6 bavul yola çıkmadan önce hazırlandı",
+      "ham": "anlaşılan 6 bavul yola çıkmadan önce hazırlandı",
+      "kategori": "negatif_kalip",
+      "sablon": "v3d-d4-0744",
+      "uyari": []
+    },
+    {
+      "girdi": "hatırlıyorum kırk yıl boyunca o köyde yaşadım",
+      "hedef": "hatırlıyorum 40 yıl boyunca o köyde yaşadım",
+      "cikti": "hatırlıyorum kırk yıl boyunca o köyde yaşadım",
+      "ham": "hatırlıyorum kırk yıl boyunca o köyde yaşadım",
+      "kategori": "kardinal",
+      "sablon": "v3d-d4-0967",
+      "uyari": []
+    },
+    {
+      "girdi": "Okan ile bir saat beş dakika konuştuk, sonra vedalaştık.",
+      "hedef": "Okan ile 1 saat 5 dakika konuştuk, sonra vedalaştık.",
+      "cikti": "Okan ile bir saat 5 dakika konuştuk, sonra vedalaştık.",
+      "ham": "Okan ile bir saat 5 dakika konuştuk, sonra vedalaştık.",
+      "kategori": "karisik",
+      "sablon": "v3d-d4-1073",
+      "uyari": []
+    },
+    {
+      "girdi": "otuz iki dişini göstermek sözünü babamdan öğrendim",
+      "hedef": "otuz iki dişini göstermek sözünü babamdan öğrendim",
+      "cikti": "32 dişini göstermek sözünü babamdan öğrendim",
+      "ham": "32 dişini göstermek sözünü babamdan öğrendim",
+      "kategori": "negatif_kalip",
+      "sablon": "v3d-d2-009-03",
+      "uyari": []
+    },
+    {
+      "girdi": "Ninem eskiden \"on beşinde kız ya erde gerek ya yerde\" derdi.",
+      "hedef": "Ninem eskiden \"on beşinde kız ya erde gerek ya yerde\" derdi.",
+      "cikti": "Ninem eskiden \"15'inde kız ya erde gerek ya yerde\" derdi.",
+      "ham": "Ninem eskiden \"15'inde kız ya erde gerek ya yerde\" derdi.",
+      "kategori": "negatif_kalip",
+      "sablon": "v3d-d2-076-01",
+      "uyari": []
+    },
+    {
+      "girdi": "Dört yüz yirmi üç kilometre yürüdük.",
+      "hedef": "423 kilometre yürüdük.",
+      "cikti": "423 km yürüdük.",
+      "ham": "423 km yürüdük.",
+      "kategori": "kardinal",
+      "sablon": "v3d-d5-0096",
+      "uyari": []
+    },
+    {
+      "girdi": "yol arkadaşımın sözü şuydu on beşinde kız ya erde gerek ya yerde",
+      "hedef": "yol arkadaşımın sözü şuydu on beşinde kız ya erde gerek ya yerde",
+      "cikti": "yol arkadaşımın sözü şuydu 15'inde kız ya erde gerek ya yerde",
+      "ham": "yol arkadaşımın sözü şuydu 15'inde kız ya erde gerek ya yerde",
+      "kategori": "negatif_kalip",
+      "sablon": "v3d-d2-076-06",
+      "uyari": []
+    },
+    {
+      "girdi": "Metinde \"onluk bir kutu\" sözü geçiyor.",
+      "hedef": "Metinde \"10'luk bir kutu\" sözü geçiyor.",
+      "cikti": "Metinde \"onluk bir kutu\" sözü geçiyor.",
+      "ham": "Metinde \"onluk bir kutu\" sözü geçiyor.",
+      "kategori": "kardinal",
+      "sablon": "v3d-d8-0071",
+      "uyari": []
+    },
+    {
+      "girdi": "Kardeşim kulağıma \"otuz iki dişini göstermek\" diye fısıldadı.",
+      "hedef": "Kardeşim kulağıma \"otuz iki dişini göstermek\" diye fısıldadı.",
+      "cikti": "Kardeşim kulağıma \"32 dişini göstermek\" diye fısıldadı.",
+      "ham": "Kardeşim kulağıma \"32 dişini göstermek\" diye fısıldadı.",
+      "kategori": "negatif_kalip",
+      "sablon": "v3d-d2-009-05",
+      "uyari": []
+    },
+    {
+      "girdi": "Dokuz yüz on dört kilometre yürüdük.",
+      "hedef": "914 kilometre yürüdük.",
+      "cikti": "914 km yürüdük.",
+      "ham": "914 km yürüdük.",
+      "kategori": "kardinal",
+      "sablon": "v3d-d5-0096",
+      "uyari": []
+    },
+    {
+      "girdi": "ne yazık ki altı fincan dolabın üst rafında duruyordu",
+      "hedef": "ne yazık ki altı fincan dolabın üst rafında duruyordu",
+      "cikti": "ne yazık ki 6 fincan dolabın üst rafında duruyordu",
+      "ham": "ne yazık ki 6 fincan dolabın üst rafında duruyordu",
+      "kategori": "negatif_kalip",
+      "sablon": "v3d-d4-0722",
+      "uyari": []
+    },
+    {
+      "girdi": "defterde beş arşın yazıyor",
+      "hedef": "defterde 5 arşın yazıyor",
+      "cikti": "defterde beş arşın yazıyor",
+      "ham": "defterde beş arşın yazıyor",
+      "kategori": "kardinal",
+      "sablon": "v3d-d7-0042",
+      "uyari": []
+    },
+    {
+      "girdi": "Metinde \"altmışlık bir kutu\" sözü geçiyor.",
+      "hedef": "Metinde \"60'lık bir kutu\" sözü geçiyor.",
+      "cikti": "Metinde \"altmışlık bir kutu\" sözü geçiyor.",
+      "ham": "Metinde \"altmışlık bir kutu\" sözü geçiyor.",
+      "kategori": "kardinal",
+      "sablon": "v3d-d8-0071",
+      "uyari": []
+    },
+    {
+      "girdi": "anlatıcı tam burada yetmiş iki millete bir gözle bakmak dedi",
+      "hedef": "anlatıcı tam burada yetmiş iki millete bir gözle bakmak dedi",
+      "cikti": "anlatıcı tam burada 72 millete bir gözle bakmak dedi",
+      "ham": "anlatıcı tam burada 72 millete bir gözle bakmak dedi",
+      "kategori": "negatif_kalip",
+      "sablon": "v3d-d2-086-04",
+      "uyari": []
+    },
+    {
+      "girdi": "Elli kilometre yürüdük.",
+      "hedef": "50 kilometre yürüdük.",
+      "cikti": "50 km yürüdük.",
+      "ham": "50 km yürüdük.",
+      "kategori": "kardinal",
+      "sablon": "v3d-d5-0096",
+      "uyari": []
+    },
+    {
+      "girdi": "Metinde \"otuzluk bir kasa\" sözü geçiyor.",
+      "hedef": "Metinde \"30'luk bir kasa\" sözü geçiyor.",
+      "cikti": "Metinde \"otuzluk bir kasa\" sözü geçiyor.",
+      "ham": "Metinde \"otuzluk bir kasa\" sözü geçiyor.",
+      "kategori": "kardinal",
+      "sablon": "v3d-d8-0071",
+      "uyari": []
+    },
+    {
+      "girdi": "Ninem eskiden \"otuz iki dişini göstermek\" derdi.",
+      "hedef": "Ninem eskiden \"otuz iki dişini göstermek\" derdi.",
+      "cikti": "Ninem eskiden \"32 dişini göstermek\" derdi.",
+      "ham": "Ninem eskiden \"32 dişini göstermek\" derdi.",
+      "kategori": "negatif_kalip",
+      "sablon": "v3d-d2-009-01",
+      "uyari": []
+    },
+    {
+      "girdi": "on beşinde kız ya erde gerek ya yerde sözünü babamdan öğrendim",
+      "hedef": "on beşinde kız ya erde gerek ya yerde sözünü babamdan öğrendim",
+      "cikti": "15'inde kız ya erde gerek ya yerde sözünü babamdan öğrendim",
+      "ham": "15'inde kız ya erde gerek ya yerde sözünü babamdan öğrendim",
+      "kategori": "negatif_kalip",
+      "sablon": "v3d-d2-076-03",
+      "uyari": []
+    },
+    {
+      "girdi": "Yol arkadaşımın sözü şuydu: \"otuz iki dişini göstermek\".",
+      "hedef": "Yol arkadaşımın sözü şuydu: \"otuz iki dişini göstermek\".",
+      "cikti": "Yol arkadaşımın sözü şuydu: \"32 dişini göstermek\".",
+      "ham": "Yol arkadaşımın sözü şuydu: \"32 dişini göstermek\".",
+      "kategori": "negatif_kalip",
+      "sablon": "v3d-d2-009-06",
+      "uyari": []
+    },
+    {
+      "girdi": "Metinde \"yedinci sınıf\" sözü geçiyor.",
+      "hedef": "Metinde \"7. sınıf\" sözü geçiyor.",
+      "cikti": "Metinde \"yedinci sınıf\" sözü geçiyor.",
+      "ham": "Metinde \"yedinci sınıf\" sözü geçiyor.",
+      "kategori": "sira",
+      "sablon": "v3d-d8-0067",
+      "uyari": []
+    },
+    {
+      "girdi": "Yol arkadaşımın sözü şuydu: \"on beşinde kız ya erde gerek ya yerde\".",
+      "hedef": "Yol arkadaşımın sözü şuydu: \"on beşinde kız ya erde gerek ya yerde\".",
+      "cikti": "Yol arkadaşımın sözü şuydu: \"15'inde kız ya erde gerek ya yerde\".",
+      "ham": "Yol arkadaşımın sözü şuydu: \"15'inde kız ya erde gerek ya yerde\".",
+      "kategori": "negatif_kalip",
+      "sablon": "v3d-d2-076-06",
+      "uyari": []
+    },
+    {
+      "girdi": "Yüz akı.",
+      "hedef": "Yüz akı.",
+      "cikti": "100 akı.",
+      "ham": "100 akı.",
+      "kategori": "negatif_kalip",
+      "sablon": "v3d-d2-092-00",
+      "uyari": []
+    },
+    {
+      "girdi": "Metinde \"üçüncü kat\" sözü geçiyor.",
+      "hedef": "Metinde \"3. kat\" sözü geçiyor.",
+      "cikti": "Metinde \"üçüncü kat\" sözü geçiyor.",
+      "ham": "Metinde \"üçüncü kat\" sözü geçiyor.",
+      "kategori": "sira",
+      "sablon": "v3d-d8-0067",
+      "uyari": []
+    },
+    {
+      "girdi": "Saat henüz üçtür.",
+      "hedef": "Saat henüz 3'tür.",
+      "cikti": "Saat henüz üçtür.",
+      "ham": "Saat henüz üçtür.",
+      "kategori": "saat",
+      "sablon": "v3d-d6-0295",
+      "uyari": []
+    },
+    {
+      "girdi": "Metinde \"seksenlik bir şişe\" sözü geçiyor.",
+      "hedef": "Metinde \"80'lik bir şişe\" sözü geçiyor.",
+      "cikti": "Metinde \"seksenlik bir şişe\" sözü geçiyor.",
+      "ham": "Metinde \"seksenlik bir şişe\" sözü geçiyor.",
+      "kategori": "kardinal",
+      "sablon": "v3d-d8-0071",
+      "uyari": []
+    },
+    {
+      "girdi": "Yedi yüz yedi kilometre yürüdük.",
+      "hedef": "707 kilometre yürüdük.",
+      "cikti": "707 km yürüdük.",
+      "ham": "707 km yürüdük.",
+      "kategori": "kardinal",
+      "sablon": "v3d-d5-0096",
+      "uyari": []
+    },
+    {
+      "girdi": "Metinde \"yetmişlik bir kasa\" sözü geçiyor.",
+      "hedef": "Metinde \"70'lik bir kasa\" sözü geçiyor.",
+      "cikti": "Metinde \"yetmişlik bir kasa\" sözü geçiyor.",
+      "ham": "Metinde \"yetmişlik bir kasa\" sözü geçiyor.",
+      "kategori": "kardinal",
+      "sablon": "v3d-d8-0071",
+      "uyari": []
+    },
+    {
+      "girdi": "Metinde \"sekizinci sınıf\" sözü geçiyor.",
+      "hedef": "Metinde \"8. sınıf\" sözü geçiyor.",
+      "cikti": "Metinde \"sekizinci sınıf\" sözü geçiyor.",
+      "ham": "Metinde \"sekizinci sınıf\" sözü geçiyor.",
+      "kategori": "sira",
+      "sablon": "v3d-d8-0067",
+      "uyari": []
+    },
+    {
+      "girdi": "on beşinde kız ya erde gerek ya yerde",
+      "hedef": "on beşinde kız ya erde gerek ya yerde",
+      "cikti": "15'inde kız ya erde gerek ya yerde",
+      "ham": "15'inde kız ya erde gerek ya yerde",
+      "kategori": "negatif_kalip",
+      "sablon": "v3d-d2-076-00",
+      "uyari": []
+    },
+    {
+      "girdi": "Metinde \"yirmilik bir şişe\" sözü geçiyor.",
+      "hedef": "Metinde \"20'lik bir şişe\" sözü geçiyor.",
+      "cikti": "Metinde \"yirmilik bir şişe\" sözü geçiyor.",
+      "ham": "Metinde \"yirmilik bir şişe\" sözü geçiyor.",
+      "kategori": "kardinal",
+      "sablon": "v3d-d8-0071",
+      "uyari": []
+    },
+    {
+      "girdi": "Altı yüz altmış altı kilometre yürüdük.",
+      "hedef": "666 kilometre yürüdük.",
+      "cikti": "666 km yürüdük.",
+      "ham": "666 km yürüdük.",
+      "kategori": "kardinal",
+      "sablon": "v3d-d5-0096",
+      "uyari": []
+    },
+    {
+      "girdi": "kardeşim kulağıma otuz iki dişini göstermek diye fısıldadı",
+      "hedef": "kardeşim kulağıma otuz iki dişini göstermek diye fısıldadı",
+      "cikti": "kardeşim kulağıma 32 dişini göstermek diye fısıldadı",
+      "ham": "kardeşim kulağıma 32 dişini göstermek diye fısıldadı",
+      "kategori": "negatif_kalip",
+      "sablon": "v3d-d2-009-05",
+      "uyari": []
+    },
+    {
+      "girdi": "Kırkı çoktan bitmişti.",
+      "hedef": "40'ı çoktan bitmişti.",
+      "cikti": "Kırkı çoktan bitmişti.",
+      "ham": "Kırkı çoktan bitmişti.",
+      "kategori": "kardinal",
+      "sablon": "v3d-d5-0213",
+      "uyari": []
+    },
+    {
+      "girdi": "Kardeşim kulağıma \"on beşinde kız ya erde gerek ya yerde\" diye fısıldadı.",
+      "hedef": "Kardeşim kulağıma \"on beşinde kız ya erde gerek ya yerde\" diye fısıldadı.",
+      "cikti": "Kardeşim kulağıma \"15'inde kız ya erde gerek ya yerde\" diye fısıldadı.",
+      "ham": "Kardeşim kulağıma \"15'inde kız ya erde gerek ya yerde\" diye fısıldadı.",
+      "kategori": "negatif_kalip",
+      "sablon": "v3d-d2-076-05",
+      "uyari": []
+    },
+    {
+      "girdi": "\"On beşinde kız ya erde gerek ya yerde\" sözünü babamdan öğrendim.",
+      "hedef": "\"On beşinde kız ya erde gerek ya yerde\" sözünü babamdan öğrendim.",
+      "cikti": "\"15'inde kız ya erde gerek ya yerde\" sözünü babamdan öğrendim.",
+      "ham": "\"15'inde kız ya erde gerek ya yerde\" sözünü babamdan öğrendim.",
+      "kategori": "negatif_kalip",
+      "sablon": "v3d-d2-076-03",
+      "uyari": []
+    },
+    {
+      "girdi": "yetmiş iki millete bir gözle bakmak sözünü babamdan öğrendim",
+      "hedef": "yetmiş iki millete bir gözle bakmak sözünü babamdan öğrendim",
+      "cikti": "72 millete bir gözle bakmak sözünü babamdan öğrendim",
+      "ham": "72 millete bir gözle bakmak sözünü babamdan öğrendim",
+      "kategori": "negatif_kalip",
+      "sablon": "v3d-d2-086-03",
+      "uyari": []
+    },
+    {
+      "girdi": "Seksen dokuz kilometre yürüdük.",
+      "hedef": "89 kilometre yürüdük.",
+      "cikti": "89 km yürüdük.",
+      "ham": "89 km yürüdük.",
+      "kategori": "kardinal",
+      "sablon": "v3d-d5-0096",
+      "uyari": []
+    },
+    {
+      "girdi": "Yirmi üç kilometre yürüdük.",
+      "hedef": "23 kilometre yürüdük.",
+      "cikti": "23 km yürüdük.",
+      "ham": "23 km yürüdük.",
+      "kategori": "kardinal",
+      "sablon": "v3d-d5-0096",
+      "uyari": []
+    },
+    {
+      "girdi": "sohbet uzayınca yetmiş iki millete bir gözle bakmak sözü aklıma geldi",
+      "hedef": "sohbet uzayınca yetmiş iki millete bir gözle bakmak sözü aklıma geldi",
+      "cikti": "sohbet uzayınca 72 millete bir gözle bakmak sözü aklıma geldi",
+      "ham": "sohbet uzayınca 72 millete bir gözle bakmak sözü aklıma geldi",
+      "kategori": "negatif_kalip",
+      "sablon": "v3d-d2-086-02",
+      "uyari": []
+    },
+    {
+      "girdi": "On kilometre yürüdük.",
+      "hedef": "10 kilometre yürüdük.",
+      "cikti": "10 km yürüdük.",
+      "ham": "10 km yürüdük.",
+      "kategori": "kardinal",
+      "sablon": "v3d-d5-0096",
+      "uyari": []
+    },
+    {
+      "girdi": "Otuz iki dişini göstermek.",
+      "hedef": "Otuz iki dişini göstermek.",
+      "cikti": "32 dişini göstermek.",
+      "ham": "32 dişini göstermek.",
+      "kategori": "negatif_kalip",
+      "sablon": "v3d-d2-009-00",
+      "uyari": []
+    },
+    {
+      "girdi": "bana şunu anlattı kırk fidan bahçede yağmuru bekleyip durdu",
+      "hedef": "bana şunu anlattı 40 fidan bahçede yağmuru bekleyip durdu",
+      "cikti": "bana şunu anlattı kırk fidan bahçede yağmuru bekleyip durdu",
+      "ham": "bana şunu anlattı kırk fidan bahçede yağmuru bekleyip durdu",
+      "kategori": "kardinal",
+      "sablon": "v3d-d4-0643",
+      "uyari": []
+    },
+    {
+      "girdi": "Doksan sekiz kilometre yürüdük.",
+      "hedef": "98 kilometre yürüdük.",
+      "cikti": "98 km yürüdük.",
+      "ham": "98 km yürüdük.",
+      "kategori": "kardinal",
+      "sablon": "v3d-d5-0096",
+      "uyari": []
+    },
+    {
+      "girdi": "kardeşim kulağıma on beşinde kız ya erde gerek ya yerde diye fısıldadı",
+      "hedef": "kardeşim kulağıma on beşinde kız ya erde gerek ya yerde diye fısıldadı",
+      "cikti": "kardeşim kulağıma 15'inde kız ya erde gerek ya yerde diye fısıldadı",
+      "ham": "kardeşim kulağıma 15'inde kız ya erde gerek ya yerde diye fısıldadı",
+      "kategori": "negatif_kalip",
+      "sablon": "v3d-d2-076-05",
+      "uyari": []
+    },
+    {
+      "girdi": "sohbet uzayınca otuz iki dişini göstermek sözü aklıma geldi",
+      "hedef": "sohbet uzayınca otuz iki dişini göstermek sözü aklıma geldi",
+      "cikti": "sohbet uzayınca 32 dişini göstermek sözü aklıma geldi",
+      "ham": "sohbet uzayınca 32 dişini göstermek sözü aklıma geldi",
+      "kategori": "negatif_kalip",
+      "sablon": "v3d-d2-009-02",
+      "uyari": []
+    },
+    {
+      "girdi": "Bana: \"On yaşındayım!\" dedi.",
+      "hedef": "Bana: \"10 yaşındayım!\" dedi.",
+      "cikti": "Bana: \"On yaşındayım!\" dedi.",
+      "ham": "Bana: \"On yaşındayım!\" dedi.",
+      "kategori": "kardinal",
+      "sablon": "v3d-d5-0149",
+      "uyari": []
+    },
+    {
+      "girdi": "Altı yüz on iki kilometre yürüdük.",
+      "hedef": "612 kilometre yürüdük.",
+      "cikti": "612 km yürüdük.",
+      "ham": "612 km yürüdük.",
+      "kategori": "kardinal",
+      "sablon": "v3d-d5-0096",
+      "uyari": []
+    },
+    {
+      "girdi": "Notta \"kırklık bir torba\" yazıyordu.",
+      "hedef": "Notta \"40'lık bir torba\" yazıyordu.",
+      "cikti": "Notta \"kırklık bir torba\" yazıyordu.",
+      "ham": "Notta \"kırklık bir torba\" yazıyordu.",
+      "kategori": "kardinal",
+      "sablon": "v3d-d8-0072",
+      "uyari": []
+    },
+    {
+      "girdi": "Metinde \"doksanlık bir şişe\" sözü geçiyor.",
+      "hedef": "Metinde \"90'lık bir şişe\" sözü geçiyor.",
+      "cikti": "Metinde \"doksanlık bir şişe\" sözü geçiyor.",
+      "ham": "Metinde \"doksanlık bir şişe\" sözü geçiyor.",
+      "kategori": "kardinal",
+      "sablon": "v3d-d8-0071",
+      "uyari": []
+    },
+    {
+      "girdi": "yetmiş iki millete bir gözle bakmak",
+      "hedef": "yetmiş iki millete bir gözle bakmak",
+      "cikti": "72 millete bir gözle bakmak",
+      "ham": "72 millete bir gözle bakmak",
+      "kategori": "negatif_kalip",
+      "sablon": "v3d-d2-086-00",
+      "uyari": []
+    },
+    {
+      "girdi": "Anlatıcı tam burada \"otuz iki dişini göstermek\" dedi.",
+      "hedef": "Anlatıcı tam burada \"otuz iki dişini göstermek\" dedi.",
+      "cikti": "Anlatıcı tam burada \"32 dişini göstermek\" dedi.",
+      "ham": "Anlatıcı tam burada \"32 dişini göstermek\" dedi.",
+      "kategori": "negatif_kalip",
+      "sablon": "v3d-d2-009-04",
+      "uyari": []
+    },
+    {
+      "girdi": "Hatırlıyorum, kırk yıl boyunca o köyde yaşadım.",
+      "hedef": "Hatırlıyorum, 40 yıl boyunca o köyde yaşadım.",
+      "cikti": "Hatırlıyorum, kırk yıl boyunca o köyde yaşadım.",
+      "ham": "Hatırlıyorum, kırk yıl boyunca o köyde yaşadım.",
+      "kategori": "kardinal",
+      "sablon": "v3d-d4-0967",
+      "uyari": []
+    },
+    {
+      "girdi": "Beş yüz otuz altı kilometre yürüdük.",
+      "hedef": "536 kilometre yürüdük.",
+      "cikti": "536 km yürüdük.",
+      "ham": "536 km yürüdük.",
+      "kategori": "kardinal",
+      "sablon": "v3d-d5-0096",
+      "uyari": []
+    },
+    {
+      "girdi": "Kırk dört kilometre yürüdük.",
+      "hedef": "44 kilometre yürüdük.",
+      "cikti": "44 km yürüdük.",
+      "ham": "44 km yürüdük.",
+      "kategori": "kardinal",
+      "sablon": "v3d-d5-0096",
+      "uyari": []
+    },
+    {
+      "girdi": "Dört yüz otuz altı kilometre yürüdük.",
+      "hedef": "436 kilometre yürüdük.",
+      "cikti": "436 km yürüdük.",
+      "ham": "436 km yürüdük.",
+      "kategori": "kardinal",
+      "sablon": "v3d-d5-0096",
+      "uyari": []
+    },
+    {
+      "girdi": "ninem eskiden on beşinde kız ya erde gerek ya yerde derdi",
+      "hedef": "ninem eskiden on beşinde kız ya erde gerek ya yerde derdi",
+      "cikti": "ninem eskiden 15'inde kız ya erde gerek ya yerde derdi",
+      "ham": "ninem eskiden 15'inde kız ya erde gerek ya yerde derdi",
+      "kategori": "negatif_kalip",
+      "sablon": "v3d-d2-076-01",
+      "uyari": []
+    },
+    {
+      "girdi": "kardeşim kulağıma yetmiş iki millete bir gözle bakmak diye fısıldadı",
+      "hedef": "kardeşim kulağıma yetmiş iki millete bir gözle bakmak diye fısıldadı",
+      "cikti": "kardeşim kulağıma 72 millete bir gözle bakmak diye fısıldadı",
+      "ham": "kardeşim kulağıma 72 millete bir gözle bakmak diye fısıldadı",
+      "kategori": "negatif_kalip",
+      "sablon": "v3d-d2-086-05",
+      "uyari": []
+    },
+    {
+      "girdi": "Metinde \"onluk bir paket\" sözü geçiyor.",
+      "hedef": "Metinde \"10'luk bir paket\" sözü geçiyor.",
+      "cikti": "Metinde \"onluk bir paket\" sözü geçiyor.",
+      "ham": "Metinde \"onluk bir paket\" sözü geçiyor.",
+      "kategori": "kardinal",
+      "sablon": "v3d-d8-0071",
+      "uyari": []
+    },
+    {
+      "girdi": "On beşinde kız ya erde gerek ya yerde.",
+      "hedef": "On beşinde kız ya erde gerek ya yerde.",
+      "cikti": "15'inde kız ya erde gerek ya yerde.",
+      "ham": "15'inde kız ya erde gerek ya yerde.",
+      "kategori": "negatif_kalip",
+      "sablon": "v3d-d2-076-00",
+      "uyari": []
+    },
+    {
+      "girdi": "Defterde beş arşın yazıyor.",
+      "hedef": "Defterde 5 arşın yazıyor.",
+      "cikti": "Defterde beş arşın yazıyor.",
+      "ham": "Defterde beş arşın yazıyor.",
+      "kategori": "kardinal",
+      "sablon": "v3d-d7-0042",
+      "uyari": []
+    },
+    {
+      "girdi": "Metinde \"onuncu sayfa\" sözü geçiyor.",
+      "hedef": "Metinde \"10. sayfa\" sözü geçiyor.",
+      "cikti": "Metinde \"onuncu sayfa\" sözü geçiyor.",
+      "ham": "Metinde \"onuncu sayfa\" sözü geçiyor.",
+      "kategori": "sira",
+      "sablon": "v3d-d8-0067",
+      "uyari": []
+    },
+    {
+      "girdi": "Yetmiş iki millete bir gözle bakmak.",
+      "hedef": "Yetmiş iki millete bir gözle bakmak.",
+      "cikti": "72 millete bir gözle bakmak.",
+      "ham": "72 millete bir gözle bakmak.",
+      "kategori": "negatif_kalip",
+      "sablon": "v3d-d2-086-00",
+      "uyari": []
+    },
+    {
+      "girdi": "romanda birden otuz iki dişini göstermek sözüyle karşılaştım",
+      "hedef": "romanda birden otuz iki dişini göstermek sözüyle karşılaştım",
+      "cikti": "romanda birden 32 dişini göstermek sözüyle karşılaştım",
+      "ham": "romanda birden 32 dişini göstermek sözüyle karşılaştım",
+      "kategori": "negatif_kalip",
+      "sablon": "v3d-d2-009-07",
+      "uyari": []
+    },
+    {
+      "girdi": "Anlatıcı tam burada \"on beşinde kız ya erde gerek ya yerde\" dedi.",
+      "hedef": "Anlatıcı tam burada \"on beşinde kız ya erde gerek ya yerde\" dedi.",
+      "cikti": "Anlatıcı tam burada \"15'inde kız ya erde gerek ya yerde\" dedi.",
+      "ham": "Anlatıcı tam burada \"15'inde kız ya erde gerek ya yerde\" dedi.",
+      "kategori": "negatif_kalip",
+      "sablon": "v3d-d2-076-04",
+      "uyari": []
+    },
+    {
+      "girdi": "Metinde \"otuzluk bir torba\" sözü geçiyor.",
+      "hedef": "Metinde \"30'luk bir torba\" sözü geçiyor.",
+      "cikti": "Metinde \"otuzluk bir torba\" sözü geçiyor.",
+      "ham": "Metinde \"otuzluk bir torba\" sözü geçiyor.",
+      "kategori": "kardinal",
+      "sablon": "v3d-d8-0071",
+      "uyari": []
+    },
+    {
+      "girdi": "Otuz sekiz kilometre yürüdük.",
+      "hedef": "38 kilometre yürüdük.",
+      "cikti": "38 km yürüdük.",
+      "ham": "38 km yürüdük.",
+      "kategori": "kardinal",
+      "sablon": "v3d-d5-0096",
+      "uyari": []
+    },
+    {
+      "girdi": "otuz iki dişini göstermek",
+      "hedef": "otuz iki dişini göstermek",
+      "cikti": "32 dişini göstermek",
+      "ham": "32 dişini göstermek",
+      "kategori": "negatif_kalip",
+      "sablon": "v3d-d2-009-00",
+      "uyari": []
+    },
+    {
+      "girdi": "bir dakika bir dakika",
+      "hedef": "bir dakika bir dakika",
+      "cikti": "1 dakika 1 dakika",
+      "ham": "1 dakika 1 dakika",
+      "kategori": "negatif_dogal",
+      "sablon": "v3d-d1-7c2bc93de5456fe0c727e6bc8fce9bab",
+      "uyari": []
+    },
+    {
+      "girdi": "bin can ile",
+      "hedef": "bin can ile",
+      "cikti": "1.000 can ile",
+      "ham": "1.000 can ile",
+      "kategori": "negatif_kalip",
+      "sablon": "v3d-d2-128-00",
+      "uyari": []
+    },
+    {
+      "girdi": "Metinde \"on beşlik bir kasa\" sözü geçiyor.",
+      "hedef": "Metinde \"15'lik bir kasa\" sözü geçiyor.",
+      "cikti": "Metinde \"on beşlik bir kasa\" sözü geçiyor.",
+      "ham": "Metinde \"on beşlik bir kasa\" sözü geçiyor.",
+      "kategori": "kardinal",
+      "sablon": "v3d-d8-0071",
+      "uyari": []
+    },
+    {
+      "girdi": "yol arkadaşımın sözü şuydu otuz iki dişini göstermek",
+      "hedef": "yol arkadaşımın sözü şuydu otuz iki dişini göstermek",
+      "cikti": "yol arkadaşımın sözü şuydu 32 dişini göstermek",
+      "ham": "yol arkadaşımın sözü şuydu 32 dişini göstermek",
+      "kategori": "negatif_kalip",
+      "sablon": "v3d-d2-009-06",
+      "uyari": []
+    },
+    {
+      "girdi": "\"Yetmiş iki millete bir gözle bakmak\" sözünü babamdan öğrendim.",
+      "hedef": "\"Yetmiş iki millete bir gözle bakmak\" sözünü babamdan öğrendim.",
+      "cikti": "\"72 millete bir gözle bakmak\" sözünü babamdan öğrendim.",
+      "ham": "\"72 millete bir gözle bakmak\" sözünü babamdan öğrendim.",
+      "kategori": "negatif_kalip",
+      "sablon": "v3d-d2-086-03",
+      "uyari": []
+    },
+    {
+      "girdi": "Metinde \"yirmilik bir kutu\" sözü geçiyor.",
+      "hedef": "Metinde \"20'lik bir kutu\" sözü geçiyor.",
+      "cikti": "Metinde \"yirmilik bir kutu\" sözü geçiyor.",
+      "ham": "Metinde \"yirmilik bir kutu\" sözü geçiyor.",
+      "kategori": "kardinal",
+      "sablon": "v3d-d8-0071",
+      "uyari": []
+    },
+    {
+      "girdi": "Yol arkadaşımın sözü şuydu: \"yetmiş iki millete bir gözle bakmak\".",
+      "hedef": "Yol arkadaşımın sözü şuydu: \"yetmiş iki millete bir gözle bakmak\".",
+      "cikti": "Yol arkadaşımın sözü şuydu: \"72 millete bir gözle bakmak\".",
+      "ham": "Yol arkadaşımın sözü şuydu: \"72 millete bir gözle bakmak\".",
+      "kategori": "negatif_kalip",
+      "sablon": "v3d-d2-086-06",
+      "uyari": []
+    },
+    {
+      "girdi": "yol arkadaşımın sözü şuydu yetmiş iki millete bir gözle bakmak",
+      "hedef": "yol arkadaşımın sözü şuydu yetmiş iki millete bir gözle bakmak",
+      "cikti": "yol arkadaşımın sözü şuydu 72 millete bir gözle bakmak",
+      "ham": "yol arkadaşımın sözü şuydu 72 millete bir gözle bakmak",
+      "kategori": "negatif_kalip",
+      "sablon": "v3d-d2-086-06",
+      "uyari": []
+    },
+    {
+      "girdi": "Kardeşim kulağıma \"yetmiş iki millete bir gözle bakmak\" diye fısıldadı.",
+      "hedef": "Kardeşim kulağıma \"yetmiş iki millete bir gözle bakmak\" diye fısıldadı.",
+      "cikti": "Kardeşim kulağıma \"72 millete bir gözle bakmak\" diye fısıldadı.",
+      "ham": "Kardeşim kulağıma \"72 millete bir gözle bakmak\" diye fısıldadı.",
+      "kategori": "negatif_kalip",
+      "sablon": "v3d-d2-086-05",
+      "uyari": []
+    },
+    {
+      "girdi": "Metinde \"dördüncü bölüm\" sözü geçiyor.",
+      "hedef": "Metinde \"4. bölüm\" sözü geçiyor.",
+      "cikti": "Metinde \"dördüncü bölüm\" sözü geçiyor.",
+      "ham": "Metinde \"dördüncü bölüm\" sözü geçiyor.",
+      "kategori": "sira",
+      "sablon": "v3d-d8-0067",
+      "uyari": []
+    },
+    {
+      "girdi": "ninem eskiden otuz iki dişini göstermek derdi",
+      "hedef": "ninem eskiden otuz iki dişini göstermek derdi",
+      "cikti": "ninem eskiden 32 dişini göstermek derdi",
+      "ham": "ninem eskiden 32 dişini göstermek derdi",
+      "kategori": "negatif_kalip",
+      "sablon": "v3d-d2-009-01",
+      "uyari": []
+    },
+    {
+      "girdi": "anlatıcı tam burada on beşinde kız ya erde gerek ya yerde dedi",
+      "hedef": "anlatıcı tam burada on beşinde kız ya erde gerek ya yerde dedi",
+      "cikti": "anlatıcı tam burada 15'inde kız ya erde gerek ya yerde dedi",
+      "ham": "anlatıcı tam burada 15'inde kız ya erde gerek ya yerde dedi",
+      "kategori": "negatif_kalip",
+      "sablon": "v3d-d2-076-04",
+      "uyari": []
+    },
+    {
+      "girdi": "Beş yüz üç kilometre yürüdük.",
+      "hedef": "503 kilometre yürüdük.",
+      "cikti": "503 km yürüdük.",
+      "ham": "503 km yürüdük.",
+      "kategori": "kardinal",
+      "sablon": "v3d-d5-0096",
+      "uyari": []
+    },
+    {
+      "girdi": "Metinde \"yüzlük bir şişe\" sözü geçiyor.",
+      "hedef": "Metinde \"100'lük bir şişe\" sözü geçiyor.",
+      "cikti": "Metinde \"yüzlük bir şişe\" sözü geçiyor.",
+      "ham": "Metinde \"yüzlük bir şişe\" sözü geçiyor.",
+      "kategori": "kardinal",
+      "sablon": "v3d-d8-0071",
+      "uyari": []
+    }
+  ],
+  "koruma_geri_alma": 2
+}

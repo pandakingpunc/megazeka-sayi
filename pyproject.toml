@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "megazeka-sayi"
-version = "2.5.0"
+version = "3.0.0"
 description = "Megazeka-Sayı: Türkçe ters metin normalleştirme (ASR'deki yazıyla sayıları TDK rakam biçimine çevirme)"
 readme = "README.md"
 requires-python = ">=3.11,<3.14"

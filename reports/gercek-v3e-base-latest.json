@@ -1,0 +1,773 @@
+{
+  "ad": "v3e-base-latest",
+  "kontrol_noktasi": "v3e-base-latest",
+  "genel": {
+    "kopya": {
+      "ornek": 279,
+      "kati": 163,
+      "esnek": 167,
+      "negatif": 163,
+      "yanlis_donusum": 0,
+      "pozitif": 116,
+      "pozitif_dogru": 4,
+      "pozitif_dokunulmadi": 112
+    },
+    "kural": {
+      "ornek": 279,
+      "kati": 97,
+      "esnek": 114,
+      "negatif": 163,
+      "yanlis_donusum": 116,
+      "pozitif": 116,
+      "pozitif_dogru": 67,
+      "pozitif_dokunulmadi": 1
+    },
+    "ham": {
+      "ornek": 279,
+      "kati": 265,
+      "esnek": 267,
+      "negatif": 163,
+      "yanlis_donusum": 7,
+      "pozitif": 116,
+      "pozitif_dogru": 111,
+      "pozitif_dokunulmadi": 5
+    },
+    "korumali": {
+      "ornek": 279,
+      "kati": 266,
+      "esnek": 268,
+      "negatif": 163,
+      "yanlis_donusum": 6,
+      "pozitif": 116,
+      "pozitif_dogru": 111,
+      "pozitif_dokunulmadi": 5
+    }
+  },
+  "kategori": {
+    "aralik": {
+      "kopya": {
+        "ornek": 17,
+        "kati": 0,
+        "esnek": 0,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 17,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 17
+      },
+      "kural": {
+        "ornek": 17,
+        "kati": 0,
+        "esnek": 0,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 17,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 0
+      },
+      "ham": {
+        "ornek": 17,
+        "kati": 17,
+        "esnek": 17,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 17,
+        "pozitif_dogru": 17,
+        "pozitif_dokunulmadi": 0
+      },
+      "korumali": {
+        "ornek": 17,
+        "kati": 17,
+        "esnek": 17,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 17,
+        "pozitif_dogru": 17,
+        "pozitif_dokunulmadi": 0
+      }
+    },
+    "atasozu": {
+      "kopya": {
+        "ornek": 12,
+        "kati": 12,
+        "esnek": 12,
+        "negatif": 12,
+        "yanlis_donusum": 0,
+        "pozitif": 0,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 0
+      },
+      "kural": {
+        "ornek": 12,
+        "kati": 0,
+        "esnek": 0,
+        "negatif": 12,
+        "yanlis_donusum": 12,
+        "pozitif": 0,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 0
+      },
+      "ham": {
+        "ornek": 12,
+        "kati": 7,
+        "esnek": 7,
+        "negatif": 12,
+        "yanlis_donusum": 5,
+        "pozitif": 0,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 0
+      },
+      "korumali": {
+        "ornek": 12,
+        "kati": 7,
+        "esnek": 7,
+        "negatif": 12,
+        "yanlis_donusum": 5,
+        "pozitif": 0,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 0
+      }
+    },
+    "buyuk": {
+      "kopya": {
+        "ornek": 8,
+        "kati": 0,
+        "esnek": 0,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 8,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 8
+      },
+      "kural": {
+        "ornek": 8,
+        "kati": 0,
+        "esnek": 0,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 8,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 0
+      },
+      "ham": {
+        "ornek": 8,
+        "kati": 8,
+        "esnek": 8,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 8,
+        "pozitif_dogru": 8,
+        "pozitif_dokunulmadi": 0
+      },
+      "korumali": {
+        "ornek": 8,
+        "kati": 8,
+        "esnek": 8,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 8,
+        "pozitif_dogru": 8,
+        "pozitif_dokunulmadi": 0
+      }
+    },
+    "es_yazim": {
+      "kopya": {
+        "ornek": 35,
+        "kati": 35,
+        "esnek": 35,
+        "negatif": 35,
+        "yanlis_donusum": 0,
+        "pozitif": 0,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 0
+      },
+      "kural": {
+        "ornek": 35,
+        "kati": 18,
+        "esnek": 19,
+        "negatif": 35,
+        "yanlis_donusum": 16,
+        "pozitif": 0,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 0
+      },
+      "ham": {
+        "ornek": 35,
+        "kati": 35,
+        "esnek": 35,
+        "negatif": 35,
+        "yanlis_donusum": 0,
+        "pozitif": 0,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 0
+      },
+      "korumali": {
+        "ornek": 35,
+        "kati": 35,
+        "esnek": 35,
+        "negatif": 35,
+        "yanlis_donusum": 0,
+        "pozitif": 0,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 0
+      }
+    },
+    "kalip": {
+      "kopya": {
+        "ornek": 53,
+        "kati": 53,
+        "esnek": 53,
+        "negatif": 53,
+        "yanlis_donusum": 0,
+        "pozitif": 0,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 0
+      },
+      "kural": {
+        "ornek": 53,
+        "kati": 18,
+        "esnek": 18,
+        "negatif": 53,
+        "yanlis_donusum": 35,
+        "pozitif": 0,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 0
+      },
+      "ham": {
+        "ornek": 53,
+        "kati": 51,
+        "esnek": 51,
+        "negatif": 53,
+        "yanlis_donusum": 2,
+        "pozitif": 0,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 0
+      },
+      "korumali": {
+        "ornek": 53,
+        "kati": 52,
+        "esnek": 52,
+        "negatif": 53,
+        "yanlis_donusum": 1,
+        "pozitif": 0,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 0
+      }
+    },
+    "kardinal": {
+      "kopya": {
+        "ornek": 45,
+        "kati": 0,
+        "esnek": 1,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 45,
+        "pozitif_dogru": 1,
+        "pozitif_dokunulmadi": 44
+      },
+      "kural": {
+        "ornek": 45,
+        "kati": 42,
+        "esnek": 42,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 45,
+        "pozitif_dogru": 42,
+        "pozitif_dokunulmadi": 0
+      },
+      "ham": {
+        "ornek": 45,
+        "kati": 40,
+        "esnek": 41,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 45,
+        "pozitif_dogru": 41,
+        "pozitif_dokunulmadi": 4
+      },
+      "korumali": {
+        "ornek": 45,
+        "kati": 40,
+        "esnek": 41,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 45,
+        "pozitif_dogru": 41,
+        "pozitif_dokunulmadi": 4
+      }
+    },
+    "kucuk_sayi": {
+      "kopya": {
+        "ornek": 30,
+        "kati": 30,
+        "esnek": 30,
+        "negatif": 30,
+        "yanlis_donusum": 0,
+        "pozitif": 0,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 0
+      },
+      "kural": {
+        "ornek": 30,
+        "kati": 0,
+        "esnek": 10,
+        "negatif": 30,
+        "yanlis_donusum": 20,
+        "pozitif": 0,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 0
+      },
+      "ham": {
+        "ornek": 30,
+        "kati": 29,
+        "esnek": 30,
+        "negatif": 30,
+        "yanlis_donusum": 0,
+        "pozitif": 0,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 0
+      },
+      "korumali": {
+        "ornek": 30,
+        "kati": 29,
+        "esnek": 30,
+        "negatif": 30,
+        "yanlis_donusum": 0,
+        "pozitif": 0,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 0
+      }
+    },
+    "olcu": {
+      "kopya": {
+        "ornek": 4,
+        "kati": 0,
+        "esnek": 0,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 4,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 4
+      },
+      "kural": {
+        "ornek": 4,
+        "kati": 2,
+        "esnek": 2,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 4,
+        "pozitif_dogru": 2,
+        "pozitif_dokunulmadi": 0
+      },
+      "ham": {
+        "ornek": 4,
+        "kati": 4,
+        "esnek": 4,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 4,
+        "pozitif_dogru": 4,
+        "pozitif_dokunulmadi": 0
+      },
+      "korumali": {
+        "ornek": 4,
+        "kati": 4,
+        "esnek": 4,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 4,
+        "pozitif_dogru": 4,
+        "pozitif_dokunulmadi": 0
+      }
+    },
+    "ondalik": {
+      "kopya": {
+        "ornek": 5,
+        "kati": 0,
+        "esnek": 0,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 5,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 5
+      },
+      "kural": {
+        "ornek": 5,
+        "kati": 5,
+        "esnek": 5,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 5,
+        "pozitif_dogru": 5,
+        "pozitif_dokunulmadi": 0
+      },
+      "ham": {
+        "ornek": 5,
+        "kati": 4,
+        "esnek": 4,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 5,
+        "pozitif_dogru": 4,
+        "pozitif_dokunulmadi": 1
+      },
+      "korumali": {
+        "ornek": 5,
+        "kati": 4,
+        "esnek": 4,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 5,
+        "pozitif_dogru": 4,
+        "pozitif_dokunulmadi": 1
+      }
+    },
+    "para": {
+      "kopya": {
+        "ornek": 20,
+        "kati": 0,
+        "esnek": 2,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 20,
+        "pozitif_dogru": 2,
+        "pozitif_dokunulmadi": 18
+      },
+      "kural": {
+        "ornek": 20,
+        "kati": 9,
+        "esnek": 9,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 20,
+        "pozitif_dogru": 9,
+        "pozitif_dokunulmadi": 0
+      },
+      "ham": {
+        "ornek": 20,
+        "kati": 20,
+        "esnek": 20,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 20,
+        "pozitif_dogru": 20,
+        "pozitif_dokunulmadi": 0
+      },
+      "korumali": {
+        "ornek": 20,
+        "kati": 20,
+        "esnek": 20,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 20,
+        "pozitif_dogru": 20,
+        "pozitif_dokunulmadi": 0
+      }
+    },
+    "saat": {
+      "kopya": {
+        "ornek": 4,
+        "kati": 0,
+        "esnek": 0,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 4,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 4
+      },
+      "kural": {
+        "ornek": 4,
+        "kati": 2,
+        "esnek": 2,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 4,
+        "pozitif_dogru": 2,
+        "pozitif_dokunulmadi": 1
+      },
+      "ham": {
+        "ornek": 4,
+        "kati": 4,
+        "esnek": 4,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 4,
+        "pozitif_dogru": 4,
+        "pozitif_dokunulmadi": 0
+      },
+      "korumali": {
+        "ornek": 4,
+        "kati": 4,
+        "esnek": 4,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 4,
+        "pozitif_dogru": 4,
+        "pozitif_dokunulmadi": 0
+      }
+    },
+    "sira": {
+      "kopya": {
+        "ornek": 4,
+        "kati": 3,
+        "esnek": 4,
+        "negatif": 3,
+        "yanlis_donusum": 0,
+        "pozitif": 1,
+        "pozitif_dogru": 1,
+        "pozitif_dokunulmadi": 0
+      },
+      "kural": {
+        "ornek": 4,
+        "kati": 1,
+        "esnek": 1,
+        "negatif": 3,
+        "yanlis_donusum": 3,
+        "pozitif": 1,
+        "pozitif_dogru": 1,
+        "pozitif_dokunulmadi": 0
+      },
+      "ham": {
+        "ornek": 4,
+        "kati": 4,
+        "esnek": 4,
+        "negatif": 3,
+        "yanlis_donusum": 0,
+        "pozitif": 1,
+        "pozitif_dogru": 1,
+        "pozitif_dokunulmadi": 0
+      },
+      "korumali": {
+        "ornek": 4,
+        "kati": 4,
+        "esnek": 4,
+        "negatif": 3,
+        "yanlis_donusum": 0,
+        "pozitif": 1,
+        "pozitif_dogru": 1,
+        "pozitif_dokunulmadi": 0
+      }
+    },
+    "tarih": {
+      "kopya": {
+        "ornek": 12,
+        "kati": 0,
+        "esnek": 0,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 12,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 12
+      },
+      "kural": {
+        "ornek": 12,
+        "kati": 0,
+        "esnek": 6,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 12,
+        "pozitif_dogru": 6,
+        "pozitif_dokunulmadi": 0
+      },
+      "ham": {
+        "ornek": 12,
+        "kati": 12,
+        "esnek": 12,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 12,
+        "pozitif_dogru": 12,
+        "pozitif_dokunulmadi": 0
+      },
+      "korumali": {
+        "ornek": 12,
+        "kati": 12,
+        "esnek": 12,
+        "negatif": 0,
+        "yanlis_donusum": 0,
+        "pozitif": 12,
+        "pozitif_dogru": 12,
+        "pozitif_dokunulmadi": 0
+      }
+    },
+    "zamir": {
+      "kopya": {
+        "ornek": 30,
+        "kati": 30,
+        "esnek": 30,
+        "negatif": 30,
+        "yanlis_donusum": 0,
+        "pozitif": 0,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 0
+      },
+      "kural": {
+        "ornek": 30,
+        "kati": 0,
+        "esnek": 0,
+        "negatif": 30,
+        "yanlis_donusum": 30,
+        "pozitif": 0,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 0
+      },
+      "ham": {
+        "ornek": 30,
+        "kati": 30,
+        "esnek": 30,
+        "negatif": 30,
+        "yanlis_donusum": 0,
+        "pozitif": 0,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 0
+      },
+      "korumali": {
+        "ornek": 30,
+        "kati": 30,
+        "esnek": 30,
+        "negatif": 30,
+        "yanlis_donusum": 0,
+        "pozitif": 0,
+        "pozitif_dogru": 0,
+        "pozitif_dokunulmadi": 0
+      }
+    }
+  },
+  "hatalar": [
+    {
+      "no": 2,
+      "girdi": "Çocuk güğümünü olduğu yerde bırakarak ona koştu, parayı uzattı: \"Şunu iki çeyrek yapsana!\"",
+      "hedef": "Çocuk güğümünü olduğu yerde bırakarak ona koştu, parayı uzattı: \"Şunu iki çeyrek yapsana!\"",
+      "kabul": [],
+      "ham": "Çocuk güğümünü olduğu yerde bırakarak ona koştu, parayı uzattı: \"Şunu 2 çeyrek yapsana!\"",
+      "korumali": "Çocuk güğümünü olduğu yerde bırakarak ona koştu, parayı uzattı: \"Şunu 2 çeyrek yapsana!\"",
+      "kural": "Çocuk güğümünü olduğu yerde bırakarak 10'a koştu, parayı uzattı: \"Şunu 2 çeyrek yapsana!\"",
+      "kategori": "kalip",
+      "uyari": []
+    },
+    {
+      "no": 14,
+      "girdi": "Daha bir buçuk ay önce aslanlar gibi kardeşimi öldürdü.",
+      "hedef": "Daha 1,5 ay önce aslanlar gibi kardeşimi öldürdü.",
+      "kabul": [],
+      "ham": "Daha bir buçuk ay önce aslanlar gibi kardeşimi öldürdü.",
+      "korumali": "Daha bir buçuk ay önce aslanlar gibi kardeşimi öldürdü.",
+      "kural": "Daha 1,5 ay önce aslanlar gibi kardeşimi öldürdü.",
+      "kategori": "ondalik",
+      "uyari": []
+    },
+    {
+      "no": 21,
+      "girdi": "Ayın en çok on gününde aldığı en çok altmışar kuruşla bunları doyuramıyordu.",
+      "hedef": "Ayın en çok 10 gününde aldığı en çok altmışar kuruşla bunları doyuramıyordu.",
+      "kabul": [],
+      "ham": "Ayın en çok on gününde aldığı en çok altmışar kuruşla bunları doyuramıyordu.",
+      "korumali": "Ayın en çok on gününde aldığı en çok altmışar kuruşla bunları doyuramıyordu.",
+      "kural": "Ayın en çok 10 gününde aldığı en çok altmışar kuruşla bunları doyuramıyordu.",
+      "kategori": "kardinal",
+      "uyari": []
+    },
+    {
+      "no": 60,
+      "girdi": "Yaş yetmiş, iş bitmiş.",
+      "hedef": "Yaş yetmiş, iş bitmiş.",
+      "kabul": [],
+      "ham": "Yaş 70, iş bitmiş.",
+      "korumali": "Yaş 70, iş bitmiş.",
+      "kural": "Yaş 70, iş bitmiş.",
+      "kategori": "atasozu",
+      "uyari": []
+    },
+    {
+      "no": 68,
+      "girdi": "Yerinden oynayan yetmiş kazaya uğrar; en küçüğü ölüm.",
+      "hedef": "Yerinden oynayan yetmiş kazaya uğrar; en küçüğü ölüm.",
+      "kabul": [],
+      "ham": "Yerinden oynayan 70 kazaya uğrar; en küçüğü ölüm.",
+      "korumali": "Yerinden oynayan 70 kazaya uğrar; en küçüğü ölüm.",
+      "kural": "Yerinden oynayan 70 kazaya uğrar; en küçüğü ölüm.",
+      "kategori": "atasozu",
+      "uyari": []
+    },
+    {
+      "no": 87,
+      "girdi": "Otuz iki dişten çıkan, otuz iki mahalleye yayılır.",
+      "hedef": "Otuz iki dişten çıkan, otuz iki mahalleye yayılır.",
+      "kabul": [],
+      "ham": "32 dişten çıkan, 32 mahalleye yayılır.",
+      "korumali": "32 dişten çıkan, 32 mahalleye yayılır.",
+      "kural": "32 dişten çıkan, 32 mahalleye yayılır.",
+      "kategori": "atasozu",
+      "uyari": []
+    },
+    {
+      "no": 96,
+      "girdi": "Hırsız sekiz, köşe dokuz.",
+      "hedef": "Hırsız sekiz, köşe dokuz.",
+      "kabul": [],
+      "ham": "Hırsız 8, köşe dokuz.",
+      "korumali": "Hırsız 8, köşe dokuz.",
+      "kural": "Hırsız 8, köşe 9.",
+      "kategori": "atasozu",
+      "uyari": []
+    },
+    {
+      "no": 113,
+      "girdi": "Dervişlik olaydı taç ile hırka, ben de alırdım otuza kırka.",
+      "hedef": "Dervişlik olaydı taç ile hırka, ben de alırdım otuza kırka.",
+      "kabul": [],
+      "ham": "Dervişlik olaydı taç ile hırka, ben de alırdım 30'a 40'a.",
+      "korumali": "Dervişlik olaydı taç ile hırka, ben de alırdım 30'a 40'a.",
+      "kural": "Dervişlik olaydı taç ile hırka, ben de alırdım 30'a 40'a.",
+      "kategori": "atasozu",
+      "uyari": []
+    },
+    {
+      "no": 118,
+      "girdi": "Sen bu usulü daha ziyade kırkını geçmiş memurlarla, lise talebesine tatbik edecektin.",
+      "hedef": "Sen bu usulü daha ziyade 40'ını geçmiş memurlarla, lise talebesine tatbik edecektin.",
+      "kabul": [],
+      "ham": "Sen bu usulü daha ziyade kırkını geçmiş memurlarla, lise talebesine tatbik edecektin.",
+      "korumali": "Sen bu usulü daha ziyade kırkını geçmiş memurlarla, lise talebesine tatbik edecektin.",
+      "kural": "Sen bu usulü daha ziyade 40'ını geçmiş memurlarla, lise talebesine tatbik edecektin.",
+      "kategori": "kardinal",
+      "uyari": []
+    },
+    {
+      "no": 147,
+      "girdi": "Oyuncuların kağıtlarına bakarak: \"Koz çek, yirmiyi söyle\" diye karışmaya başlamış.",
+      "hedef": "Oyuncuların kağıtlarına bakarak: \"Koz çek, 20'yi söyle\" diye karışmaya başlamış.",
+      "kabul": [],
+      "ham": "Oyuncuların kağıtlarına bakarak: \"Koz çek, yirmiyi söyle\" diye karışmaya başlamış.",
+      "korumali": "Oyuncuların kağıtlarına bakarak: \"Koz çek, yirmiyi söyle\" diye karışmaya başlamış.",
+      "kural": "Oyuncuların kağıtlarına bakarak: \"Koz çek, 20'yi söyle\" diye karışmaya başlamış.",
+      "kategori": "kardinal",
+      "uyari": []
+    },
+    {
+      "no": 163,
+      "girdi": "Bin dert vardı başında.",
+      "hedef": "Bin dert vardı başında.",
+      "kabul": [],
+      "ham": "1.004 vardı başında.",
+      "korumali": "Bin dert vardı başında.",
+      "kural": "1.000 dert vardı başında.",
+      "kategori": "kalip",
+      "uyari": [
+        "\"Bin dert\" → \"1.004\" geri alındı (sayı olmayan sözcük değişti)"
+      ]
+    },
+    {
+      "no": 165,
+      "girdi": "Belki bini de aşar.",
+      "hedef": "Belki 1.000'i de aşar.",
+      "kabul": [],
+      "ham": "Belki bini de aşar.",
+      "korumali": "Belki bini de aşar.",
+      "kural": "Belki 1.000'i de aşar.",
+      "kategori": "kardinal",
+      "uyari": []
+    }
+  ],
+  "koruma_geri_alma": 1
+}

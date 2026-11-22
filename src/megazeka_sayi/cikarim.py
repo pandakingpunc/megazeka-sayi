@@ -87,6 +87,7 @@ _PARA_OLCU_KOKLERI = ('lira', 'kurus', 'lirasi', 'kilogram', 'miligram', 'kilo',
                       'gigabayt', 'megabayt', 'terabayt', 'kilovat', 'vat', 'volt', 'megahertz', 'kilohertz', 'hertz',
                       'derece', 'santigrat')
 _SAYI_SOZ = frozenset(_SAYI_KOKLERI)
+_ONLUKLAR = ('yirmi', 'otuz', 'kirk', 'elli', 'altmis', 'yetmis', 'seksen', 'doksan')
 # Saat deyişleri: "bire on kala", "biri on geçe", "ona çeyrek var".
 _SAAT_YUKLEM = frozenset({'gece', 'geciyor', 'geciyordu', 'gececek', 'kala', 'kalmisti', 'kalir', 'var', 'vardi', 'varken'})
 _AY_ADLARI = frozenset({'ocak', 'subat', 'mart', 'nisan', 'mayis', 'haziran', 'temmuz', 'agustos', 'eylul', 'ekim', 'kasim',
@@ -156,6 +157,10 @@ def sayi_benzeri_mi(sozcuk, onceki=None, sonraki=(), saat_once=False):
     if any(f.startswith(k) and _EK_PARA.match(f[len(k):]) for k in _PARA_OLCU_KOKLERI):
         return True
     if saat_once and any(f.startswith(k) and _EK_FIIL.match(f[len(k):]) for k in _SAYI_KOKLERI):
+        return True
+    # 20–90 onlukları iyelik + zamir n'siyle eş yazımlı sözcük oluşturmaz (``kırkını geçmiş``, ``ellisinden sonra``);
+    # ``ikisini de``, ``birini``, ``onunla`` gibi kalıplar bu yüzden yalnız sayı bağlamında sayılır.
+    if any(f.startswith(k) and _EK_N.match(f[len(k):]) for k in _ONLUKLAR):
         return True
     if _on_baglami_mi(onceki):
         return any(f.startswith(k) and _EK_N.match(f[len(k):]) for k in _KOKLER) or bool(_BITISIK_N.match(f))
@@ -344,7 +349,7 @@ def _parcala(metin, sinir):
 
 
 class SayiDonusturucu:
-    """ByT5-small + LoRA (``models/checkpoints/<ad>``) ile ITN; çıktı korumadan geçirilir."""
+    """ByT5 (small ya da base) + LoRA (``models/checkpoints/<ad>`` ya da Hub deposu) ile ITN; çıktı korumadan geçirilir."""
 
     def __init__(self, kontrol_noktasi='best', isin=1, max_bayt=192, aygit=None):
         from . import depolama
@@ -357,6 +362,15 @@ class SayiDonusturucu:
         yol = depolama.ROOT / 'models/checkpoints' / kontrol_noktasi
         # Kontrol noktası hangi tabanla eğitildiyse o yüklenir (taban.json; yoksa ByT5-small).
         taban_adi = depolama.kontrol_noktasi_tabani(yol) if kontrol_noktasi != 'base' else None
+        if (kontrol_noktasi != 'base' and not (yol / 'adapter_config.json').exists()
+                and '/' in str(kontrol_noktasi)):
+            # Yerel klasör ya da Hub deposu: taban, adaptörün kendi yapılandırmasından okunur
+            # (v2.5 ByT5-small, v3.0 ByT5-base); okunamazsa taban.json / small varsayımı kalır.
+            try:
+                from peft import PeftConfig
+                taban_adi = PeftConfig.from_pretrained(str(kontrol_noktasi)).base_model_name_or_path or taban_adi
+            except Exception:
+                pass
         self.tokenizer, taban, self.kaynak = depolama.temel_model_yukle(self.dtype, taban_adi)
         if kontrol_noktasi != 'base':
             if (yol / 'adapter_config.json').exists():
